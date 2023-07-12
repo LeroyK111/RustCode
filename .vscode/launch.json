@@ -1,0 +1,82 @@
+{
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  // 常见python设置参数https://code.visualstudio.com/docs/python/settings-reference
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "rustRun",
+      "type": "rust",
+      // attach通常是远程调试，
+      "request": "launch",
+      // 启动调试器时运行的可执行文件or文件, 等价于python file.py
+      "program": "${file}",
+      // 传递给文件的参数，等价于python file.py 1 2 3
+      "args": [],
+      // 环境变量，可以自己设置
+      "env": {},
+      // 环境变量文件，默认工作目录下的.env文件
+      "envFile": "${workspaceFolder}/.env",
+      // 查找依赖项和其他文件的当前工作目录
+      "cwd": "${workspaceFolder}",
+      // 合并终端输出
+      "console": "integratedTerminal",
+      // 开启协程并发
+      "gevent": true,
+      // 开启子进程调试
+      "subProcess": true,
+      // 断点调试，更改代码后自动重试
+      "autoReload": {
+        "enable": true
+      },
+      "python": "${command:python.interpreterPath}"
+      // pserve额外命令
+      // "pyramid": false
+      // Linux提升权限
+      // "sudo": false
+      // 调试的模块
+      // "module": "flask"
+      // 调试范围，只有自己的代码
+      // "justMyCode": true
+      // django框架专用
+      // "django": false
+      // jinja调试
+      // "jinja": false
+      // 运行调试器的快捷键
+      // "purpose": []
+      // 重定向输出
+      // "redirectOutput": true
+      // 程序启动时，是否自动断点
+      // "stopOnEntry": false
+      // 调试端口
+      // "port": 0
+      // 调试器分组
+      // "presentation": {
+      //   "hidden": false,
+      //   "group": "",
+      //   "order": 1
+      // },
+      // debug开始前，要启动的任务tasks
+      // "preLaunchTask": {
+      //   "task": "",
+      //   "type": ""
+      // },
+      // debug结束后，要启动的任务tasks
+      // "postDebugTask": {
+      //   "task": "",
+      //   "type": ""
+      // },
+      // 调试会话期间控制台面板的可见性
+      // "internalConsoleOptions": "neverOpen",
+      // 调试器额外端口
+      // "debugServer": 4711,
+      // 自动打开url
+      // "serverReadyAction": {
+      //   "action": "debugWithEdge",
+      //   "pattern": "listening on port ([0-9]+)",
+      //   "uriFormat": "http://localhost:%s",
+      //   "webRoot": "${workspaceFolder}"
+      // },
+    }
+    // !还有复合多进程启动机制，多用在JavaScript中
+  ]
+}
