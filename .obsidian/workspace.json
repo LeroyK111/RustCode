@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7059835ee7fec4c8",
@@ -87,6 +88,16 @@
         "id": "bcd92aa8fdb2e18f",
         "type": "tabs",
         "children": [
+          {
+            "id": "2c6dd45e1333608b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
           {
             "id": "9400c90803b3a3c4",
             "type": "leaf",
@@ -126,23 +137,12 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "2c6dd45e1333608b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -154,8 +154,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0fc53035e864bfab",
+  "active": "a177d25997417c94",
   "lastOpenFiles": [
+    "readme.assets",
     "readme.assets"
   ]
 }

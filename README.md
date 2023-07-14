@@ -12,6 +12,36 @@
 
 **vscode插件**：https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer
 
+## 基本指令
+### windows安装方式
+### Linux\\MacOs安装方式
+
+
+
+
+
+
+
+升级rust
+```shell
+$ rustup update
+
+```
+
+
+```
+info: cleaning up downloads & tmp directories  
+thread ‘main’ panicked at ‘Unable to clean up C:\Users\GrapeX.rustup\tmp: Os { code: 5, kind: PermissionDenied, message: “拒绝访问。” }’, src\utils\utils.rs:650:13  
+stack backtrace:  
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+```
+tmp无法清除，目前没有正在运行的rust项目，应当是有其它需要rust的进程还在活动，经检查 vscode 没关，rust-analyzer 还在活动，停止插件或关闭vscode即可解决。
+
+
+
+
+
+
 ## 入门
 
 目录模板：
