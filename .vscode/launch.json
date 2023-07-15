@@ -5,20 +5,36 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // linux/mac上，记得使用cppdbg
-            // windows上 使用cppvsdbg
+            // windows上 使用 cppvsdbg
             "type": "cppvsdbg",
             // 附加
             "request": "launch",
             // 调试器名
-            "name": "rustRun",
+            "name": "(windows)rustRun",
             // 一般执行代码都在这里src/main.rs，这个位置相对引用更好些
             // D:\RustCode\learning\target\debug\learning.exe
             "program": "${fileWorkspaceFolder}/${input:currentProjectName}/target/debug/${input:currentProjectName}.exe",
             // 用于查找依赖项和其他文件的当前工作目录
             "cwd": "${workspaceFolder}",
             // 使用vscode集成终端
-            "console": "integratedTerminal",
+            // "console": "integratedTerminal",
+            // rs文件调试前，执行的任务
+            "preLaunchTask": "build",
+        },
+        {
+            // linux/mac上，记得使用 lldb
+            "type": "lldb",
+            // 附加
+            "request": "launch",
+            // 调试器名
+            "name": "(OSX)rustRun",
+            // 一般执行代码都在这里src/main.rs，这个位置相对引用更好些
+            // D:\RustCode\learning\target\debug\learning.exe
+            "program": "${fileWorkspaceFolder}/${input:currentProjectName}/target/debug/${input:currentProjectName}",
+            // 用于查找依赖项和其他文件的当前工作目录
+            "cwd": "${workspaceFolder}",
+            // 使用vscode集成终端
+            // "console": "integratedTerminal",
             // rs文件调试前，执行的任务
             "preLaunchTask": "build",
         }
