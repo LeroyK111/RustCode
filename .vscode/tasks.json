@@ -1,7 +1,14 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    // tasks任务,一般都是前端框架使用。python通常都是默认脚本
     "version": "2.0.0",
-    "tasks": []
+    "tasks": [
+        {
+            // 调试前，先构建一遍
+            "label": "build",
+            "type": "shell",
+            "command": "cargo build",
+            "options": {
+                "cwd": "${fileDirname}"
+            }
+        },
+    ],
 }

@@ -25,5 +25,15 @@
   // 更改行号颜色
   "workbench.colorCustomizations": {
     "editorLineNumber.foreground": "#daa520"
-  }
+  },
+  // 开启rust插件，代码灰块提示。
+  "editor.inlayHints.enabled": "on",
+  // todo 语意语法提示块，高亮
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "*.mutable": {
+        "fontStyle": ""
+      },
+    }
+  },
 }

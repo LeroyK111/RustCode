@@ -1,4 +1,7 @@
+# !这里是cargo.toml的包管理器，类似npm package.json package-lock.json
+
 [package]
+# 包元信息
 name = "learning"
 version = "0.1.0"
 edition = "2021"
@@ -6,3 +9,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# 依赖库
+ferris-says = "0.3.1"
