@@ -6,6 +6,8 @@
             "label": "build",
             "type": "shell",
             "command": "cargo build",
+            // 可能需要给 cargo build 赋予参数，
+            "args": [],
             "options": {
                 "cwd": "${fileDirname}"
             }
