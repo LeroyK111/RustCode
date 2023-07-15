@@ -142,7 +142,7 @@ fn main() {
 然后我们吉祥物就出来了。
 ![](readme.assets/Pasted%20image%2020230715215843.png)
 ### vscode的简单配置
-#### setting.json
+#### Setting基本配置
 ```json
 {
 
@@ -222,7 +222,7 @@ fn main() {
 
 }
 ```
-#### 调试
+#### Launch调试
 要开始调试，您首先需要安装具有调试支持的两种语言扩展之一：
 
 - [Microsoft C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (ms-vscode.cpptools) –_在 Windows 上_
@@ -233,3 +233,148 @@ fn main() {
 设置断点, 选择调试器。
 ![](readme.assets/Pasted%20image%2020230715222428.png)
 ![](readme.assets/Pasted%20image%2020230715222636.png)
+```json
+{
+
+    // 使用 IntelliSense 了解相关属性。
+
+    // 悬停以查看现有属性的描述。
+
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+
+    "version": "0.2.0",
+
+    "configurations": [
+
+        {
+
+            // linux/mac上，记得使用cppdbg
+
+            // windows上 使用cppvsdbg
+
+            "type": "cppvsdbg",
+
+            // 附加
+
+            "request": "launch",
+
+            // 调试器名
+
+            "name": "rustRun",
+
+            // 一般执行代码都在这里src/main.rs，这个位置相对引用更好些
+
+            // D:\RustCode\learning\target\debug\learning.exe
+
+            "program": "${fileWorkspaceFolder}/${input:currentProjectName}/target/debug/${input:currentProjectName}.exe",
+
+            // 用于查找依赖项和其他文件的当前工作目录
+
+            "cwd": "${workspaceFolder}",
+
+            // 使用vscode集成终端
+
+            "console": "integratedTerminal",
+
+            // rs文件调试前，执行的任务
+
+            "preLaunchTask": "build",
+
+        }
+
+    ],
+
+    "inputs": [
+
+        {
+
+            // 用户输入id的内容，用在program
+
+            "id": "currentProjectName",
+
+            // PromptString：显示一个输入框以从用户处获取字符串。
+
+            // pickString：显示快速选择下拉列表，让用户从多个选项中进行选择。
+
+            // command：运行任意命令。
+
+            "type": "promptString",
+
+            // 提示输入
+
+            "description": "选择你要调试可执行文件",
+
+            // 默认是learning.exe
+
+            "default": "learning",
+
+            // 不隐藏
+
+            "password": false
+
+        },
+
+    ]
+
+}
+```
+#### Tasks构建任务
+```json
+{
+
+    "version": "2.0.0",
+
+    "tasks": [
+
+        {
+
+            // 调试前，先构建一遍
+
+            "label": "build",
+
+            "type": "shell",
+
+            "command": "cargo build",
+
+            "options": {
+
+                "cwd": "${fileDirname}"
+
+            }
+
+        },
+
+    ],
+
+}
+```
+
+### 教程版
+跟随网络的教程开始学习。
+https://www.rust-lang.org/zh-CN/learn
+
+
+
+
+#### 标准库
+
+
+#### Cargo用法
+
+
+
+
+##### 打包发布
+
+
+
+
+#### 嵌入式开发
+##### 开发板
+
+##### 系统构建
+
+#### Shell开发
+
+
+#### webAssembly开发
