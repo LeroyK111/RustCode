@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3b5b29c7e7e47bd7",
+        "id": "b47e50e430403477",
         "type": "tabs",
         "children": [
           {
-            "id": "a177d25997417c94",
+            "id": "adaebccbeaa713be",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -154,8 +154,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a177d25997417c94",
+  "active": "adaebccbeaa713be",
   "lastOpenFiles": [
+    "README.md",
     "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/work-products.bin",
     "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/v83a94erbvled1d.o",
     "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/query-cache.bin",
@@ -166,7 +167,6 @@
     "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/aly6s787fatg9a0.o",
     "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/51nqtrcob4o6xr0t.o",
     "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/4lqwrd81pefwz328.o",
-    "learning/target/debug/incremental/learning-30rtl2ceq9svt/s-gmvp8l0mvh-jrliyv-ea4rp2ko7h9jdwzv9yau9mgtl/4kuex6x5e3isg0li.o",
     "readme.assets/Pasted image 20230715222636.png",
     "readme.assets/Pasted image 20230715222428.png",
     "readme.assets/Pasted image 20230715215843.png",
