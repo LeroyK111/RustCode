@@ -700,9 +700,607 @@ backyard
 <div>相对路径引用：use garden::vegetables::Asparagus; 不带create</div>
 </div>
 #### 基本变量和概念
+##### 变量
+```rust
+// 变量mut
 
+pub fn test_mut() {
+
+let mut x = 5;
+
+println!("The value of x is: {x}");
+
+x = 6;
+
+println!("The value of x is: {x}");
+
+}
+
+  
+
+// 常量, 无法变更，const
+
+pub fn constants() {
+
+const THREE_HOURS_INSECONDS: u32 = 60 * 60 * 3;
+
+println!("{}", THREE_HOURS_INSECONDS)
+
+}
+
+  
+
+// 隐藏，当定义域不同时，同一个变量改变时，会发生不同的结果。
+
+pub fn Shadowing() {
+
+let x: i32 = 5;
+
+  
+
+let x = x + 1;
+
+  
+
+{
+
+let x = x * 2;
+
+println!("The value of x in the inner scope is: {x}");
+
+}
+
+  
+
+println!("The value of x is: {x}");
+
+}
+
+  
+
+// 变量类型的强制性
+
+pub fn testType() {
+
+// todo 这种可以修改已命名的值
+
+let spaces = " ";
+
+let spaces = spaces.len();
+
+// todo 这种就会报错，虽然你可以修改value，但不允许修改它的type。
+
+// let mut spaces = " ";
+
+// spaces = spaces.len();
+
+}
+```
+
+
+
+##### 标量
+![](readme.assets/Pasted%20image%2020230718225406.png)
+![](readme.assets/Pasted%20image%2020230718225808.png)
+```rust
+/*
+
+!标量（scalar）类型代表一个单独的值。Rust 有四种基本的标量类型：整型、浮点型、布尔类型和字符类型。
+
+长度 有符号 无符号
+
+8-bit i8 u8
+
+16-bit i16 u16
+
+32-bit i32 u32
+
+64-bit i64 u64
+
+128-bit i128 u128
+
+arch isize usize
+
+  
+
+数字字面值 例子
+
+Decimal (十进制) 98_222
+
+Hex (十六进制) 0xff
+
+Octal (八进制) 0o77
+
+Binary (二进制) 0b1111_0000
+
+Byte (单字节字符)(仅限于u8) b'A'
+
+  
+
+* 整型溢出，是无法通过编译的。
+
+* 使用 --release flag 在 release 模式中构建时，Rust 不会检测会导致 panic 的整型溢出。相反发生整型溢出时，Rust 会进行一种被称为二进制补码 wrapping（two’s complement wrapping）的操作。
+
+*/
+
+// 使用整型
+
+pub fn changeType() {
+
+let guess: u32 = "42".parse().expect("Not a number!");
+
+println!("{}", guess)
+
+}
+
+  
+
+// 浮点数，默认都是双精度，单精度也能用
+
+pub fn float() {
+
+let x = 2.0; // f64
+
+let y: f32 = 3.0; // f32
+
+}
+
+  
+
+// 数值计算
+
+pub fn count() {
+
+// addition
+
+let sum = 5 + 10;
+
+  
+
+// subtraction
+
+let difference = 95.5 - 4.3;
+
+  
+
+// multiplication
+
+let product = 4 * 30;
+
+  
+
+// division
+
+let quotient = 56.7 / 32.2;
+
+let truncated = -5 / 3; // 结果为 -1
+
+  
+
+// remainder
+
+let remainder = 43 % 5;
+
+}
+
+  
+
+// 布尔值
+
+pub fn bools() {
+
+let t = true;
+
+  
+
+let f: bool = false; // with explicit type annotation
+
+}
+
+  
+
+// 字符类型，这个很特殊
+
+pub fn string() {
+
+let c = 'z';
+
+let z: char = 'ℤ'; // with explicit type annotation
+
+let heart_eyed_cat = '😻';
+
+}
+
+  
+
+// 复合类型
+
+pub fn tuple() {
+
+let tup = (500, 6.4, 1);
+
+  
+
+// 解构赋值
+
+let (x, y, z) = tup;
+
+  
+
+// 点索引赋值
+
+// let five_hundred = x.0;
+
+  
+
+// let six_point_four = x.1;
+
+  
+
+// let one = x.2;
+
+  
+
+println!("The value of y is: {y}");
+
+}
+
+  
+
+pub fn array() {
+
+let months = [
+
+"January",
+
+"February",
+
+"March",
+
+"April",
+
+"May",
+
+"June",
+
+"July",
+
+"August",
+
+"September",
+
+"October",
+
+"November",
+
+"December",
+
+];
+
+// 直接给每个元素赋予type
+
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+
+  
+
+// 分号表示五个元素，五个元素为3
+
+let a = [3; 5];
+
+  
+  
+
+// 通过索引访问数组元素
+
+let first = a[0];
+
+let second = a[1];
+
+  
+  
+
+}
+
+  
+
+use std::io;
+
+  
+  
+
+// 通过输入索引，获取数组中的value。如果超过索引范围，则报错
+
+fn test() {
+
+let a = [1, 2, 3, 4, 5];
+
+  
+
+println!("Please enter an array index.");
+
+  
+
+let mut index = String::new();
+
+  
+
+io::stdin()
+
+.read_line(&mut index)
+
+.expect("Failed to read line");
+
+  
+
+let index: usize = index
+
+.trim()
+
+.parse()
+
+.expect("Index entered was not a number");
+
+  
+
+let element = a[index];
+
+  
+
+println!("The value of the element at index {index} is: {element}");
+
+}
+```
+##### 函数
+```rust
+// 函数
+
+  
+
+/*
+
+Rust 代码中的函数和变量名使用 snake case 规范风格。在 snake case 中，所有字母都是小写并使用下划线分隔单词。
+
+*/
+
+  
+
+// 有点python的类型注解的感觉了
+
+pub fn print_labeled_measurement(value: i32, unit_label: char) {
+
+println!("The measurement is: {value}{unit_label}");
+
+}
+
+  
+
+// 表达式写法
+
+pub fn talk() {
+
+let y = {
+
+let x = 3;
+
+x + 1
+
+};
+
+  
+
+println!("The value of y is: {y}");
+
+}
+
+  
+  
+
+// 返回值函数，只需要箭头函数
+
+fn plus_one(x: i32) -> i32 {
+
+// 不能加入分号，“mismatched types”（类型不匹配）
+
+x + 1
+
+}
+```
+##### 分支结构（判断，循环）
+```rust
+/*
+
+!值得注意的是代码中的条件 必须 是 bool 值。如果条件不是 bool 值，我们将得到一个错误。例如，尝试运行以下代码
+
+*/
+
+pub fn testIf() {
+
+let number = 3;
+
+  
+
+if number % 4 == 0 {
+
+println!("number is divisible by 4");
+
+} else if number % 3 == 0 {
+
+println!("number is divisible by 3");
+
+} else if number % 2 == 0 {
+
+println!("number is divisible by 2");
+
+} else {
+
+println!("number is not divisible by 4, 3, or 2");
+
+}
+
+}
+
+  
+
+pub fn testIf_2() {
+
+let condition = true;
+
+// 语法糖, 但是返回值的类型必须一致
+
+let number = if condition { 5 } else { 6 };
+
+  
+
+println!("The value of number is: {number}");
+
+}
+
+  
+
+pub fn lp() {
+
+// 当运行这个程序时，我们会看到连续的反复打印 again!，直到我们手动停止程序。大部分终端都支持一个快捷键，ctrl-c，来终止一个陷入无限循环的程序。
+
+// loop {
+
+// println!("again!");
+
+// }
+
+  
+
+let mut counter = 0;
+
+  
+
+let result = loop {
+
+counter += 1;
+
+  
+
+if counter == 10 {
+
+break counter * 2;
+
+}
+
+};
+
+  
+
+println!("The result is {result}");
+
+}
+
+  
+
+// 循环嵌套
+
+pub fn lp2() {
+
+let mut count = 0;
+
+// 加入标签，指示跳出的是哪层循环
+
+'counting_up: loop {
+
+println!("count = {count}");
+
+let mut remaining = 10;
+
+  
+
+loop {
+
+println!("remaining = {remaining}");
+
+if remaining == 9 {
+
+break;
+
+}
+
+if count == 2 {
+
+break 'counting_up;
+
+}
+
+remaining -= 1;
+
+}
+
+  
+
+count += 1;
+
+}
+
+println!("End count = {count}");
+
+}
+
+  
+
+// while 条件循环
+
+fn lp3() {
+
+let a = [10, 20, 30, 40, 50];
+
+let mut index = 0;
+
+  
+
+while index < 5 {
+
+println!("the value is: {}", a[index]);
+
+  
+
+index += 1;
+
+}
+
+}
+
+  
+
+// !for循环 最好用的循环
+
+fn lp4() {
+
+let a = [10, 20, 30, 40, 50];
+
+  
+
+for element in a {
+
+println!("the value is: {element}");
+
+}
+
+  
+
+// rev翻转字符串，1..4是一个数组的语法糖
+
+for number in (1..4).rev() {
+
+println!("{number}!");
+
+}
+
+println!("LIFTOFF!!!");
+
+}
+```
 
 #### ⭐️所有权
+所有权（系统）是 Rust 最为与众不同的特性，对语言的其他部分有着深刻含义。<span style="color: red;">它让 Rust 无需垃圾回收（garbage collector）即可保障内存安全，因此理解 Rust 中所有权如何工作是十分重要的。</span>本章，我们将讲到所有权以及相关功能：借用（borrowing）、slice 以及 Rust 如何在内存中布局数据。
+
+
+
 
 
 #### 结构体

@@ -1,3 +1,4 @@
+// 变量mut
 pub fn test_mut() {
     let mut x = 5;
     println!("The value of x is: {x}");
@@ -5,14 +6,15 @@ pub fn test_mut() {
     println!("The value of x is: {x}");
 }
 
-// 常量, 无法变更
+// 常量, 无法变更，const
 pub fn constants() {
     const THREE_HOURS_INSECONDS: u32 = 60 * 60 * 3;
+    println!("{}", THREE_HOURS_INSECONDS)
 }
 
 // 隐藏，当定义域不同时，同一个变量改变时，会发生不同的结果。
 pub fn Shadowing() {
-    let x = 5;
+    let x: i32 = 5;
 
     let x = x + 1;
 
@@ -22,4 +24,15 @@ pub fn Shadowing() {
     }
 
     println!("The value of x is: {x}");
+}
+
+// 变量类型的强制性
+pub fn testType() {
+    // todo 这种可以修改已命名的值
+    let spaces = "   ";
+    let spaces = spaces.len();
+    
+    // todo 这种就会报错，虽然你可以修改value，但不允许修改它的type。
+    // let mut spaces = "   ";
+    // spaces = spaces.len();
 }
