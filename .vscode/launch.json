@@ -17,7 +17,7 @@
             // 用于查找依赖项和其他文件的当前工作目录
             "cwd": "${workspaceFolder}",
             // 使用vscode集成终端
-            // "console": "integratedTerminal",
+            "console": "integratedTerminal",
             // rs文件调试前，执行的任务
             "preLaunchTask": "build",
         },
@@ -34,7 +34,7 @@
             // 用于查找依赖项和其他文件的当前工作目录
             "cwd": "${workspaceFolder}",
             // 使用vscode集成终端
-            // "console": "integratedTerminal",
+            "console": "integratedTerminal",
             // rs文件调试前，执行的任务
             "preLaunchTask": "build",
         }

@@ -1,6 +1,18 @@
+// 导入库
 use ferris_says::say;
 use std::io::{stdout, BufWriter};
-// 引入包，并且导入say函数
+// 导入自己包，先声明同级目录下的rs文件
+// 私有模块声明
+mod game;
+// 共有模块声明
+// pub mod game;
+
+// 这是相对路径
+use game::{g, test};
+// 只引用一个函数
+// use game::g;
+// 绝对路径引入，这是根路径
+// use crate::game::test;
 
 fn test_says() {
     let stdout: std::io::Stdout = stdout();
@@ -11,7 +23,12 @@ fn test_says() {
     say(message, width, &mut writer).unwrap();
 }
 
+// !主程序入口函数
 fn main() {
-    println!("Hello, Rust!");
-    test_says()
+    // 打印
+    // println!("Hello, Rust!");
+    // 测试函数
+    // test_says();
+    // 测试导包
+    g();
 }
