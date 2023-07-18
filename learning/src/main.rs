@@ -4,8 +4,10 @@ use std::io::{stdout, BufWriter};
 // 导入自己包，先声明同级目录下的rs文件
 // 私有模块声明
 mod game;
+
 // 共有模块声明
-// pub mod game;
+pub mod keywords;
+use keywords::{constants, test_mut, Shadowing};
 
 // 这是相对路径
 use game::{g, test};
@@ -30,5 +32,7 @@ fn main() {
     // 测试函数
     // test_says();
     // 测试导包
-    g();
+    // g();
+    // 测试变量和可变性
+    test_mut();
 }
