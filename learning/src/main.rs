@@ -36,6 +36,12 @@ fn test_says() {
     say(message, width, &mut writer).unwrap();
 }
 
+
+// 测试所有权
+mod ownership;
+use ownership::{scope, scope1};
+
+
 // !主程序入口函数
 fn main() {
     // 打印
@@ -70,8 +76,8 @@ fn main() {
     // 函数
     // print_labeled_measurement(32, '2');
 
-    
-
-
+    // 作用域函数，打印
+    // scope()
+    scope1();
 
 }
