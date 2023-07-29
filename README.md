@@ -700,6 +700,12 @@ backyard
 <div>相对路径引用：use garden::vegetables::Asparagus; 不带create</div>
 </div>
 #### 基本变量和概念
+- 字面量：= 字面量 
+	- 就是等号右边的就是字面量
+- 变量：mut
+- 常量：const
+	- 如果不加mut，都默认是常量。
+
 ##### 变量
 ```rust
 // 变量mut
@@ -1320,16 +1326,1000 @@ Rust 的核心功能（之一）是 所有权（ownership）。虽然该功能�
 3.当所有者（变量）离开作用域，这个值将被丢弃。
 ```
 
+##### 内存与分配
+就字符串字面值来说，我们在编译时就知道其内容，所以文本被直接硬编码进最终的可执行文件中。这使得字符串字面值快速且高效。不过这些特性都只得益于字符串字面值的不可变性。不幸的是，我们不能为了每一个在编译时大小未知的文本而将一块内存放入二进制文件中，并且它的大小还可能随着程序运行而改变。
 
+对于 String 类型，为了支持一个可变，可增长的文本片段，需要在堆上分配一块在编译时未知大小的内存来存放内容。这意味着：
 
+必须在运行时向内存分配器（memory allocator）请求内存。
+需要一个当我们处理完 String 时将内存返回给分配器的方法。
+第一部分由我们完成：当调用 String::from 时，它的实现 (implementation) 请求其所需的内存。这在编程语言中是非常通用的。
 
+然而，第二部分实现起来就各有区别了。在有 垃圾回收（garbage collector，GC）的语言中，GC 记录并清除不再使用的内存，而我们并不需要关心它。在大部分没有 GC 的语言中，识别出不再使用的内存并调用代码显式释放就是我们的责任了，跟请求内存的时候一样。从历史的角度上说正确处理内存回收曾经是一个困难的编程问题。如果忘记回收了会浪费内存。如果过早回收了，将会出现无效变量。如果重复回收，这也是个 bug。我们需要精确的为一个 allocate 配对一个 free。
 
+Rust 采取了一个不同的策略：内存在拥有它的变量离开作用域后就被自动释放。下面是示例 4-1 中作用域例子的一个使用 String 而不是字符串字面值的版本：
+```rust
+   {
+        let s = String::from("hello"); // 从此处起，s 是有效的
 
+        // 使用 s
+    }                                  // 此作用域已结束，
+                                       // s 不再有效
+```
+ 
+这是一个将 String 需要的内存返回给分配器的很自然的位置：当 s 离开作用域的时候。当变量离开作用域，Rust 为我们调用一个特殊的函数。这个函数叫做 drop，在这里 String 的作者可以放置释放内存的代码。Rust 在结尾的 } 处自动调用 drop。
 
-#### 结构体
+注意：在 C++ 中，这种 item 在生命周期结束时释放资源的模式有时被称作 资源获取即初始化（Resource Acquisition Is Initialization (RAII)）。如果你使用过 RAII 模式的话应该对 Rust 的 drop 函数并不陌生。
 
+这个模式对编写 Rust 代码的方式有着深远的影响。现在它看起来很简单，不过在更复杂的场景下代码的行为可能是不可预测的，比如当有多个变量使用在堆上分配的内存时。现在让我们探索一些这样的场景。
 
+```rust
+pub fn scope() {
+
+// 函数作用域
+
+/*
+
+当 s 进入作用域 时，它就是有效的。
+
+这一直持续到它 离开作用域 为止。
+
+*/
+
+let s = "函数外作用域";
+
+{
+
+// 内部属性和方法，只能内部调用，除非你给返回值
+
+let s = "函数作用域字符串";
+
+}
+
+  
+
+/*
+
+这是一个将 String 需要的内存返回给分配器的很自然的位置：当 s 离开作用域的时候。当变量离开作用域，Rust 为我们调用一个特殊的函数。这个函数叫做 drop，在这里 String 的作者可以放置释放内存的代码。Rust 在结尾的 } 处自动调用 drop。
+
+*/
+
+  
+
+println!("{}", s)
+
+}
+
+  
+
+pub fn scope1() {
+
+// *使用from函数基于字符串的字面值来创建string
+
+// *:这两个冒号 :: 是运算符，允许将特定的 from 函数置于 String 类型的命名空间（namespace）下，而不需要使用类似 string_from 这样的名字。
+
+let mut s = String::from("前\n");
+
+  
+
+s.push_str("追加字符串"); // push_str() 在字符串后追加字面值
+
+  
+
+println!("{}", s);
+
+  
+
+/*
+
+?就字符串字面值来说，我们在编译时就知道其内容，所以文本被直接硬编码进最终的可执行文件中。这使得字符串字面值快速且高效。不过这些特性都只得益于字符串字面值的不可变性。不幸的是，我们不能为了每一个在编译时大小未知的文本而将一块内存放入二进制文件中，并且它的大小还可能随着程序运行而改变。
+
+  
+
+*/
+
+}
+
+  
+
+pub fn scope2() {
+
+// 变量和数据交互的方式：这个会让rust深复制。
+
+let x = 5;
+
+let y = x;
+
+  
+
+// 方式二：这种则会让rust潜复制，让s2指向s1点内存地址。
+
+let s1 = String::from("hello");
+
+let s2 = s1;
+
+  
+
+/*
+
+todo 当 s2 和 s1 离开作用域，他们都会尝试释放相同的内存。这是一个叫做 二次释放（double free）的错误，也是之前提到过的内存安全性 bug 之一。两次释放（相同）内存会导致内存污染，它可能会导致潜在的安全漏洞。
+
+  
+
+todo rust的解决思路：s1被清理，s2彻底取代s1。
+
+*/
+
+  
+
+// s2正常使用
+
+// println!("{s2}");
+
+// s1 则报错error[E0382]: borrow of moved value: `s1`
+
+// println!("{s1}")
+
+}
+
+  
+
+pub fn scope3() {
+
+// 深复制，只针对字面量from
+
+let s1 = String::from("hello");
+
+let s2 = s1.clone();
+
+  
+
+println!("s1 = {}, s2 = {}", s1, s2);
+
+  
+
+// 拷贝, 这里没有使用字面量from，
+
+let x = 5;
+
+let y = x;
+
+  
+
+println!("x = {}, y = {}", x, y);
+
+}
+
+  
+
+pub fn scope4() {
+
+let s = String::from("hello"); // s 进入作用域
+
+  
+
+takes_ownership(s); // s 的值移动到函数里 ...
+
+// ... 所以到这里不再有效
+
+  
+
+let x = 5; // x 进入作用域
+
+  
+
+makes_copy(x); // x 应该移动函数里，
+
+// 但 i32 是 Copy 的，
+
+// 所以在后面可继续使用 x
+
+  
+
+let response = gives_ownership();
+
+println!("{response}");
+
+  
+
+// jie解构赋值
+
+let str1 = String::from("abc");
+
+let (s2, s2lenght) = calculate_length(str1);
+
+println!("{s2}, {s2lenght}")
+
+}
+
+  
+
+fn takes_ownership(some_string: String) {
+
+// some_string 进入作用域
+
+println!("{}", some_string);
+
+} // 这里，some_string 移出作用域并调用 `drop` 方法。
+
+// 占用的内存被释放
+
+  
+
+fn makes_copy(some_integer: i32) {
+
+// some_integer 进入作用域
+
+println!("{}", some_integer);
+
+} // 这里，some_integer 移出作用域。没有特殊之处
+
+  
+
+fn gives_ownership() -> String {
+
+// gives_ownership 会将
+
+// 返回值移动给
+
+// 调用它的函数
+
+  
+
+let some_string = String::from("yours"); // some_string 进入作用域。
+
+  
+
+some_string // 返回 some_string
+
+// 并移出给调用的函数
+
+//
+
+}
+
+  
+
+// 返回一个元祖
+
+fn calculate_length(s: String) -> (String, usize) {
+
+let length = s.len(); // len() 返回字符串的长度
+
+(s, length)
+
+}
+```
+##### 引用与借用
+``` rust
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &mut s;
+    let r2 = &mut s;
+
+    println!("{}, {}", r1, r2);
+}
+```
+我们不能在同一时间多次将 s 作为可变变量借用。第一个可变的借入在 r1 中，并且必须持续到在 println！ 中使用它，但是在那个可变引用的创建和它的使用之间，我们又尝试在 r2 中创建另一个可变引用，该引用借用与 r1 相同的数据。
+
+这一限制以一种非常小心谨慎的方式允许可变性，防止同一时间对同一数据存在多个可变引用。新 Rustacean 们经常难以适应这一点，因为大部分语言中变量任何时候都是可变的。这个限制的好处是 Rust 可以在编译时就避免数据竞争。数据竞争（data race）类似于竞态条件，它可由这三个行为造成：
+- 两个或更多指针同时访问同一数据。
+- 至少有一个指针被用来写入数据。
+- 没有同步数据访问的机制。
+
+数据竞争会导致未定义行为，难以在运行时追踪，并且难以诊断和修复；Rust 避免了这种情况的发生，因为它甚至不会编译存在数据竞争的代码！
+
+一如既往，可以使用大括号来创建一个新的作用域，以允许拥有多个可变引用，只是不能 同时 拥有：
+```rust
+   let mut s = String::from("hello");
+
+    {
+        let r1 = &mut s;
+    } // r1 在这里离开了作用域，所以我们完全可以创建一个新的引用
+
+    let r2 = &mut s;
+```
+
+Rust 在同时使用可变与不可变引用时也采用的类似的规则。这些代码会导致一个错误：
+
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &s; // 没问题
+    let r2 = &s; // 没问题
+    let r3 = &mut s; // 大问题
+
+    println!("{}, {}, and {}", r1, r2, r3);
+}
+
+```
+哇哦！我们 也 不能在拥有不可变引用的同时拥有可变引用。
+不可变引用的用户可不希望在他们的眼皮底下值就被意外的改变了！然而，多个不可变引用是可以的，因为没有哪个只能读取数据的人有能力影响其他人读取到的数据。
+注意一个引用的作用域从声明的地方开始一直持续到最后一次使用为止。例如，因为最后一次使用不可变引用（println!)，发生在声明可变引用之前，所以如下代码是可以编译的：
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    let r1 = &s; // 没问题
+    let r2 = &s; // 没问题
+    println!("{} and {}", r1, r2);
+    // 此位置之后 r1 和 r2 不再使用
+
+    let r3 = &mut s; // 没问题
+    println!("{}", r3);
+}
+
+```
+不可变引用 r1 和 r2 的作用域在 println! 最后一次使用之后结束，这也是创建可变引用 r3 的地方。它们的作用域没有重叠，所以代码是可以编译的。编译器可以在作用域结束之前判断不再使用的引用。
+
+尽管这些错误有时使人沮丧，但请牢记这是 Rust 编译器在提前指出一个潜在的 bug（在编译时而不是在运行时）并精准显示问题所在。这样你就不必去跟踪为何数据并不是你想象中的那样。
+
+###### 引用的规则
+
+- 在任意给定时间，
+	- 要么 只能有一个可变引用，
+	- 要么 只能有多个不可变引用。
+- 引用必须总是有效的。
+
+##### Slice类型
+slice 允许你引用集合中一段连续的元素序列，而不用引用整个集合。slice 是一类引用，所以它没有所有权。
+
+```rust
+/*
+
+todo 引用（reference）像一个指针，因为它是一个地址，我们可以由此访问储存于该地址的属于其他变量的数据。 与指针不同，引用确保指向某个特定类型的有效值。
+
+*/
+
+  
+
+// 形参也要注明引用
+
+fn calculate_length(s: &String) -> usize {
+
+s.len()
+
+}
+
+  
+
+fn change(some_string: &mut String) {
+
+some_string.push_str(", world");
+
+}
+
+  
+
+// 不支持返回引用值, 在具有指针的语言中，很容易通过释放内存时保留指向它的指针而错误地生成一个 悬垂指针（dangling pointer），所谓悬垂指针是其指向的内存可能已经被分配给其它持有者。
+
+// fn dangle() -> &String {
+
+// let s = String::from("hello");
+
+// &s
+
+// }
+
+  
+
+// 获取首字母
+
+fn first_word(s: &String) -> usize {
+
+// 因为需要逐个元素的检查 String 中的值是否为空格，需要用 as_bytes 方法将 String 转化为字节数组
+
+let bytes = s.as_bytes();
+
+// 接下来，使用 iter 方法在字节数组上创建一个迭代器：
+
+for (i, &item) in bytes.iter().enumerate() {
+
+if item == b' ' {
+
+// i是索引，item是元素
+
+return i;
+
+}
+
+}
+
+  
+
+// 如果没有空格，则整个字符串就是首字母
+
+s.len()
+
+}
+
+  
+
+// 获取首单词
+
+fn first_word2(s: &str) -> &str {
+
+let bytes = s.as_bytes();
+
+for (i, &item) in bytes.iter().enumerate() {
+
+if item == b' ' {
+
+return &s[0..i];
+
+}
+
+}
+
+&s[..]
+
+}
+
+  
+
+pub fn demo() {
+
+let mut s1 = String::from("hello");
+
+// !使用 & 即可引用。
+
+let len = calculate_length(&s1);
+
+// println!("The length of '{}' is {}.", s1, len);
+
+  
+
+// 修改引用的值，则需要 &mut 将传入的参数转换为可变引用.
+
+change(&mut s1);
+
+// println!("{s1}"); // hello, world
+
+  
+
+// 同一个定义域下，不支持两次可变引用的再赋值。
+
+let r1 = &mut s1;
+
+// let r2 = &mut s1; // error[E0499]: cannot borrow `s` as mutable more than once at a time
+
+// println!("{r1}");
+
+  
+
+// 悬垂指针（dangling pointer）
+
+// let test = dangle(); // error[E0106]: missing lifetime specifier
+
+  
+
+// 迭代器分割字符串
+
+let mut data = String::from("ab c");
+
+// let mut res = first_word(&data);
+
+// data.clear(); // data会被清空
+
+// println!("{res}, {data}"); // 这里不会报错
+
+  
+
+// 改进
+
+let res2 = first_word2(&data);
+
+// data.clear();
+
+println!("{res2}"); // 这里由于是引用分割，当你清空原始对象后，会报错。error[E0502]: cannot borrow `data` as mutable because it is also borrowed as immutable
+
+  
+
+// 字符串切割
+
+let s = String::from("hello world");
+
+// let hello = &s[0..5];
+
+let hello = &s[..5];
+
+let endIndex = s.len();
+
+// let world = &s[6..11];
+
+let world = &s[6..endIndex];
+
+  
+
+// 获取整个字符串
+
+// let slice = &s[0..len];
+
+// let slice = &s[..];
+
+  
+
+// println!("{s}, {hello}, {world}")
+
+// let x = &s[-1]; // 不支持负索引
+
+  
+
+let a = [1, 2, 3, 4, 5];
+
+let slice = &a[1..3];
+
+// 读写
+
+for s in slice {
+
+println!("{}", s);
+
+}
+
+// 断言相等
+
+assert_eq!(slice, &[2, 3]);
+
+  
+  
+
+}
+```
+
+#### 结构体struct
+struct，或者 structure，是一个自定义数据类型，允许你包装和命名多个相关的值，从而形成一个有意义的组合。如果你熟悉一门面向对象语言，struct 就像对象中的数据属性。在本章中，我们会对元组和结构体进行比较和对比。
+
+生命周期确保结构体引用的数据有效性跟结构体本身保持一致。
+```rust
+struct User {
+    active: bool,
+    // 造成生命周期无效
+    username: &str,
+    email: &str,
+    sign_in_count: u64,
+}
+
+fn main() {
+    let user1 = User {
+        active: true,
+        username: "someusername123",
+        email: "someone@example.com",
+        sign_in_count: 1,
+    };
+}
+```
+
+##### 方法语法
+为了使函数定义于 Rectangle 的上下文中，我们开始了一个 impl 块（impl 是 implementation 的缩写），这个 impl 块中的所有内容都将与 Rectangle 类型相关联。接着将 area 函数移动到 impl 大括号中，并将签名中的第一个（在这里也是唯一一个）参数和函数体中其他地方的对应参数改成 self。然后在 main 中将我们先前调用 area 方法并传递 rect1 作为参数的地方，改成使用 方法语法（method syntax）在 Rectangle 实例上调用 area 方法。方法语法获取一个实例并加上一个点号，后跟方法名、圆括号以及任何参数。
+
+在 area 的签名中，使用 &self 来替代 rectangle: &Rectangle，&self 实际上是 self: &Self 的缩写。在一个 impl 块中，Self 类型是 impl 块的类型的别名。方法的第一个参数必须有一个名为 self 的Self 类型的参数，所以 Rust 让你在第一个参数位置上只用 self 这个名字来缩写。注意，我们仍然需要在 self 前面使用 & 来表示这个方法借用了 Self 实例，就像我们在 rectangle: &Rectangle 中做的那样。方法可以选择获得 self 的所有权，或者像我们这里一样不可变地借用 self，或者可变地借用 self，就跟其他参数一样。
+
+这里选择 &self 的理由跟在函数版本中使用 &Rectangle 是相同的：我们并不想获取所有权，只希望能够读取结构体中的数据，而不是写入。如果想要在方法中改变调用方法的实例，需要将第一个参数改为 &mut self。通过仅仅使用 self 作为第一个参数来使方法获取实例的所有权是很少见的；这种技术通常用在当方法将 self 转换成别的实例的时候，这时我们想要防止调用者在转换之后使用原始的实例。
+
+使用方法替代函数，除了可使用方法语法和不需要在每个函数签名中重复 self 的类型之外，其主要好处在于组织性。我们将某个类型实例能做的所有事情都一起放入 impl 块中，而不是让将来的用户在我们的库中到处寻找 Rectangle 的功能。
+```rust
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
+fn main() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        rect1.area()
+    );
+}
+
+```
+
+Rust 并没有一个与 -> 等效的运算符；相反，Rust 有一个叫 自动引用和解引用（automatic referencing and dereferencing）的功能。方法调用是 Rust 中少数几个拥有这种行为的地方。
+
+它是这样工作的：当使用 object.something() 调用方法时，Rust 会自动为 object 添加 &、&mut 或 * 以便使 object 与方法签名匹配。也就是说，这些代码是等价的：
+```rust
+p1.distance(&p2);
+(&p1).distance(&p2);
+```
+第一行看起来简洁的多。这种自动引用的行为之所以有效，是因为方法有一个明确的接收者———— self 的类型。在给出接收者和方法名的前提下，Rust 可以明确地计算出方法是仅仅读取（&self），做出修改（&mut self）或者是获取所有权（self）。事实上，Rust 对方法接收者的隐式借用让所有权在实践中更友好。
+
+```rust
+// 定义结构体
+
+struct User {
+
+active: bool,
+
+username: String,
+
+email: String,
+
+sign_in_count: i32,
+
+}
+
+  
+
+fn build_user(email: String, username: String) -> User {
+
+User {
+
+active: true,
+
+username: username,
+
+email: email,
+
+sign_in_count: 1,
+
+}
+
+}
+
+  
+
+// 元组结构体
+
+struct Color(i32, i32, i32);
+
+  
+
+// 类单元结构体
+
+struct AlwaysEqual;
+
+  
+
+pub fn theWorld() {
+
+// 有点对象语法的感觉
+
+let mut user1 = User {
+
+active: true,
+
+username: String::from("someusername123"),
+
+email: String::from("someone@example.com"),
+
+sign_in_count: 1,
+
+};
+
+// 结构体赋值
+
+user1.email = String::from("785632486@qq.com");
+
+// println!("{}", user1.email);
+
+  
+
+// 使用user1的内容，填充给user2
+
+// let user2 = User {
+
+// active: user1.active,
+
+// username: user1.username,
+
+// email: String::from("another@example.com"),
+
+// sign_in_count: user1.sign_in_count,
+
+// };
+
+// 使用语法糖，进行解构赋值
+
+let user3 = User {
+
+email: String::from("another@example.com"),
+
+..user1
+
+};
+
+// user1被清理掉了，user3能正常使用。
+
+// println!("{}", user1.email)
+
+// println!("{}", user2.email)
+
+// println!("{}", user3.sign_in_count);
+
+// clone 可以进行属性的深复制, 但结构体不能深复制
+
+let user4 = user3.email.clone();
+
+// println!("{}", user4)
+
+  
+
+// 元组结构体
+
+let black = Color(0, 0, 0);
+
+  
+
+// 类单元结构体
+
+let subject = AlwaysEqual;
+
+  
+
+// 结构体传参数
+
+// wh();
+
+  
+
+// 结构体原型，方法
+
+// print();
+
+  
+
+// 结构体参数增加
+
+// inherit();
+
+  
+
+// !关联函数, 涉及到模块语法
+
+testSelf();
+
+}
+
+  
+
+// 使用 #[derive(Debug)] 后才能打印结构体
+
+#[derive(Debug)]
+
+struct Rectangle {
+
+width: u32,
+
+height: u32,
+
+}
+
+  
+
+// 计算矩形面积
+
+fn wh() {
+
+// let width1 = 30;
+
+// let height1 = 50;
+
+// println!("{}", area(width1, height1));
+
+  
+
+// let rect1 = (30, 50);
+
+// println!("{}", area1(rect1));
+
+  
+
+let rect2 = Rectangle {
+
+width: 30,
+
+height: 50,
+
+};
+
+println!("{}", area2(&rect2));
+
+}
+
+  
+
+fn area(width: u32, height: u32) -> u32 {
+
+width * height
+
+}
+
+  
+
+fn area1(dimensions: (u32, u32)) -> u32 {
+
+// 使用元组结构体，计算
+
+dimensions.0 * dimensions.1
+
+}
+
+  
+
+fn area2(rectangle: &Rectangle) -> u32 {
+
+// 使用普通对象结构体
+
+rectangle.height * rectangle.width
+
+}
+
+  
+
+// 改写结构体，这里很像js的prototype，高级对象方法。
+
+impl Rectangle {
+
+fn area(&self) -> u32 {
+
+// 这个self又类似
+
+self.width * self.height
+
+}
+
+// 调用内部方法的返回值，类似计算属性的引用，
+
+fn width(&self) -> bool {
+
+self.width > 0
+
+}
+
+}
+
+  
+
+// 通过派生 trait 增加实用功能, 打印结构体
+
+fn print() {
+
+let rect1 = Rectangle {
+
+width: 30,
+
+height: 50,
+
+};
+
+// 非格式化语法
+
+// println!("rect1 is {:?}", rect1);
+
+// 格式化语法
+
+// println!("rect1 is {:#?}", rect1);
+
+  
+
+// 另一种使用 Debug 格式打印数值的方法是使用 dbg! 宏。dbg! 宏接收一个表达式的所有权（与 println! 宏相反，后者接收的是引用），打印出代码中调用 dbg! 宏时所在的文件和行号，以及该表达式的结果值，并返回该值的所有权。
+
+  
+
+// 打印到异常控制台
+
+// dbg!(&rect1);
+
+  
+
+// 调用结构体内部方法
+
+println!("{}", rect1.area());
+
+if rect1.width() {
+
+println!("The rectangle has a nonzero width; it is {}", rect1.width);
+
+}
+
+}
+
+  
+
+impl Rectangle {
+
+// 添加新的结构体方法
+
+fn can_hold(&self, other: &Rectangle) -> bool {
+
+self.width > other.width && self.height > other.height
+
+}
+
+}
+
+  
+
+// 结构体参数修改
+
+fn inherit() {
+
+let rect1 = Rectangle {
+
+width: 30,
+
+height: 50,
+
+};
+
+let rect2 = Rectangle {
+
+width: 10,
+
+height: 40,
+
+};
+
+let rect3 = Rectangle {
+
+width: 60,
+
+height: 45,
+
+};
+
+  
+
+println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
+
+println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+
+}
+
+  
+
+// 结构体的关联函数
+
+impl Rectangle {
+
+// 这里就涉及到模块了
+
+fn square(size: u32) -> Self {
+
+Self {
+
+width: size,
+
+height: size,
+
+}
+
+}
+
+}
+
+  
+
+fn testSelf() {
+
+let sq = Rectangle::square(23);
+
+println!("{:#?}", sq)
+
+}
+```
+结构体让你可以创建出在你的领域中有意义的自定义类型。通过结构体，我们可以将相关联的数据片段联系起来并命名它们，这样可以使得代码更加清晰。在 impl 块中，你可以定义与你的类型相关联的函数，而方法是一种相关联的函数，让你指定结构体的实例所具有的行为。
+
+但结构体并不是创建自定义类型的唯一方法：让我们转向 Rust 的枚举功能，为你的工具箱再添一个工具。
 #### ⭐️枚举和模式
+本章介绍 枚举（enumerations），也被称作 enums。枚举允许你通过列举可能的 成员（variants）来定义一个类型。首先，我们会定义并使用一个枚举来展示它是如何连同数据一起编码信息的。接下来，我们会探索一个特别有用的枚举，叫做 Option，它代表一个值要么是某个值要么什么都不是。然后会讲到在 match 表达式中用模式匹配，针对不同的枚举值编写相应要执行的代码。最后会介绍 if let，另一个简洁方便处理代码中枚举的结构。
+
+
+
 
 
 #### 包，库，creat模块管理

@@ -39,8 +39,14 @@ fn test_says() {
 
 // 测试所有权
 mod ownership;
-use ownership::{scope, scope1};
+use ownership::{scope, scope1, scope2, scope3, scope4};
+// 引用和借用
+mod referenceBorrowing;
+use referenceBorrowing::{demo};
 
+// 结构体
+mod structure;
+use structure::theWorld;
 
 // !主程序入口函数
 fn main() {
@@ -50,14 +56,14 @@ fn main() {
     // test_says();
     // 测试导包
     // g();
-    // 测试变量
+    // *测试变量
     // test_mut();
     // 测试不可变量
     // constants()
     // 测试定义域
     // Shadowing();
 
-    // 改变数据类型
+    // *改变数据类型
     // changeType()
     // 标量类型
     // 浮点
@@ -76,8 +82,20 @@ fn main() {
     // 函数
     // print_labeled_measurement(32, '2');
 
-    // 作用域函数，打印
+    // todo 作用域函数，打印
     // scope()
-    scope1();
+    // 字符串类型
+    // scope1();
+    // scope2();
+    // 字面量，深复制、克隆
+    // scope3();
+    // 函数和字面量
+    // scope4();
+
+    // *所有权：引用和借用
+    // demo();
+    
+    // ?结构体，有点像typescript的接口语法
+    theWorld();
 
 }
