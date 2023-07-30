@@ -48,6 +48,10 @@ use referenceBorrowing::{demo};
 mod structure;
 use structure::theWorld;
 
+// 枚举体
+mod enums;
+use enums::enums;
+
 // !主程序入口函数
 fn main() {
     // 打印
@@ -96,6 +100,12 @@ fn main() {
     // demo();
     
     // ?结构体，有点像typescript的接口语法
-    theWorld();
+    // theWorld();
+
+    // todo 枚举
+    emums();
+
+    
+
 
 }
