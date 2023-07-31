@@ -2319,26 +2319,799 @@ println!("{:#?}", sq)
 #### ⭐️枚举和模式
 本章介绍 枚举（enumerations），也被称作 enums。枚举允许你通过列举可能的 成员（variants）来定义一个类型。首先，我们会定义并使用一个枚举来展示它是如何连同数据一起编码信息的。接下来，我们会探索一个特别有用的枚举，叫做 Option，它代表一个值要么是某个值要么什么都不是。然后会讲到在 match 表达式中用模式匹配，针对不同的枚举值编写相应要执行的代码。最后会介绍 if let，另一个简洁方便处理代码中枚举的结构。
 
+```rust
+/*
 
+枚举结构体
 
+  
 
+结构体给予你将字段和数据聚合在一起的方法，像 Rectangle 结构体有 width 和 height 两个字段。而枚举给予你将一个值成为一个集合之一的方法。比如，我们想让 Rectangle 是一些形状的集合，包含 Circle 和 Triangle 。为了做到这个，Rust 提供了枚举类型。
 
+  
 
+让我们看看一个需要诉诸于代码的场景，来考虑为何此时使用枚举更为合适且实用。假设我们要处理 IP 地址。目前被广泛使用的两个主要 IP 标准：IPv4（version four）和 IPv6（version six）。这是我们的程序可能会遇到的所有可能的 IP 地址类型：所以可以 枚举 出所有可能的值，这也正是此枚举名字的由来。
 
+  
 
+任何一个 IP 地址要么是 IPv4 的要么是 IPv6 的，而且不能两者都是。IP 地址的这个特性使得枚举数据结构非常适合这个场景，因为枚举值只可能是其中一个成员。IPv4 和 IPv6 从根本上讲仍是 IP 地址，所以当代码在处理适用于任何类型的 IP 地址的场景时应该把它们当作相同的类型。
 
+  
 
+可以通过在代码中定义一个 IpAddrKind 枚举来表现这个概念并列出可能的 IP 地址类型，V4 和 V6。这被称为枚举的 成员（variants）：
 
+*/
 
+  
 
+pub fn enums() {
 
+#[derive(Debug)]
 
+enum IpAddrKind {
 
+V4,
+
+V6,
+
+}
+
+// 分别导出enum的两个实例
+
+// 注意枚举的成员位于其标识符的命名空间中，并使用两个冒号分开
+
+let four = IpAddrKind::V4;
+
+let six = IpAddrKind::V6;
+
+  
+
+// 使用成员调用函数
+
+route(IpAddrKind::V4);
+
+route(IpAddrKind::V6);
+
+  
+
+fn route(ip_kind: IpAddrKind) {
+
+println!("{:#?}", ip_kind)
+
+}
+
+}
+
+  
+
+// 枚举字段，赋予类型
+
+  
+
+pub fn enums1() {
+
+#[derive(Debug)]
+
+enum IpAddr {
+
+V4(String),
+
+V6(String),
+
+}
+
+  
+
+let home = IpAddr::V4(String::from("127.0.0.1"));
+
+let loopback = IpAddr::V6(String::from("::1"));
+
+println!("{:#?}", home);
+
+  
+
+// * 直接构建元组
+
+enum IpAddr1 {
+
+V4(u8, u8, u8, u8),
+
+V6(String),
+
+}
+
+  
+
+let home = IpAddr1::V4(127, 0, 0, 1);
+
+let loopback = IpAddr1::V6(String::from("::1"));
+
+  
+
+// todo 结构体，枚举
+
+struct Ipv4Addr {
+
+// --snip--
+
+b: i32,
+
+}
+
+  
+
+struct Ipv6Addr {
+
+// --snip--
+
+a: String,
+
+}
+
+  
+
+enum IpAddr2 {
+
+V4(Ipv4Addr),
+
+V6(Ipv6Addr),
+
+}
+
+  
+
+// ?枚举类型
+
+enum Message {
+
+// 类单元结构体
+
+Quit,
+
+// 普通结构体
+
+Move { x: i32, y: i32 },
+
+// 元组结构体
+
+Write(String),
+
+// 元组结构体
+
+ChangeColor(i32, i32, i32),
+
+}
+
+  
+
+// 枚举也是一种结构
+
+impl Message {
+
+fn call(&self) {
+
+// 在这里定义方法体
+
+}
+
+}
+
+  
+
+let m = Message::Write(String::from("hello"));
+
+m.call();
+
+}
+
+  
+
+pub fn enums2() {
+
+enum Option<T> {
+
+// 空值
+
+None,
+
+// 任意数据，泛型
+
+Some(T),
+
+}
+
+  
+
+let some_number = Some(5);
+
+let some_char = Some('e');
+
+let absent_number: Option<i32> = Option::None;
+
+}
+
+  
+
+pub fn enums3() {
+
+enum Coin {
+
+Penny,
+
+Nickel,
+
+Dime,
+
+Quarter,
+
+}
+
+fn value_in_cents(coin: Coin) -> u8 {
+
+match coin {
+
+Coin::Penny => {
+
+println!("Lucky penny!");
+
+1
+
+}
+
+Coin::Nickel => 5,
+
+Coin::Dime => 10,
+
+Coin::Quarter => 25,
+
+}
+
+}
+
+// 返回1
+
+println!("{}", value_in_cents(Coin::Penny));
+
+  
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+
+match x {
+
+None => None,
+
+Some(i) => Some(i + 1),
+
+}
+
+}
+
+  
+
+let five = Some(5);
+
+let six = plus_one(five);
+
+let none = plus_one(None);
+
+}
+
+  
+
+pub fn enums4() {
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+
+match x {
+
+Some(i) => Some(i + 1),
+
+// 要求必须穷尽所有的可能，包括none
+
+None => None,
+
+}
+
+}
+
+  
+
+// todo other通配符
+
+let dice_roll = 9;
+
+match dice_roll {
+
+3 => 3,
+
+7 => 7,
+
+// other 可以获取match传递下来的值
+
+other => other,
+
+// 不要match传递下来的值
+
+// _ => reroll(),
+
+};
+
+  
+
+// if let 简单判断, 语法糖
+
+let config_max = Some(3u8);
+
+if let Some(max) = config_max {
+
+println!("The maximum is configured to be {}", max);
+
+}
+
+  
+
+// 语法糖2
+
+let mut count = 0;
+
+// match coin {
+
+// Coin::Quarter(state) => println!("State quarter from {:?}!", state),
+
+// _ => count += 1,
+
+// }
+
+  
+
+// 语法糖3
+
+let mut count = 0;
+
+// if let Coin::Quarter(state) = coin {
+
+// println!("State quarter from {:?}!", state);
+
+// } else {
+
+// count += 1;
+
+// }
+
+}
+```
+一种特殊的结构体。比价适合判断。
 
 #### 包，库，creat模块管理
+对于一个由一系列相互关联的包组成的超大型项目，Cargo 提供了 “工作空间” 这一功能， “Cargo Workspaces” 。
 
+讨论封装来实现细节，这可以使你更高级地重用代码：你实现了一个操作后，其他的代码可以通过该代码的公共接口来进行调用，而不需要知道它是如何实现的。你在编写代码时可以定义哪些部分是其他代码可以使用的公共部分，以及哪些部分是你有权更改实现细节的私有部分。这是另一种减少你在脑海中记住项目内容数量的方法。
 
+这里有一个需要说明的概念 “作用域（scope）”：代码所在的嵌套上下文有一组定义为 “in scope” 的名称。当阅读、编写和编译代码时，程序员和编译器需要知道特定位置的特定名称是否引用了变量、函数、结构体、枚举、模块、常量或者其他有意义的项。你可以创建作用域，以及改变哪些名称在作用域内还是作用域外。同一个作用域内不能拥有两个相同名称的项；可以使用一些工具来解决名称冲突。
+Rust 有许多功能可以让你管理代码的组织，包括哪些内容可以被公开，哪些内容作为私有部分，以及程序每个作用域中的名字。这些功能。这有时被称为 “模块系统（the module system）”，包括：
+
+- 包（Packages）：Cargo 的一个功能，它允许你构建、测试和分享 crate。
+- Crates ：一个模块的树形结构，它形成了库或二进制项目。
+- 模块（Modules）和 use：允许你控制作用域和路径的私有性。
+- 路径（path）：一个命名例如结构体、函数或模块等项的方式。
+
+##### 创建包
+```shell
+$ cargo new my-project
+```
+目录结构
+![](readme.assets/Pasted%20image%2020230731234223.png)
+##### 定义模块
+模块系统的部分，如允许你命名项的 路径（paths）；用来将路径引入作用域的 use 关键字；以及使项变为公有的 pub 关键字。我们还将讨论 as 关键字、外部包和 glob 运算符。
+```
+从 crate 根节点开始: 当编译一个 crate, 编译器首先在 crate 根文件（通常，对于一个库 crate 而言是src/lib.rs，对于一个二进制 crate 而言是src/main.rs）中寻找需要被编译的代码。
+
+声明模块: 在 crate 根文件中，你可以声明一个新模块；比如，你用mod garden声明了一个叫做garden的模块。编译器会在下列路径中寻找模块代码：
+内联，在大括号中，当mod garden后方不是一个分号而是一个大括号
+在文件 src/garden.rs
+在文件 src/garden/mod.rs
+
+声明子模块: 在除了 crate 根节点以外的其他文件中，你可以定义子模块。比如，你可能在src/garden.rs中定义了mod vegetables;。编译器会在以父模块命名的目录中寻找子模块代码：
+内联，在大括号中，当mod vegetables后方不是一个分号而是一个大括号
+在文件 src/garden/vegetables.rs
+在文件 src/garden/vegetables/mod.rs
+
+模块中的代码路径: 一旦一个模块是你 crate 的一部分，你可以在隐私规则允许的前提下，从同一个 crate 内的任意地方，通过代码路径引用该模块的代码。举例而言，一个 garden vegetables 模块下的Asparagus类型可以在crate::garden::vegetables::Asparagus被找到。
+
+私有 vs 公用: 一个模块里的代码默认对其父模块私有。为了使一个模块公用，应当在声明时使用pub mod替代mod。为了使一个公用模块内部的成员公用，应当在声明前使用pub。
+
+use 关键字: 在一个作用域内，use关键字创建了一个成员的快捷方式，用来减少长路径的重复。在任何可以引用crate::garden::vegetables::Asparagus的作用域，你可以通过 use crate::garden::vegetables::Asparagus;创建一个快捷方式，然后你就可以在作用域中只写Asparagus来使用该类型。
+```
+###### 创建库
+```shell
+cargo new --lib restaurant
+```
+src/main.rs 和 src/lib.rs 叫做 crate 根。之所以这样叫它们是因为这两个文件的内容都分别在 crate 模块结构的根组成了一个名为 crate 的模块，该结构被称为 模块树（module tree）。
+![](readme.assets/Pasted%20image%2020230801001058.png)
+路径有两种形式：
+- 绝对路径（absolute path）是以 crate 根（root）开头的全路径；对于外部 crate 的代码，是以 crate 名开头的绝对路径，对于对于当前 crate 的代码，则以字面值 crate 开头。
+- 相对路径（relative path）从当前模块开始，以 self、super 或当前模块的标识符开头。
+绝对路径和相对路径都后跟一个或多个由双冒号（::）分割的标识符。
+
+```rust
+// crate 是当前项目的根文件, 对于一个二进制 crate 而言是src/main.rs
+
+// gardan的代码路径
+
+use crate::garden::vegetables::Asparagus;
+
+// 申明子模块的路径
+
+pub mod garden;
+
+  
+
+fn main() {
+
+let plant = Asparagus {};
+
+println!("I'm growing {:?}!", plant);
+
+my::indirect_call();
+
+}
+
+  
+  
+
+fn function() {
+
+println!("called `function()`");
+
+}
+
+  
+
+mod cool {
+
+pub fn function() {
+
+println!("called `cool::function()`");
+
+}
+
+}
+
+  
+
+mod my {
+
+fn function() {
+
+println!("called `my::function()`");
+
+}
+
+mod cool {
+
+pub fn function() {
+
+println!("called `my::cool::function()`");
+
+}
+
+}
+
+pub fn indirect_call() {
+
+// 让我们从这个作用域中访问所有名为 `function` 的函数！
+
+print!("called `my::indirect_call()`, that\n> ");
+
+// `self` 关键字表示当前的模块作用域——在这个例子是 `my`。
+
+// 调用 `self::function()` 和直接调用 `function()` 都得到相同的结果，
+
+// 因为他们表示相同的函数。
+
+self::function();
+
+function();
+
+// 我们也可以使用 `self` 来访问 `my` 内部的另一个模块：
+
+self::cool::function();
+
+// `super` 关键字表示父作用域（在 `my` 模块外面）。
+
+super::function();
+
+// 这将在 *crate* 作用域内绑定 `cool::function` 。
+
+// 在这个例子中，crate 作用域是最外面的作用域。
+
+{
+
+use crate::cool::function as root_function;
+
+root_function();
+
+}
+
+}
+
+}
+```
+##### 使用共有结构体
+```rust
+mod back_of_house {
+
+// 共有结构体
+
+pub struct Breakfast {
+
+pub toast: String,
+
+seasonal_fruit: String,
+
+}
+
+  
+
+impl Breakfast {
+
+pub fn summer(toast: &str) -> Breakfast {
+
+Breakfast {
+
+toast: String::from(toast),
+
+seasonal_fruit: String::from("peaches"),
+
+}
+
+}
+
+}
+
+}
+
+  
+
+pub fn eat_at_restaurant() {
+
+// 在夏天订购一个黑麦土司作为早餐
+
+let mut meal = back_of_house::Breakfast::summer("Rye");
+
+// 改变主意更换想要面包的类型
+
+meal.toast = String::from("Wheat");
+
+println!("I'd like {} toast please", meal.toast);
+
+  
+
+// 如果取消下一行的注释代码不能编译；
+
+// 不允许查看或修改早餐附带的季节水果
+
+// meal.seasonal_fruit = String::from("blueberries");
+
+}
+```
+```rust
+mod back_of_house {
+
+// 共有枚举
+
+pub enum Appetizer {
+
+Soup,
+
+Salad,
+
+}
+
+}
+
+  
+
+pub fn eat_at_restaurant() {
+
+let order1 = back_of_house::Appetizer::Soup;
+
+let order2 = back_of_house::Appetizer::Salad;
+
+}
+
+```
+##### 使用use
+```rust
+// 使用use将模块引入作用域
+
+  
+
+mod front_of_house {
+
+pub mod hosting {
+
+pub fn add_to_waitlist() {}
+
+}
+
+}
+
+  
+
+use crate::front_of_house::hosting;
+
+  
+
+pub fn eat_at_restaurant() {
+
+hosting::add_to_waitlist();
+
+}
+```
+```rust
+mod front_of_house {
+
+pub mod hosting {
+
+pub fn add_to_waitlist() {}
+
+}
+
+}
+
+  
+
+use crate::front_of_house::hosting;
+
+  
+
+mod customer {
+
+// 编译器错误显示短路径不在适用于 customer 模块中：
+
+// use crate::front_of_house::hosting;
+
+pub fn eat_at_restaurant() {
+
+hosting::add_to_waitlist();
+
+}
+
+}
+```
+```rust
+use std::fmt;
+
+use std::io;
+
+// 如何将两个具有相同名称但不同父模块的 Result 类型引入作用域，以及如何引用它们。
+
+fn function1() -> fmt::Result {
+
+// --snip--
+
+Ok(())
+
+}
+
+  
+
+fn function2() -> io::Result<()> {
+
+// --snip--
+
+Ok(())
+
+}
+
+  
+  
+
+// 另一方面，使用 use 引入结构体、枚举和其他项时，习惯是指定它们的完整路径。示例
+
+use std::collections::HashMap;
+
+fn test() {
+
+let mut map = HashMap::new();
+
+map.insert(1, 2);
+
+}
+
+  
+
+// 正常引用
+
+mod front_of_house {
+
+pub mod hosting {
+
+pub fn add_to_waitlist() {}
+
+}
+
+}
+
+  
+
+use crate::front_of_house::hosting::add_to_waitlist;
+
+  
+
+pub fn eat_at_restaurant() {
+
+add_to_waitlist();
+
+}
+```
+##### 使用as
+```rust
+use std::fmt::Result;
+
+use std::io::Result as IoResult;
+
+  
+
+fn function1() -> Result {
+
+// --snip--
+
+Ok(())
+
+}
+
+  
+
+fn function2() -> IoResult<()> {
+
+// --snip--
+
+Ok(())
+
+}
+```
+##### 二次封装
+```rust
+mod front_of_house {
+
+pub mod hosting {
+
+pub fn add_to_waitlist() {}
+
+}
+
+}
+
+  
+
+pub use crate::front_of_house::hosting;
+
+  
+
+pub fn eat_at_restaurant() {
+
+hosting::add_to_waitlist();
+
+}
+```
+##### 使用三方库
+![](readme.assets/Pasted%20image%2020230801005250.png)
+![](readme.assets/Pasted%20image%2020230801005354.png)
+##### 引用一个库的多个函数
+![](readme.assets/Pasted%20image%2020230801005700.png)
+##### 将模块拆分成多个文件
+经验问题。
+![](readme.assets/Pasted%20image%2020230801010244.png)
 #### 常见集合
+Rust 标准库中包含一系列被称为 集合（collections）的非常有用的数据结构。大部分其他数据类型都代表一个特定的值，不过集合可以包含多个值。不同于内建的数组和元组类型，这些集合指向的数据是储存在堆上的，这意味着数据的数量不必在编译时就已知，并且还可以随着程序的运行增长或缩小。每种集合都有着不同功能和成本，而根据当前情况选择合适的集合，这是一项应当逐渐掌握的技能。在这一章里，我们将详细的了解三个在 Rust 程序中被广泛使用的集合：
+
+vector 允许我们一个挨着一个地储存一系列数量可变的值
+字符串（string）是字符的集合。我们之前见过 String 类型，不过在本章我们将深入了解。
+哈希 map（hash map）允许我们将值与一个特定的键（key）相关联。这是一个叫做 map 的更通用的数据结构的特定实现。
+
+
 
 
 #### ⭐️错误处理

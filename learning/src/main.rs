@@ -20,9 +20,8 @@ use game::{g, test};
 // mod 数据类型;
 // use 数据类型::{changeType;}
 
-
 mod function;
-use function::{print_labeled_measurement};
+use function::print_labeled_measurement;
 
 mod dataType;
 use dataType::{array, bools, changeType, count, float, string, tuple};
@@ -36,13 +35,12 @@ fn test_says() {
     say(message, width, &mut writer).unwrap();
 }
 
-
 // 测试所有权
 mod ownership;
 use ownership::{scope, scope1, scope2, scope3, scope4};
 // 引用和借用
 mod referenceBorrowing;
-use referenceBorrowing::{demo};
+use referenceBorrowing::demo;
 
 // 结构体
 mod structure;
@@ -50,7 +48,9 @@ use structure::theWorld;
 
 // 枚举体
 mod enums;
-use enums::enums;
+use enums::{enums, enums1, enums2, enums3};
+
+
 
 // !主程序入口函数
 fn main() {
@@ -98,14 +98,13 @@ fn main() {
 
     // *所有权：引用和借用
     // demo();
-    
+
     // ?结构体，有点像typescript的接口语法
     // theWorld();
 
     // todo 枚举
-    emums();
-
-    
-
-
+    // enums();
+    // enums1();
+    // enums2();
+    enums3();
 }
