@@ -4,6 +4,11 @@ use crate::garden::vegetables::Asparagus;
 // 申明子模块的路径
 pub mod garden;
 
+// 申明集合的位置
+// mod collections;
+// 调用它的所有方法
+// use collections::vector;
+
 fn main() {
     let plant = Asparagus {};
     println!("I'm growing {:?}!", plant);
@@ -58,15 +63,15 @@ mod my {
 }
 
 // 单个引用
-use std::cmp::Ordering;
+// use std::cmp::Ordering;
 // 引用上一级
-use std::io;
+// use std::io;
 // 嵌套引用
-use std::{cmp::Ordering, io};
+// use std::{cmp::Ordering, io};
 // 单个引用
-use std::io::Write;
+// use std::io::Write;
 // 括号批量引用
-use std::io::{self, Write};
+// use std::io::{self, Write};
 // 全部引用
-use std::collections::*;
+// use std::collections::*;
 
