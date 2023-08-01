@@ -50,6 +50,11 @@ use structure::theWorld;
 mod enums;
 use enums::{enums, enums1, enums2, enums3};
 
+// 集合
+mod coll;
+use coll::vectors::{call, call2};
+use coll::strings::strMain;
+use coll::hashmaps::hashmaps;
 
 
 // !主程序入口函数
@@ -106,5 +111,11 @@ fn main() {
     // enums();
     // enums1();
     // enums2();
-    enums3();
+    // enums3();
+
+    // !集合
+    // call();
+    // call2();
+    // strMain();
+    hashmaps();
 }

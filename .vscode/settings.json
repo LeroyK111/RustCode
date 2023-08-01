@@ -37,6 +37,11 @@
     }
   },
   "rust-analyzer.linkedProjects": [
+    "./learning/Cargo.toml",
+    "./learning/Cargo.toml",
+    "./learning/Cargo.toml",
+    "./learning/Cargo.toml",
+    "./learning/Cargo.toml",
     "./learning/Cargo.toml"
   ],
 }

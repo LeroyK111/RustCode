@@ -3111,10 +3111,331 @@ Rust 标准库中包含一系列被称为 集合（collections）的非常有用
 - 字符串（string）是字符的集合。我们之前见过 String 类型，不过在本章我们将深入了解。
 - 哈希 map（hash map）允许我们将值与一个特定的键（key）相关联。这是一个叫做 map 的更通用的数据结构的特定实现。
 
+##### 列表vector
+```rust
+pub fn call() {
 
+// 创建存储列表，数据结构
 
+// let mut v: Vec<i32> = Vec::new();
+
+// 简写方式
+
+// let v = vec![1, 2, 3];
+
+let mut v = vec![];
+
+// 开始堆栈
+
+v.push(5);
+
+v.push(6);
+
+v.push(7);
+
+v.push(8);
+
+println!("{:?}", v);
+
+  
+
+// 引用
+
+let third: &i32 = &v[2];
+
+println!("The third element is {third}");
+
+  
+
+// 获取
+
+let third: Option<&i32> = v.get(2);
+
+match third {
+
+Some(third) => println!("The third element is {third}"),
+
+None => println!("There is no third element."),
+
+}
+
+  
+
+// let does_not_exist = &v[100];
+
+// println!("{}", does_not_exist);
+
+  
+
+// get 可以避免索引报错。取不到的值，用none代替
+
+let does_not_exist = v.get(100);
+
+println!("{:?}", does_not_exist);
+
+}
+
+  
+
+pub fn call2() {
+
+// 已经不会报错了
+
+let mut v = vec![1, 2, 3, 4, 5];
+
+let first = &v[0];
+
+v.push(6);
+
+}
+
+  
+
+pub fn call3() {
+
+let v = vec![100, 32, 57];
+
+// 循环引用
+
+for i in &v {
+
+println!("{i}");
+
+}
+
+  
+
+// 循环改写
+
+let mut v = vec![100, 32, 57];
+
+for i in &mut v {
+
+*i += 50;
+
+}
+
+  
+
+// 枚举结构自适应
+
+enum SpreadsheetCell {
+
+Int(i32),
+
+Float(f64),
+
+Text(String),
+
+}
+
+  
+
+let row = vec![
+
+SpreadsheetCell::Int(3),
+
+SpreadsheetCell::Text(String::from("blue")),
+
+SpreadsheetCell::Float(10.12),
+
+];
+
+}
+```
+
+##### string字符串
+在开始深入这些方面之前，我们需要讨论一下术语 字符串 的具体意义。Rust 的核心语言中只有一种字符串类型：字符串 slice str，它通常以被借用的形式出现，&str。第四章讲到了 字符串 slices：它们是一些对储存在别处的 UTF-8 编码字符串数据的引用。
+```rust
+pub fn strMain() {
+
+// 空字符串
+
+let mut s = String::new();
+
+  
+
+// 不可变字符串
+
+let data = "initial contents";
+
+  
+
+// 转字符串
+
+let s = data.to_string();
+
+  
+
+// 该方法也可直接用于字符串字面值：
+
+let s = "initial contents".to_string();
+
+  
+
+// 创建字符串
+
+let s = String::from("initial contents");
+
+  
+
+// 追加字符串 的 几种方式
+
+let mut s = String::from("foo");
+
+s.push_str("bar");
+
+s += "baz";
+
+s.push('l');
+
+println!("{}", s);
+
+  
+
+// 使用format!
+
+let s1 = String::from("tic");
+
+let s2 = String::from("tac");
+
+let s3 = String::from("toe");
+
+let s = format!("{s1}-{s2}-{s3}");
+
+println!("{}", s);
+
+  
+
+// !索引字符串？根本不支持的。
+
+// * 1.字符串长度在内存中不是字面量的长度
+
+// * 2.let hello = "Здравствуйте";let answer = &hello[0];
+
+// let hello = "Здравствуйте";
+
+// let answer = &hello[0];
+
+  
+
+// 遍历字符串
+
+for c in "Зд".chars() {
+
+println!("{c}");
+
+}
+
+for b in "Зд".bytes() {
+
+println!("{b}");
+
+}
+
+  
+
+/*
+
+标准库提供了很多围绕 String 和 &str 构建的功能，来帮助我们正确处理这些复杂场景。请务必查看这些使用方法的文档，例如 contains 来搜索一个字符串，和 replace 将字符串的一部分替换为另一个字符串。
+
+  
+
+称作 String 的类型是由标准库提供的，而没有写进核心语言部分，它是可增长的、可变的、有所有权的、UTF-8 编码的字符串类型。当 Rustacean 们谈到 Rust 的 “字符串”时，它们通常指的是 String 或字符串 slice &str 类型，而不特指其中某一个。
+
+*/
+
+}
+```
+##### hash map 存储键值对
+常用集合类型是 哈希 map（hash map）。HashMap<K, V> 类型储存了一个键类型 K 对应一个值类型 V 的映射。它通过一个 哈希函数（hashing function）来实现映射，决定如何将键和值放入内存中。
+```rust
+use std::collections::HashMap;
+
+  
+
+pub fn hashmaps() {
+
+let mut scores = HashMap::new();
+
+// 写入值
+
+scores.insert(String::from("Blue"), 10);
+
+scores.insert(String::from("Yellow"), 50);
+
+for (key, value) in &scores {
+
+println!("{key}: {value}");
+
+}
+
+// 访问值
+
+let team_name = String::from("Blue");
+
+let score = scores.get(&team_name).copied().unwrap_or(0);
+
+  
+
+// 插入hash
+
+let field_name = String::from("Favorite color");
+
+let field_value = String::from("Blue");
+
+let mut map = HashMap::new();
+
+// field_name， field_name 立刻失效
+
+map.insert(field_name, field_value);
+
+  
+
+// 覆盖更新hash
+
+scores.insert(String::from("Blue"), 10);
+
+scores.insert(String::from("Blue"), 25);
+
+// 检查更新，没有才增加
+
+scores.entry(String::from("Yellow")).or_insert(50);
+
+scores.entry(String::from("Blue")).or_insert(50);
+
+  
+
+// 根据旧值更新新值
+
+let text = "hello world wonderful world";
+
+let mut map = HashMap::new();
+
+for word in text.split_whitespace() {
+
+let count = map.entry(word).or_insert(0);
+
+*count += 1;
+
+}
+
+println!("{:?}", map);
+
+}
+```
 
 #### ⭐️错误处理
+错误是软件中不可否认的事实，所以 Rust 有一些处理出错情况的特性。在许多情况下，Rust 要求你承认错误的可能性，并在你的代码编译前采取一些行动。这一要求使你的程序更加健壮，因为它可以确保你在将代码部署到生产环境之前就能发现错误并进行适当的处理。
+
+Rust 将错误分为两大类：
+可恢复的（recoverable）
+不可恢复的（unrecoverable）错误。
+对于一个可恢复的错误，比如文件未找到的错误，我们很可能只想向用户报告问题并重试操作。
+不可恢复的错误总是 bug 出现的征兆，比如试图访问一个超过数组末端的位置，因此我们要立即停止程序。
+
+大多数语言并不区分这两种错误，并采用类似异常这样方式统一处理他们。Rust 没有异常。相反，它有 Result<T, E> 类型，用于处理可恢复的错误，还有 panic! 宏，在程序遇到不可恢复的错误时停止执行。
+
 
 
 #### 泛型、Trait、生命周期
