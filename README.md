@@ -3435,13 +3435,1297 @@ Rust 将错误分为两大类：
 不可恢复的错误总是 bug 出现的征兆，比如试图访问一个超过数组末端的位置，因此我们要立即停止程序。
 
 大多数语言并不区分这两种错误，并采用类似异常这样方式统一处理他们。Rust 没有异常。相反，它有 Result<T, E> 类型，用于处理可恢复的错误，还有 panic! 宏，在程序遇到不可恢复的错误时停止执行。
+##### 不可恢复错误panic
+修改配置cargo.toml，开启终止。
+在任意rs中写入panic。
+![](readme.assets/Pasted%20image%2020230805153742.png)
+##### 可恢复错误result
+主要是利用枚举，穷尽异常。
+```rust
+let greeting_file_result = File::open("hello.txt");
 
+let greeting_file = match greeting_file_result {
 
+Ok(file) => file,
 
+// 这里则是通用异常
+
+// Err(error) => panic!("Problem opening the file: {:?}", error),
+
+// 枚举再细化，区分不同的错误
+
+Err(error) => match error.kind() {
+
+// 找不到文件，则创建文件
+
+ErrorKind::NotFound => match File::create("hello.txt") {
+
+Ok(fc) => fc,
+
+Err(e) => panic!("Problem creating the file: {:?}", e),
+
+},
+
+// 其他异常就爆出
+
+other_error => {
+
+panic!("Problem opening the file: {:?}", other_error);
+
+}
+
+},
+
+};
+```
+###### 使用闭包后更好的写法
+```rust
+let greeting_file = File::open("hello.txt").unwrap_or_else(|error| {
+
+if error.kind() == ErrorKind::NotFound {
+
+File::create("hello.txt").unwrap_or_else(|error| {
+
+panic!("Problem creating the file: {:?}", error);
+
+})
+
+} else {
+
+panic!("Problem opening the file: {:?}", error);
+
+}
+
+});
+```
+
+###### 错误传播
+标准格式
+```rust
+// 传播 propagating
+
+fn read_username_from_file() -> Result<String, io::Error> {
+
+let username_file_result = File::open("hello.txt");
+
+// 打开文件
+
+let mut username_file = match username_file_result {
+
+Ok(file) => file,
+
+Err(e) => return Err(e),
+
+};
+
+// 读取文件内容
+
+let mut username = String::new();
+
+match username_file.read_to_string(&mut username) {
+
+Ok(_) => Ok(username),
+
+Err(e) => Err(e),
+
+}
+
+}
+```
+
+简写格式。
+```rust
+fn read_username_from_file2() -> Result<String, io::Error> {
+
+let mut username_file = File::open("hello.txt")?;
+
+let mut username = String::new();
+
+username_file.read_to_string(&mut username)?;
+
+Ok(username)
+
+}
+```
+再次简写
+```rust
+fn read_username_from_file3() -> Result<String, io::Error> {
+
+let mut username = String::new();
+
+File::open("hello.txt")?.read_to_string(&mut username)?;
+
+Ok(username)
+
+}
+```
+再次简写
+```rust
+// 再次简写
+
+fn read_username_from_file4() -> Result<String, io::Error> {
+    fs::read_to_string("hello.txt");
+```
+##### 主函数捕获异常
+```rust
+// crate 是当前项目的根文件, 对于一个二进制 crate 而言是src/main.rs
+
+// gardan的代码路径
+
+// use crate::garden::vegetables::Asparagus;
+
+// 申明子模块的路径
+
+// mod garden;
+
+  
+
+// 调用fs文件系统
+
+use std::fs::File;
+
+// use std::io::ErrorKind;
+
+use std::error::Error;
+
+// 调用异常捕获
+
+mod err;
+
+use err::demo;
+
+  
+
+fn main() -> Result<(), Box<dyn Error>> {
+
+// !模块路径知识学习完毕
+
+// let plant = Asparagus {};
+
+// println!("I'm growing {:?}!", plant);
+
+// my::indirect_call();
+
+  
+
+// !这里我们学习panic 不可恢复错误
+
+// panic!("crash and burn");
+
+/*
+
+这里尝试访问 vector 的第一百个元素（这里的索引是 99 因为索引从 0 开始），不过它只有三个元素。这种情况下 Rust 会 panic。[] 应当返回一个元素，不过如果传递了一个无效索引，就没有可供 Rust 返回的正确的元素。
+
+  
+
+*C 语言中，尝试读取数据结构之后的值是未定义行为（undefined behavior）。你会得到任何对应数据结构中这个元素的内存位置的值，甚至是这些内存并不属于这个数据结构的情况。这被称为 缓冲区溢出（buffer overread），并可能会导致安全漏洞，比如攻击者可以像这样操作索引来读取储存在数据结构之后不被允许的数据。
+
+  
+
+为了保护程序远离这类漏洞，如果尝试读取一个索引不存在的元素，Rust 会停止执行并拒绝继续。尝试运行上面的程序会出现如下：
+
+*/
+
+// let v = vec![1, 2, 3, 4];
+
+// v[99];
+
+// ? shell执行 RUST_BACKTRACE=1 cargo run 即可获取更详细的报错内容
+
+  
+
+// !处理result，可恢复错误
+
+// ?本质是利用了枚举成功or失败
+
+// enum Result<T, E> {
+
+// Ok(T),
+
+// Err(E),
+
+// }
+
+// 打开文件
+
+// let greeting_file_result = File::open("hello.txt");
+
+// let greeting_file = match greeting_file_result {
+
+// Ok(file) => file,
+
+// // 这里则是通用异常
+
+// // Err(error) => panic!("Problem opening the file: {:?}", error),
+
+// // 枚举再细化，区分不同的错误
+
+// Err(error) => match error.kind() {
+
+// // 找不到文件，则创建文件
+
+// ErrorKind::NotFound => match File::create("hello.txt") {
+
+// Ok(fc) => fc,
+
+// Err(e) => panic!("Problem creating the file: {:?}", e),
+
+// },
+
+// // 其他异常就爆出
+
+// other_error => {
+
+// panic!("Problem opening the file: {:?}", other_error);
+
+// }
+
+// },
+
+// };
+
+  
+
+// * 更好的写法，利用闭包
+
+// 利用链式调用
+
+// let greeting_file = File::open("hello.txt").unwrap_or_else(|error| {
+
+// if error.kind() == ErrorKind::NotFound {
+
+// File::create("hello.txt").unwrap_or_else(|error| {
+
+// panic!("Problem creating the file: {:?}", error);
+
+// })
+
+// } else {
+
+// panic!("Problem opening the file: {:?}", error);
+
+// }
+
+// });
+
+  
+
+// ? 链式语法，类似promise then cache的异常处理方法
+
+// let greeting_file = File::open("hello.txt").unwrap();
+
+// let greeting_file =
+
+// File::open("hello.txt").expect("hello.txt should be included in this project");
+
+  
+
+// ? 这里引用err.rs中的其他api
+
+demo();
+
+  
+
+// todo 哪怕是主函数，也可以进行错误传递
+
+let greeting_file_result = File::open("hello.txt")?;
+
+Ok(())
+
+}
+
+  
+
+fn function() {
+
+println!("called `function()`");
+
+}
+
+  
+
+// module cool 模块cool
+
+mod cool {
+
+pub fn function() {
+
+println!("called `cool::function()`");
+
+}
+
+}
+
+  
+
+// 模块my
+
+mod my {
+
+fn function() {
+
+println!("called `my::function()`");
+
+}
+
+  
+
+mod cool {
+
+pub fn function() {
+
+println!("called `my::cool::function()`");
+
+}
+
+}
+
+  
+
+pub fn indirect_call() {
+
+// 让我们从这个作用域中访问所有名为 `function` 的函数！
+
+print!("called `my::indirect_call()`, that\n> ");
+
+  
+
+// `self` 关键字表示当前的模块作用域——在这个例子是 `my`。
+
+// 调用 `self::function()` 和直接调用 `function()` 都得到相同的结果，
+
+// 因为他们表示相同的函数。
+
+self::function();
+
+function();
+
+  
+
+// 我们也可以使用 `self` 来访问 `my` 内部的另一个模块：
+
+self::cool::function();
+
+  
+
+// `super` 关键字表示父作用域（在 `my` 模块外面）。
+
+super::function();
+
+  
+
+// 这将在 *crate* 作用域内绑定 `cool::function` 。
+
+// 在这个例子中，crate 作用域是最外面的作用域。
+
+{
+
+use crate::cool::function as root_function;
+
+root_function();
+
+}
+
+}
+
+}
+
+  
+
+// 单个引用
+
+// use std::cmp::Ordering;
+
+// 引用上一级
+
+// use std::io;
+
+// 嵌套引用
+
+// use std::{cmp::Ordering, io};
+
+// 单个引用
+
+// use std::io::Write;
+
+// 括号批量引用
+
+// use std::io::{self, Write};
+
+// 全部引用
+
+// use std::collections::*;
+```
 #### 泛型、Trait、生命周期
+在 Rust 中其工具之一就是 泛型（generics）。泛型是具体类型或其他属性的抽象替代。我们可以表达泛型的属性，比如他们的行为或如何与其他泛型相关联，而不需要在编写和编译代码时知道他们在这里实际上代表什么。
+trait，这是一个定义泛型行为的方法。trait 可以与泛型结合来将泛型限制为只接受拥有特定行为的类型，而不是任意类型。
+最后介绍 生命周期（lifetimes），它是一类允许我们向编译器提供引用如何相互关联的泛型。Rust 的生命周期功能允许在很多场景下借用值的同时仍然使编译器能够检查这些引用的有效性。
+###### 泛型T
+```rust
+fn type_of<T>(_: T) -> &'static str {
+
+// 通过泛型，获取类型
+
+type_name::<T>()
+
+}
+
+  
+
+fn largest_i32(list: &[i32]) -> &i32 {
+
+let mut largest = &list[0];
+
+for item in list {
+
+if item > largest {
+
+largest = item;
+
+}
+
+}
+
+largest
+
+}
+
+fn largest_char(list: &[char]) -> &char {
+
+let mut largest = &list[0];
+
+for item in list {
+
+if item > largest {
+
+largest = item;
+
+}
+
+}
+
+largest
+
+}
+
+  
+
+// fn largest<T>(list: &[T]) -> &T {
+
+// let mut largest = &list[0];
+
+// for item in list {
+
+// if item > largest {
+
+// largest = item;
+
+// }
+
+// }
+
+// largest
+
+// }
+
+fn main() {
+// !泛型
+
+// let number_list = vec![34, 50, 25, 100, 65];
+
+// let mut largest = &number_list[0];
+
+// for number in &number_list {
+
+// if number > largest {
+
+// largest = number;
+
+// }
+
+// }
+
+// println!("The largest number is {}", largest);
+
+// * 抽象层
+
+// let number_list = vec![34, 50, 25, 100, 65];
+
+// let result = largest_i32(&number_list);
+
+// println!("The largest number is {}", result);
+
+// let char_list = vec!['y', 'm', 'a', 'q'];
+
+// let result = largest_char(&char_list);
+
+// println!("The largest char is {}", result);
+
+// * 传入泛型，由输入形参决定类型
+
+// let number_list = vec![34, 50, 25, 100, 65];
+
+// let result = largest(&number_list);
+
+// println!("The largest number is {}", result);
+
+  
+
+// *结构体中泛型
+
+// struct Point<T> {
+
+// x: T,
+
+// y: T,
+
+// };
+
+// #[derive(Debug)]
+
+// struct Point1<T, U> {
+
+// x: T,
+
+// y: U,
+
+// }
+
+// impl<T, U> Point1<T, U> {
+
+// fn x(&self) -> &T {
+
+// &self.x
+
+// }
+
+// }
+
+// 强制制定泛型
+
+// impl Point<f32> {
+
+// fn distance_from_origin(&self) -> f32 {
+
+// (self.x.powi(2) + self.y.powi(2)).sqrt()
+
+// }
+
+  
+
+// }
+
+// let wont_work = Point { x: 0, y: 4.0 }; // 会报错，类型不定
+
+// let wont_work = Point1 { x: 0, y: 4.0 }; // 编译通过，
+
+// println!("{:?}", wont_work);
+
+// * 枚举泛型
+
+// enum Option<T> {
+
+// Some(T),
+
+// None,
+
+// }
+
+// enum Result<T, E> {
+
+// Ok(T),
+
+// Err(E),
+
+// }
+
+// * 泛型嵌套
+
+// struct Point<X1, Y1> {
+
+// x: X1,
+
+// y: Y1,
+
+// }
+
+  
+
+// impl<X1, Y1> Point<X1, Y1> {
+
+// fn mixup<X2, Y2>(self, other: Point<X2, Y2>) -> Point<X1, Y2> {
+
+// Point {
+
+// x: self.x,
+
+// y: other.y,
+
+// }
+
+// }
+
+// }
+
+// let p1 = Point { x: 5, y: 10.4 };
+
+// let p2 = Point { x: "Hello", y: 'c' };
+
+// let p3 = p1.mixup(p2);
+
+// println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
+
+  
+
+// let integer = Some(5);
+
+// let float = Some(5.0);
+
+// *Rust 通过在编译时进行泛型代码的 单态化（monomorphization）来保证效率。单态化是一个通过填充编译时使用的具体类型，将通用代码转换为特定代码的过程。
+
+// let integer = Some(5);
+
+// let float = Some(5.0);
+
+// println!("{:?} is {}", integer, type_of(integer));
+
+// println!("{:?} is {}", integer, type_of(float));Ï
+}
+```
+###### 接口trait
+trait 定义了某个特定类型拥有可能与其他类型共享的功能。可以通过 trait 以一种抽象的方式定义共享的行为。可以使用 trait bounds 指定泛型是任何拥有特定行为的类型。
+
+```rust
+/*
+
+! 这里放入 interfaces 接口
+
+*/
+
+pub trait Summary {
+
+fn summarize(&self) -> String;
+
+fn summarize_author(&self) -> String;
+
+fn summarize_test(&self) -> String {
+
+format!("调用我自己函数 {}", self.summarize())
+
+}
+
+}
+
+pub trait Summary2 {
+
+fn summarize(&self) -> String {
+
+String::from("(Read more...)")
+
+}
+
+}
+
+  
+
+// 结构体
+
+pub struct NewsArticle {
+
+pub headline: String,
+
+pub location: String,
+
+pub author: String,
+
+pub content: String,
+
+}
+
+// 引入接口详细方法
+
+impl Summary2 for NewsArticle {}
+
+  
+
+// * 约束了 机构体的方法，
+
+pub struct Tweet {
+
+pub username: String,
+
+pub content: String,
+
+pub reply: bool,
+
+pub retweet: bool,
+
+}
+
+  
+
+// 引入接口模糊方法
+
+impl Summary for Tweet {
+
+fn summarize(&self) -> String {
+
+format!("{}: {}", self.username, self.content)
+
+}
+
+fn summarize_author(&self) -> String {
+
+format!("@{}", self.username)
+
+}
+
+}
+
+  
+
+// todo 标准格式化 接口
+
+use std::fmt::{Debug, Display, Error, Formatter, Result};
+
+// 多接口使用
+
+impl Display for Tweet {
+
+fn fmt(&self, f: &mut Formatter) -> Result {
+
+write!(f, "{}", self.reply)
+
+}
+
+}
+
+  
+
+// *接受结构对象，跨作用域引用其他结构体的方法
+
+// pub fn notify(item: &impl Summary) {
+
+// println!("为其他 {}", item.summarize())
+
+// }
+
+  
+
+// Trait Bound 语法糖
+
+// pub fn notify<T: Summary>(item: &T) {
+
+// println!("Breaking news! {}", item.summarize());
+
+// }
+
+  
+
+// pub fn notify(item1: &impl Summary, item2: &impl Summary2) {
+
+// println!("Breaking1 news! {}", item1.summarize());
+
+// println!("Breaking2 news! {}", item2.summarize());
+
+// }
+
+  
+
+// pub fn notify<T: Summary, U: Summary2>(item1: &T, item2: &U) {
+
+// println!("Breaking1 news! {}", item1.summarize());
+
+// println!("Breaking2 news! {}", item2.summarize());
+
+// }
+
+  
+
+// * 多接口使用
+
+// pub fn notify(item: &(impl Summary + Display)) {
+
+// println!("Breaking news! {}", item.summarize());
+
+// println!("news! {}", item);
+
+// }
+
+  
+
+// pub fn notify<T: Summary + Display>(item: &T) {
+
+// println!("Breaking news! {}", item.summarize());
+
+// println!("news! {}", item);
+
+// }
+
+  
+
+// fn some_function<T: Display + Clone, U: Clone + Debug>(t: &T, u: &U) -> i32 {
+
+// println!("难受")
+
+// }
+
+// todo 推荐写法
+
+// fn some_function1<T, U>(t: &T, u: &U) -> i32
+
+// where
+
+// T: Display + Clone,
+
+// U: Clone + Debug,
+
+// {
+
+// println!("Breaking news! {}", item.summarize());
+
+// }
+
+  
+
+// !在返回值上定义
+
+fn returns_summarizable() -> impl Summary {
+
+Tweet {
+
+username: String::from("??"),
+
+content: String::from("xx"),
+
+reply: false,
+
+retweet: false,
+
+}
+
+}
+
+  
+
+pub fn interfaces() {
+
+// todo 引入模糊方法
+
+let tweet = Tweet {
+
+username: String::from("horse_ebooks"),
+
+content: String::from("of course, as you probably already know, people"),
+
+reply: false,
+
+retweet: false,
+
+};
+
+  
+
+// println!("引入模糊方法: {}", tweet.summarize());
+
+// println!("引入模糊方法: {}", tweet.summarize_author());
+
+// println!("{}", tweet.summarize_test());
+
+  
+
+// todo 引入详细方法
+
+let article = NewsArticle {
+
+headline: String::from("Penguins win the Stanley Cup Championship!"),
+
+location: String::from("Pittsburgh, PA, USA"),
+
+author: String::from("Iceburgh"),
+
+content: String::from(
+
+"The Pittsburgh Penguins once again are the best \
+
+hockey team in the NHL.",
+
+),
+
+};
+
+// println!("引入详细方法: {}", article.summarize());
+
+// *避开作用域问题，调用给其他函数引用
+
+// notify(&tweet);
+
+// notify(&tweet, &article);
+
+// some_function(&tweet, &article)
+
+// some_function1(&tweet, &article)
+
+// let D = returns_summarizable();
+
+// println!("{}", D.summarize());
+
+  
+
+let a = Pair { x: 1, y: 1 };
+
+a.cmp_display();
+
+  
+
+// 给泛型添加方法
+
+let circle = Circle { radius: 6 };
+
+println!("{}", circle.to_string());
+
+}
+
+  
+
+struct Pair<T> {
+
+x: T,
+
+y: T,
+
+}
+
+  
+
+impl<T> Pair<T> {
+
+fn new(x: T, y: T) -> Self {
+
+Self { x, y }
+
+}
+
+}
+
+  
+
+impl<T: Display + PartialOrd> Pair<T> {
+
+fn cmp_display(&self) {
+
+if self.x >= self.y {
+
+println!("The largest member is x = {}", self.x);
+
+} else {
+
+println!("The largest member is y = {}", self.y);
+
+}
+
+}
+
+}
+
+  
+
+// 给泛型实现方法
+
+use std::string::ToString;
+
+  
+
+struct Circle {
+
+radius: i32,
+
+}
+
+  
+
+impl ToString for Circle {
+
+fn to_string(&self) -> String {
+
+format!("Circle of radius {:?}", self.radius)
+
+}
+
+}
+```
+类似typescript的编程，但是更难用。
+
+##### 生命周期
+###### 避免悬垂引用
+生命周期的主要目标是避免悬垂引用（dangling references），后者会导致程序引用了非预期引用的数据。
+```rust
+fn main() {
+    let r;
+
+    {
+        let x = 5;
+        r = &x;
+    }
+
+    println!("r: {}", r);
+}
+
+```
+
+###### 借用检查器
+Rust 编译器有一个 借用检查器（borrow checker），它比较作用域来确保所有的借用都是有效的。
+```rust
+fn main() {
+    let x = 5;            // ----------+-- 'b
+                          //           |
+    let r = &x;           // --+-- 'a  |
+                          //   |       |
+    println!("r: {}", r); //   |       |
+                          // --+       |
+}                         // ----------+
+
+```
+
+###### 生命周期注解
+```rust
+&i32        // 引用
+&'a i32     // 带有显式生命周期的引用
+&'a mut i32 // 带有显式生命周期的可变引用
+```
+为了在函数签名中使用生命周期注解，需要在函数名和参数列表间的尖括号中声明泛型生命周期（lifetime）参数，就像泛型类型（type）参数一样。
+
+我们希望函数签名表达如下限制：也就是这两个参数和返回的引用存活的一样久。（两个）参数和返回的引用的生命周期是相关的。
+
+<div style="color: red">强行将参数中的生命周期，作用域拉到一致。避免引用失败。</div>
+```rust
+pub fn timer() {
+
+let x = 5; // ----------+-- 'b
+
+// |
+
+let r = &x; // --+-- 'a |
+
+// | |
+
+// println!("r: {}", r); // | |
+
+// --+ |
+
+// ----------+
+
+  
+
+// !函数生命周期
+
+let string1 = String::from("abcd");
+
+// let string2 = "xyz";
+
+// let result = longest(string1.as_str(), string2);
+
+// println!("The longest string is {}", result);
+
+{
+
+let string2 = String::from("xyz");
+
+let result = longest(string1.as_str(), string2.as_str());
+
+// println!("The longest string is {}", result);
+
+}
+
+  
+
+// !结构体声明周期
+
+let novel = String::from("Call me Ishmael. Some years ago...");
+
+let first_sentence = novel.split('.').next().expect("Could not find a '.'");
+
+let i = ImportantExcerpt {
+
+part: first_sentence,
+
+};
+
+println!("{:?}", i);
+
+}
+
+  
+
+// &i32 // 引用
+
+// &'a i32 // 带有显式生命周期的引用
+
+// &'a mut i32 // 带有显式生命周期的可变引用
+
+  
+
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+
+if x.len() > y.len() {
+
+x
+
+} else {
+
+y
+
+}
+
+}
+
+  
+
+// 编译失败是因为有定义域不同
+
+// fn longest1(x: &str, y: &str) -> str {
+
+// if x.len() > y.len() {
+
+// x
+
+// } else {
+
+// y
+
+// }
+
+// }
+
+#[derive(Debug)]
+
+struct ImportantExcerpt<'a> {
+
+part: &'a str,
+
+// 首先，这里有一个方法 level。其唯一的参数是 self 的引用，而且返回值只是一个 i32，并不引用任何值：
+
+impl<'a> ImportantExcerpt<'a> {
+
+fn level(&self) -> i32 {
+
+3
+
+}
+
+}
+
+// 适用于第三条生命周期省略规则的例子
+
+impl<'a> ImportantExcerpt<'a> {
+
+fn announce_and_return_part(&self, announcement: &str) -> &str {
+
+println!("Attention please: {}", announcement);
+
+self.part
+
+}
+
+}
+
+
+
+}
+```
+
+<div style="color: green">生命周期省略（Lifetime Elision）</div>
+在编写了很多 Rust 代码后，Rust 团队发现在特定情况下 Rust 程序员们总是重复地编写一模一样的生命周期注解。这些场景是可预测的并且遵循几个明确的模式。接着 Rust 团队就把这些模式编码进了 Rust 编译器中，如此借用检查器在这些情况下就能推断出生命周期而不再强制程序员显式的增加注解。
+
+这里我们提到一些 Rust 的历史是因为更多的明确的模式被合并和添加到编译器中是完全可能的。未来只会需要更少的生命周期注解。
+
+被编码进 Rust 引用分析的模式被称为 生命周期省略规则（lifetime elision rules）。这并不是需要程序员遵守的规则；这些规则是一系列特定的场景，此时编译器会考虑，如果代码符合这些场景，就无需明确指定生命周期。
+
+省略规则并不提供完整的推断：如果 Rust 在明确遵守这些规则的前提下变量的生命周期仍然是模棱两可的话，它不会猜测剩余引用的生命周期应该是什么。编译器会在可以通过增加生命周期注解来解决错误问题的地方给出一个错误提示，而不是进行推断或猜测。
+<div style="color: skyblue">
+函数或方法的参数的生命周期被称为 输入生命周期（input lifetimes），
+而返回值的生命周期被称为 输出生命周期（output lifetimes）。
+</div>
+
+
+编译器采用三条规则来判断引用何时不需要明确的注解。第一条规则适用于输入生命周期，后两条规则适用于输出生命周期。如果编译器检查完这三条规则后仍然存在没有计算出生命周期的引用，编译器将会停止并生成错误。这些规则适用于 fn 定义，以及 impl 块。
+
+- 第一条规则是编译器为每一个引用参数都分配一个生命周期参数。换句话说就是，函数有一个引用参数的就有一个生命周期参数：fn foo<'a>(x: &'a i32)，有两个引用参数的函数就有两个不同的生命周期参数，fn foo<'a, 'b>(x: &'a i32, y: &'b i32)，依此类推。
+- 第二条规则是如果只有一个输入生命周期参数，那么它被赋予所有输出生命周期参数：fn foo<'a>(x: &'a i32) -> &'a i32。
+- 第三条规则是如果方法有多个输入生命周期参数并且其中一个参数是 &self 或 &mut self，说明是个对象的方法 (method)(译者注：这里涉及 rust 的面向对象参见 17 章)，那么所有输出生命周期参数被赋予 self 的生命周期。第三条规则使得方法更容易读写，因为只需更少的符号。
+```rust
+假设我们自己就是编译器。并应用这些规则来计算示例 10-25 中 first_word 函数签名中的引用的生命周期。开始时签名中的引用并没有关联任何生命周期：
+
+fn first_word(s: &str) -> &str {
+接着编译器应用第一条规则，也就是每个引用参数都有其自己的生命周期。我们像往常一样称之为 'a，所以现在签名看起来像这样：
+
+fn first_word<'a>(s: &'a str) -> &str {
+对于第二条规则，因为这里正好只有一个输入生命周期参数所以是适用的。第二条规则表明输入参数的生命周期将被赋予输出生命周期参数，所以现在签名看起来像这样：
+
+fn first_word<'a>(s: &'a str) -> &'a str {
+现在这个函数签名中的所有引用都有了生命周期，如此编译器可以继续它的分析而无须程序员标记这个函数签名中的生命周期。
+
+让我们再看看另一个例子，这次我们从示例 10-20 中没有生命周期参数的 longest 函数开始：
+
+fn longest(x: &str, y: &str) -> &str {
+再次假设我们自己就是编译器并应用第一条规则：每个引用参数都有其自己的生命周期。这次有两个参数，所以就有两个（不同的）生命周期：
+
+fn longest<'a, 'b>(x: &'a str, y: &'b str) -> &str {
+再来应用第二条规则，因为函数存在多个输入生命周期，它并不适用于这种情况。再来看第三条规则，它同样也不适用，这是因为没有 self 参数。应用了三个规则之后编译器还没有计算出返回值类型的生命周期。这就是在编译示例 10-20 的代码时会出现错误的原因：编译器使用所有已知的生命周期省略规则，仍不能计算出签名中所有引用的生命周期。
+
+因为第三条规则真正能够适用的就只有方法签名，现在就让我们看看那种情况中的生命周期，并看看为什么这条规则意味着我们经常不需要在方法签名中标注生命周期。
+```
+###### 静态生命周期
+这里有一种特殊的生命周期值得讨论：'static，其生命周期能够存活于整个程序期间。所有的字符串字面值都拥有 'static 生命周期，我们也可以选择像下面这样标注出来：
+```rust
+let s: &'static str = "I have a static lifetime.";
+```
+这个字符串的文本被直接储存在程序的二进制文件中而这个文件总是可用的。因此所有的字符串字面值都是 'static 的。
+
+###### 泛型，接口生命周期
+```rust
+use std::fmt::Display;
+
+  
+
+fn longest_with_an_announcement<'a, T>(
+
+x: &'a str,
+
+y: &'a str,
+
+ann: T,
+
+) -> &'a str
+
+where
+
+T: Display,
+
+{
+
+println!("Announcement! {}", ann);
+
+if x.len() > y.len() {
+
+x
+
+} else {
+
+y
+
+}
+
+}
+```
 
 
 #### 自动化测试
+Edsger W. Dijkstra 在其 1972 年的文章【谦卑的程序员】（“The Humble Programmer”）中说到 “软件测试是证明 bug 存在的有效方法，而证明其不存在时则显得令人绝望的不足。”（“Program testing can be a very effective way to show the presence of bugs, but it is hopelessly inadequate for showing their absence.”）这并不意味着我们不该尽可能地测试软件！
+
+程序的正确性意味着代码如我们期望的那样运行。Rust 是一个相当注重正确性的编程语言，不过正确性是一个难以证明的复杂主题。Rust 的类型系统在此问题上下了很大的功夫，不过类型系统不可能捕获所有问题。为此，Rust 包含了编写自动化软件测试的功能支持。
+
+
 
 
 #### 构建命令行程序

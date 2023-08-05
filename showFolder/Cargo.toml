@@ -2,6 +2,9 @@
 name = "showFolder"
 version = "0.1.0"
 edition = "2021"
+# 异常栈终止
+[profile.release]
+panic = 'abort'
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

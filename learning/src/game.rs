@@ -94,15 +94,27 @@ pub fn g() {
 
         字符串的 parse 方法 将字符串转换成其他类型。这里用它来把字符串转换为数值。我们需要告诉 Rust 具体的数字类型，这里通过 let guess: u32 指定。guess 后面的冒号（:）告诉 Rust 我们指定了变量的类型。Rust 有一些内建的数字类型；u32 是一个无符号的 32 位整型。
         */
+
         // * 语法糖，分别处理成功or失败
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        // 开始比较, 但是必须类型一致，也就说我们必须转换字符串到u32
+        // 直接补充缺失
+        // if guess < 1 || guess > 100 {
+        //     println!("The secret number will be between 1 and 100.");
+        //     continue;
+        // }
 
-        match guess.cmp(&secret_number) {
+        // 逻辑解耦
+        let guess = Guess::new(guess.try_into().unwrap());
+        if guess.braeking {
+            continue;
+        }
+
+        // 开始比较, 但是必须类型一致，也就说我们必须转换字符串到u32
+        match guess.value().cmp(&secret_number) {
             Ordering::Less => println!("too small"),
             Ordering::Greater => println!("too big"),
             Ordering::Equal => {
@@ -111,5 +123,27 @@ pub fn g() {
                 break;
             }
         }
+    }
+}
+
+pub struct Guess {
+    value: i32,
+    braeking: bool,
+}
+
+impl Guess {
+    pub fn new(value: i32) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {}.", value);
+        } else {
+            Guess {
+                value,
+                braeking: false,
+            }
+        }
+    }
+
+    pub fn value(&self) -> i32 {
+        self.value
     }
 }

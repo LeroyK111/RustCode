@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e4be772e1ea9b243",
+        "id": "f32fb43bc70475c0",
         "type": "tabs",
         "children": [
           {
-            "id": "7c48448c277de2c7",
+            "id": "b2d58fa77bf0d114",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -154,29 +154,29 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7c48448c277de2c7",
+  "active": "b2d58fa77bf0d114",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-dbdbhl1di32b/s-gndltl5n9b-8aak3t-bfk7fl5ypd3i283mgrkghploe/work-products.bin",
-    "learning/target/debug/incremental/learning-dbdbhl1di32b/s-gndltl5n9b-8aak3t-bfk7fl5ypd3i283mgrkghploe/query-cache.bin",
-    "learning/target/debug/incremental/learning-dbdbhl1di32b/s-gndltl5n9b-8aak3t-bfk7fl5ypd3i283mgrkghploe/dep-graph.bin",
-    "learning/target/debug/incremental/learning-dbdbhl1di32b/s-gndltl5n9b-8aak3t-bfk7fl5ypd3i283mgrkghploe",
-    "learning/target/debug/incremental/learning-2dzne4dp54wzv/s-gndltl5n99-2by1yx-5gy54h57td1c3rrtkagjwkedh/work-products.bin",
-    "learning/target/debug/incremental/learning-2dzne4dp54wzv/s-gndltl5n99-2by1yx-5gy54h57td1c3rrtkagjwkedh/query-cache.bin",
-    "learning/target/debug/incremental/learning-2dzne4dp54wzv/s-gndltl5n99-2by1yx-5gy54h57td1c3rrtkagjwkedh/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2dzne4dp54wzv/s-gndltl5n99-2by1yx-5gy54h57td1c3rrtkagjwkedh",
-    "learning/target/debug/incremental/learning-dbdbhl1di32b/s-gndltl5n9b-8aak3t.lock",
-    "learning/target/debug/incremental/learning-2dzne4dp54wzv/s-gndltl5n99-2by1yx.lock",
-    "learning/target/debug/deps/learning-3017c4f1a3bee316",
+    "showFolder/target/debug/deps/showFolder-c9719c4abc9b75aa",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/zwyb2t5u9hwmh4a.o",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/x3upm6ylb0apblp.o",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/work-products.bin",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/query-cache.bin",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/dep-graph.bin",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/d3e3s43wfvime14.o",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/4evcoohuv2pmt7qy.o",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/3u2rh7g9f7pf2494.o",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/37wttaw1gr3wpa44.o",
+    "showFolder/target/debug/incremental/showFolder-316xxyrjjy8tw/s-gni2u75ivq-1od372p-jahd4mi8cli2hz8eyzkos3yq/37ndqz37yr14zs61.o",
+    "README.md",
+    "readme.assets/Pasted image 20230805153742.png",
     "readme.assets/Pasted image 20230801010244.png",
     "readme.assets/Pasted image 20230801005700.png",
     "readme.assets/Pasted image 20230801005354.png",
     "readme.assets/Pasted image 20230801005250.png",
     "readme.assets/Pasted image 20230801001058.png",
     "readme.assets/Pasted image 20230731234223.png",
-    "README.md",
     "readme.assets/Pasted image 20230718225808.png",
     "readme.assets/Pasted image 20230718225803 1.png",
-    "readme.assets/Pasted image 20230718225803.png",
-    "readme.assets/Pasted image 20230718225406.png"
+    "readme.assets/Pasted image 20230718225803.png"
   ]
 }

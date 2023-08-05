@@ -64,7 +64,7 @@ fn main() {
     // 测试函数
     // test_says();
     // 测试导包
-    // g();
+    g();
     // *测试变量
     // test_mut();
     // 测试不可变量
@@ -117,5 +117,5 @@ fn main() {
     // call();
     // call2();
     // strMain();
-    hashmaps();
+    // hashmaps();
 }
