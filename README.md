@@ -4725,6 +4725,609 @@ Edsger W. Dijkstra 在其 1972 年的文章【谦卑的程序员】（“The Hum
 
 程序的正确性意味着代码如我们期望的那样运行。Rust 是一个相当注重正确性的编程语言，不过正确性是一个难以证明的复杂主题。Rust 的类型系统在此问题上下了很大的功夫，不过类型系统不可能捕获所有问题。为此，Rust 包含了编写自动化软件测试的功能支持。
 
+Rust 中的测试函数是用来验证非测试代码是否是按照期望的方式运行的。测试函数体通常执行如下三种操作：
+- 设置任何所需的数据或状态
+- 运行需要测试的代码
+- 断言其结果是我们所期望的
+
+##### 生成模块lib
+```shell
+$ cargo new adder --lib
+$ cd adder
+```
+##### 调用测试用例
+```shell
+$ cargo test
+   Compiling adder v0.1.0 (file:///projects/adder)
+    Finished test [unoptimized + debuginfo] target(s) in 0.57s
+     Running unittests src/lib.rs (target/debug/deps/adder-92948b65e88960b4)
+
+// 测试函数的名称
+running 1 test
+test tests::it_works ... ok
+// 测试结果
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests adder
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+```
+##### 编写测试
+```rust
+/*
+
+!带入测试。
+
+*/
+
+  
+
+pub fn add(left: usize, right: usize) -> usize {
+
+left + right
+
+}
+
+  
+
+#[derive(Debug)]
+
+struct Rectangle {
+
+width: u32,
+
+height: u32,
+
+}
+
+  
+
+impl Rectangle {
+
+fn can_hold(&self, other: &Rectangle) -> bool {
+
+self.width > other.width && self.height > other.height
+
+}
+
+}
+
+  
+
+pub fn add_two(a: i32) -> i32 {
+
+// a + 3
+
+a + 2
+
+}
+
+// todo 自定义失败信息
+
+pub fn greeting(name: &str) -> String {
+
+format!("Hello {}!", name)
+
+// String::format("11")
+
+}
+
+  
+
+// 使用should_panic 检查 panic
+
+pub struct Guess {
+
+value: i32,
+
+}
+
+impl Guess {
+
+pub fn new(value: i32) -> Guess {
+
+if value < 1 || value > 100 {
+
+panic!("Guess value must be between 1 and 100, got {}.", value);
+
+}
+
+  
+
+Guess { value }
+
+}
+
+}
+
+  
+
+#[cfg(test)]
+
+mod tests {
+
+use super::*;
+
+  
+
+#[test]
+
+fn it_works() {
+
+let result = add(2, 2);
+
+assert_eq!(result, 4);
+
+}
+
+  
+
+// 捕捉异常的枚举结构体，
+
+#[test]
+
+fn it_works_enmus() -> Result<(), String> {
+
+if 2 + 2 == 4 {
+
+Ok(())
+
+} else {
+
+Err(String::from("two plus two does not equal four"))
+
+}
+
+}
+
+  
+
+#[test]
+
+fn exploration() {
+
+assert_eq!(2 + 2, 4);
+
+}
+
+  
+
+// 这里则是一个失败的测试例子
+
+// #[test]
+
+// fn another() {
+
+// panic!("Make this test fail");
+
+// }
+
+  
+
+// 结构体测试
+
+use super::*;
+
+#[test]
+
+fn larger_can_hold_smaller() {
+
+let larger = Rectangle {
+
+width: 8,
+
+height: 7,
+
+};
+
+let smaller = Rectangle {
+
+width: 5,
+
+height: 1,
+
+};
+
+// 断言 真假 这里报错
+
+assert!(larger.can_hold(&smaller));
+
+}
+
+  
+
+// 再次测试
+
+#[test]
+
+fn smaller_cannot_hold_larger() {
+
+let larger = Rectangle {
+
+width: 8,
+
+height: 7,
+
+};
+
+let smaller = Rectangle {
+
+width: 5,
+
+height: 1,
+
+};
+
+  
+
+assert!(!smaller.can_hold(&larger));
+
+}
+
+#[test]
+
+fn it_adds_two() {
+
+// 断言相等
+
+assert_eq!(4, add_two(2));
+
+}
+
+  
+
+#[test]
+
+fn greeting_contains_name() {
+
+let result = greeting("Carol");
+
+// 直接打印自定义错误信息
+
+assert!(result.contains("Carol"), "我是错误信息{}", result);
+
+}
+
+  
+
+#[test]
+
+#[should_panic(expected = "你不能传入正常值")]
+
+fn greater_than_100() {
+
+// 检测panic是否生效
+
+Guess::new(2);
+
+}
+
+}
+```
+##### 控制测试
+就像 cargo run 会编译代码并运行生成的二进制文件一样，cargo test 在测试模式下编译代码并运行生成的测试二进制文件。cargo test 产生的二进制文件的默认行为是并发运行所有的测试，并截获测试运行过程中产生的输出，阻止他们被显示出来，使得阅读测试结果相关的内容变得更容易。不过可以指定命令行参数来改变 cargo test 的默认行为。
+
+可以将一部分命令行参数传递给 cargo test，而将另外一部分传递给生成的测试二进制文件。为了分隔这两种参数，需要先列出传递给 cargo test 的参数，接着是分隔符 --，再之后是传递给测试二进制文件的参数。运行 cargo test --help 会提示 cargo test 的有关参数，而运行 cargo test -- --help 可以提示在分隔符之后使用的有关参数。
+
+###### 设置测试的线程
+```rust
+$ cargo test -- --test-threads=1
+```
+###### 显示成功的输出
+```rust
+$ cargo test -- --show-output
+```
+###### 单独测试 / 批量测试
+只要名字是测试用例中函数的一部分，那符合的函数都会被使用
+```rust
+$ cargo test one_hundred
+```
+###### 忽略测试
+需要加入#[ignore]
+```rust
+  
+#[test]
+
+#[ignore]
+
+#[should_panic(expected = "你不能传入正常值")]
+
+fn greater_than_100() {
+
+// 检测panic是否生效
+
+Guess::new(12);
+
+}
+```
+```rust
+$ cargo test -- --ignored
+$ cargo test -- --include-ignored
+```
+
+##### 测试框架
+单元测试（unit tests）与 集成测试（integration tests）。单元测试倾向于更小而更集中，在隔离的环境中一次测试一个模块，或者是测试私有接口。而集成测试对于你的库来说则完全是外部的。它们与其他外部代码一样，通过相同的方式使用你的代码，只测试公有接口而且每个测试都有可能会测试多个模块。
+###### 单元测试
+将测试用例写入到模块本身中
+```rust
+/*
+
+!带入测试。
+
+*/
+
+  
+
+pub fn add(left: usize, right: usize) -> usize {
+
+left + right
+
+}
+
+  
+
+#[derive(Debug)]
+
+struct Rectangle {
+
+width: u32,
+
+height: u32,
+
+}
+
+  
+
+impl Rectangle {
+
+fn can_hold(&self, other: &Rectangle) -> bool {
+
+self.width > other.width && self.height > other.height
+
+}
+
+}
+
+  
+
+pub fn add_two(a: i32) -> i32 {
+
+// a + 3
+
+a + 2
+
+}
+
+// todo 自定义失败信息
+
+pub fn greeting(name: &str) -> String {
+
+format!("Hello {}!", name)
+
+// String::format("11")
+
+}
+
+  
+
+// 使用should_panic 检查 panic
+
+pub struct Guess {
+
+value: i32,
+
+}
+
+impl Guess {
+
+pub fn new(value: i32) -> Guess {
+
+if value < 1 || value > 100 {
+
+panic!("Guess value must be between 1 and 100, got {}.", value);
+
+}
+
+  
+
+Guess { value }
+
+}
+
+}
+
+  
+
+#[cfg(test)]
+
+mod tests {
+
+use super::*;
+
+  
+
+#[test]
+
+fn it_works() {
+
+let result = add(2, 2);
+
+assert_eq!(result, 4);
+
+}
+
+  
+
+// 捕捉异常的枚举结构体，
+
+#[test]
+
+fn it_works_enmus() -> Result<(), String> {
+
+if 2 + 2 == 4 {
+
+Ok(())
+
+} else {
+
+Err(String::from("two plus two does not equal four"))
+
+}
+
+}
+
+  
+
+#[test]
+
+fn exploration() {
+
+assert_eq!(2 + 2, 4);
+
+}
+
+  
+
+// 这里则是一个失败的测试例子
+
+// #[test]
+
+// fn another() {
+
+// panic!("Make this test fail");
+
+// }
+
+  
+
+// 结构体测试
+
+use super::*;
+
+#[test]
+
+fn larger_can_hold_smaller() {
+
+let larger = Rectangle {
+
+width: 8,
+
+height: 7,
+
+};
+
+let smaller = Rectangle {
+
+width: 5,
+
+height: 1,
+
+};
+
+// 断言 真假 这里报错
+
+assert!(larger.can_hold(&smaller));
+
+}
+
+  
+
+// 再次测试
+
+#[test]
+
+fn smaller_cannot_hold_larger() {
+
+let larger = Rectangle {
+
+width: 8,
+
+height: 7,
+
+};
+
+let smaller = Rectangle {
+
+width: 5,
+
+height: 1,
+
+};
+
+  
+
+assert!(!smaller.can_hold(&larger));
+
+}
+
+#[test]
+
+fn it_adds_two() {
+
+// 断言相等
+
+assert_eq!(4, add_two(2));
+
+}
+
+  
+
+#[test]
+
+fn greeting_contains_name() {
+
+let result = greeting("Carol");
+
+// 直接打印自定义错误信息
+
+assert!(result.contains("Carol"), "我是错误信息{}", result);
+
+}
+
+  
+
+#[test]
+
+#[ignore]
+
+#[should_panic(expected = "你不能传入正常值")]
+
+fn greater_than_100() {
+
+// 检测panic是否生效
+
+Guess::new(12);
+
+}
+
+}
+```
+###### 集成测试
+在 Rust 中，集成测试对于你需要测试的库来说完全是外部的。同其他使用库的代码一样使用库文件，也就是说它们只能调用一部分库中的公有 API。集成测试的目的是测试库的多个部分能否一起正常工作。一些单独能正确运行的代码单元集成在一起也可能会出现问题，所以集成测试的覆盖率也是很重要的。为了创建集成测试，你需要先创建一个 tests 目录。
+```
+adder
+├── Cargo.lock
+├── Cargo.toml
+├── src
+│   └── lib.rs
+└── tests
+    └── integration_test.rs
+
+```
+<p style='color: red;'>如果src的存在同级tests，则只会使用tests中的rs文件。
+</p>
+也可以选择用哪个测试用例。
+```shell
+$ cargo test --test integration_test
+```
+如果项目是二进制 crate 并且只包含 src/main.rs 而没有 src/lib.rs，这样就不可能在 tests 目录创建集成测试并使用 extern crate 导入 src/main.rs 中定义的函数。只有库 crate 才会向其他 crate 暴露了可供调用和使用的函数；二进制 crate 只意在单独运行。
+
+这就是许多 Rust 二进制项目使用一个简单的 src/main.rs 调用 src/lib.rs 中的逻辑的原因之一。因为通过这种结构，集成测试 就可以 通过 extern crate 测试库 crate 中的主要功能了，而如果这些重要的功能没有问题的话，src/main.rs 中的少量代码也就会正常工作且不需要测试。
+
+![](readme.assets/Pasted%20image%2020230806184721.png)
+
 
 
 

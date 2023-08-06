@@ -28,7 +28,18 @@ pub fn eat_at_restaurant() {
 use rand::Rng;
 // 引用标准库
 use std::collections::HashMap;
+
+
+// 
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn it_works() {
+        let result = 2 + 2;
+        assert_eq!(result, 4);
+    }
+}
+
 fn main() {
     let secret_number = rand::thread_rng().gen_range(1..=100);
 }
-
