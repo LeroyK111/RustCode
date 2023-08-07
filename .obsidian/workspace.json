@@ -156,17 +156,18 @@
   },
   "active": "b2d58fa77bf0d114",
   "lastOpenFiles": [
+    "minigrep/output.txt",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/work-products.bin",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/tnubw3hl38x5rs0.o",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/rtzcicir22ylabc.o",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/query-cache.bin",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/qadmyzbtv2b31sj.o",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/dep-graph.bin",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/ba6g3kshlqlizcu.o",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/amp4d98nd6bdd80.o",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/5gqwkvibidhjf6m2.o",
+    "minigrep/target/debug/incremental/minigrep-ysnhzch24kda/s-gnk52uqzdt-1qhwwcu-2xfkcjztwh12cei4g75990zeh/5f7mvt3h5r50k5iq.o",
     "readme.assets/Pasted image 20230806184721.png",
-    "adder/src/lib.rs",
-    "adder/tests/lib.rs",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/work-products.bin",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/query-cache.bin",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/p5e7xugii7dz7fl.o",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/dep-graph.bin",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/c6w5ce92o3usrb7.o",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/94ijcuzh7pdys9l.o",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/58hh6o7gkgehg3pm.o",
-    "adder/target/debug/incremental/test-yhyzl9t4cpy6/s-gnit2xvh4t-vtia3l-b02f4879lwxq1tvndvvjvjh15/57m9uis5i8m9d1s2.o",
     "README.md",
     "readme.assets/Pasted image 20230805153742.png",
     "readme.assets/Pasted image 20230801010244.png",
@@ -176,7 +177,6 @@
     "readme.assets/Pasted image 20230801001058.png",
     "readme.assets/Pasted image 20230731234223.png",
     "readme.assets/Pasted image 20230718225808.png",
-    "readme.assets/Pasted image 20230718225803 1.png",
-    "readme.assets/Pasted image 20230718225803.png"
+    "readme.assets/Pasted image 20230718225803 1.png"
   ]
 }

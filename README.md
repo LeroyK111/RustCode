@@ -5332,11 +5332,1064 @@ $ cargo test --test integration_test
 Rust 的运行速度、安全性、单二进制文件输出和跨平台支持使其成为创建命令行程序的绝佳选择，所以我们的项目将创建一个我们自己版本的经典命令行搜索工具：grep。grep 是 “Globally search a Regular Expression and Print.” 的首字母缩写。grep 最简单的使用场景是在特定文件中搜索指定字符串。为此，grep 获取一个文件路径和一个字符串作为参数，接着读取文件并找到其中包含字符串参数的行，然后打印出这些行。
 
 在这个过程中，我们会展示如何让我们的命令行工具利用很多命令行工具中用到的终端功能。读取环境变量来使得用户可以配置工具的行为。打印到标准错误控制流（stderr）而不是标准输出（stdout），例如这样用户可以选择将成功输出重定向到文件中的同时仍然在屏幕上显示错误信息。
+```shell
+# 创建新项目
+$ cargo new minigrep
+```
+执行命令，检索文件
+```shell
+cargo run -- searchstring example-filename.txt
+```
 
+##### 读写参数
+```rust
+// 调用函数，使用外部传参
 
+use std::env;
 
+  
 
+fn main() {
+
+// 需要一个 Rust 标准库提供的函数 std::env::args。这个函数返回一个传递给程序的命令行参数的 迭代器（iterator）
+
+let args: Vec<String> = env::args().collect();
+
+// 打印到异常控制台
+
+// dbg!(args);
+
+/*
+
+[src/main.rs:7] args = [
+
+"target/debug/minigrep", // * 这是二进制文件名称
+
+"searchstring", // * 第一个参数
+
+"example-filename.txt", // * 第二参数
+
+]˝
+
+*/
+
+  
+
+// 获取参数
+
+let pathName = &args[0];
+
+let query = &args[1];
+
+let file_path = &args[2];
+
+println!("zero{}", pathName);
+
+println!("one{}", query);
+
+println!("two{}", file_path);
+
+}
+```
+
+##### 读写文件
+```rust
+// 调用函数，使用外部传参
+
+use std::env;
+
+use std::fs;
+
+  
+
+/*
+
+main 函数负责多个任务的组织问题在许多二进制项目中很常见。所以 Rust 社区开发出一类在 main 函数开始变得庞大时进行二进制程序的关注分离的指导。这些过程有如下步骤：
+
+  
+
+将程序拆分成 main.rs 和 lib.rs 并将程序的逻辑放入 lib.rs 中。
+
+当命令行解析逻辑比较小时，可以保留在 main.rs 中。
+
+当命令行解析开始变得复杂时，也同样将其从 main.rs 提取到 lib.rs 中。
+
+经过这些过程之后保留在 main 函数中的责任应该被限制为：
+
+  
+
+使用参数值调用命令行解析逻辑
+
+设置任何其他的配置
+
+调用 lib.rs 中的 run 函数
+
+如果 run 返回错误，则处理这个错误
+
+这个模式的一切就是为了关注分离：main.rs 处理程序运行，而 lib.rs 处理所有的真正的任务逻辑。因为不能直接测试 main 函数，这个结构通过将所有的程序逻辑移动到 lib.rs 的函数中使得我们可以测试他们。仅仅保留在 main.rs 中的代码将足够小以便阅读就可以验证其正确性。让我们遵循这些步骤来重构程序。
+
+*/
+
+  
+
+fn main() {
+
+// 需要一个 Rust 标准库提供的函数 std::env::args。这个函数返回一个传递给程序的命令行参数的 迭代器（iterator）
+
+let args: Vec<String> = env::args().collect();
+
+// 打印到异常控制台
+
+// dbg!(args);
+
+/*
+
+[src/main.rs:7] args = [
+
+"target/debug/minigrep", // * 这是二进制文件名称
+
+"searchstring", // * 第一个参数
+
+"example-filename.txt", // * 第二参数
+
+]˝
+
+*/
+
+  
+
+// 获取参数
+
+// let pathName = &args[0];
+
+let query = &args[1];
+
+let file_path = &args[2];
+
+// println!("zero{}", pathName);
+
+// println!("one{}", query);
+
+// println!("two{}", file_path);
+
+  
+
+// 读写文件
+
+println!("In file {}", file_path);
+
+let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
+
+println!("With text:\n{contents}");
+
+  
+
+}
+```
+##### 标准写法
+```rust
+// 调用函数，使用外部传参
+
+use std::env;
+
+use std::error::Error;
+
+use std::fs;
+
+use std::process;
+
+  
+
+/*
+
+main 函数负责多个任务的组织问题在许多二进制项目中很常见。所以 Rust 社区开发出一类在 main 函数开始变得庞大时进行二进制程序的关注分离的指导。这些过程有如下步骤：
+
+  
+
+将程序拆分成 main.rs 和 lib.rs 并将程序的逻辑放入 lib.rs 中。
+
+当命令行解析逻辑比较小时，可以保留在 main.rs 中。
+
+当命令行解析开始变得复杂时，也同样将其从 main.rs 提取到 lib.rs 中。
+
+经过这些过程之后保留在 main 函数中的责任应该被限制为：
+
+  
+
+使用参数值调用命令行解析逻辑
+
+设置任何其他的配置
+
+调用 lib.rs 中的 run 函数
+
+如果 run 返回错误，则处理这个错误
+
+这个模式的一切就是为了关注分离：main.rs 处理程序运行，而 lib.rs 处理所有的真正的任务逻辑。因为不能直接测试 main 函数，这个结构通过将所有的程序逻辑移动到 lib.rs 的函数中使得我们可以测试他们。仅仅保留在 main.rs 中的代码将足够小以便阅读就可以验证其正确性。让我们遵循这些步骤来重构程序。
+
+*/
+
+  
+
+fn main() {
+
+// 需要一个 Rust 标准库提供的函数 std::env::args。这个函数返回一个传递给程序的命令行参数的 迭代器（iterator）
+
+// let args: Vec<String> = env::args().collect();
+
+// 打印到异常控制台
+
+// dbg!(args);
+
+/*
+
+[src/main.rs:7] args = [
+
+"target/debug/minigrep", // * 这是二进制文件名称
+
+"searchstring", // * 第一个参数
+
+"example-filename.txt", // * 第二参数
+
+]˝
+
+*/
+
+  
+
+// 获取参数
+
+// let pathName = &args[0];
+
+// let query = &args[1];
+
+// let file_path = &args[2];
+
+// println!("zero{}", pathName);
+
+// println!("one{}", query);
+
+// println!("two{}", file_path);
+
+  
+
+// 读写文件
+
+// println!("In file {}", file_path);
+
+// let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
+
+// println!("With text:\n{contents}");
+
+  
+
+let args: Vec<String> = env::args().collect();
+
+let config = Config::build(&args).unwrap_or_else(|err| {
+
+println!("Problem parsing arguments: {err}");
+
+process::exit(1);
+
+});
+
+  
+
+// let contents =
+
+// fs::read_to_string(config.file_path).expect("Should have been able to read the file");
+
+  
+
+if let Err(e) = run(config) {
+
+println!("Application error: {e}");
+
+process::exit(1);
+
+}
+
+}
+
+  
+
+struct Config {
+
+query: String,
+
+file_path: String,
+
+}
+
+  
+
+// fn parse_config(args: &[String]) -> Config {
+
+// let query = args[1].clone();
+
+// let file_path = args[2].clone();
+
+  
+
+// Config { query, file_path }
+
+// }
+
+  
+
+impl Config {
+
+fn build(args: &[String]) -> Result<Config, &'static str> {
+
+if args.len() < 3 {
+
+return Err("not enough arguments");
+
+}
+
+  
+
+let query = args[1].clone();
+
+let file_path = args[2].clone();
+
+  
+
+Ok(Config { query, file_path })
+
+}
+
+}
+
+  
+
+fn run(config: Config) -> Result<(), Box<dyn Error>> {
+
+let contents = fs::read_to_string(config.file_path)?;
+
+println!("With text:\n{contents}");
+
+Ok(())
+
+}
+```
+
+##### 模块化
+main
+```rust
+// 调用函数，使用外部传参
+
+use std::env;
+
+// use std::error::Error;
+
+// use std::fs;
+
+use minigrep::Config;
+
+use std::process;
+
+  
+
+/*
+
+main 函数负责多个任务的组织问题在许多二进制项目中很常见。所以 Rust 社区开发出一类在 main 函数开始变得庞大时进行二进制程序的关注分离的指导。这些过程有如下步骤：
+
+  
+
+将程序拆分成 main.rs 和 lib.rs 并将程序的逻辑放入 lib.rs 中。
+
+当命令行解析逻辑比较小时，可以保留在 main.rs 中。
+
+当命令行解析开始变得复杂时，也同样将其从 main.rs 提取到 lib.rs 中。
+
+经过这些过程之后保留在 main 函数中的责任应该被限制为：
+
+  
+
+使用参数值调用命令行解析逻辑
+
+设置任何其他的配置
+
+调用 lib.rs 中的 run 函数
+
+如果 run 返回错误，则处理这个错误
+
+这个模式的一切就是为了关注分离：main.rs 处理程序运行，而 lib.rs 处理所有的真正的任务逻辑。因为不能直接测试 main 函数，这个结构通过将所有的程序逻辑移动到 lib.rs 的函数中使得我们可以测试他们。仅仅保留在 main.rs 中的代码将足够小以便阅读就可以验证其正确性。让我们遵循这些步骤来重构程序。
+
+*/
+
+  
+
+fn main() {
+
+// 需要一个 Rust 标准库提供的函数 std::env::args。这个函数返回一个传递给程序的命令行参数的 迭代器（iterator）
+
+// let args: Vec<String> = env::args().collect();
+
+// 打印到异常控制台
+
+// dbg!(args);
+
+/*
+
+[src/main.rs:7] args = [
+
+"target/debug/minigrep", // * 这是二进制文件名称
+
+"searchstring", // * 第一个参数
+
+"example-filename.txt", // * 第二参数
+
+]˝
+
+*/
+
+  
+
+// 获取参数
+
+// let pathName = &args[0];
+
+// let query = &args[1];
+
+// let file_path = &args[2];
+
+// println!("zero{}", pathName);
+
+// println!("one{}", query);
+
+// println!("two{}", file_path);
+
+  
+
+// 读写文件
+
+// println!("In file {}", file_path);
+
+// let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
+
+// println!("With text:\n{contents}");
+
+  
+
+let args: Vec<String> = env::args().collect();
+
+let config = Config::build(&args).unwrap_or_else(|err| {
+
+println!("Problem parsing arguments: {err}");
+
+process::exit(1);
+
+});
+
+  
+
+// let contents =
+
+// fs::read_to_string(config.file_path).expect("Should have been able to read the file");
+
+  
+
+// if let Err(e) = run(config) {
+
+// println!("Application error: {e}");
+
+// process::exit(1);
+
+// }
+
+  
+
+if let Err(e) = minigrep::run(config) {
+
+println!("Application error: {e}");
+
+process::exit(1);
+
+}
+
+}
+
+  
+
+// struct Config {
+
+// query: String,
+
+// file_path: String,
+
+// }
+
+  
+
+// fn parse_config(args: &[String]) -> Config {
+
+// let query = args[1].clone();
+
+// let file_path = args[2].clone();
+
+  
+
+// Config { query, file_path }
+
+// }
+
+  
+
+// impl Config {
+
+// fn build(args: &[String]) -> Result<Config, &'static str> {
+
+// if args.len() < 3 {
+
+// return Err("not enough arguments");
+
+// }
+
+  
+
+// let query = args[1].clone();
+
+// let file_path = args[2].clone();
+
+  
+
+// Ok(Config { query, file_path })
+
+// }
+
+// }
+
+  
+
+// fn run(config: Config) -> Result<(), Box<dyn Error>> {
+
+// let contents = fs::read_to_string(config.file_path)?;
+
+// println!("With text:\n{contents}");
+
+// Ok(())
+
+// }
+```
+##### 处理环境变量
+lib.rs
+```rust
+use std::error::Error;
+
+use std::fs;
+
+use std::env;
+
+  
+
+// pub struct Config {
+
+// pub query: String,
+
+// pub file_path: String,
+
+// }
+
+  
+
+pub struct Config {
+
+pub query: String,
+
+pub file_path: String,
+
+pub ignore_case: bool,
+
+}
+
+  
+
+// impl Config {
+
+// pub fn build(args: &[String]) -> Result<Config, &'static str> {
+
+// if args.len() < 3 {
+
+// return Err("not enough arguments");
+
+// }
+
+  
+
+// let query = args[1].clone();
+
+// let file_path = args[2].clone();
+
+  
+
+// Ok(Config { query, file_path })
+
+// }
+
+// }
+
+  
+
+// pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
+
+// let contents = fs::read_to_string(config.file_path)?;
+
+// // println!("With text:\n{contents}");
+
+// for line in search(&config.query, &contents) {
+
+// // 找到我们想要的那行
+
+// println!("{line}");
+
+// }
+
+// Ok(())
+
+// }
+
+  
+
+impl Config {
+
+pub fn build(args: &[String]) -> Result<Config, &'static str> {
+
+if args.len() < 3 {
+
+return Err("not enough arguments");
+
+}
+
+  
+
+let query = args[1].clone();
+
+let file_path = args[2].clone();
+
+// IGNORE_CASE=1 cargo run to poem.txt 设置环境变量执行语句
+
+let ignore_case = env::var("IGNORE_CASE").is_ok();
+
+  
+
+Ok(Config {
+
+query,
+
+file_path,
+
+ignore_case,
+
+})
+
+}
+
+}
+
+  
+
+pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
+
+let contents = fs::read_to_string(config.file_path)?;
+
+  
+
+let results = if config.ignore_case {
+
+search_case_insensitive(&config.query, &contents)
+
+} else {
+
+search(&config.query, &contents)
+
+};
+
+  
+
+for line in results {
+
+println!("{line}");
+
+}
+
+  
+
+Ok(())
+
+}
+
+  
+
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+
+let mut results = Vec::new();
+
+  
+
+for line in contents.lines() {
+
+if line.contains(query) {
+
+// 第二行的productive刚好满足条件
+
+results.push(line);
+
+}
+
+}
+
+  
+
+results
+
+}
+
+  
+
+pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+
+let query = query.to_lowercase();
+
+let mut results = Vec::new();
+
+  
+
+for line in contents.lines() {
+
+if line.to_lowercase().contains(&query) {
+
+results.push(line);
+
+}
+
+}
+
+  
+
+results
+
+}
+
+  
+
+#[cfg(test)]
+
+mod tests {
+
+use super::*;
+
+  
+
+#[test]
+
+fn one_result() {
+
+let query = "duct";
+
+let contents = "\
+
+Rust:
+
+safe, fast, productive.
+
+Pick three.";
+
+  
+
+// 测试是否相等
+
+assert_eq!(vec!["safe, fast, productive."], search(query, contents));
+
+}
+
+  
+
+// 大小写不敏感
+
+#[test]
+
+fn case_sensitive() {
+
+let query = "duct";
+
+let contents = "\
+
+Rust:
+
+safe, fast, productive.
+
+Pick three.
+
+Duct tape.";
+
+  
+
+assert_eq!(vec!["safe, fast, productive."], search(query, contents));
+
+}
+
+  
+
+#[test]
+
+fn case_insensitive() {
+
+let query = "rUsT";
+
+let contents = "\
+
+Rust:
+
+safe, fast, productive.
+
+Pick three.
+
+Trust me.";
+
+  
+
+assert_eq!(
+
+vec!["Rust:", "Trust me."],
+
+search_case_insensitive(query, contents)
+
+);
+
+}
+
+}
+```
+##### 使用错误输出
+main.rs
+```rust
+// 调用函数，使用外部传参
+
+use std::env;
+
+// use std::error::Error;
+
+// use std::fs;
+
+use minigrep::Config;
+
+use std::process;
+
+  
+
+/*
+
+main 函数负责多个任务的组织问题在许多二进制项目中很常见。所以 Rust 社区开发出一类在 main 函数开始变得庞大时进行二进制程序的关注分离的指导。这些过程有如下步骤：
+
+  
+
+将程序拆分成 main.rs 和 lib.rs 并将程序的逻辑放入 lib.rs 中。
+
+当命令行解析逻辑比较小时，可以保留在 main.rs 中。
+
+当命令行解析开始变得复杂时，也同样将其从 main.rs 提取到 lib.rs 中。
+
+经过这些过程之后保留在 main 函数中的责任应该被限制为：
+
+  
+
+使用参数值调用命令行解析逻辑
+
+设置任何其他的配置
+
+调用 lib.rs 中的 run 函数
+
+如果 run 返回错误，则处理这个错误
+
+这个模式的一切就是为了关注分离：main.rs 处理程序运行，而 lib.rs 处理所有的真正的任务逻辑。因为不能直接测试 main 函数，这个结构通过将所有的程序逻辑移动到 lib.rs 的函数中使得我们可以测试他们。仅仅保留在 main.rs 中的代码将足够小以便阅读就可以验证其正确性。让我们遵循这些步骤来重构程序。
+
+*/
+
+  
+
+fn main() {
+
+// 需要一个 Rust 标准库提供的函数 std::env::args。这个函数返回一个传递给程序的命令行参数的 迭代器（iterator）
+
+// let args: Vec<String> = env::args().collect();
+
+// 打印到异常控制台
+
+// dbg!(args);
+
+/*
+
+[src/main.rs:7] args = [
+
+"target/debug/minigrep", // * 这是二进制文件名称
+
+"searchstring", // * 第一个参数
+
+"example-filename.txt", // * 第二参数
+
+]˝
+
+*/
+
+  
+
+// 获取参数
+
+// let pathName = &args[0];
+
+// let query = &args[1];
+
+// let file_path = &args[2];
+
+// println!("zero{}", pathName);
+
+// println!("one{}", query);
+
+// println!("two{}", file_path);
+
+  
+
+// 读写文件
+
+// println!("In file {}", file_path);
+
+// let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
+
+// println!("With text:\n{contents}");
+
+  
+
+let args: Vec<String> = env::args().collect();
+
+let config = Config::build(&args).unwrap_or_else(|err| {
+
+// println!("Problem parsing arguments: {err}");
+
+// ! 使用eprintln! 可以让错误信息不被输出
+
+eprintln!("Problem parsing arguments: {err}");
+
+process::exit(1);
+
+});
+
+  
+
+// let contents =
+
+// fs::read_to_string(config.file_path).expect("Should have been able to read the file");
+
+  
+
+// if let Err(e) = run(config) {
+
+// println!("Application error: {e}");
+
+// process::exit(1);
+
+// }
+
+  
+
+if let Err(e) = minigrep::run(config) {
+
+// println!("Application error: {e}");
+
+eprintln!("Application error: {e}");
+
+process::exit(1);
+
+}
+
+}
+
+  
+
+// struct Config {
+
+// query: String,
+
+// file_path: String,
+
+// }
+
+  
+
+// fn parse_config(args: &[String]) -> Config {
+
+// let query = args[1].clone();
+
+// let file_path = args[2].clone();
+
+  
+
+// Config { query, file_path }
+
+// }
+
+  
+
+// impl Config {
+
+// fn build(args: &[String]) -> Result<Config, &'static str> {
+
+// if args.len() < 3 {
+
+// return Err("not enough arguments");
+
+// }
+
+  
+
+// let query = args[1].clone();
+
+// let file_path = args[2].clone();
+
+  
+
+// Ok(Config { query, file_path })
+
+// }
+
+// }
+
+  
+
+// fn run(config: Config) -> Result<(), Box<dyn Error>> {
+
+// let contents = fs::read_to_string(config.file_path)?;
+
+// println!("With text:\n{contents}");
+
+// Ok(())
+
+// }
+```
 ####  迭代器和闭包
+programming）。函数式编程风格通常包含将函数作为参数值或其他函数的返回值、将函数赋值给变量以供之后执行等等。
+
+本章我们不会讨论函数式编程是或不是什么的问题，而是展示 Rust 的一些在功能上与其他被认为是函数式语言类似的特性。
+
+更具体的，我们将要涉及：
+
+闭包（Closures），一个可以储存在变量里的类似函数的结构
+迭代器（Iterators），一种处理元素序列的方式
+如何使用闭包和迭代器来改进第十二章的 I/O 项目。
+闭包和迭代器的性能。（剧透警告： 他们的速度超乎你的想象！）
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### ⭐️智能指针
 
