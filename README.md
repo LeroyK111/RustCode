@@ -11,7 +11,6 @@
 **devTools**：vscode吧，常用一些。
 
 **vscode插件**：https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer
-
 ### windows安装方式
 [安装页面](https://www.rust-lang.org/zh-CN/tools/install)
 前置环境：[Microsoft C++构建工具]()
