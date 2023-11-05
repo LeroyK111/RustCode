@@ -1,0 +1,48 @@
+
+/*
+内存结构层次：
+1.Resigters(internal storage) bytes
+2.CacheMemory(internal storage) km/mb
+3.MainMemory(RAM) primaryStorage GB
+4.USB/FLASH Memory  SecondaryStorage GB
+5.MagneticDisk/HardDisk SecondaryStorage TB
+6.MagneticDisk/HardDisk TertiaryStorage PB/EB
+*/
+
+/*
+在编写高效的Rust代码时，重要的是通过以最大化空间局部性(访问附近的内存位置)和时间局部性(重用最近访问的数据)的方式组织数据来最小化缓存丢失。
+
+这方面的一个简单示例是使用结构将相关数据分组在一起，这可以改善空间局部性，因为结构元素更可能彼此靠近，从而减少缓存丢失。而不是做这样的事情：
+*/
+
+// let x = 1;
+// let y = 2;
+// let z = 3;
+
+// do something with x, y, and z
+// 你可以在一个struct中声明变量：
+// struct XYZ {
+//     x: i32,
+//     y: i32,
+//     z: i32,
+// }
+
+// let xyz = XYZ { x: 1, y: 2, z: 3 };
+
+// do something with xyz.x, xyz.y, and xyz.z
+// 这样就会以更加缓存友好的方式访问变量，从而改进空间局部性并减少缓存丢失。请记住，只有当它对程序有意义时，才应该使用这种技术。如果不需要一起访问这些变量，那么将它们声明到一个结构体中就没有意义了。
+
+// 另一种技术是尽可能使用切片而不是链表或其他动态数据结构，切片提供了更好的空间局部性，因为元素在内存中彼此相邻存储，因此访问它们通常更快。
+
+// 例如，考虑一个需要遍历整数集合的程序。
+// let mut list = LinkedList::new();
+// list.push_back(1);
+// list.push_back(2);
+// list.push_back(3);
+
+// 这里不应该使用链表，可以使用一个静态大小的切片：
+// let array = [1, 2, 3];
+
+// 通过在这里使用片，可以访问内存中的相邻元素，从而提高空间局部性并减少缓存丢失。如果使用了链表，则元素可能分散在整个内存中，可能导致更多的缓存丢失和更慢的处理时间。
+
+// 总的来说，理解内存层次结构并相应地优化代码可以显著提高性能。通过注意如何使用和访问内存中的数据，可以毫不费力地改进代码。

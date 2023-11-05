@@ -166,6 +166,17 @@
   },
   "active": "9b373be972ff94b0",
   "lastOpenFiles": [
+    "learning/src/optimalPerformance/count.rs",
+    "learning/src/optimalPerformance/memory.rs",
+    "learning/src/optimalPerformance/meroy.rs",
+    "learning/src/optimalPerformance/cpu.rs",
+    "learning/src/optimalPerformance",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i/dep-graph.bin",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i/work-products.bin",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i/query-cache.bin",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i",
+    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gqazqptesr-1dqnl8l-k6meni964v7ixrkzurbrqzyc/work-products.bin",
+    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gqazqptesr-1dqnl8l-k6meni964v7ixrkzurbrqzyc/query-cache.bin",
     "readme.assets/Pasted image 20231102020253.png",
     "readme.assets/Pasted image 20231102020242.png",
     "readme.assets/Pasted image 20231102020231.png",
@@ -176,17 +187,6 @@
     "readme.assets/Pasted image 20231102015711.png",
     "readme.assets/Pasted image 20231102015652.png",
     "readme.assets/Pasted image 20231102015536.png",
-    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gq6qm8hbls-cd7eb2-cdgz6ozn2y85kaf88j1pv8qbk/work-products.bin",
-    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gq6qm8hbls-cd7eb2-cdgz6ozn2y85kaf88j1pv8qbk/query-cache.bin",
-    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gq6qm8hbls-cd7eb2-cdgz6ozn2y85kaf88j1pv8qbk/dep-graph.bin",
-    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gq6qm8hbls-cd7eb2-cdgz6ozn2y85kaf88j1pv8qbk",
-    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gq6qm8hbls-6ehvpu-avvryn2t1v4g4t5ix9005us2k/work-products.bin",
-    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gq6qm8hbls-6ehvpu-avvryn2t1v4g4t5ix9005us2k/query-cache.bin",
-    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gq6qm8hbls-6ehvpu-avvryn2t1v4g4t5ix9005us2k/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gq6qm8hbls-6ehvpu-avvryn2t1v4g4t5ix9005us2k",
-    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gq6qm8hbls-6ehvpu-working/work-products.bin",
-    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gq6qm8hbls-6ehvpu-working/query-cache.bin",
-    "README.md",
-    "readme.assets/Pasted image 20230806184721.png"
+    "README.md"
   ]
 }
