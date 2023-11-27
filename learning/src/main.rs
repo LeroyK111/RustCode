@@ -59,12 +59,18 @@ use coll::vectors::{call, call2};
 // !主程序入口函数
 fn main() {
     // 打印
+<<<<<<< HEAD
 
     println!("Hello, Rust!");
     // println!("Hello, Rust!");
 
+=======
+    // println!("Hello, R ust!");
+     
+>>>>>>> 51ea630 (1)
     // 测试函数
     test_says();
+    
     // 测试导包
     // g();
     // *测试变量

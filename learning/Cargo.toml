@@ -14,3 +14,10 @@ panic = 'abort'
 # 依赖库
 ferris-says = "0.3.1"
 rand = "0.8.5"
+
+
+# 改变代码检查等级
+# [lints.rust]
+# unsafe_code="forbid"
+# [lints.clippy]
+# enum_global_use="deny"
