@@ -60,11 +60,11 @@ use coll::hashmaps::hashmaps;
 // !主程序入口函数
 fn main() {
     // 打印
-    // println!("Hello, Rust!");
+    println!("Hello, Rust!");
     // 测试函数
     // test_says();
     // 测试导包
-    g();
+    // g();
     // *测试变量
     // test_mut();
     // 测试不可变量
@@ -118,4 +118,6 @@ fn main() {
     // call2();
     // strMain();
     // hashmaps();
+
+    
 }

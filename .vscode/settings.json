@@ -44,4 +44,5 @@
     "./learning/Cargo.toml",
     "./learning/Cargo.toml"
   ],
+  "rust-analyzer.showUnlinkedFileNotification": false,
 }
