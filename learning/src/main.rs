@@ -52,17 +52,19 @@ use enums::{enums, enums1, enums2, enums3};
 
 // 集合
 mod coll;
-use coll::vectors::{call, call2};
-use coll::strings::strMain;
 use coll::hashmaps::hashmaps;
-
+use coll::strings::strMain;
+use coll::vectors::{call, call2};
 
 // !主程序入口函数
 fn main() {
     // 打印
+
     println!("Hello, Rust!");
+    // println!("Hello, Rust!");
+
     // 测试函数
-    // test_says();
+    test_says();
     // 测试导包
     // g();
     // *测试变量
@@ -118,6 +120,4 @@ fn main() {
     // call2();
     // strMain();
     // hashmaps();
-
-    
 }

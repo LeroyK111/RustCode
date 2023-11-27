@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f32fb43bc70475c0",
+        "id": "8cff336c69866581",
         "type": "tabs",
         "children": [
           {
-            "id": "b2d58fa77bf0d114",
+            "id": "9b373be972ff94b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -137,6 +137,16 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "4b0cfc2487a0a7dc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ]
       }
@@ -154,29 +164,29 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b2d58fa77bf0d114",
+  "active": "9b373be972ff94b0",
   "lastOpenFiles": [
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/work-products.bin",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/twrhti49rrqh1n6.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/rs7ll6sho3bl505.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/query-cache.bin",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/ixykkk7v2ruhw2r.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/52bluofq4i55i00b.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/dep-graph.bin",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/3f68604o0pgmexap.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/36rx8mbdhqd2puq8.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/2njkg56n8fha7avw.o",
-    "func/target/debug/incremental/func-39duc4an9a5oi/s-gny45i2on9-ifqx8e-1ir5bfrnwps1q6f3wdsvxch4l/2jlen23krvd16b8j.o",
-    "readme.assets/Pasted image 20230806184721.png",
-    "README.md",
-    "readme.assets/Pasted image 20230805153742.png",
-    "readme.assets/Pasted image 20230801010244.png",
-    "readme.assets/Pasted image 20230801005700.png",
-    "readme.assets/Pasted image 20230801005354.png",
-    "readme.assets/Pasted image 20230801005250.png",
-    "readme.assets/Pasted image 20230801001058.png",
-    "readme.assets/Pasted image 20230731234223.png",
-    "readme.assets/Pasted image 20230718225808.png",
-    "readme.assets/Pasted image 20230718225803 1.png"
+    "learning/src/optimalPerformance/count.rs",
+    "learning/src/optimalPerformance/memory.rs",
+    "learning/src/optimalPerformance/meroy.rs",
+    "learning/src/optimalPerformance/cpu.rs",
+    "learning/src/optimalPerformance",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i/dep-graph.bin",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i/work-products.bin",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i/query-cache.bin",
+    "learning/target/debug/incremental/learning-180jqpaiu9xp/s-gqazqptfec-1q6m590-c2rqvohlk5by0xyn0x4lgzj0i",
+    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gqazqptesr-1dqnl8l-k6meni964v7ixrkzurbrqzyc/work-products.bin",
+    "learning/target/debug/incremental/learning-2beh621yxmrpm/s-gqazqptesr-1dqnl8l-k6meni964v7ixrkzurbrqzyc/query-cache.bin",
+    "readme.assets/Pasted image 20231102020253.png",
+    "readme.assets/Pasted image 20231102020242.png",
+    "readme.assets/Pasted image 20231102020231.png",
+    "readme.assets/Pasted image 20231102020223.png",
+    "readme.assets/Pasted image 20231102020213.png",
+    "readme.assets/Pasted image 20231102020142.png",
+    "readme.assets/Pasted image 20231102015907.png",
+    "readme.assets/Pasted image 20231102015711.png",
+    "readme.assets/Pasted image 20231102015652.png",
+    "readme.assets/Pasted image 20231102015536.png",
+    "README.md"
   ]
 }
