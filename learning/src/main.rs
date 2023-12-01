@@ -63,8 +63,11 @@ fn main() {
     println!("Hello, Rust!");
     // println!("Hello, Rust!");
 
+    // println!("Hello, R ust!");
+
     // 测试函数
     test_says();
+
     // 测试导包
     // g();
     // *测试变量
