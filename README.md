@@ -11,6 +11,50 @@
 **devTools**：vscode吧，常用一些。
 
 **vscode插件**：https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer
+### 插件合集
+```shell
+# 热重载插件
+cargo install cargo-watch
+# 监听改变
+cargo watch -x run
+# other
+cargo watch -c -q -w ./src -x run
+-c 来清空终端
+-q 抑制cargo watch本身的输出
+-w 关注某个目录，这里只关注src目录。
+-x 运行cargo命令
+```
+
+```shell
+# 命令行包管理工具
+cargo install cargo-edit
+```
+
+```shell
+# cargo modules插件允许我们可视化项目的模块结构，以树状格式显示模块结构。
+cargo install cargo-modules
+```
+
+```shell
+# cargo audit检查项目的依赖项是否有任何安全漏洞，这在持续集成中特别有用。
+cargo install cargo-audit
+```
+
+```shell
+# cargo tarpaulin 是另一个对持续集成非常有用的插件，这个插件计算项目的代码覆盖率。
+cargo install cargo-tarpaulin
+```
+
+```shell
+# cargo-nextest 是新一代的rust测试程序，它提供了漂亮的测试结果，片状的测试检测，并且在某些代码库上可以将测试运行速度提高60倍。
+cargo install cargo-nextest
+```
+
+```shell
+# cargo-make 是rust的任务运行器和构建工具，它允许你定义一组任务并在流程中运行它们，任务可以在toml文件中定义。
+cargo install cargo-make
+```
+
 ### windows安装方式
 [安装页面](https://www.rust-lang.org/zh-CN/tools/install)
 前置环境：[Microsoft C++构建工具]()
