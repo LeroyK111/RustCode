@@ -66,7 +66,7 @@ fn main() {
     // println!("Hello, R ust!");
 
     // 测试函数
-    test_says();
+    // test_says();
 
     // 测试导包
     // g();
