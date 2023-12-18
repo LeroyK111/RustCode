@@ -1,0 +1,25 @@
+[package]
+name = "snapshoot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.117", optional = true }
+
+# Insta有许多不同类型的支持。如前所述，可以使用Insta对JSON文件、CSV文件甚至YAML文件进行快照测试。但有趣的是，Insta宏是如何在底层运行的。
+# Insta使用Serde提供多文件支持。不过，Insta并没有将它们分割成更小的包，而是依靠Cargo的功能将所有包无缝地打包为一个包，因此客户端可以通过这些功能只下载他们需要的包：
+[features]
+# csv = ["dep_csv", "serde"]
+json = ["serde"]
+# ron = ["dep_ron", "serde"]
+# toml = ["dep_toml", "serde"]
+# yaml = ["serde"]
+
+
+# 在底层，Insta和assert_eq都做序列化以外的事情。这两种断言解决方案之间最大的区别是Insta本地支持序列化。而在使用assert_eq!时，必须使用Serde进行手动序列化，以实现与Insta相同的结果。
+# 即使在assert_snapshot函数内部，Insta也会进行简单的字符串与字符串比较。使用assert_eq将实现类似的结果。assert_eq的比较过程比Insta的要轻量级得多，与直接使用Insta相比，比较Insta和assert_eq并不理想，因为它需要大量的样板代码和额外的工作。
+[dev-dependencies]
+insta = { version = "1.26.0", features = ["json", "csv"] }
+serde = { version = "1.0.117", features = ["derive"] }
