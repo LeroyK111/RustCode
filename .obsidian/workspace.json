@@ -166,6 +166,8 @@
   },
   "active": "9b373be972ff94b0",
   "lastOpenFiles": [
+    "learning/src/objInfo/template.rs",
+    "learning/src/objInfo/temple.rs",
     "learning/src/objInfo/demo.rs",
     "learning/src/objInfo",
     "learning/target/debug/deps/learning-338bde6cb2067a21",
@@ -175,8 +177,6 @@
     "learning/target/debug/incremental/learning-1os2imipvvoc1/s-grq1e9462x-1n32e16-5jrj0t98fubgu7u6xuvuhbt7r/dep-graph.bin",
     "learning/target/debug/incremental/learning-1os2imipvvoc1/s-grq1e9462x-1n32e16-5jrj0t98fubgu7u6xuvuhbt7r/5bczwllldxxmowi7.o",
     "learning/target/debug/incremental/learning-1os2imipvvoc1/s-grq1e9462x-1n32e16-5jrj0t98fubgu7u6xuvuhbt7r/58lw16fs94l51lv3.o",
-    "learning/target/debug/incremental/learning-1os2imipvvoc1/s-grq1e9462x-1n32e16-5jrj0t98fubgu7u6xuvuhbt7r/50qfpjzvl3f2sfsv.o",
-    "learning/target/debug/incremental/learning-1os2imipvvoc1/s-grq1e9462x-1n32e16-5jrj0t98fubgu7u6xuvuhbt7r/3nae714ejhwm3cxo.o",
     "readme.assets/Pasted image 20231102020253.png",
     "readme.assets/Pasted image 20231102020242.png",
     "readme.assets/Pasted image 20231102020231.png",
