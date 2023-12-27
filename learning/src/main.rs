@@ -60,6 +60,8 @@ use coll::vectors::{call, call2};
 fn main() {
     // 打印
     println!("Hello, Rust!");
+
+    
     // 测试函数
     // test_says();
 
