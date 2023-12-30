@@ -81,6 +81,16 @@
         "type": "tabs",
         "children": [
           {
+            "id": "46583745f2f7b888",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
             "id": "e6df40ae93399bd9",
             "type": "leaf",
             "state": {
@@ -131,23 +141,12 @@
                 "searchQuery": ""
               }
             }
-          },
-          {
-            "id": "46583745f2f7b888",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,11 +158,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b2feb97054841031",
+  "active": "46583745f2f7b888",
   "lastOpenFiles": [
-    "learning/src/datetime/useDTT.rs",
-    "learning/src/datetime",
-    "learning/src/asyncNote/readme.md",
-    "learning/src/asyncNote"
+    "learning/target/debug/deps/learning-48308066e1b3af34.d",
+    "learning/target/debug/deps/learning-bb7f6b0982b33dcb.d",
+    "learning/target/debug/incremental/learning-2jcueezi2foim/s-grzfbp5867-zsa7gy-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-2jcueezi2foim/s-grzfbp5867-zsa7gy.lock",
+    "learning/target/debug/incremental/learning-2jcueezi2foim/s-grzfbp5867-zsa7gy-working",
+    "learning/target/debug/incremental/learning-2jcueezi2foim",
+    "learning/target/debug/incremental/learning-2a1fsxd0s974g/s-grzfbp5863-dlqv4n-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-2a1fsxd0s974g/s-grzfbp5863-dlqv4n.lock",
+    "learning/target/debug/incremental/learning-2a1fsxd0s974g/s-grzfbp5863-dlqv4n-working",
+    "learning/target/debug/incremental/learning-2a1fsxd0s974g",
+    "learning/target/debug/deps/librand-82b02ca947b95208.rmeta",
+    "learning/src/asyncNote/readme.md"
   ]
 }
