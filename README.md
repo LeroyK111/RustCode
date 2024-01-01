@@ -142,6 +142,155 @@ https://doc.rust-lang.org/cargo/index.html
 - cargo publish 可以将库发布到 crates.io。
 - cargo --version
 
+### Rustup
+
+1. Rust和LLVM的关系是怎样的？
+
+2. Rustup中targets是什么，为什么可以安装多个？
+
+3. Rust在windows上为什么需要安装Visual studio？
+
+4. Rust工具链有哪些工具？
+
+- rustup 是什么？
+
+```sh
+Rustup是 Rust 的官方工具链管理器，它提供了一种方便的方式来安装、管理和切换不同的Rust工具链版本。总的来说有如下能力：
+
+1. 安装 Rust：
+
+• rustup 允许你轻松地安装最新版本的 Rust，包括稳定版、beta 版和 nightly 版。 rustup install stable
+
+2. 切换 Rust 工具链版本：
+
+• 你可以使用 rustup default 命令切换默认的 Rust 版本。 rustup default stable
+
+• 也可以在项目级别使用 .rust-version 文件指定特定的 Rust 版本。
+
+3. 管理目标（Targets）：
+
+• rustup 允许你安装不同的目标，以支持交叉编译和在不同的平台上运行 Rust 代码。 rustup target add <target>
+
+• 列出已安装的目标： rustup target list
+
+4. 升级 Rust 工具链版本：
+
+• 使用 rustup update 命令可以升级已安装的 Rust 工具链版本。 rustup update
+
+5. 卸载 Rust：
+
+• rustup 允许你卸载 Rust，并清理相关的工具链和组件。 rustup self uninstall
+
+6. 组件管理：
+
+• rustup 允许你安装和管理不同的 Rust 组件，如 rust-src、rust-analysis 等。 rustup component add rust-src
+
+7. 查看工具链信息：
+
+• 使用 rustup show 命令可以查看有关当前 Rust 环境的详细信息，包括已安装的工具链、组件等。 rustup show
+
+通过上面的内容我们知道了Rustup可以管理toolchain和target，那么toolchain和target究竟是什么呢?
+
+```
+
+- 工具链
+```sh
+toolchain指一组Rust工具，包括编译器（rustc）、构建工具（cargo）、文档生成工具（rustdoc）以及其他与 Rust 相关的实用程序。Toolchain用于管理和构建 Rust 代码，并且可以包括一个特定版本的 Rust 编译器和标准库，还包含一个默认是编译到本机平台的target。工具链的版本可以是 "stable"（稳定版）、"beta"（测试版）或 "nightly"（每日构建版），每个版本都对应着不同的 Rust 编译器和特性。
+
+下面这些常用的命令可以操作工具链：
+
+# 安装新的toolchain
+rustup install stable
+# 设置默认的toolchain
+rustup default stable
+# 列出已经安装的toolchain
+rustup toolchain list
+# 更新到最新稳定版
+rustup update stable
+# 更新到指定版本
+rustup update <version>
+# 显示toolchain和targets
+rustup show
+下面这些就是工具链中的工具命令了，它们通常存储在~/.cargo/bin这个目录下。
+
+1. rustc: Rust编译器，负责将Rust源代码编译为机器码。它是Rust的主要编译器，也是构建Rust程序的关键组件。
+
+2. Cargo: Rust的构建系统和包管理器。Cargo简化了项目的创建、依赖管理和构建过程。它还提供了一组命令用于构建、运行测试、发布和安装Rust程序。
+
+3. rustdoc: Rust的文档生成工具。通过使用特定的注释格式，rustdoc能够生成漂亮的文档，帮助开发者编写和维护文档。
+
+4. rustfmt: 代码格式化工具，用于保持Rust代码的一致性和可读性。它能够格式化代码，使其符合Rust语言的约定。
+
+5. rustup: Rust的工具链管理器，用于安装、升级和管理Rust的不同版本。它还允许你切换默认的Rust版本，以适应项目的需求。
+
+6. rls (Rust Language Server): 提供了与IDE（集成开发环境）集成所需的功能，例如代码补全、跳转到定义、查找引用等。支持的IDE包括Visual Studio Code、Atom等。
+
+7. cargo-make: 用于创建和运行自定义构建任务的工具。它允许开发者在构建过程中执行自定义的命令和脚本。
+
+8. miri: Rust的Mir Interpreter，用于执行和测试Rust程序在MIR（Mid-level Intermediate Representation）级别的代码。Miri有助于检测一些可能的内存安全问题。
+
+这只是Rust工具链中的一部分工具。Rust社区积极发展和维护工具链，以提高开发者的工作效率，并确保Rust代码的质量和安全性。你可以通过查阅Rust官方文档或使用cargo --list命令查看完整的工具列表。
+
+```
+
+- 跨平台开发和交叉编译
+```sh
+Rust 中的target概念主要是为了支持跨平台开发和交叉编译，以确保 Rust 代码可以在不同的操作系统和架构上正确运行。Rustc target指的是编译和构建目标平台Rust代码时需要的组件。不要混淆为Rust项目编译后产生的target文件夹。它的格式表示为：<arch>-<vendor>-<sys>-<abi>。其中：
+
+• <arch> 表示架构（例如，x86_64 表示 64 位的 x86 架构）。
+
+• <vendor> 表示供应商（一般为空）。
+
+• <sys> 表示操作系统（例如，linux、windows、macos 等）。
+
+• <abi> 表示二进制接口（例如，默认的是 "gnu"，也可以是 "musl"、"msvc" 等）。
+
+示例：
+
+• x86_64-unknown-linux-gnu: 64位 x86 架构，Linux 操作系统。
+
+• i686-pc-windows-msvc: 32位 x86 架构，Windows 操作系统，使用 MSVC 编译器。
+
+• aarch64-apple-ios: 64位 ARM 架构，iOS 操作系统。
+
+• wasm32-unknown-unknown: WebAssembly 目标。
+
+一般来说只需要rustup target add 命令安装某个目标平台组件即可，但对于一些特殊平台，可能需要手动安装相关的交叉编译工具链，例如windows msvc或者android NDK。
+
+下面是操作Target常用的命令：
+
+# 列出可用的target
+rustup target list
+# 安装一个新的rustup target add <target>
+rustup target add x86_64-unknown-linux-gnu
+# 把代码编译到指定平台
+cargo build --target x86_64-unknown-linux-gnu
+• 安装新目标：rustup target add <target>
+
+• 列出已安装的目标：rustup target list
+
+我在初学rust时，就经常混淆toolchain和target。现在我们知道了target是toolchain的一部分，编译到特定目标平台要使用对应目标平台的target。
+```
+
+- Rust编译器中的LLVM、MSVC、GNU
+```sh
+你可能听说过Rust编译器后端使用了LLVM，那为何还需要msvc和gnu呢，为啥Go和Java这些语言不需要呢？那我们来理一下Rust编译过程你就清楚了。
+
+Rust编译器实际上是由多个组件组成的，其中之一是“rustc”做为前端编译器，而编译器的后端使用了LLVM。
+
+1. 前端编译器（rustc）： 这一部分负责将Rust源代码转换为中间表示（Intermediate Representation，IR），该表示形式在Rust中称为“MIR”（Mid-level Intermediate Representation）。
+
+2. 后端编译器（LLVM）： MIR然后被传递给LLVM，LLVM是一个开源的编译器基础设施，提供了许多通用的优化和代码生成工具。LLVM将MIR转换为目标机器的机器码，并执行一系列优化，以生成最终的可执行文件。
+
+以Windows平台为例，Rust编译器就是rustc.exe，它首先会把源码编译为MIR，然后交给LLVM处理，LLVM继续把MIR先编译成LLVM IR进而编译为目标平台的机器码（此时还不是执行文件，只是一堆机器码）。往后就是target发挥作用了，target调用msvc或gnu来完成链接步骤，主要是链接目标平台库文件并生成可执行文件。这里整个编译过程几乎都是由rustc.exe完成的，因为它包含了llvm和调用target的代码，跟目标平台相关的工作则是由msvc或gnu来完成。msvc和gnu是c/c++的编译工具链，编译后的最终产物就是可执行文件或库，rustc在编译后期用到了它们提供的功能。
+
+整个编译过程大致如下：
+
+Source code -> MIR -> LLVM IR -> 机器码 -> Target链接 -> 可执行文件或库
+
+Go编译器是自己实现了链接目标平台的工作，因此不需要msvc或gnu。Java也是类似，所有的底层工作都是Java虚拟机实现的，javac仅仅是把源码编译成class字节码就结束了。
+```
+
 ### VScode编辑器配置
 https://code.visualstudio.com/docs/languages/rust
 
