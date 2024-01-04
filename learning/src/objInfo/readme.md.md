@@ -273,6 +273,60 @@ where
 ```
 
 ## 策略模式
+![](assets/Pasted%20image%2020240104205448.png)
+```rust
+trait TravelStrategy {  
+    fn travel(&self, distance: i16);      
+}
+
+
+struct TrainStrategy;  
+  
+impl TravelStrategy for TrainStrategy {  
+    fn travel(&self, distance: i16) {  
+        println!("Travelled {} km by train", distance);  
+    }  
+}
+
+// TrainStrategy结构体为空。我们在上面实现了一个travel方法，它只是打印旅行的距离。
+
+struct CarStrategy;  
+  
+impl TravelStrategy for CarStrategy {  
+    fn travel(&self, distance: i16) {  
+        println!("Travelled {} km by car", distance);  
+    }  
+}
+
+struct TravelHub<T: TravelStrategy> {  
+    strategy: T,  
+}
+
+//我们在这里使用泛型，T: TravelStrategy意味着我们可以拥有任何类型，只要它实现了TravelStrategy特征。
+//为什么是泛型？泛型使得在具体类中传递更容易，而无需求助于Box或类似的方法，并且它使代码更具可读性。
+impl<T: TravelStrategy> TravelHub<T> {  
+    fn new(strategy: T)->Self {  
+        Self {  
+            strategy  
+        }  
+    }  
+  
+    fn customer_travel(&self, distance:i16) {  
+        self.strategy.travel(distance);  
+    }  
+}
+//1，首先定义一个构造函数，它获取一个具体类作为形参。这个具体的类必须实现TravelStrategy特性。
+//2，然后我们定义customer_travel方法，它只调用所选策略上的travel方法。
+
+//用TrainStrategy作为参数实例化一个travelhub。由于TrainStrategy实现了TravelStrategy特性，我们可以将其作为参数传递。
+fn main() {  
+	// Travelled 20 km by train
+    let travelhub = TravelHub::new(TrainStrategy{});  
+    travelhub.customer_travel(20);  
+}
+
+
+```
 
 ```
 上节说到，模板方法变化一下就能成策略模式，怎么变化的？且看策略模式典型案例：
@@ -384,6 +438,10 @@ where
 
 编程的一大挑战就是为了应对变化，开发者知道的招式变化越多，应对的就越从容，使用看起来正确实际上却会逐渐失控的招式，只会味道越来越坏。变化就是“可扩展性”，谈到“可扩展性”，面向对象说这个我熟，“可扩展性”就是面向对象的目标之一啊！先别轻信，完美应对变化可不容易，即便资深的面向对象专家，都不敢说他写的每个东西都真能满足“单一职责”。。单一职责的足够“原子化”吗？面向对象思想有个老毛病，就是不够具体，让人抓不到，又让人以为抓到了，实际上是面向对象规定的东西，包括它的评论、解释大都泛泛而谈，没有一个度，很难意见统一。
 ```
+
+
+
+
 
 
 ## 原型法

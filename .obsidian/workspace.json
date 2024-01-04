@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "learning/src/objInfo/readme.md.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "08494dd2bbf04639",
@@ -86,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "learning/src/objInfo/readme.md.md"
               }
             }
           },
@@ -96,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "learning/src/objInfo/readme.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "learning/src/objInfo/readme.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,8 +157,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "46583745f2f7b888",
+  "active": "b2feb97054841031",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20240104205448.png",
+    "README.md",
     "learning/target/debug/incremental/learning-2jcueezi2foim/s-gs1p4osedl-jgsckk-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-2jcueezi2foim/s-gs1p4osedl-jgsckk-working",
     "learning/target/debug/incremental/learning-2jcueezi2foim/s-gs1p4osedl-jgsckk.lock",
@@ -170,7 +171,6 @@
     "learning/target/debug/incremental/learning-2jcueezi2foim/s-gs1p29dwda-1hjbo64-working",
     "learning/target/debug/incremental/learning-2a1fsxd0s974g/s-gs1p29dwdb-9lfc76-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-2a1fsxd0s974g/s-gs1p29dwdb-9lfc76-working",
-    "learning/target/debug/incremental/learning-2jcueezi2foim/s-gs1p29dwda-1hjbo64.lock",
     "learning/src/asyncNote/readme.md"
   ]
 }
