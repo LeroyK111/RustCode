@@ -161,17 +161,17 @@
   },
   "active": "96e4d9a3d49fdabc",
   "lastOpenFiles": [
-    "webFramework/rustRocket/src/main.rs",
-    "webFramework/rustRocket/Cargo.toml",
-    "webFramework/rustRocket/src",
-    "webFramework/rustRocket/Cargo.lock",
-    "webFramework/rustRocket",
-    "cloud/readme.md",
-    "cloud",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gs9qpyoq54-11bndo3-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gs9qpyoq54-11bndo3-working",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gs9qpyoq54-kg8bzx-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gs9qpyoq54-kg8bzx-working",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gs9qpyoq54-11bndo3.lock"
+    "gameEngine/readme.md",
+    "gameEngine",
+    "Embedded/polodb-example/src/main.rs",
+    "Embedded/polodb-example/src",
+    "Embedded/polodb-example/Cargo.toml",
+    "Embedded/polodb-example",
+    "Embedded",
+    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gsd0jywq0h-1hzqoe0-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gsd0jywq0h-1hzqoe0-working",
+    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gsd0jywq09-ks5fl8-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gsd0jywq09-ks5fl8-working",
+    "cloud/readme.md"
   ]
 }
