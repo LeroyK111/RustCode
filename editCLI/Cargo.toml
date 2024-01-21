@@ -1,0 +1,52 @@
+[package]
+name = "editCLI"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# 我们将使用相当多的依赖库来创建一个漂亮的CLI：
+
+# clap：是一个非常容易使用的命令行参数解析器，它使用预定义的结构体进行管理。
+
+
+# sqlx：是一个简单的SQL绑定器，不是ORM for rust，这使得在我们的数据库上执行SQL查询非常容易。
+
+
+# serde：是一个流行的序列化与反序列化库
+
+
+# chrono：与时间相关库
+
+
+# rand：是生成随机数的库
+
+
+# dotenv：用于从.env文件中读取信息
+
+
+# tabled：用于将结构体样式化为表
+
+
+# tokio：异步运行时
+
+
+# bunt和inquire：是CLI格式化和提示库
+
+
+# human-panic：给人类看的Panic信息
+
+[dependencies]
+clap = {version = "4.3.23", features = ["derive"]}
+sqlx = { version = "0.7", features = [ "runtime-tokio", "sqlite" ] }
+serde = {version = "*", features=["derive"]}
+bunt = "*"
+inquire = "*"
+tokio = {version="*", features=["full"]}
+chrono = "*"
+rand = "*"
+dotenv = {version="*"}
+tabled ={ version="*"}
+human-panic = "*"
+
+
