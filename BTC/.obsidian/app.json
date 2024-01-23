@@ -1,5 +1,6 @@
 {
   "attachmentFolderPath": "assets",
   "useMarkdownLinks": true,
-  "newFileLocation": "folder"
+  "newFileLocation": "folder",
+  "showInlineTitle": false
 }
