@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "sql/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4f5d777a3d87e0b1",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "sql/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "sql/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "sql/readme.md"
               }
             }
           }
@@ -159,8 +158,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "96e4d9a3d49fdabc",
+  "active": "fcf7fc65e8793c78",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20240123205054.png",
+    "learning/src/objInfo/assets/Pasted image 20240123204925.png",
+    "learning/src/objInfo/assets/Pasted image 20240123204809.png",
+    "learning/src/objInfo/assets/Pasted image 20240123204752.png",
+    "learning/src/objInfo/assets/Pasted image 20240123204743.png",
+    "learning/src/objInfo/assets/Pasted image 20240123204329.png",
+    "learning/src/objInfo/assets/Pasted image 20240123204314.png",
+    "README.md",
     "learning/target/debug/incremental/learning-1uqoargsltu80/s-gsmnkebx7q-k0el0k-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-1uqoargsltu80/s-gsmnkebx7q-k0el0k-working",
     "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gsmnkebx7q-jrjwrg-working/dep-graph.part.bin",
@@ -171,7 +178,6 @@
     "learning/target/debug/incremental/learning-1uqoargsltu80/s-gslu5amuxt-1kme10g-working",
     "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gslu5amuxr-16omvdm-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gslu5amuxr-16omvdm-working",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gslu5amuxr-16omvdm.lock",
     "应用方向/readme.md",
     "cloud/ptrace.md",
     "gameEngine/readme.md",

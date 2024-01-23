@@ -1,5 +1,6 @@
 {
   "accentColor": "",
   "showViewHeader": false,
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "baseFontSize": 18
 }
