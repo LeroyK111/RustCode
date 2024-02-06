@@ -1,5 +1,17 @@
 # 云服务构建
 
+## Rust微服务Rust-RPC框架
+krpc: https://github.com/kwsc98/krpc-rust
+
+实现一个基于netty单路复用网络模型的rpc框架，支持spring-boot启动，支持zookeeper，nacos注册中心。
+
+
+## RustDesk 远程桌面
+
+RustDesk -- 基于 Rust 的开源远程桌面
+RustDesk 是一个基于 Rust 开发的开源远程桌面，TeamViewer 的替代品。RustDesk 开箱即用，无需任何配置。您完全掌控数据，不用担心安全问题。您可以使用我们的注册/中继服务器， 或者自己设置， 亦或者开发您的版本。
+
+
 
 
 ## 分布式存储

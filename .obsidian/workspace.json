@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ai/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ai/readme.md"
               }
             }
           },
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ai/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ai/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,11 +159,23 @@
   },
   "active": "4ba521da139103f3",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5t7yxl4k-es4o09-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5t7yxl4k-es4o09-working",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5t7yxl4k-p9l1ey-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5t7yxl4k-p9l1ey-working",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5t7yxl4k-es4o09.lock",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5t7yxl4k-p9l1ey.lock"
+    "应用方向/重写基础软件.md",
+    "cloud/readme.md",
+    "real-ime-message/readme.md",
+    "real-ime-message/target/debug/ws_cli.d",
+    "real-ime-message/target/debug/ws_cli",
+    "real-ime-message/target/debug/deps/ws_cli-8543bb3e28db1211",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/yyg3e7vn3hkvydh.o",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/ymet4eybr0mam35.o",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/work-products.bin",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/umy9kmkonpave50.o",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/sb8t85hkd9adb3y.o",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/s597icqcnwlys71.o",
+    "real-ime-message/target/debug/incremental/ws_cli-2qhqqj40m0udl/s-gt5vh0q06j-17mt1vu-ctsrvpx0b77uhwrze9gc4pkqm/rlu8j8kuhzqafv2.o",
+    "learning/src/asyncNote/readme.md",
+    "learning/src/rwFile/readme.md",
+    "learning/src/closure/demo.md",
+    "README.md",
+    "learning/src/derive-with/demo.md"
   ]
 }
