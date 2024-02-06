@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "5cb87def900891f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc236d4530e68aaa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ba521da139103f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2849d38d74e5e1d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab91c02e0ad3ae69",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77bf2521000343ec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2f2b0143b026eb56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d8bd8bccdc029b73",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "d25ac51326ccfb62",
+    "type": "split",
+    "children": [
+      {
+        "id": "e95a538836658f7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4580544294fea023",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "28c1d4e4b0eeb05e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "137c050f43781cf4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "62daf9d69afc7276",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "49d8fb5db3dd8281",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "4ba521da139103f3",
+  "lastOpenFiles": [
+    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5t7yxl4k-es4o09-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5t7yxl4k-es4o09-working",
+    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5t7yxl4k-p9l1ey-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5t7yxl4k-p9l1ey-working",
+    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5t7yxl4k-es4o09.lock",
+    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5t7yxl4k-p9l1ey.lock"
+  ]
+}
