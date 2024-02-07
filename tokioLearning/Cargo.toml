@@ -1,0 +1,14 @@
+[package]
+name = "tokioLearning"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+# Tokio是Rust中异步编程的运行时，围绕Future的抽象而构建。它利用了Rust的所有权和并发模型的强大功能来并发处理多个任务。它提供了一系列用于编写异步代码的实用程序，包括I/O驱动程序、计时器和异步任务调度器。
+# 了解Tokio的高级概念可以进一步帮助我们创建更复杂和高效的应用程序。
+
+[dependencies]
+tokio = { version = "1.28.2", features = ["full"] }
+tokio-stream = "0.1.14"
