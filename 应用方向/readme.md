@@ -72,3 +72,66 @@ Dropbox，在其核心文件存储系统中
 Honeypot，在Searchspot，他们用于寻找顶尖科技人才的搜索引擎中
 
 HuggingFace，在他们最新的开源机器学习框架Candle中
+
+ntpd-rs, 是一个工具，用于同步你的计算机时钟，实现NTP和NTS协议。它是用Rust编写的，重点是安全性和稳定性。它支持客户端和服务器端。
+
+aerugo,用Rust编写的面向安全应用的实时操作系统。该项目是欧洲航天局开发的，针对基于32位ARM Cortex-M7处理器的ATSAMV71Q21微控制器。它的设计灵感来自于纯函数式编程范式和transputers架构。
+
+
+```
+XIU
+
+XIU是用纯Rust开发的一款简单和安全的流媒体服务器，目前支持的流媒体协议包括RTMP[cluster]/RTSP/WebRTC[Whip/Whep]/HLS/HTTPFLV。
+
+支持多平台（Linux/Mac/Windows）
+
+
+
+支持RTMP
+
+支持发布和订阅H264/AAC 直播流；
+
+支持秒开（Gop cache）；
+
+支持转换到HLS/HTTP-FLV协议；
+
+支持部署集群；
+
+支持RTSP
+
+支持通过TCP（Interleaved）和UDP发布或订阅H.265/H.264/AAC流；
+
+支持转换到RTMP/HLS/HTTP-FLV协议；
+
+
+支持WebRTC（Whip/Whep）
+
+支持使用Whip发布rtc流；
+
+支持使用Whep订阅rtc流；
+
+支持转换到RTMP/HLS/HTTP-FLV协议；
+
+
+支持订阅HLS/HTTPFLV直播流
+
+
+支持命令行或者配置文件配置服务
+
+
+支持HTTP API/notify
+
+支持查询流信息；
+
+支持流事件通知；
+
+支持token鉴权
+
+
+支持把直播流录制成HLS协议(m3u8+ts)文件
+```
+
+Servo - 并行浏览器引擎, Servo是一个用Rust语言编写的web浏览器引擎原型，支持WebGL和WebGPU，适用于桌面、移动和嵌入式应用程序。它目前在64位macOS、64位Linux、64位Windows和Android上开发。
+
+
+Motūrus OS, Motūrus项目是为云构建的一个简单、快速、安全的操作系统(Motūrus OS)。更具体地说，Motūrus OS(有时称为Motor OS)是一种针对基于虚拟机(如web服务、“无服务器”、边缘缓存等)的新操作系统。Motūrus OS是一个基于微内核的操作系统，用Rust构建，专门针对虚拟化工作负载。它目前支持基于x64 kvm的虚拟机。
