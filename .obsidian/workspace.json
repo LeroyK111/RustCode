@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai/readme.md",
+                "file": "pinProject/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ai/readme.md"
+                "file": "pinProject/readme.md"
               }
             }
           },
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ai/readme.md",
+                "file": "pinProject/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ai/readme.md",
+                "file": "pinProject/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,17 +159,21 @@
   },
   "active": "4ba521da139103f3",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5vy7lp7e-1bq833e-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5vy7lp7e-1bq833e-working",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5vy7lp6b-1bkbbrp-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5vy7lp6b-1bkbbrp-working",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5vy7lp7e-1bq833e.lock",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5vy7lp6b-1bkbbrp.lock",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5vy21r0o-1elrgcp-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1uqoargsltu80/s-gt5vy21r0o-1elrgcp-working",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5vy21r0o-1fyn81r-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5vy21r0o-1fyn81r-working",
-    "learning/target/debug/incremental/learning-1o6273eqjxz85/s-gt5vy21r0o-1fyn81r.lock",
+    "learning/target/debug/incremental/learning-2maaifzsniotf/s-gtgdr4222l-186zig6-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-2maaifzsniotf/s-gtgdr4222l-186zig6-working",
+    "learning/target/debug/incremental/learning-2maaifzsniotf/s-gtgdr4222l-186zig6.lock",
+    "learning/target/debug/incremental/learning-35m11eco8sjqc/s-gtgdr421oc-605m4w-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-35m11eco8sjqc/s-gtgdr421oc-605m4w-working",
+    "learning/target/debug/incremental/learning-35m11eco8sjqc/s-gtgdr421oc-605m4w.lock",
+    "learning/target/debug/deps/rmetanqzCw9/lib.rmeta",
+    "learning/target/debug/deps/rmetanqzCw9",
+    "learning/target/debug/deps/rmetacW0Qos/lib.rmeta",
+    "learning/target/debug/deps/rmetacW0Qos",
+    "learning/target/debug/deps/rmetaACdiyH/lib.rmeta",
+    "learning/src/objInfo/assets/Pasted image 20240216114403.png",
+    "learning/src/objInfo/assets/Pasted image 20240216113934.png",
+    "learning/src/objInfo/assets/Pasted image 20240216113844.png",
+    "ai/readme.md",
     "应用方向/重写基础软件.md",
     "cloud/readme.md",
     "real-ime-message/readme.md",
