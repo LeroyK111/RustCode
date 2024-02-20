@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "dc236d4530e68aaa",
+        "id": "3cd98aed37ec5b7f",
         "type": "tabs",
         "children": [
           {
-            "id": "4ba521da139103f3",
+            "id": "bef156de66d9e47e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pinProject/readme.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -84,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "pinProject/readme.md"
-              }
+              "state": {}
             }
           },
           {
@@ -95,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pinProject/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pinProject/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,8 +149,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4ba521da139103f3",
+  "active": "bef156de66d9e47e",
   "lastOpenFiles": [
+    "learning/readme.md",
+    "应用方向/编译器.md",
+    "learning/src/objInfo/assets/Pasted image 20240220175109.png",
+    "learning/src/objInfo/assets/Pasted image 20240220175054.png",
+    "pinProject/readme.md",
     "learning/target/debug/incremental/learning-2maaifzsniotf/s-gtgdr4222l-186zig6-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-2maaifzsniotf/s-gtgdr4222l-186zig6-working",
     "learning/target/debug/incremental/learning-2maaifzsniotf/s-gtgdr4222l-186zig6.lock",
@@ -169,7 +166,6 @@
     "learning/target/debug/deps/rmetanqzCw9",
     "learning/target/debug/deps/rmetacW0Qos/lib.rmeta",
     "learning/target/debug/deps/rmetacW0Qos",
-    "learning/target/debug/deps/rmetaACdiyH/lib.rmeta",
     "learning/src/objInfo/assets/Pasted image 20240216114403.png",
     "learning/src/objInfo/assets/Pasted image 20240216113934.png",
     "learning/src/objInfo/assets/Pasted image 20240216113844.png",
