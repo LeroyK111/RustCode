@@ -86,6 +86,25 @@ cargo install cargo-nextest
 cargo install cargo-make
 ```
 
+```shell
+# cargo-machete是一个Cargo插件，用于从项目中删除未使用的依赖项
+cargo install cargo-machete
+cargo machete
+```
+
+```sh
+# Testcontainers为项目在本地添加的基础设施进行测试可能相当棘手，Testcontainers的目标是通过提供一个开源框架来解决这个问题，该框架为你的应用程序提供本地轻量级容器，这些容器在使用后可以立即丢弃
+cargo add testcontainers
+```
+
+```sh
+# tokio-console是一个对于使用Tokio的Rust异步程序的调试器。
+```
+
+```sh
+# cargo-flamegraph是一个用Rust编写生成火焰图的程序，火焰图是分布式请求跟踪的可视化，最初是用Perl编写的，但现在已经移植到Rust中。通过使用火焰图，可以更容易地看到错误(例如，竞争条件)可能来自何处，或者可能在何处出现内存泄漏，异常高延迟或难以通过常规日志调试的错误等问题，可以通过这种方式更容易地解决，因为你可以可视化的看到调用堆栈。
+cargo install flamegraph
+```
 ### windows安装方式
 [安装页面](https://www.rust-lang.org/zh-CN/tools/install)
 前置环境：[Microsoft C++构建工具]()
