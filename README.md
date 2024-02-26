@@ -6738,6 +6738,9 @@ $ cargo doc --open
 
 
 #### webAssembly开发
+Jco 1.0 发布
+我们很高兴地宣布 Jco 1.0 版本：为 WebAssembly 组件和 WASI 0.2 1 构建的原生 Javascript WebAssembly 工具链和运行时。Jco 可以在 Node.js 内原生运行 Wasm 组件，从而可以轻松获取用不同编程编写的库语言并使用 Node.js 运行时执行它们。通过实现整个 WASI 0.2 API 接口，这些组件可以访问网络、文件系统以及 Node.js 运行时中可用的其他系统 API。
+
 
 
 ##### 例子
