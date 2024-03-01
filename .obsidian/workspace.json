@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "machine_learning/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d25ac51326ccfb62",
@@ -86,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "machine_learning/readme.md"
               }
             }
           },
@@ -96,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "machine_learning/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "machine_learning/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +159,20 @@
   },
   "active": "bef156de66d9e47e",
   "lastOpenFiles": [
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq-working",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m.lock",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq.lock",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tdel9k-1b0fmqb-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tdel9k-1b0fmqb-working",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2-working",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2.lock",
+    "README.md",
+    "machine_learning/readme.md",
     "asset-bundler/readme.md",
-    "asset-bundler",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw4qg477w-1uf41zm-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw4qg477w-1uf41zm-working",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw4qg477f-ujudcq-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw4qg477f-ujudcq-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw4qg477w-1uf41zm.lock",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw4qg477f-ujudcq.lock",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtv1xp70ch-cc8h8j-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtv1xp70ch-cc8h8j-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtv1xp70cx-q4ahmy-working/dep-graph.part.bin",
     "webFramework/webtransport-example/readme.md",
     "learning/src/OOM/cveRS.md",
     "learning/readme.md",
@@ -188,7 +190,6 @@
     "learning/src/asyncNote/readme.md",
     "learning/src/rwFile/readme.md",
     "learning/src/closure/demo.md",
-    "README.md",
     "learning/src/derive-with/demo.md"
   ]
 }

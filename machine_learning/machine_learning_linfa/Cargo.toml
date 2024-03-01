@@ -1,0 +1,13 @@
+[package]
+name = "machine_learning_linfa"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+linfa = "0.7.0"
+linfa-linear = "0.7.0"
+ndarray = "0.15.6"
+polars = { version = "0.35.4", features = ["ndarray"]}
+
