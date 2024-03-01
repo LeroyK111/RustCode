@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3cd98aed37ec5b7f",
+        "id": "08f0f2f0b4824cf0",
         "type": "tabs",
         "children": [
           {
-            "id": "bef156de66d9e47e",
+            "id": "2b0dd49f42b243d1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "machine_learning/readme.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -84,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "machine_learning/readme.md"
-              }
+              "state": {}
             }
           },
           {
@@ -95,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "machine_learning/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "machine_learning/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,8 +149,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bef156de66d9e47e",
+  "active": "2b0dd49f42b243d1",
   "lastOpenFiles": [
+    "machine_learning/readme.md",
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working",
     "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq-working/dep-graph.part.bin",
@@ -169,9 +162,7 @@
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tdel9k-1b0fmqb-working",
     "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2.lock",
     "README.md",
-    "machine_learning/readme.md",
     "asset-bundler/readme.md",
     "webFramework/webtransport-example/readme.md",
     "learning/src/OOM/cveRS.md",
