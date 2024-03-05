@@ -11,8 +11,12 @@
             "id": "2b0dd49f42b243d1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "应用方向/代码覆盖率.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -80,7 +84,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "应用方向/代码覆盖率.md"
+              }
             }
           },
           {
@@ -89,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "应用方向/代码覆盖率.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "应用方向/代码覆盖率.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,6 +159,8 @@
   },
   "active": "2b0dd49f42b243d1",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20240305201233.png",
+    "learning/src/objInfo/assets/Pasted image 20240305201033.png",
     "machine_learning/readme.md",
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working",
