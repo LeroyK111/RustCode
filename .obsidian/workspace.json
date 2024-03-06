@@ -11,12 +11,8 @@
             "id": "2b0dd49f42b243d1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "应用方向/数据可视化.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -84,9 +80,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "应用方向/数据可视化.md"
-              }
+              "state": {}
             }
           },
           {
@@ -95,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/数据可视化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/数据可视化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,22 +151,23 @@
   },
   "active": "2b0dd49f42b243d1",
   "lastOpenFiles": [
+    "应用方向/数据可视化.md",
+    "应用方向/pickleDB.md",
+    "thread_adv/src/main.rs",
+    "thread_adv/src",
+    "thread_adv/Cargo.toml",
+    "thread_adv",
     "learning/src/objInfo/assets/Pasted image 20240307205552.png",
     "learning/src/objInfo/assets/Pasted image 20240307205324.png",
     "learning/src/objInfo/assets/Pasted image 20240307205212.png",
-    "应用方向/从语法到构建软件.md",
-    "应用方向/数据可视化.md",
-    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu2u0zu4yj-1b2zgb9-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu2u0zu4yj-1b2zgb9-working",
-    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu2u0zu4yj-1b2zgb9.lock",
-    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu2u0zu4oq-9ixe48-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu2u0zu4oq-9ixe48-working",
-    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu2u0zu4oq-9ixe48.lock",
-    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu2twgjcdt-1p9qd3a-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu2twgjcdt-1p9qd3a-working",
-    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu2twgjcdu-1jeu6bv-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu2twgjcdu-1jeu6bv-working",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu3xmsyhqk-1wfxd4w-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu3xmsyhqk-1wfxd4w-working",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu3xmsyhqr-1qfej7n-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu3xmsyhqr-1qfej7n-working",
+    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu3xmsyhqr-1qfej7n.lock",
+    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu3xmsyhqk-1wfxd4w.lock",
     "应用方向/代码覆盖率.md",
+    "应用方向/从语法到构建软件.md",
     "learning/src/objInfo/assets/Pasted image 20240305201233.png",
     "learning/src/objInfo/assets/Pasted image 20240305201033.png",
     "machine_learning/readme.md",
