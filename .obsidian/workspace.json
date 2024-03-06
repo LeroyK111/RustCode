@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/代码覆盖率.md",
+                "file": "应用方向/从语法到构建软件.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/代码覆盖率.md"
+                "file": "应用方向/从语法到构建软件.md"
               }
             }
           },
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/代码覆盖率.md",
+                "file": "应用方向/从语法到构建软件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/代码覆盖率.md",
+                "file": "应用方向/从语法到构建软件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,19 +159,21 @@
   },
   "active": "2b0dd49f42b243d1",
   "lastOpenFiles": [
+    "应用方向/代码覆盖率.md",
+    "应用方向/从语法到构建软件.md",
+    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu1spa3580-dksi5u-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu1spa3580-dksi5u-working",
+    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu1spa3580-dksi5u.lock",
+    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu1spa34dx-1n7sdek-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu1spa34dx-1n7sdek-working",
+    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu1spa34dx-1n7sdek.lock",
+    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu1s8hotw2-1ff5y9s-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu1s8hotw2-1ff5y9s-working",
+    "learning/target/debug/incremental/learning-3flcdzin70nd1/s-gu1s8hotw2-1ff5y9s.lock",
+    "learning/target/debug/incremental/learning-3ah5o8pamaby0/s-gu1s8hotqg-m7isqq-working/dep-graph.part.bin",
     "learning/src/objInfo/assets/Pasted image 20240305201233.png",
     "learning/src/objInfo/assets/Pasted image 20240305201033.png",
     "machine_learning/readme.md",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq-working",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tjo3oo-orlu9m.lock",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tjo3op-1cfw5jq.lock",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tdel9k-1b0fmqb-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gtw7tdel9k-1b0fmqb-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gtw7tdel9s-lqrln2-working",
     "README.md",
     "asset-bundler/readme.md",
     "webFramework/webtransport-example/readme.md",
