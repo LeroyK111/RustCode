@@ -11,12 +11,8 @@
             "id": "b1022abb70603ff8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wasm-example/readme.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wasm-example/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wasm-example/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,13 +130,10 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "wasm-example/readme.md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,16 +151,19 @@
   },
   "active": "b1022abb70603ff8",
   "lastOpenFiles": [
-    "learning/src/objInfo/assets/Pasted image 20240315225348.png",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu76djpd2u-vi4811-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu76djpd2u-vi4811-working",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu76djpd34-d8na3f-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu76djpd34-d8na3f-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu76djpd2u-vi4811.lock",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu76djpd34-d8na3f.lock",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu4id0eax2-1efkl3d-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-15qc6osivawty/s-gu4id0eax2-1efkl3d-working",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu4id0eax9-144xqd8-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gu4id0eax9-144xqd8-working"
+    "webFramework/api-rate-limiting/src/main.rs",
+    "webFramework/api-rate-limiting/src",
+    "webFramework/api-rate-limiting/Cargo.lock",
+    "webFramework/api-rate-limiting/readme.md",
+    "webFramework/api-rate-limiting/Cargo.toml",
+    "webFramework/api-rate-limiting",
+    "wasm-example/src/lib.rs",
+    "wasm-example/readme.md",
+    "wasm-example/src",
+    "wasm-example/Cargo.toml",
+    "wasm-example/Cargo.lock",
+    "wasm-example",
+    "tokioLearning/src/fileDeom.rs",
+    "learning/src/objInfo/assets/Pasted image 20240315225348.png"
   ]
 }
