@@ -160,6 +160,7 @@
   },
   "active": "b1022abb70603ff8",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gulpx12aen-111wqx8-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gulpx12aen-111wqx8-working",
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gulpx12aen-rwk6d3-working/dep-graph.part.bin",
@@ -172,6 +173,19 @@
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gulpwq4grz-6ts8cj-working/dep-graph.part.bin",
     "learning/target/debug/incremental/learning-15qc6osivawty/s-gulpwq4grz-6ts8cj-working",
     "learning/target/debug/incremental/learning-qiihj3mssx7c/s-gulpwq4grz-dctwqu-working/dep-graph.part.bin",
+=======
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gulo1co652-10wb2i8-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gulo1co652-10wb2i8-working",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gulo1co652-10wb2i8.lock",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gulo1co3sx-1kybbbh-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gulo1co3sx-1kybbbh-working",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gulo1co3sx-1kybbbh.lock",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gulnwtt8t9-sg2vc2-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gulnwtt8t9-sg2vc2-working",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gulnwtt8sg-ql59nu-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gulnwtt8sg-ql59nu-working",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gulnwtt8t9-sg2vc2.lock",
+>>>>>>> d6ebaa7 (1)
     "应用方向/常见陷阱.md",
     "mobile_learning/slint.md",
     "bugs/10个常见RUST生命周期.md",
