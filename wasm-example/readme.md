@@ -299,3 +299,53 @@ use napi::bindgen_prelude::*;use image::io::Reader;use image::ImageFormat;use
 
 当然，尽管有这些优点，但是napi-rs只与Node.js兼容，同时还需要使用Node生态系统来更新CLI，从rust优先的角度来看，这是一个有点奇怪的方式。但是，napi-rs是用Rust开始编写Node.js的一种非常简单的方法。如果要为浏览器编写一些通用WASM代码，还是需要使用wasm-pack或wasm-bindgen。
 
+
+# 补充
+
+WebAssembly (Wasm)和Rust已经成为一个强大的组合，改变了软件工程的面貌。Wasm是一种二进制指令格式，可以在web浏览器上高性能的执行，为web应用程序提供接近本机的速度。Rust与Wasm的无缝集成，可以专注于性能和内存安全，这样就创建了一个强大的组合。
+
+WebAssembly是一个底层虚拟机，运行用C、C++和Rust等语言编写的代码。它为在web上部署应用程序提供了一个可移植的编译目标。Wasm允许开发人员使用传统上为系统编程保留的语言，而不是依赖JavaScript来完成性能密集型任务。
+
+![](../learning/src/objInfo/assets/Pasted%20image%2020240329223349.png)
+
+Wasm是一个基于栈的虚拟机，具有紧凑的二进制格式。这种格式被设计成既能快速解码又能在网络上传输。它在浏览器中与JavaScript一起运行，允许开发人员利用这两种语言的优势进行项目开发。
+
+Rust的内存安全特性使其成为编写Wasm模块的理想语言。Rust编译器可以直接针对WebAssembly，将Rust代码翻译成Wasm二进制文件。这种集成确保了生成的模块不仅性能良好，而且安全。
+
+开发人员可以用JavaScript以外的语言编写代码，扩大了可用工具的范围。Wasm模块可以在任何支持该标准的环境中运行，而不局限于web浏览器。
+
+![](../learning/src/objInfo/assets/Pasted%20image%2020240329223354.png)
+
+WASM应用案例
+
+**游戏开发：**Wasm非常适合图像密集型任务，使其成为基于浏览器的游戏的绝佳选择。
+
+**多媒体处理**：视频和音频编辑应用程序受益于Wasm的性能，提供无缝的用户体验。
+
+**数据处理：**Wasm用于图像识别和机器学习等任务，在这些任务中，速度至关重要。
+
+**集成现有代码****：**Wasm可以将遗留代码合并到现代web应用程序中，而无需完全重写。
+
+**微服务架构：**Wasm模块可以独立部署，从而形成微服务。
+
+**边缘计算：**Wasm有助于将计算推到边缘，减少关键操作的延迟。
+
+Rust & WASM学习资源：
+
+Rust and WebAssembly：
+
+https://rustwasm.github.io/docs/book/
+
+  
+
+从Rust编译到WebAssembly：
+
+https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm
+
+  
+
+  
+
+总结
+
+WebAssembly与Rust结合在一起，代表了web开发的范式转变。它为浏览器带来高性能计算的能力，加上Rust的安全特性，为开发人员打开了新的可能性。随着生态系统的发展，WebAssembly将在未来的软件工程中扮演关键角色，提供前所未有的速度、可移植性和灵活性。

@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "79f232ceec955c6f",
+    "id": "714629686665a21a",
     "type": "split",
     "children": [
       {
-        "id": "9c70beceeb9f8e13",
+        "id": "3b6da1c2956ddcaa",
         "type": "tabs",
         "children": [
           {
-            "id": "b1022abb70603ff8",
+            "id": "92e3e48ad6262e0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "wasm-example/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6d44128efa954efa",
+    "id": "fa0d8fca87bd2967",
     "type": "split",
     "children": [
       {
-        "id": "ca5a5447447e5b7d",
+        "id": "e8e92acc9d30569f",
         "type": "tabs",
         "children": [
           {
-            "id": "0c4579b7e324de46",
+            "id": "9a65f67f08ccd856",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "d6b28e94378531c8",
+            "id": "0de0643680a66a13",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "4f09f964a640ae09",
+            "id": "e838cab7e8e841ce",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,34 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "f77bd847b12fe9b8",
+    "id": "da5e57bdf4e59161",
     "type": "split",
     "children": [
       {
-        "id": "d89b5e6a771f02b8",
+        "id": "ab40ce85a7f740e0",
         "type": "tabs",
         "children": [
           {
-            "id": "bdf85f3edd0cd5eb",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
-            }
-          },
-          {
-            "id": "dc06c2fe2e64e72a",
+            "id": "d2ccd77ae7dee93d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "wasm-example/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,19 +97,19 @@
             }
           },
           {
-            "id": "00e30753f53e5fba",
+            "id": "6232636624703409",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "wasm-example/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "000eb9bd230c91a4",
+            "id": "3552eb97eb08677b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +120,7 @@
             }
           },
           {
-            "id": "6a9f6a841171b926",
+            "id": "e7b575a4be2e8009",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -141,12 +130,23 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "8ef115c5f58430a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wasm-example/readme.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,8 +158,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b1022abb70603ff8",
+  "active": "8ef115c5f58430a8",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "应用方向/面试题.md",
     "letterTools/serdeLearning/src/main.rs",
     "letterTools/serdeLearning/src",
@@ -180,5 +181,15 @@
     "webFramework/api-rate-limiting/readme.md",
     "wasm-example/readme.md",
     "learning/src/objInfo/assets/Pasted image 20240315225348.png"
+=======
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gur6o9d5rw-sk7a15-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gur6o9d5rw-sk7a15-working",
+    "learning/target/debug/incremental/learning-1ykjxogzg215m/s-gur6o9d5rw-sk7a15.lock",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gur6o9d5ke-euapa5-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gur6o9d5ke-euapa5-working",
+    "learning/target/debug/incremental/learning-1q68y4hwa2c4k/s-gur6o9d5ke-euapa5.lock",
+    "learning/src/objInfo/assets/Pasted image 20240329223354.png",
+    "learning/src/objInfo/assets/Pasted image 20240329223349.png"
+>>>>>>> aed4386 (1)
   ]
 }
