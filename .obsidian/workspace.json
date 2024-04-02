@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "79f232ceec955c6f",
+    "id": "d3cad65e5e8a8df3",
     "type": "split",
     "children": [
       {
-        "id": "9c70beceeb9f8e13",
+        "id": "6b19be2ba1ca00dc",
         "type": "tabs",
         "children": [
           {
-            "id": "b1022abb70603ff8",
+            "id": "0b31c90746829bef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6d44128efa954efa",
+    "id": "aa76d8f3ecd0a1b3",
     "type": "split",
     "children": [
       {
-        "id": "ca5a5447447e5b7d",
+        "id": "d3466ffc4bc6ccb4",
         "type": "tabs",
         "children": [
           {
-            "id": "0c4579b7e324de46",
+            "id": "6935c9d083e0b1b2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "d6b28e94378531c8",
+            "id": "a8eaacb5df38f941",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "4f09f964a640ae09",
+            "id": "2c8c44d11cbc3590",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,34 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
-    "id": "f77bd847b12fe9b8",
+    "id": "fff47fb634dc3b61",
     "type": "split",
     "children": [
       {
-        "id": "d89b5e6a771f02b8",
+        "id": "0417f1de600fa4ca",
         "type": "tabs",
         "children": [
           {
-            "id": "bdf85f3edd0cd5eb",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
-            }
-          },
-          {
-            "id": "dc06c2fe2e64e72a",
+            "id": "f5b49c5fe3126941",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,19 +92,18 @@
             }
           },
           {
-            "id": "00e30753f53e5fba",
+            "id": "5a1dce208b9938f7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "000eb9bd230c91a4",
+            "id": "457ba8be897dfa04",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +114,7 @@
             }
           },
           {
-            "id": "6a9f6a841171b926",
+            "id": "30e9a9af4ea57a63",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -141,12 +124,21 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "e0e885e29a5a9f1f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,8 +150,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b1022abb70603ff8",
+  "active": "0b31c90746829bef",
   "lastOpenFiles": [
+    "应用方向/信号处理.md",
     "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh/work-products.bin",
     "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh/dep-graph.bin",
     "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh/query-cache.bin",
@@ -170,34 +163,8 @@
     "learning/target/debug/incremental/learning-32zpeshceb4nn/s-guvmb8298l-yig08x-2a4qxy5aha3b6cviggl6a8kos",
     "learning/target/debug/deps/liblearning-4c900e6c946ade2b.rmeta",
     "learning/target/debug/deps/liblearning-85759c0c2ea18390.rmeta",
-    "learning/target/debug/deps/learning-4c900e6c946ade2b.d",
     "应用方向/hawkeye.md",
-<<<<<<< HEAD
-    "learning/src/objInfo/assets/Pasted image 20240329223354.png",
-    "learning/src/objInfo/assets/Pasted image 20240329223349.png",
-    "应用方向/面试题.md",
-    "letterTools/serdeLearning/src/main.rs",
-    "letterTools/serdeLearning/src",
-    "letterTools/serdeLearning/Cargo.toml",
-    "letterTools/serdeLearning",
-    "autoVerification/readme.md",
-    "autoVerification",
-    "learning/target/debug/incremental/learning-h1p8phvu09k/s-guovw0q104-197l577-gc7em9romkfn3vh4kgzbh7nu/work-products.bin",
-    "learning/target/debug/incremental/learning-h1p8phvu09k/s-guovw0q104-197l577-gc7em9romkfn3vh4kgzbh7nu/query-cache.bin",
-    "learning/target/debug/incremental/learning-h1p8phvu09k/s-guovw0q104-197l577-gc7em9romkfn3vh4kgzbh7nu/dep-graph.bin",
-    "learning/target/debug/incremental/learning-h1p8phvu09k/s-guovw0q104-197l577-gc7em9romkfn3vh4kgzbh7nu",
-    "learning/target/debug/incremental/learning-24pywzr4tygaw/s-guovw0q0zy-bzeiny-5jhqq769otnxzvswkkblncw0/work-products.bin",
-    "应用方向/共享目录.md",
-    "应用方向/常见陷阱.md",
-    "mobile_learning/slint.md",
-    "bugs/10个常见RUST生命周期.md",
-    "TEST/readme.md",
-    "webFramework/api-rate-limiting/readme.md",
-    "wasm-example/readme.md",
-    "learning/src/objInfo/assets/Pasted image 20240315225348.png"
-=======
     "应用方向/RIIR.md",
     "应用方向/RIIR.MD"
->>>>>>> ce5b1f1 (1)
   ]
 }
