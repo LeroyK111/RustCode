@@ -160,7 +160,19 @@
   },
   "active": "b1022abb70603ff8",
   "lastOpenFiles": [
+    "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh/work-products.bin",
+    "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh/query-cache.bin",
+    "learning/target/debug/incremental/learning-3uxzrrj5hk20k/s-guvmb829ag-bs74qi-6j7jd1arodp5ll00vat9rateh",
+    "learning/target/debug/incremental/learning-32zpeshceb4nn/s-guvmb8298l-yig08x-2a4qxy5aha3b6cviggl6a8kos/work-products.bin",
+    "learning/target/debug/incremental/learning-32zpeshceb4nn/s-guvmb8298l-yig08x-2a4qxy5aha3b6cviggl6a8kos/query-cache.bin",
+    "learning/target/debug/incremental/learning-32zpeshceb4nn/s-guvmb8298l-yig08x-2a4qxy5aha3b6cviggl6a8kos/dep-graph.bin",
+    "learning/target/debug/incremental/learning-32zpeshceb4nn/s-guvmb8298l-yig08x-2a4qxy5aha3b6cviggl6a8kos",
+    "learning/target/debug/deps/liblearning-4c900e6c946ade2b.rmeta",
+    "learning/target/debug/deps/liblearning-85759c0c2ea18390.rmeta",
+    "learning/target/debug/deps/learning-4c900e6c946ade2b.d",
     "应用方向/hawkeye.md",
+<<<<<<< HEAD
     "learning/src/objInfo/assets/Pasted image 20240329223354.png",
     "learning/src/objInfo/assets/Pasted image 20240329223349.png",
     "应用方向/面试题.md",
@@ -183,5 +195,9 @@
     "webFramework/api-rate-limiting/readme.md",
     "wasm-example/readme.md",
     "learning/src/objInfo/assets/Pasted image 20240315225348.png"
+=======
+    "应用方向/RIIR.md",
+    "应用方向/RIIR.MD"
+>>>>>>> ce5b1f1 (1)
   ]
 }
