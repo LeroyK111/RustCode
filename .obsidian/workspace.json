@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/数据可视化.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f77bd847b12fe9b8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "应用方向/数据可视化.md"
               }
             }
           },
@@ -96,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/数据可视化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/数据可视化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,6 +159,10 @@
   },
   "active": "b1022abb70603ff8",
   "lastOpenFiles": [
+    "应用方向/枚举表示状态.md",
+    "未命名.md",
+    "learning/readme.md",
+    "README.md",
     "应用方向/信号处理.md",
     "learning/target/debug/deps/liblearning-18fc92dbba98f020.rmeta",
     "learning/target/debug/deps/learning-18fc92dbba98f020.d",
