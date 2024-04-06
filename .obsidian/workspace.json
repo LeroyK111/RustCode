@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/数据可视化.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f77bd847b12fe9b8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/数据可视化.md"
+                "file": "README.md"
               }
             }
           },
@@ -95,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/数据可视化.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/数据可视化.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,9 +161,9 @@
   "active": "b1022abb70603ff8",
   "lastOpenFiles": [
     "应用方向/枚举表示状态.md",
-    "未命名.md",
-    "learning/readme.md",
-    "README.md",
+    "tokioLearning/Kameo.md",
+    "learning/src/asyncNote/bridgeTest.rs",
+    "cloud/proxyfor.md",
     "应用方向/信号处理.md",
     "learning/target/debug/deps/liblearning-18fc92dbba98f020.rmeta",
     "learning/target/debug/deps/learning-18fc92dbba98f020.d",
@@ -173,7 +174,6 @@
     "learning/target/debug/incremental/learning-1verthe0lhy14/s-guvklrpamr-112ntnl-76u7ae32denj34thg5teg444h/dep-graph.bin",
     "learning/target/debug/incremental/learning-1verthe0lhy14/s-guvklrpamr-112ntnl.lock",
     "learning/target/debug/incremental/learning-1verthe0lhy14/s-guvklrpamr-112ntnl-76u7ae32denj34thg5teg444h",
-    "learning/target/debug/incremental/learning-1verthe0lhy14",
     "应用方向/hawkeye.md",
     "learning/src/objInfo/assets/Pasted image 20240329223354.png",
     "learning/src/objInfo/assets/Pasted image 20240329223349.png",
