@@ -18,6 +18,24 @@ ocrs image.png --json -o content.json
 ocrs image.png --png -o annotated.png
 ```
 
+## aichat - Rust AI集成器
+
+一个统一的命令行界面，集成了 10 多个平台：
+
+OpenAI: GPT3.5/GPT4 (paid, vision)
+Azure-OpenAI (paid)
+OpenAI-Compatible platforms
+Gemini: Gemini-1.0/Gemini-1.5 (free, vision)
+VertexAI (paid, vision)
+Claude: Claude3 (vision, paid)
+Mistral (paid)
+Cohere (paid)
+Ollama (free, local)
+Ernie (paid)
+Qianwen (paid, vision)
+Moonshot (paid)
+Github https://github.com/sigoden/aichat
+
 
 ## Candle Tensor 技术
 
