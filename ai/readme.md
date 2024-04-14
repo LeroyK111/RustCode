@@ -37,6 +37,14 @@ Moonshot (paid)
 Github https://github.com/sigoden/aichat
 
 
+## C2PA使用Rust来实现其目标
+C2PA（内容来源和真实性联盟）是一个开放标准，旨在帮助用户识别数字文件（例如图像、录音或视频）的创建者、内容以及其编辑方式。其目标是使用户能够更轻松地将真实照片或视频与人工智能生成的图像和数字艺术区分开来。
+
+C2PA Rust 库实现了 C2PA 的一个子集，用来做为一个标准参考。
+
+Repo: https://opensource.contentauthenticity.org/docs/rust- sdk/
+
+
 ## Candle Tensor 技术
 
 最知名的 Tensor 类型是 PyTorch 机器学习框架中的 Tensor。但对于 Rust，我们也有 Tensor 类型。在 Rust 社区中最受欢迎的深度学习框架：Candle、Burn、Dfdx 都为我们提供了自己的 Tensor 类型定义。
