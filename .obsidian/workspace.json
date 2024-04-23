@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "79515b333d7d5063",
+        "id": "16ada18732ba51dd",
         "type": "tabs",
         "children": [
           {
-            "id": "f371f8f89883c999",
+            "id": "341122af2c47a5ba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learning/readme.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learning/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "learning/readme.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -158,8 +150,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f371f8f89883c999",
+  "active": "341122af2c47a5ba",
   "lastOpenFiles": [
+    "bugs/区分可变引用和可变变量.md",
+    "learning/src/objInfo/assets/Pasted image 20240423220257.png",
+    "learning/src/objInfo/assets/Pasted image 20240423220232.png",
+    "learning/src/objInfo/assets/Pasted image 20240423220222.png",
+    "learning/src/objInfo/assets/Pasted image 20240423220211.png",
+    "learning/src/objInfo/assets/Pasted image 20240423220157.png",
+    "learning/readme.md",
     "learning/src/objInfo/assets/Pasted image 20240422222940.png"
   ]
 }
