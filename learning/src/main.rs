@@ -64,10 +64,10 @@ fn main() {
     // 测试函数
     test_says();
 
-    println!("nihao")
-
     // 测试导包
     // g();
+
+
     // *测试变量
     // test_mut();
     // 测试不可变量
