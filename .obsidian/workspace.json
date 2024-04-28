@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "letterTools/手动hashmap.md",
+                "file": "应用方向/C编译器.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "letterTools/手动hashmap.md"
+                "file": "应用方向/C编译器.md"
               }
             }
           },
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "letterTools/手动hashmap.md",
+                "file": "应用方向/C编译器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "letterTools/手动hashmap.md",
+                "file": "应用方向/C编译器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,6 +159,8 @@
   },
   "active": "15b69a077d17650b",
   "lastOpenFiles": [
+    "应用方向/build速度.md",
+    "letterTools/手动hashmap.md",
     "learning/src/objInfo/assets/Pasted image 20240427205246.png",
     "learning/src/objInfo/assets/Pasted image 20240427205217.png"
   ]
