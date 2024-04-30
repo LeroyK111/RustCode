@@ -9,3 +9,6 @@ wgpu框架，是一个跨平台、安全、纯 Rust 的图形 API。它可以运
 
 它的API基于WebGPU 标准实现。
 
+
+## Freya 0.2
+我刚刚发布了 Freya v0.2 ，这是我的基于 Dioxus 和 Skia 的 Rust GUI 库。
