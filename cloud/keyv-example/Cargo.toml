@@ -1,0 +1,9 @@
+[package]
+name = "keyv-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+keyv = {version = "0.2.1", features = ["full"]}
+tokio = {version = "1.37.0", features = ["full"]}
+
