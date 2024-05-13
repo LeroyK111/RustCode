@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "cloud/otlp-example/readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "4e3f309c18596da9",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "cloud/otlp-example/readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "cloud/otlp-example/readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "cloud/otlp-example/readme.md"
               }
             }
           }
@@ -159,8 +158,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d067e5d035286192",
+  "active": "19bcab27dbd96a70",
   "lastOpenFiles": [
+    "ai/symbolica.md",
+    "webServer/readme.md",
+    "gameEngine/Kira.md",
+    "learning/src/objInfo/assets/Pasted image 20240513202833.png",
+    "README.md",
     "learning/readme.md",
     "应用方向/诊断特性.md",
     "应用方向/ZED代码编辑器.md",
