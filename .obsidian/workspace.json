@@ -11,8 +11,12 @@
             "id": "36ff0d33a59520be",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "learning/src/Trait和泛型的高级用法.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "learning/src/Trait和泛型的高级用法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "learning/src/Trait和泛型的高级用法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "learning/src/Trait和泛型的高级用法.md"
+              }
             }
           }
         ]
@@ -152,6 +160,7 @@
   },
   "active": "36ff0d33a59520be",
   "lastOpenFiles": [
+    "learning/src/Trait和泛型的高级用法.md",
     "ai/NdArray.md"
   ]
 }
