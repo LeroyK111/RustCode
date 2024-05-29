@@ -160,6 +160,12 @@
   },
   "active": "36ff0d33a59520be",
   "lastOpenFiles": [
+    "TEST/Datadog.md",
+    "ai/img-to-ascii/Cargo.lock",
+    "ai/img-to-ascii/src/main.rs",
+    "ai/img-to-ascii/src",
+    "ai/img-to-ascii/Cargo.toml",
+    "ai/img-to-ascii",
     "learning/src/Trait和泛型的高级用法.md",
     "ai/NdArray.md"
   ]
