@@ -1,18 +1,20 @@
 // 导入库
 use ferris_says::say;
-use std::io::{stdout, BufWriter};
+use std::io::{self, stdout, BufWriter};
+
 // 导入自己包，先声明同级目录下的rs文件
 // 私有模块声明
-// mod game;
+mod game;
 
 // 共有模块声明
 // mod variablesVariability;
 // use variablesVariability::{constants, test_mut, Shadowing};
 
 // 这是相对路径
-// use game::{g, test};
+use game::{g, test};
 // 只引用一个函数
 // use game::g;
+
 // 绝对路径引入，这是根路径
 // use crate::game::test;
 
@@ -56,13 +58,40 @@ fn test_says() {
     say(message, width, &mut writer).unwrap();
 }
 
+fn test_guess() {
+    // 提示
+    println!("Please input your guess.");
+    // 创建可变值， 这一行创建了一个可变变量，当前它绑定到一个新的 String 空实例上。
+    let mut guess = String::new();
+    // 这是不可变值
+    // let apples = 5;
+    // mut 在rust中所有对象默认都是不可变的
+    // let mut apples1 = 5;
+    
+    // 引用io标准输入 句柄
+    io::stdin()
+    // 读取字符串 并引用 &mut guess 赋值
+        .read_line(&mut guess)
+        // 异常捕获, 如果不调异常捕获，程序可以执行，但是会报错提示
+        .expect("Failed to read line");
+
+    // 打印字符串，模版语法
+    println!("You guessed: {guess}");
+
+    let x = 5;
+    let y = 10;
+
+    println!("x = {x} and y + 2 = {}", y + 2);
+}
+
 // !主程序入口函数
 fn main() {
     // 打印
-    println!("Hello, Rust!");
-
+    // println!("Hello, Rust!");
+    // 测试猜测
+    // test_guess();
     // 测试函数
-    test_says();
+    // test_says();
 
     // 测试导包
     // g();

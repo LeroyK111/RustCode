@@ -157,6 +157,7 @@ tmp无法清除，目前没有正在运行的rust项目，应当是有其它需�
 ### Cargo
 https://doc.rust-lang.org/cargo/index.html
 - cargo build 可以构建项目
+- cargo build --release  当项目最终准备好发布时，来优化编译项目。
 - cargo run 可以运行项目
 - cargo test 可以测试项目
 - cargo doc 可以为项目构建文档
@@ -329,11 +330,28 @@ cargo new learning
 cargo build
 ```
 ![](readme.assets/Pasted%20image%2020230715213137.png)
-目录解析
+target目录解析
+
+|文件夹/文件|内容和作用|
+|---|---|
+|`debug`|调试模式下的构建输出，包括可执行文件、依赖库和编译缓存。|
+|`release`|发布模式下的构建输出，优化后的可执行文件和依赖库。|
+|`build`|构建过程中生成的中间文件和临时文件。|
+|`deps`|项目的依赖项的编译结果，用于链接到最终二进制文件。|
+|`incremental`|增量编译的缓存数据，加速后续的编译过程。|
+|`.fingerprint`|项目及其依赖项的指纹文件，跟踪文件变化决定是否重新编译。|
+|`doc`|通过 `cargo doc` 生成的项目文档，HTML格式的API文档。|
+|`examples`|项目中示例代码的编译结果，展示项目功能使用方法。|
+|`package`|用于发布到 crates.io 的打包文件（通过 `cargo package` 生成）。|
+|`tmp`|构建过程中创建的临时文件。|
 
 ### 执行主函数
 ![](readme.assets/Pasted%20image%2020230715213623.png)
-有意思的地方来了。
+有意思的地方来了。 这个方法不再推荐
+```
+rustc main.rs # 编译
+./debug/learning # 执行
+```
 当你执行cargo run时，会默认执行cargo build，然后执行exe脚本。
 ```shell
 cargo run

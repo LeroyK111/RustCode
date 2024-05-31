@@ -4,7 +4,7 @@
 // 标准库std，引入其中的io模块
 use std::io;
 // 引入三方随机数库
-use rand::Rng;
+use rand::{self, Rng};
 // 引入比较库
 use std::cmp::Ordering;
 
@@ -25,6 +25,13 @@ pub fn test() {
 pub fn g() {
     println!("Guess the number!");
 
+    /*
+    接下来，我们在中间还新增加了两行。
+    第一行调用了 rand::thread_rng 函数提供实际使用的随机数生成器：它位于当前执行线程的本地环境中，并从操作系统获取 seed。
+    接着调用随机数生成器的 gen_range 方法。这个方法由 use rand::Rng 语句引入到作用域的 Rng trait 定义。
+    gen_range 方法获取一个范围表达式（range expression）作为参数，并生成一个在此范围之间的随机数。这里使用的这类范围表达式使用了 start..=end 这样的形式，也就是说包含了上下端点，所以需要指定 1..=100 来请求一个 1 和 100 之间的数。
+    */
+
     // !随机数生成，再控制个范围，链式调用，太熟悉了
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
@@ -34,7 +41,6 @@ pub fn g() {
     loop {
         println!("Please input your guess.");
         // 创建一个 变量（variable）来储存用户输入，创建一个new string的空字符串实例
-
         let mut guess = String::new();
 
         // 写法一，如果你没有引用io，则标准库可以在这里引用
@@ -95,7 +101,7 @@ pub fn g() {
         字符串的 parse 方法 将字符串转换成其他类型。这里用它来把字符串转换为数值。我们需要告诉 Rust 具体的数字类型，这里通过 let guess: u32 指定。guess 后面的冒号（:）告诉 Rust 我们指定了变量的类型。Rust 有一些内建的数字类型；u32 是一个无符号的 32 位整型。
         */
 
-        // * 语法糖，分别处理成功or失败
+        // * 语法糖，分别处理成功or失败,类型转换
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
