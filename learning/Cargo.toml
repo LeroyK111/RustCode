@@ -13,9 +13,10 @@ panic = 'abort'
 # 依赖库
 [dependencies]
 ferris-says = "0.3.1"
+# 随机数包
 rand = "0.8.5"
 # 异步函数
-reqwest = "0.11.23"
+reqwest = "0.12.4"
 serde_json = "1.0.109"
 tokio = {version = "1.35.1", features = ["full"]}
 

@@ -18,6 +18,32 @@ ocrs image.png --json -o content.json
 ocrs image.png --png -o annotated.png
 ```
 
+## aichat - Rust AI集成器
+
+一个统一的命令行界面，集成了 10 多个平台：
+
+OpenAI: GPT3.5/GPT4 (paid, vision)
+Azure-OpenAI (paid)
+OpenAI-Compatible platforms
+Gemini: Gemini-1.0/Gemini-1.5 (free, vision)
+VertexAI (paid, vision)
+Claude: Claude3 (vision, paid)
+Mistral (paid)
+Cohere (paid)
+Ollama (free, local)
+Ernie (paid)
+Qianwen (paid, vision)
+Moonshot (paid)
+Github https://github.com/sigoden/aichat
+
+
+## C2PA使用Rust来实现其目标
+C2PA（内容来源和真实性联盟）是一个开放标准，旨在帮助用户识别数字文件（例如图像、录音或视频）的创建者、内容以及其编辑方式。其目标是使用户能够更轻松地将真实照片或视频与人工智能生成的图像和数字艺术区分开来。
+
+C2PA Rust 库实现了 C2PA 的一个子集，用来做为一个标准参考。
+
+Repo: https://opensource.contentauthenticity.org/docs/rust- sdk/
+
 
 ## Candle Tensor 技术
 
@@ -35,6 +61,18 @@ Candle是一个为简单和高性能而设计的深度学习框架。它为定�
 2，Burn
 
 Burn的目标是在Rust中构建一个成熟的机器学习栈。它包含各种组件，包括数据加载、模型定义、训练、超参数优化等。Burn使用自定义内核代码进行计算，从而更好地控制底层操作。
+
+```
+2. burn
+以极高的灵活性、计算效率和可移植性为主要目标。
+
+作为中间的媒介，burn有两个特点是我选择的理由
+
+对各种设备的兼容，这是burn最独特的一点
+对于移植性做的特别好，是作为媒介最基本的特性
+当然，作为一个新兴起的框架，burn还有很多待改进的地方，比如对新算法的支持，对灵活数据结构的支持，不过就工程角度上讲，burn是满足大部分需要的。
+```
+
 
 3，DFDX
 
@@ -76,3 +114,23 @@ Burn和DFDX为机器学习管道提供了更大的灵活性和控制，允许自
 7，部署和生产注意事项
 
 评估ML应用程序的部署需求，例如对容器化、无服务器环境或嵌入式系统的需求。像Candle和Burn这样的框架，作为纯Rust解决方案，可能在某些部署场景中更有优势。
+
+
+### 很棒的机器学习/深度学习 Rust 库
+
+
+数据库
+Qdrant -用于下一代AI的高性能，大规模向量数据库.
+postgresml - GPU 驱动的 AI 应用程序数据库。利用 SQL 的简单性和最新的 NLP、ML + LLM 模型，更快地将您的应用推向市场。
+Cozo DB - 一个事务性的关系图向量数据库，使用 Datalog 进行查询.人工智能的海马体！
+
+
+库/框架
+Candle - Rust 的极简主义 ML 框架
+Burn - 一个新的全面的动态深度学习框架，使用 Rust 构建，具有极高的灵活性、计算效率和可移植性作为其主要目标。
+Juice （formerly Leaf） - 黑客的机器学习引擎
+Linfa - 一个 Rust 机器学习框架.
+dfdx - Rust 中的深度学习，具有形状检查张量和神经网络
+ModelFox - 使训练、部署和监控机器学习模型变得容易。
+Luminal - 光速深度学习.
+smartcore -用于机器学习和数值计算的综合库.

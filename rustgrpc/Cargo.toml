@@ -1,0 +1,16 @@
+[package]
+name = "rustgrpc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# 这个例子使用了Tonic库，它是gRPC的一个rust实现。它是一个快速、高性能、开源、通用的RPC框架，使用HTTP/2协议，支持移动端！我们已经定义了依赖项，现在可以继续编写应用程序了。
+
+[dependencies]
+tonic = "0.11"
+tokio = { version = "1", features = ["full"] }
+prost = "0.12.4"
+
+[build-dependencies]
+tonic-build = "0.11"
+

@@ -273,3 +273,148 @@ if let Some(x) = x {
 ```
 
 
+## Rust中闭包的优缺点？
+
+闭包
+
+闭包是匿名的内联函数，可以捕获和存储它们周围的环境(即它们作用域中的变量和值)。它们对于创建可以传递给高阶函数或存储在数据结构中的简短函数特别有用。闭包类似于lambdas或其他编程语言中的匿名函数。在Rust中，闭包是使用||语法定义的，后面跟着可选的输入参数列表、->返回类型(如果需要)和花括号{}内的代码块。
+
+让我们看一个在Rust中演示闭包的例子。假设你想创建一个高阶函数，以闭包作为参数，并将其应用于两个数字：
+```rust
+fn apply<F>(f: F, a: i32, b: i32) -> i32 
+where
+    F: Fn(i32, i32) -> i32
+{
+    f(a, b)
+}
+
+fn main() {
+    let add = |a: i32, b: i32| a + b;
+    let mul = |a: i32, b: i32| a * b;
+
+    println!("5 + 3 = {}", apply(add, 5, 3));
+    println!("5 * 3 = {}", apply(mul, 5, 3))
+}
+```
+执行cargo run，结果如下：
+5 + 3 = 8
+5 * 3 = 15
+在这个例子中，我们定义了一个高阶函数apply，它接受一个闭包F和两个i32值作为输入。闭包是用Fn特征边界定义的，这意味着它可以是任何接受两个i32值并返回一个i32的函数或闭包。
+
+在main函数中，我们定义了两个闭包，add和mul，分别执行加法和乘法。然后将这些闭包传递给apply函数，apply函数将闭包应用于输入的数字。
+
+闭包提供了一种方便而简洁的方法来定义小型的一次性函数，这些函数可以作为参数传递给高阶函数(即接受其他函数作为输入的函数)或存储在数据结构中。在使用迭代器、异步编程以及需要传递一小块行为的任何场景时，它们特别有用。
+
+
+闭包的优点
+
+1，简洁
+
+闭包为就地定义短函数提供了简洁的语法。例如，我们使用闭包“|a, b| a.len().cmp(&b.len())”直接在下面的代码示例中的sort_by方法调用中简明地表达排序逻辑。
+```rust
+fn main() {
+    let mut words = vec!["banana", "apple", "orange", "grape"];
+
+    words.sort_by(|a, b| a.len().cmp(&b.len()));
+
+    println!("Sorted words: {:?}", words); // Output: Sorted words: ["apple", "grape", "banana", "orange"]
+}
+```
+
+2，灵活
+
+闭包可以从它们的环境中捕获变量，使它们更适合不同的用例。例如，闭包“|&x| x > threshold”捕获threshold变量，允许过滤逻辑适应不同的threshold值。
+```rust
+fn main() {
+    let numbers = vec![1, 2, 3, 4, 5];
+    let threshold = 3;
+
+    let filtered_numbers: Vec<_> = numbers.into_iter().filter(|&x| x > threshold).collect();
+
+    println!("Filtered numbers: {:?}", filtered_numbers); // Output: Filtered numbers: [4, 5]
+}
+```
+3，封装
+
+通过捕获变量，闭包可以在不需要额外数据结构的情况下维护状态。例如，内部闭包“ || { count += 1; count }”捕获count变量的值，将状态封装在闭包本身中。
+```rust
+fn main() {
+    let mut count = 0;
+    let mut counter = || {
+        || {
+            count += 1;
+            count
+        }
+    }();
+
+    println!("Counter: {}", counter()); // Output: Counter: 1
+    println!("Counter: {}", counter()); // Output: Counter: 2
+}
+```
+4，与高阶函数的兼容性
+
+闭包可以作为参数传递给其他函数或存储在数据结构中，从而支持强大的抽象和模式。例如，apply_to_each函数(在下面的代码示例中)接受一个闭包作为参数，并将其应用于items切片中的每个元素。闭包“|x| *x *= 2”将数字向量中的每个元素加倍。
+```rust
+fn apply_to_each<T, F>(items: &mut [T], f: F)
+where
+    F: Fn(&mut T),
+{
+    for item in items {
+        f(item);
+    }
+}
+
+fn main() {
+    let mut numbers = vec![1, 2, 3, 4, 5];
+
+    apply_to_each(&mut numbers, |x| *x *= 2);
+
+    println!("Doubled numbers: {:?}", numbers); // Output: Doubled numbers: [2, 4, 6, 8, 10]
+}
+```
+
+闭包的缺点
+
+1，有限的可重用性
+
+闭包通常仅限于定义它们的代码的特定部分，因此不能在其他地方重用。
+
+2，性能
+
+由于捕获变量和动态分派，闭包有时会引入运行时开销。例如，在下面的示例中，闭包按值捕获large_data，将整个向量移动到闭包的环境中。这可能会导致性能开销，特别是如果向量很大，因为它需要在创建闭包时复制数据。在性能至关重要的情况下，使用带有显式参数的函数而不是捕获变量可能会更好。
+```rust
+fn main() {
+    let large_data = vec![0; 1_000_000];
+    let closure = move || {
+        let _sum = large_data.iter().sum::<i32>();
+    };
+
+    // Use the closure
+    closure();
+}
+```
+3，复杂的生命周期
+
+在捕获引用时，闭包可能会引入复杂的生命周期，使代码更难推理。在下面的例子中，我们试图返回一个闭包，该闭包捕获了对字符串的引用。但是，代码将无法编译，因为文本变量超出了作用域，并且闭包捕获的引用无效。这引入了生命周期的复杂性，使代码更难推理，并可能导致错误。
+```rust
+fn create_closure<'a>(input: &'a str) -> impl Fn() -> &'a str {
+    move || input
+}
+
+fn main() {
+    let closure;
+    let output;
+
+    {
+        let text = String::from("Hello, world!");
+        closure = create_closure(&text);
+        output = closure();
+    }
+
+    println!("Output: {}", output);
+}
+```
+
+总结
+
+Rust中的闭包是匿名函数，可以从环境中捕获值。它们提供了一种富有表现力的、灵活的方式来定义短函数，可用于高阶函数的参数或存储在数据结构中。
