@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "593cf0c2a7b0dc31",
+        "id": "f4645a35d4e02956",
         "type": "tabs",
         "children": [
           {
-            "id": "adb9ee5b3d860a51",
+            "id": "f810177d3101b6de",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -159,8 +151,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "adb9ee5b3d860a51",
+  "active": "f810177d3101b6de",
   "lastOpenFiles": [
+    "应用方向/rust的物权法.md",
+    "learning/src/objInfo/assets/Pasted image 20240613200328.png",
+    "learning/src/objInfo/assets/Pasted image 20240613200257.png",
+    "learning/src/objInfo/assets/Pasted image 20240613200248.png",
+    "learning/src/objInfo/assets/Pasted image 20240613200240.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195752.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195741.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195730.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195617.png",
+    "README.md",
     "letterTools/rust-kafka/docker-compose.yml",
     "letterTools/rust-kafka/src/bin/consumer.rs",
     "letterTools/rust-kafka/src/bin/producer.rs",
@@ -173,11 +175,9 @@
     "ai/mistral.md",
     "ai/mistral.rs",
     "TEST/criterionTest/target/release/deps/libnum_traits-323b737de2294f79.rlib",
-    "TEST/criterionTest/target/release/deps/libwindows_sys-8f3cac925e2c7091.rlib",
     "letterTools/RustCUPP.md",
     "letterTools/Rathole.md",
     "未命名.md",
-    "README.md",
     "letterTools/Nushell.md",
     "learning/src/Trait和泛型的高级用法.md",
     "gameEngine/bevy.md",
