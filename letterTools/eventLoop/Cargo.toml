@@ -1,0 +1,11 @@
+[package]
+name = "eventLoop"
+version = "0.1.0"
+edition = "2021"
+# crossbeam：用于并发编程的工具
+# strum：strum是一组宏和trait，在Rust中可以更容易地处理枚举和字符串。
+# strum_macros：只包含用于strum箱子的派生宏
+[dependencies]
+crossbeam = "0.8.4"
+strum = "0.26.2"
+strum_macros = "0.26.4"
