@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "a02d2d53f5c4d6c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4645a35d4e02956",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f810177d3101b6de",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3f1a8a98103e818b",
+    "type": "split",
+    "children": [
+      {
+        "id": "edf6176ce11a9914",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "66639579470d9ef0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f09ffffa740db000",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d1cb11ad46b53f39",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "689fdd4b6484f7a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "724bd961de5f9791",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d046dc39b53ad46",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0de7f0016916d720",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "47c794294082346c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f11ee2d1fb89638b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "342105c806ec7779",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "f810177d3101b6de",
+  "lastOpenFiles": [
+    "应用方向/rust的物权法.md",
+    "learning/src/objInfo/assets/Pasted image 20240613200328.png",
+    "learning/src/objInfo/assets/Pasted image 20240613200257.png",
+    "learning/src/objInfo/assets/Pasted image 20240613200248.png",
+    "learning/src/objInfo/assets/Pasted image 20240613200240.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195752.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195741.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195730.png",
+    "learning/src/objInfo/assets/Pasted image 20240613195617.png",
+    "README.md",
+    "letterTools/rust-kafka/docker-compose.yml",
+    "letterTools/rust-kafka/src/bin/consumer.rs",
+    "letterTools/rust-kafka/src/bin/producer.rs",
+    "letterTools/rust-kafka/src/bin",
+    "letterTools/rust-kafka/readme.md",
+    "letterTools/rust-kafka/src/main.rs",
+    "letterTools/rust-kafka/src",
+    "letterTools/rust-kafka/Cargo.toml",
+    "letterTools/rust-kafka",
+    "ai/mistral.md",
+    "ai/mistral.rs",
+    "TEST/criterionTest/target/release/deps/libnum_traits-323b737de2294f79.rlib",
+    "letterTools/RustCUPP.md",
+    "letterTools/Rathole.md",
+    "未命名.md",
+    "letterTools/Nushell.md",
+    "learning/src/Trait和泛型的高级用法.md",
+    "gameEngine/bevy.md",
+    "ai/NdArray.md",
+    "TEST/Datadog.md"
+  ]
+}
