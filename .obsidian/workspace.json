@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "10e8aaa79530350f",
+    "id": "c49cb31eecce16d2",
     "type": "split",
     "children": [
       {
-        "id": "1adac26a6ed7dc3f",
+        "id": "1df4ee0bd0b83973",
         "type": "tabs",
         "children": [
           {
-            "id": "33a83ad87468543c",
+            "id": "b222d16f49fb5cb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/Rust编程范式.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "2fc1f1b9ed17ae56",
+    "id": "fbdfc374961e5c57",
     "type": "split",
     "children": [
       {
-        "id": "1772bbed92403d5e",
+        "id": "01af9fc23ac46cec",
         "type": "tabs",
         "children": [
           {
-            "id": "e2af976eb7812e77",
+            "id": "78b21339437b489f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "d313e8dc92467091",
+            "id": "2ec182c405817426",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "4bba31593a05c055",
+            "id": "67e1b1d0da8ef6b2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +69,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "c58f90b654572ec5",
+    "id": "1c72841315c69c57",
     "type": "split",
     "children": [
       {
-        "id": "63a7d0f4310bb5f4",
+        "id": "d087788a4169f6bf",
         "type": "tabs",
         "children": [
           {
-            "id": "cd05e9989dd82b93",
+            "id": "27dead59d7957749",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/Rust编程范式.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +98,19 @@
             }
           },
           {
-            "id": "af0424edf117f4df",
+            "id": "e0246cbd75b26891",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/Rust编程范式.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "c2c716c4fb70f2f6",
+            "id": "6c78f82d487b0d32",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,7 +121,7 @@
             }
           },
           {
-            "id": "ee828834d2179826",
+            "id": "45b4c315bbdfd501",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -132,12 +133,12 @@
             }
           },
           {
-            "id": "d102e1921f310ffe",
+            "id": "bf4eb2f22ec97f26",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/Rust编程范式.md"
+                "file": "README.md"
               }
             }
           }
@@ -158,10 +159,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "33a83ad87468543c",
+  "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "README.md",
+    "应用方向/生命周期.md",
     "应用方向/Rust编程范式.md",
-    "应用方向/生命周期.md"
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/work-products.bin",
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/query-cache.bin",
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/dep-graph.bin",
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo",
+    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk/work-products.bin",
+    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk/query-cache.bin",
+    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk/dep-graph.bin",
+    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk",
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-working/work-products.bin",
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-working/query-cache.bin"
   ]
 }

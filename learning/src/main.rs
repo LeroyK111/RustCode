@@ -11,7 +11,7 @@ mod game;
 // use variablesVariability::{constants, test_mut, Shadowing};
 
 // 这是相对路径
-use game::{g, test};
+// use game::{g, test};
 // 只引用一个函数
 // use game::g;
 
@@ -67,10 +67,10 @@ fn test_guess() {
     // let apples = 5;
     // mut 在rust中所有对象默认都是不可变的
     // let mut apples1 = 5;
-    
+
     // 引用io标准输入 句柄
     io::stdin()
-    // 读取字符串 并引用 &mut guess 赋值
+        // 读取字符串 并引用 &mut guess 赋值
         .read_line(&mut guess)
         // 异常捕获, 如果不调异常捕获，程序可以执行，但是会报错提示
         .expect("Failed to read line");
