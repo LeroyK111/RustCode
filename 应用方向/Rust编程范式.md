@@ -71,5 +71,80 @@ let top_languages: Vec<Language> = languages    .iter()    // 只�
 - **并行****性：**函数式方法适合并行计算。每个操作链都是独立的，允许它们在现代硬件上同时执行。
 
 
+## Rust的面向对象编程范式和编程范式的最佳实践
 
+与前面讨论的函数式和命令式示例相反，让我们引入一个新的结构体FileFilter，它封装了过滤文件和文件迭代的逻辑。
+
+```rust
+pub struct FileFilter {  
+    predicates: Vec<Box<Predicate>>,  
+    start: Option<PathBuf>,  
+    stack: Vec<fs::ReadDir>,  
+}
+```
+每个FileFilter对象都携带其状态：用于过滤的谓词集合、起始路径和用于迭代的目录栈。
+
+Predicate是这样定义的:
+```rust
+type Predicate = dyn Fn(&Path) -> bool;
+```
+你可能会惊讶地发现这里有一个dyn。在Rust中，没有两个闭包具有相同的类型，即使它们完全相同！
+
+为了在Vec集合中适应这一点，我们使用带有动态分派的trait对象。通过“装箱”这些闭包，我们创建了一个Box<Predicate类型(本质上是Box<dyn Fn(&Path) -> bool>)，这允许我们在同一个Vec中存储不同的Predicate闭包，尽管它们的类型不同。
+
+在函数式编程中，我们利用迭代器和闭包的强大功能来过滤文件。在命令式风格中，我们直接使用循环和条件来操作向量。在面向对象风格中，结构体FileFilter抽象掉了这些细节。
+
+看一下add_filter方法：
+
+```rust
+pub fn add_filter(mut self, predicate: impl Fn(&Path) -> bool + 'static) -> Self {  
+    self.predicates.push(Box::new(predicate));  
+    self  
+}
+```
+
+这允许我们通过链接调用轻松地添加多个过滤器：
+
+```rust
+let filter = FileFilter::new()  
+    .add_filter(|path| {  
+        // 检查路径是否以“foo”开头  
+        path.file_name()  
+            .and_then(OsStr::to_str)  
+            .map(|name| name.starts_with("foo"))  
+            .unwrap_or(false)  
+    })    
+    .add_filter(|path| path.extension() == Some(OsStr::new("xml")));
+```
+真正展示Rust中面向对象方法的是FileFilter的Iterator trait的实现：
+```rust
+impl Iterator for FileFilter {  
+    type Item = Result<PathBuf>;  
+  
+    fn next(&mut self) -> Option<Self::Item> {  
+        todo!()  
+    }  
+}
+```
+这样，FileFilter就成为了一个构建块，它与Rust强大的迭代器生态系统完美地集成在一起，可以像其他任何迭代器一样在所有相同的地方使用，这种设计允许将复杂的迭代逻辑封装在对象中。
+
+FileFilter示例说明了Rust中的OOP如何进行可靠的封装和模块化，我们将内容(谓词)与方式(迭代和过滤逻辑)分开。trait系统轻松地将自定义迭代器与生态系统的其余部分集成在一起，使用这些工具可以使代码更易于组合和重用。
+
+编程范式最佳实践
+
+在Rust中混合不同的编程风格不仅是可能的，而且是鼓励的！从Rust对其语言设计的主要理念中也可以看出这一点。C、Haskell、OCaml和Erlang等各种各样的影响塑造了Rust的设计。
+
+一开始，Rust在本质上更偏向于函数式，但后来它演变成了一种更加平衡的语言，支持各种风格，问题是如何在不同的编程范例之间划清界限。
+
+以下是一些最佳实践：
+
+- 利用函数式风格进行数据转换，尤其是在函数和闭包等较小的范围内，map、filter或缩减等函数式方法可以使代码既简洁又清晰。
+    
+- 对于组织较大的应用程序，请考虑面向对象的风格。使用结构体或枚举可以封装相关的数据和函数，提供一个清晰的结构。
+    
+- 使用命令式风格进行粒度控制，在接近硬件的场景中，或者需要明确的分步执行时，命令式风格通常是必要的。它允许对操作进行精确控制，特别是对可变数据。这种风格在性能关键部分或与外部系统接口时特别有用，因为在这些地方需要精确的顺序。但是，始终要权衡其性能收益与潜在的可读性权衡。如果可能，将命令式代码封装在有限的范围内。
+    
+- 优先考虑可读性和可维护性，无论你选择哪种编程范式，都要始终编写简单且易于维护的代码。这不仅有利于未来的自己，而且也有利于在同一代码库上工作的同事。
+    
+- 避免过早优化，不要过早地以可读性为代价来优化性能，真正的瓶颈可能在其他地方。先测量，再优化。优雅的解决方案可以转化为快速的解决方案，但反过来并不总是正确的。
 

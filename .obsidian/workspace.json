@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/Rust编程范式.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/Rust编程范式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/Rust编程范式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "应用方向/Rust编程范式.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "README.md",
     "ai/multicalc-rust.md",
     "应用方向/生命周期.md",
     "应用方向/Rust编程范式.md",
