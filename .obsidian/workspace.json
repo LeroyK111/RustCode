@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -160,19 +161,22 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "sql/DataFusion/src/main.rs",
+    "sql/DataFusion/readme.md",
+    "sql/DataFusion/src",
+    "sql/DataFusion/Cargo.toml",
+    "sql/DataFusion",
+    "letterTools/rust-sqlx-sqlite/src/main.rs",
+    "letterTools/rust-sqlx-sqlite/Cargo.toml",
+    "letterTools/rust-sqlx-sqlite/src",
+    "letterTools/rust-sqlx-sqlite/Cargo.lock",
+    "letterTools/rust-sqlx-sqlite",
+    "learning/src/Box/readme.md",
+    "learning/src/Box",
     "应用方向/Rust编程范式.md",
     "README.md",
     "ai/multicalc-rust.md",
     "应用方向/生命周期.md",
-    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/work-products.bin",
-    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/query-cache.bin",
-    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/dep-graph.bin",
-    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo",
-    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk/work-products.bin",
-    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk/query-cache.bin",
-    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk/dep-graph.bin",
-    "learning/target/debug/incremental/learning-1fjke4vpcb2kv/s-gx8di6eqrp-1qroglz-6qc10vyu0yi5fsv5r1m86a1pk",
-    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-working/work-products.bin",
-    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-working/query-cache.bin"
+    "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/work-products.bin"
   ]
 }
