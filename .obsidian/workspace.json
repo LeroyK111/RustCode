@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/Rust编程范式.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/Rust编程范式.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/Rust编程范式.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/Rust编程范式.md"
+                "file": "README.md"
               }
             }
           }
@@ -160,10 +160,10 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "应用方向/Rust编程范式.md",
     "README.md",
     "ai/multicalc-rust.md",
     "应用方向/生命周期.md",
-    "应用方向/Rust编程范式.md",
     "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/work-products.bin",
     "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/query-cache.bin",
     "learning/target/debug/incremental/learning-bj4tpvzpncxb/s-gx8di6eqrt-2dbk0b-1gpl47s1o3tw4ptklflu0imyo/dep-graph.bin",
