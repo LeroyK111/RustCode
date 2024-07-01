@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -160,22 +161,22 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "webFramework/RTC-remoc-example/target/debug/RTC-remoc-example.d",
-    "webFramework/RTC-remoc-example/target/debug/RTC_remoc_example.pdb",
-    "webFramework/RTC-remoc-example/target/debug/RTC-remoc-example.exe",
-    "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.pdb",
-    "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.exe",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/xzxscnwsi4jdpak.o",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/work-products.bin",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/wem04iungr0refm.o",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/v8wnaom6amn1s75.o",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/v5ve2ezirpj6oef.o",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/ur66rqvjr080776.o",
     "应用方向/go的并发模型.md",
+    "webFramework/RTC-remoc-example/src/main.rs",
+    "webFramework/RTC-remoc-example/src",
+    "webFramework/RTC-remoc-example/Cargo.toml",
+    "webFramework/RTC-remoc-example/Cargo.lock",
+    "webFramework/RTC-remoc-example",
     "应用方向/future线程传递.md",
-    "应用方向/Rust编程范式.md",
-    "README.md",
+    "webFramework/threadDemo/src/main.rs",
+    "webFramework/threadDemo/src",
+    "webFramework/threadDemo/Cargo.toml",
+    "webFramework/threadDemo/Cargo.lock",
+    "webFramework/threadDemo",
+    "sql/DataFusion/readme.md",
+    "learning/src/Box/readme.md",
     "ai/multicalc-rust.md",
-    "应用方向/生命周期.md"
+    "应用方向/生命周期.md",
+    "应用方向/Rust编程范式.md"
   ]
 }
