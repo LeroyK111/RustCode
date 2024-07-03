@@ -160,6 +160,7 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "cloud/easyTier内网穿透.md",
     "tokioLearning/restaurant/src/main.rs",
     "tokioLearning/restaurant/src",
     "tokioLearning/restaurant/Cargo.toml",
@@ -170,7 +171,6 @@
     "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.pdb",
     "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.exe",
     "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/xzxscnwsi4jdpak.o",
-    "webFramework/RTC-remoc-example/target/debug/incremental/RTC_remoc_example-37yk3exaymjyk/s-gxje26v0yc-ofbff4-3r986427ylehzb10ipo7vh1j0/work-products.bin",
     "应用方向/go的并发模型.md",
     "应用方向/future线程传递.md",
     "应用方向/Rust编程范式.md",
