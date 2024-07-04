@@ -166,3 +166,40 @@ pub trait Handler<Args>: Clone + 'static {     type Output;    �
 ```rust
 pub fn to<F, Args>(handler: F) -> Route where    F: Handler<Args>,    Args: FromRequest + 'static,    F::Output: Responder + 'static {    // .. the actual function  code here}
 ```
+
+## Rust 中使用泛型函数的小技巧
+
+每次调用泛型函数时，编译器会为每种类型组合生成一个实现，这可能会产生大量代码。
+通过将大部分代码移到一个内部函数中，只生成一次大块代码，而多次生成较小的类型转换代码。
+Rust 标准库中就大量采用了这种技巧，例如:
+
+```rust
+#[stable(feature = "rust1", since = "1.0.0")]
+pub fn with_extension<S: AsRef<OsStr>>(&self, extension: S) -> PathBuf {
+    self._with_extension(extension.as_ref())
+}
+
+fn _with_extension(&self, extension: &OsStr) -> PathBuf {
+    let self_len = self.as_os_str().len();
+    let self_bytes = self.as_os_str().as_encoded_bytes();
+
+    let (new_capacity, slice_to_copy) = match self.extension() {
+        None => {
+            // Enough capacity for the extension and the dot
+            let capacity = self_len + extension.len() + 1;
+            let whole_path = self_bytes.iter();
+            (capacity, whole_path)
+        }
+        Some(previous_extension) => {
+            let capacity = self_len + extension.len() - previous_extension.len();
+            let path_till_dot = self_bytes[..self_len - previous_extension.len()].iter();
+            (capacity, path_till_dot)
+        }
+    };
+
+    let mut new_path = PathBuf::with_capacity(new_capacity);
+    new_path.as_mut_vec().extend(slice_to_copy);
+    new_path.set_extension(extension);
+    new_path
+}
+```
