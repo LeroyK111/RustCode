@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9ef59103ee20aa8b",
+        "id": "1df4ee0bd0b83973",
         "type": "tabs",
         "children": [
           {
-            "id": "c4e64e3eac33a0c5",
+            "id": "b222d16f49fb5cb8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ],
@@ -151,29 +159,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c4e64e3eac33a0c5",
+  "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "README.md",
     "应用方向/Cell共享可变引用.md",
-    "应用方向/Cell共享可变引用",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxq1uluwxe-aebwrx-8f71po33zgoq56q61a0ubbtlj/work-products.bin",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxq1uluwxe-aebwrx-8f71po33zgoq56q61a0ubbtlj/query-cache.bin",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxq1uluwxe-aebwrx-8f71po33zgoq56q61a0ubbtlj/dep-graph.bin",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxq1uluwxe-aebwrx-8f71po33zgoq56q61a0ubbtlj",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxq1uluwxe-1n08qzb-8z5asqftodtp2aans9i5u2kws/work-products.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxq1uluwxe-1n08qzb-8z5asqftodtp2aans9i5u2kws/query-cache.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxq1uluwxe-1n08qzb-8z5asqftodtp2aans9i5u2kws/dep-graph.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxq1uluwxe-1n08qzb-8z5asqftodtp2aans9i5u2kws",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxq1uluwxe-1n08qzb.lock",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxq1uluwxe-aebwrx.lock",
     "cloud/easyTier内网穿透.md",
-    "tokioLearning/restaurant/src/main.rs",
-    "tokioLearning/restaurant/src",
-    "tokioLearning/restaurant/Cargo.toml",
-    "tokioLearning/restaurant",
-    "webFramework/RTC-remoc-example/target/debug/RTC-remoc-example.d",
-    "webFramework/RTC-remoc-example/target/debug/RTC_remoc_example.pdb",
-    "webFramework/RTC-remoc-example/target/debug/RTC-remoc-example.exe",
-    "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.pdb",
-    "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.exe",
     "应用方向/go的并发模型.md",
-    "webFramework/RTC-remoc-example/src/main.rs",
-    "webFramework/RTC-remoc-example/src",
-    "webFramework/RTC-remoc-example/Cargo.toml",
-    "webFramework/RTC-remoc-example/Cargo.lock",
-    "webFramework/RTC-remoc-example",
     "应用方向/future线程传递.md",
-    "应用方向/Rust编程范式.md",
+    "sql/DataFusion/readme.md",
+    "learning/src/Box/readme.md",
     "ai/multicalc-rust.md",
     "应用方向/生命周期.md",
     "应用方向/Rust编程范式.md"

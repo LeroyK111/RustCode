@@ -63,6 +63,7 @@ fn test_guess() {
     println!("Please input your guess.");
     // 创建可变值， 这一行创建了一个可变变量，当前它绑定到一个新的 String 空实例上。
     let mut guess = String::new();
+
     // 这是不可变值
     // let apples = 5;
     // mut 在rust中所有对象默认都是不可变的
@@ -75,13 +76,25 @@ fn test_guess() {
         // 异常捕获, 如果不调异常捕获，程序可以执行，但是会报错提示
         .expect("Failed to read line");
 
+    // 将字符串转换为 i32（32 位整数）
+    let z: i32 = match guess.trim().parse() {
+        Ok(n) => n,
+        Err(e) => {
+            println!("错误代码{}", e);
+            // 主main中不支持 return
+            -10
+        }
+    };
+
     // 打印字符串，模版语法
     println!("You guessed: {guess}");
 
+    // 设置两个常量
     let x = 5;
     let y = 10;
 
-    println!("x = {x} and y + 2 = {}", y + 2);
+    // 模版语法
+    println!("x = {x} and y + z = {}", y + z);
 }
 
 // !主程序入口函数
@@ -89,7 +102,7 @@ fn main() {
     // 打印
     // println!("Hello, Rust!");
     // 测试猜测
-    // test_guess();
+    test_guess();
     // 测试函数
     // test_says();
 
