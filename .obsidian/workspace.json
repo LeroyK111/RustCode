@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1df4ee0bd0b83973",
+        "id": "9ef59103ee20aa8b",
         "type": "tabs",
         "children": [
           {
-            "id": "b222d16f49fb5cb8",
+            "id": "c4e64e3eac33a0c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -159,13 +151,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b222d16f49fb5cb8",
+  "active": "c4e64e3eac33a0c5",
   "lastOpenFiles": [
+    "README.md",
+    "应用方向/Cell共享可变引用.md",
+    "应用方向/Cell共享可变引用",
     "cloud/easyTier内网穿透.md",
     "tokioLearning/restaurant/src/main.rs",
     "tokioLearning/restaurant/src",
     "tokioLearning/restaurant/Cargo.toml",
     "tokioLearning/restaurant",
+    "webFramework/RTC-remoc-example/target/debug/RTC-remoc-example.d",
+    "webFramework/RTC-remoc-example/target/debug/RTC_remoc_example.pdb",
+    "webFramework/RTC-remoc-example/target/debug/RTC-remoc-example.exe",
+    "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.pdb",
+    "webFramework/RTC-remoc-example/target/debug/deps/RTC_remoc_example.exe",
     "应用方向/go的并发模型.md",
     "webFramework/RTC-remoc-example/src/main.rs",
     "webFramework/RTC-remoc-example/src",
@@ -173,9 +173,7 @@
     "webFramework/RTC-remoc-example/Cargo.lock",
     "webFramework/RTC-remoc-example",
     "应用方向/future线程传递.md",
-    "webFramework/threadDemo/src/main.rs",
-    "sql/DataFusion/readme.md",
-    "learning/src/Box/readme.md",
+    "应用方向/Rust编程范式.md",
     "ai/multicalc-rust.md",
     "应用方向/生命周期.md",
     "应用方向/Rust编程范式.md"
