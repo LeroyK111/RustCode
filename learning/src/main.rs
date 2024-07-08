@@ -65,7 +65,7 @@ fn test_guess() {
     let mut guess = String::new();
 
     // 这是不可变值
-    // let apples = 5;
+    // let apples = 5;aaq
     // mut 在rust中所有对象默认都是不可变的
     // let mut apples1 = 5;
 
@@ -84,7 +84,7 @@ fn test_guess() {
             // 主main中不支持 return
             -10
         }
-    };
+    }; 
 
     // 打印字符串，模版语法
     println!("You guessed: {guess}");
