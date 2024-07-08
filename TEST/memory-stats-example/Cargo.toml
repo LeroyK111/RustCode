@@ -1,0 +1,8 @@
+[package]
+name = "memory-stats-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+memory-stats = { version = "1.1.0", features = ["always_use_statm"] }
+thousands = "0.2.0"
