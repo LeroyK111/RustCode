@@ -101,8 +101,10 @@ fn test_guess() {
 fn main() {
     // 打印
     // println!("Hello, Rust!");
+    
     // 测试猜测
     test_guess();
+    
     // 测试函数
     // test_says();
 
