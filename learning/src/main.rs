@@ -84,7 +84,7 @@ fn test_guess() {
             // 主main中不支持 return
             -10
         }
-    }; 
+    };
 
     // 打印字符串，模版语法
     println!("You guessed: {guess}");
@@ -101,10 +101,10 @@ fn test_guess() {
 fn main() {
     // 打印
     // println!("Hello, Rust!");
-    
+
     // 测试猜测
     test_guess();
-    
+
     // 测试函数
     // test_says();
 

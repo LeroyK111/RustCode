@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/加密库.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/加密库.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/加密库.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/加密库.md"
+                "file": "README.md"
               }
             }
           }
@@ -160,20 +161,18 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "应用方向/常见陷阱.md",
-    "应用方向/从语法到构建软件.md",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxw3ygjtj7-1532zz-et7bzg6auo84zsv4pkqec6p5q/query-cache.bin",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxw3ygjtj7-1532zz-et7bzg6auo84zsv4pkqec6p5q/work-products.bin",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxw3ygjtj7-1532zz-et7bzg6auo84zsv4pkqec6p5q/dep-graph.bin",
+    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxw3ygjtj7-1532zz-et7bzg6auo84zsv4pkqec6p5q",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-525ahej5hem4lypb9noqos2cc/work-products.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-525ahej5hem4lypb9noqos2cc/dep-graph.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-525ahej5hem4lypb9noqos2cc/query-cache.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-525ahej5hem4lypb9noqos2cc",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-working/work-products.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-working/query-cache.bin",
+    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxw3ygjtj7-1veld4g-working/dep-graph.bin",
     "应用方向/Cell共享可变引用.md",
-    "README.md",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby/work-products.bin",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby/query-cache.bin",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v/work-products.bin",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v/query-cache.bin",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v/dep-graph.bin",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb.lock",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l.lock",
     "cloud/easyTier内网穿透.md",
     "应用方向/go的并发模型.md",
     "应用方向/future线程传递.md",
