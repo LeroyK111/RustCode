@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "30b9145703081cea",
+        "id": "1df4ee0bd0b83973",
         "type": "tabs",
         "children": [
           {
-            "id": "d91eef49ea056edd",
+            "id": "b222d16f49fb5cb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "webServer/readme.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "webServer/readme.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "webServer/readme.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "webServer/readme.md"
+                "file": "README.md"
               }
             }
           }
@@ -158,29 +159,27 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d91eef49ea056edd",
+  "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "cloud/rs-docker容器解密.md",
-    "learning/src/OOM/有问题的数据引发内存读取越界.md",
-    "learning/src/OOM/有问题的数据引发内存读取越界",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/dep-graph.bin",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/covsnp1lg8ls34zony751l7gl.o",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/work-products.bin",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/query-cache.bin",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/c1y2h0047a1bmx6476idawzg9.o",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/buslzl0e5ch4y5231zshb1h4o.o",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/budgon996s4kro4nsz7q8e3un.o",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/9ss38u80b3nqft18e22lj51k2.o",
-    "learning/target/debug/incremental/learning-0bvf1x6oobf0c/s-gyevfjxuoh-1kzmhzc-7ud5c1ebhx9p8mecdre3mkkpv/7awsaraobtdmprl8fufvhjc06.o",
+    "editCLI/target/debug/incremental/editCLI-2nggpo44117nb/s-gygtoxxe8j-156qjsk-working/dep-graph.part.bin",
+    "editCLI/target/debug/incremental/editCLI-2nggpo44117nb/s-gygtoxxe8j-156qjsk-working",
+    "editCLI/target/debug/incremental/editCLI-297diclt93082/s-gygtoxxed4-1e8n6er-working/dep-graph.part.bin",
+    "editCLI/target/debug/incremental/editCLI-297diclt93082/s-gygtoxxed4-1e8n6er-working",
+    "editCLI/target/debug/incremental/editCLI-2nggpo44117nb/s-gygtoxxe8j-156qjsk.lock",
+    "editCLI/target/debug/incremental/editCLI-297diclt93082/s-gygtoxxed4-1e8n6er.lock",
+    "rustgrpc/target/debug/incremental/client-2btbqn9ntx4qc/s-gygtoxrol0-1b37lpd-working/dep-graph.part.bin",
+    "rustgrpc/target/debug/incremental/client-2btbqn9ntx4qc/s-gygtoxrol0-1b37lpd-working",
+    "rustgrpc/target/debug/incremental/rustgrpc-1pnkqrwfn8664/s-gygtoxrnxn-04z1vzf-working/dep-graph.part.bin",
+    "rustgrpc/target/debug/incremental/rustgrpc-1pnkqrwfn8664/s-gygtoxrnxn-04z1vzf-working",
+    "rustgrpc/target/debug/incremental/rustgrpc-26qt8no48mbkr/s-gygtoxrni6-06a60rl-working/dep-graph.part.bin",
     "learning/src/objInfo/assets/Pasted image 20240725201158.png",
     "learning/src/objInfo/assets/Pasted image 20240725201057.png",
     "learning/src/objInfo/assets/Pasted image 20240725201039.png",
-    "README.md",
-    "未命名.md",
+    "learning/src/OOM/有问题的数据引发内存读取越界.md",
+    "cloud/rs-docker容器解密.md",
     "Rust2发展.md",
-    "rust2.0.md",
-    "应用方向/rust2.0.md",
     "ai/simd加速迭代器.md",
+    "应用方向/同步原语.md",
     "应用方向/加密库.md",
     "gameEngine/thread_race_game/readme.md",
     "editCLI/Zed.md",
