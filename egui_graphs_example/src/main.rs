@@ -25,8 +25,8 @@ impl ExampleApp {
     }
 }
 
+use egui_graphs::{Edge, Elements, Node};
 use std::collections::HashMap;
-use egui_graphs::{Elements, Node, Edge};
 
 fn generate_graph() -> Elements {
     let mut nodes = HashMap::new();
@@ -34,20 +34,20 @@ fn generate_graph() -> Elements {
     nodes.insert(1, Node::new(1, egui::Vec2::new(50., 0.)));
     nodes.insert(2, Node::new(2, egui::Vec2::new(-25., 60.)));
     nodes.insert(3, Node::new(3, egui::Vec2::new(25., 60.)));
-    nodes.insert(4, Node::new(4, egui::Vec2::new(0., -30.)));  
+    nodes.insert(4, Node::new(4, egui::Vec2::new(0., -30.)));
 
     let mut edges = HashMap::new();
     edges.insert((0, 1), vec![Edge::new(0, 1, 0)]);
     edges.insert((1, 2), vec![Edge::new(1, 2, 0)]);
     edges.insert((2, 4), vec![Edge::new(2, 4, 0)]);
     edges.insert((4, 3), vec![Edge::new(4, 3, 0)]);
-    edges.insert((3, 0), vec![Edge::new(3, 0, 0)]);  
+    edges.insert((3, 0), vec![Edge::new(3, 0, 0)]);
 
-    edges.insert((2, 0), vec![Edge::new(2, 0, 0)]); 
+    edges.insert((2, 0), vec![Edge::new(2, 0, 0)]);
     edges.insert((0, 4), vec![Edge::new(0, 4, 0)]);
     edges.insert((4, 1), vec![Edge::new(4, 1, 0)]);
     edges.insert((1, 3), vec![Edge::new(1, 3, 0)]);
-    edges.insert((3, 2), vec![Edge::new(3, 2, 0)]);      
+    edges.insert((3, 2), vec![Edge::new(3, 2, 0)]);
 
     Elements::new(nodes, edges)
 }
@@ -59,7 +59,6 @@ impl App for ExampleApp {
         });
     }
 }
-
 
 fn main() {
     let native_options = eframe::NativeOptions::default();
