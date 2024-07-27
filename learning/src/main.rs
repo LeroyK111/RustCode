@@ -49,14 +49,30 @@ mod game;
 // use coll::strings::strMain;
 // use coll::vectors::{call, call2};
 
-fn test_says() {
-    let stdout: std::io::Stdout = stdout();
-    let message: &str = "Hello fellow Rustaceans!";
-    let width: usize = message.chars().count();
+// fn test_says() {
+//     let stdout: std::io::Stdout = stdout();
+//     let message: &str = "Hello fellow Rustaceans!";
+//     let width: usize = message.chars().count();
 
-    let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
-    say(message, width, &mut writer).unwrap();
+//     let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
+//     say(message, width, &mut writer).unwrap();
+// }
+
+// 模式匹配中的专属范围
+// Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
+pub fn size_prefix(n: u32) -> &'static str {
+    const K: u32 = 10u32.pow(3);
+    const M: u32 = 10u32.pow(6);
+    const G: u32 = 10u32.pow(9);
+    match n {
+        ..K => "",
+        K..M => "k",
+        M..G => "M",
+        G.. => "G",
+    }
 }
+
+
 
 fn test_guess() {
     // 提示
