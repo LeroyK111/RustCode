@@ -1,7 +1,7 @@
 # web 常用框架系列
 
 ```
-Actix、Axum、Rocket、Tide、Gotham、Nickel、Ntex和Poem
+Actix、Axum、Rocket、Warp, Tide、Gotham、Nickel、Ntex, Tide, Poem
 
 Pingora, Tower, tui-realm, governor, luminal, Tailcall
 ```
