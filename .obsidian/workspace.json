@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/加密库.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/加密库.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/加密库.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/加密库.md"
+                "file": "README.md"
               }
             }
           }
@@ -160,20 +161,32 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "应用方向/常见陷阱.md",
-    "应用方向/从语法到构建软件.md",
+    "script/transform-webp/src/main.rs",
+    "script/transform-webp/src",
+    "script/transform-webp/Cargo.toml",
+    "script/transform-webp",
+    "script",
+    "editCLI/target/debug/incremental/editCLI-2nggpo44117nb/s-gygtoxxe8j-156qjsk-working/dep-graph.part.bin",
+    "editCLI/target/debug/incremental/editCLI-2nggpo44117nb/s-gygtoxxe8j-156qjsk-working",
+    "editCLI/target/debug/incremental/editCLI-297diclt93082/s-gygtoxxed4-1e8n6er-working/dep-graph.part.bin",
+    "editCLI/target/debug/incremental/editCLI-297diclt93082/s-gygtoxxed4-1e8n6er-working",
+    "editCLI/target/debug/incremental/editCLI-2nggpo44117nb/s-gygtoxxe8j-156qjsk.lock",
+    "editCLI/target/debug/incremental/editCLI-297diclt93082/s-gygtoxxed4-1e8n6er.lock",
+    "learning/src/objInfo/assets/Pasted image 20240725201158.png",
+    "learning/src/objInfo/assets/Pasted image 20240725201057.png",
+    "learning/src/objInfo/assets/Pasted image 20240725201039.png",
+    "learning/src/OOM/有问题的数据引发内存读取越界.md",
+    "cloud/rs-docker容器解密.md",
+    "Rust2发展.md",
+    "ai/simd加速迭代器.md",
+    "应用方向/同步原语.md",
+    "应用方向/加密库.md",
+    "gameEngine/thread_race_game/readme.md",
+    "editCLI/Zed.md",
+    "Embedded/嵌入式开发环境.md",
+    "webFramework/Axum/assets/640.jpg",
+    "webFramework/Axum/readme.md",
     "应用方向/Cell共享可变引用.md",
-    "README.md",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby/work-products.bin",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby/query-cache.bin",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb-9tbtjvcy22t8scfpf8vk10hby",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v/work-products.bin",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v/query-cache.bin",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v/dep-graph.bin",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l-c0er84w2705bb8gtf4xgfc15v",
-    "learning/target/debug/incremental/learning-2rdja9x3wv0se/s-gxt28wxfa6-1iyx4fb.lock",
-    "learning/target/debug/incremental/learning-oxbrzt6wwgzg/s-gxt28wxf7i-1u9c38l.lock",
     "cloud/easyTier内网穿透.md",
     "应用方向/go的并发模型.md",
     "应用方向/future线程传递.md",

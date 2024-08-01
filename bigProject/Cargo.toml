@@ -1,0 +1,17 @@
+[package]
+name = "bigProject"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["crates/package1", "crates/package2"]
+
+# 工作区申明在工作区级别声明依赖项
+# 随着您的项目发展到十几个包，您不可能让所有包的依赖项保持同步。这就是为什么您应该在工作空间中声明依赖项（ version， ...）并在包中使用它们。featuresCargo.tomlxx = { workspace = true }
+[workspace.dependencies]
+something = { version = "=1.0.0", features = ["a", "b", "c"] }
+
+
+[dependencies]
+something = { workspace = true }
+
