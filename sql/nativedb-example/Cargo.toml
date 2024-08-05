@@ -1,0 +1,9 @@
+[package]
+name = "nativedb-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+native_db = "0.7.0"
+native_model = "0.4.19"
+
