@@ -40,3 +40,9 @@ ui-realm是一个用于ui和ratatui的框架，用于实现简化的终端用户
 
 # ratatui 
 
+
+# Tauri
+
+三合一跨平台库:
+- rust后端+ts前端
+- rust前后端
