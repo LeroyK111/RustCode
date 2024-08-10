@@ -161,17 +161,18 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t/s-gypcgzpi43-019ls8a-working/dep-graph.part.bin",
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t/s-gypcgzpi43-019ls8a-working",
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t/s-gypcgzpi43-019ls8a.lock",
-    "sql/nativedb-example/target/debug/deps/nativedb_example-a6d51519ce1df15a.d",
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t/s-gypcfq579j-0fijuny-working/dep-graph.part.bin",
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t/s-gypcfq579j-0fijuny.lock",
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t/s-gypcfq579j-0fijuny-working",
-    "sql/nativedb-example/target/debug/incremental/nativedb_example-3dkds63qkz44t",
-    "sql/nativedb-example/target/debug/deps/libnative_db-2faed68aa7ca34df.rlib",
-    "sql/nativedb-example/target/debug/deps/native_db-2faed68aa7ca34df.native_db.df03d555d1e853bb-cgu.09.rcgu.o",
-    "sql/nativedb-example/target/debug/deps/native_db-2faed68aa7ca34df.native_db.df03d555d1e853bb-cgu.08.rcgu.o",
+    "webFramework/demoHttp/src/main.rs",
+    "webFramework/demoHttp/src",
+    "webFramework/demoHttp/Cargo.toml",
+    "webFramework/demoHttp/Cargo.lock",
+    "webFramework/demoHttp",
+    "learning/src/rwFile/fileCopy.rs",
+    "TEST/autoScript/src/main.rs",
+    "TEST/autoScript/src",
+    "TEST/autoScript/Cargo.toml",
+    "TEST/autoScript/Cargo.lock",
+    "TEST/autoScript",
+    "Embedded/copper/readme.md",
     "sql/nativedb-example/NativeDB.md",
     "sql/NativeDB.md",
     "sql/memds.md",
@@ -199,7 +200,6 @@
     "cloud/easyTier内网穿透.md",
     "应用方向/go的并发模型.md",
     "应用方向/future线程传递.md",
-    "sql/DataFusion/readme.md",
-    "learning/src/Box/readme.md"
+    "sql/DataFusion/readme.md"
   ]
 }
