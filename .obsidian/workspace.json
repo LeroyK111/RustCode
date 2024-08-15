@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/多核并行处理.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/多核并行处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/多核并行处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "应用方向/多核并行处理.md"
               }
             }
           }
@@ -147,7 +146,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,6 +161,7 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "README.md",
     "webFramework/demoHttp/src/main.rs",
     "webFramework/demoHttp/src",
     "webFramework/demoHttp/Cargo.toml",
@@ -171,7 +172,6 @@
     "TEST/autoScript/src",
     "TEST/autoScript/Cargo.toml",
     "TEST/autoScript/Cargo.lock",
-    "TEST/autoScript",
     "Embedded/copper/readme.md",
     "sql/nativedb-example/NativeDB.md",
     "sql/NativeDB.md",
