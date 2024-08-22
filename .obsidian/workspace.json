@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/多核并行处理.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/多核并行处理.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/多核并行处理.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/多核并行处理.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,8 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,17 +161,18 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "应用方向/多核并行处理.md",
+    "learning/target/debug/build/serde-111f6f71532b0eaa/root-output",
+    "learning/target/debug/build/serde-111f6f71532b0eaa/stderr",
+    "learning/target/debug/build/serde-111f6f71532b0eaa/output",
+    "learning/target/debug/build/rustix-1a0f8afbeab5b8d7/root-output",
+    "learning/target/debug/build/rustix-1a0f8afbeab5b8d7/stderr",
+    "learning/target/debug/build/rustix-1a0f8afbeab5b8d7/output",
+    "learning/target/debug/build/rustix-1a0f8afbeab5b8d7/out/librust_out.rmeta",
+    "learning/target/debug/build/lock_api-bac38d98da0d583d/root-output",
+    "learning/target/debug/build/lock_api-bac38d98da0d583d/stderr",
+    "learning/target/debug/build/lock_api-bac38d98da0d583d/output",
     "README.md",
-    "webFramework/demoHttp/src/main.rs",
-    "webFramework/demoHttp/src",
-    "webFramework/demoHttp/Cargo.toml",
-    "webFramework/demoHttp/Cargo.lock",
-    "webFramework/demoHttp",
-    "learning/src/rwFile/fileCopy.rs",
-    "TEST/autoScript/src/main.rs",
-    "TEST/autoScript/src",
-    "TEST/autoScript/Cargo.toml",
-    "TEST/autoScript/Cargo.lock",
     "Embedded/copper/readme.md",
     "sql/nativedb-example/NativeDB.md",
     "sql/NativeDB.md",
@@ -199,7 +200,6 @@
     "应用方向/Cell共享可变引用.md",
     "cloud/easyTier内网穿透.md",
     "应用方向/go的并发模型.md",
-    "应用方向/future线程传递.md",
-    "sql/DataFusion/readme.md"
+    "应用方向/future线程传递.md"
   ]
 }
