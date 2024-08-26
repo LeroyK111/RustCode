@@ -1,0 +1,6 @@
+[package]
+name = "hash_example"
+version = "0.1.0"
+edition = "2021"
+[dependencies]
+hash_cons = "0.2.0"
