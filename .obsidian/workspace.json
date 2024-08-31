@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Rust2发展.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Rust2发展.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Rust2发展.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Rust2发展.md"
               }
             }
           }
@@ -161,6 +160,7 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "README.md",
     "应用方向/多核并行处理.md",
     "learning/target/debug/build/serde-111f6f71532b0eaa/root-output",
     "learning/target/debug/build/serde-111f6f71532b0eaa/stderr",
@@ -172,7 +172,6 @@
     "learning/target/debug/build/lock_api-bac38d98da0d583d/root-output",
     "learning/target/debug/build/lock_api-bac38d98da0d583d/stderr",
     "learning/target/debug/build/lock_api-bac38d98da0d583d/output",
-    "README.md",
     "Embedded/copper/readme.md",
     "sql/nativedb-example/NativeDB.md",
     "sql/NativeDB.md",
