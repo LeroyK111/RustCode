@@ -161,6 +161,8 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "learning/src/quote/引用.md",
+    "learning/src/quote",
     "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y/work-products.bin",
     "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y/query-cache.bin",
     "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y/dep-graph.bin",
@@ -170,8 +172,6 @@
     "learning/target/debug/incremental/learning-02fb0d6dpwnew/s-gzjwy1sa2z-0hxpwyu-8jzy373p5ca1qt8xqv1i294dx/dep-graph.bin",
     "learning/target/debug/incremental/learning-02fb0d6dpwnew/s-gzjwy1sa2z-0hxpwyu-8jzy373p5ca1qt8xqv1i294dx",
     "learning/target/debug/deps/liblearning-303fbccf1212a35b.rmeta",
-    "learning/target/debug/deps/liblearning-8f67c1d25bc74a1d.rmeta",
-    "learning/target/debug/deps/learning-8f67c1d25bc74a1d.d",
     "应用方向/多核并行处理.md",
     "README.md",
     "Embedded/copper/readme.md",
