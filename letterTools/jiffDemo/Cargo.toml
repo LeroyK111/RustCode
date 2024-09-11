@@ -1,0 +1,7 @@
+[package]
+name = "jiffDemo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jiff = "0.1.13"
