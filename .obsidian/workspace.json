@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -161,17 +160,18 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "learning/target/debug/build/slab-7b40e3d2c3595525/build-script-build.exe",
+    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9/build_script_build-1f90f94bbcfb77a9.d",
+    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9/build_script_build-1f90f94bbcfb77a9.exe",
+    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9/build-script-build.exe",
+    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9",
+    "learning/target/debug/build/serde-f1fee7e5e3d4ef85/build_script_build-f1fee7e5e3d4ef85.d",
+    "learning/target/debug/build/serde-f1fee7e5e3d4ef85/build_script_build-f1fee7e5e3d4ef85.exe",
+    "learning/target/debug/build/serde-f1fee7e5e3d4ef85/build-script-build.exe",
+    "learning/target/debug/build/serde-f1fee7e5e3d4ef85",
+    "learning/target/debug/build/parking_lot_core-640b6541a479d551/build_script_build-640b6541a479d551.d",
+    "learning/target/debug/build/parking_lot_core-640b6541a479d551/build_script_build-640b6541a479d551.exe",
     "learning/src/quote/引用.md",
-    "learning/src/quote",
-    "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y/work-products.bin",
-    "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y/query-cache.bin",
-    "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3gv12jnkc13pf/s-gzjwy1rph2-13r45oo-a4vjpdljp0lobwz2mio8cs67y",
-    "learning/target/debug/incremental/learning-02fb0d6dpwnew/s-gzjwy1sa2z-0hxpwyu-8jzy373p5ca1qt8xqv1i294dx/work-products.bin",
-    "learning/target/debug/incremental/learning-02fb0d6dpwnew/s-gzjwy1sa2z-0hxpwyu-8jzy373p5ca1qt8xqv1i294dx/query-cache.bin",
-    "learning/target/debug/incremental/learning-02fb0d6dpwnew/s-gzjwy1sa2z-0hxpwyu-8jzy373p5ca1qt8xqv1i294dx/dep-graph.bin",
-    "learning/target/debug/incremental/learning-02fb0d6dpwnew/s-gzjwy1sa2z-0hxpwyu-8jzy373p5ca1qt8xqv1i294dx",
-    "learning/target/debug/deps/liblearning-303fbccf1212a35b.rmeta",
     "应用方向/多核并行处理.md",
     "README.md",
     "Embedded/copper/readme.md",
@@ -199,7 +199,6 @@
     "webFramework/Axum/assets/640.jpg",
     "webFramework/Axum/readme.md",
     "应用方向/Cell共享可变引用.md",
-    "cloud/easyTier内网穿透.md",
-    "应用方向/go的并发模型.md"
+    "cloud/easyTier内网穿透.md"
   ]
 }
