@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -160,17 +161,24 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
-    "learning/target/debug/build/slab-7b40e3d2c3595525/build-script-build.exe",
-    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9/build_script_build-1f90f94bbcfb77a9.d",
-    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9/build_script_build-1f90f94bbcfb77a9.exe",
-    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9/build-script-build.exe",
-    "learning/target/debug/build/serde_json-1f90f94bbcfb77a9",
-    "learning/target/debug/build/serde-f1fee7e5e3d4ef85/build_script_build-f1fee7e5e3d4ef85.d",
-    "learning/target/debug/build/serde-f1fee7e5e3d4ef85/build_script_build-f1fee7e5e3d4ef85.exe",
-    "learning/target/debug/build/serde-f1fee7e5e3d4ef85/build-script-build.exe",
-    "learning/target/debug/build/serde-f1fee7e5e3d4ef85",
-    "learning/target/debug/build/parking_lot_core-640b6541a479d551/build_script_build-640b6541a479d551.d",
-    "learning/target/debug/build/parking_lot_core-640b6541a479d551/build_script_build-640b6541a479d551.exe",
+    "应用方向/c与rust内存优化.md",
+    "webServer/p2p/src/main.rs",
+    "webServer/p2p/src",
+    "webServer/p2p/Cargo.toml",
+    "webServer/p2p",
+    "script/Release-plz/readme.md",
+    "script/Release-plz",
+    "letterTools/jiffDemo/src/main.rs",
+    "letterTools/jiffDemo/src",
+    "letterTools/jiffDemo/Cargo.toml",
+    "letterTools/jiffDemo/Cargo.lock",
+    "letterTools/jiffDemo",
+    "ai/tch-rs.md",
+    "ai/rustNLP.md",
+    "ai/SmartCore.md",
+    "ai/Linfa.md",
+    "ai/HF-Hub .md",
+    "ai/Candle.md",
     "learning/src/quote/引用.md",
     "应用方向/多核并行处理.md",
     "README.md",
@@ -192,13 +200,6 @@
     "Rust2发展.md",
     "ai/simd加速迭代器.md",
     "应用方向/同步原语.md",
-    "应用方向/加密库.md",
-    "gameEngine/thread_race_game/readme.md",
-    "editCLI/Zed.md",
-    "Embedded/嵌入式开发环境.md",
-    "webFramework/Axum/assets/640.jpg",
-    "webFramework/Axum/readme.md",
-    "应用方向/Cell共享可变引用.md",
-    "cloud/easyTier内网穿透.md"
+    "webFramework/Axum/assets/640.jpg"
   ]
 }
