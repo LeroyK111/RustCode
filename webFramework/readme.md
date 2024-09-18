@@ -3,7 +3,7 @@
 ```
 Actix、Axum、Rocket、Warp, Tide、Gotham、Nickel、Ntex, Tide, Poem
 
-Pingora, Tower, tui-realm, governor, luminal, Tailcall
+Pingora, Tower, tui-realm, governor, luminal, Tailcall, Salvo
 ```
 
 
