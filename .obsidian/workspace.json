@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/C++特性.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/C++特性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "应用方向/C++特性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "应用方向/C++特性.md"
               }
             }
           }
@@ -158,8 +158,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "78b21339437b489f",
+  "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20240921002729.png",
+    "learning/src/objInfo/assets/Pasted image 20240921002720.png",
+    "learning/src/objInfo/assets/Pasted image 20240921002702.png",
+    "learning/src/objInfo/assets/Pasted image 20240921002652.png",
+    "learning/src/objInfo/assets/Pasted image 20240921002645.png",
+    "README.md",
     "应用方向/c与rust内存优化.md",
     "webServer/p2p/src/main.rs",
     "webServer/p2p/src",
@@ -180,7 +186,6 @@
     "ai/Candle.md",
     "learning/src/quote/引用.md",
     "应用方向/多核并行处理.md",
-    "README.md",
     "Embedded/copper/readme.md",
     "sql/nativedb-example/NativeDB.md",
     "sql/NativeDB.md",
@@ -198,7 +203,6 @@
     "cloud/rs-docker容器解密.md",
     "Rust2发展.md",
     "ai/simd加速迭代器.md",
-    "应用方向/同步原语.md",
     "webFramework/Axum/assets/640.jpg"
   ]
 }
