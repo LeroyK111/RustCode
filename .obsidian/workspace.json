@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/C++特性.md",
+                "file": "letterTools/媒体解码.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "应用方向/C++特性.md",
+                "file": "letterTools/媒体解码.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "应用方向/C++特性.md",
+                "file": "letterTools/媒体解码.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/C++特性.md"
+                "file": "letterTools/媒体解码.md"
               }
             }
           }
@@ -160,6 +160,10 @@
   },
   "active": "b222d16f49fb5cb8",
   "lastOpenFiles": [
+    "未命名.md",
+    "letterTools/媒体解码.md",
+    "应用方向/C编译器.md",
+    "应用方向/C++特性.md",
     "learning/src/objInfo/assets/Pasted image 20240921002729.png",
     "learning/src/objInfo/assets/Pasted image 20240921002720.png",
     "learning/src/objInfo/assets/Pasted image 20240921002702.png",
@@ -200,9 +204,6 @@
     "learning/src/objInfo/assets/Pasted image 20240725201057.png",
     "learning/src/objInfo/assets/Pasted image 20240725201039.png",
     "learning/src/OOM/有问题的数据引发内存读取越界.md",
-    "cloud/rs-docker容器解密.md",
-    "Rust2发展.md",
-    "ai/simd加速迭代器.md",
     "webFramework/Axum/assets/640.jpg"
   ]
 }
