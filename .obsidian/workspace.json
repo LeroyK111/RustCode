@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "letterTools/媒体解码.md",
+                "file": "应用方向/c与rust内存优化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "640517a7f6fc02e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "letterTools/Trait边界.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "letterTools/媒体解码.md",
+                "file": "letterTools/Trait边界.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "letterTools/媒体解码.md",
+                "file": "letterTools/Trait边界.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "letterTools/媒体解码.md"
+                "file": "letterTools/Trait边界.md"
               }
             }
           }
@@ -158,19 +171,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b222d16f49fb5cb8",
+  "active": "640517a7f6fc02e4",
   "lastOpenFiles": [
-    "未命名.md",
+    "learning/src/objInfo/assets/Pasted image 20241001145538.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145529.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145521.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145512.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145504.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145454.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145445.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145436.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145428.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145356.png",
+    "learning/src/objInfo/assets/Pasted image 20241001145344.png",
+    "应用方向/c与rust内存优化.md",
+    "letterTools/Trait边界.md",
+    "应用方向/Rust编程范式.md",
     "letterTools/媒体解码.md",
     "应用方向/C编译器.md",
     "应用方向/C++特性.md",
-    "learning/src/objInfo/assets/Pasted image 20240921002729.png",
-    "learning/src/objInfo/assets/Pasted image 20240921002720.png",
-    "learning/src/objInfo/assets/Pasted image 20240921002702.png",
-    "learning/src/objInfo/assets/Pasted image 20240921002652.png",
-    "learning/src/objInfo/assets/Pasted image 20240921002645.png",
     "README.md",
-    "应用方向/c与rust内存优化.md",
     "webServer/p2p/src/main.rs",
     "webServer/p2p/src",
     "webServer/p2p/Cargo.toml",
@@ -198,12 +218,6 @@
     "shell/fish-shell.md",
     "letterTools/EmbedAnything.md",
     "letterTools/Copycolors.md",
-    "ai/OCR/ocrs.md",
-    "shell/Tabiew.md",
-    "learning/src/objInfo/assets/Pasted image 20240725201158.png",
-    "learning/src/objInfo/assets/Pasted image 20240725201057.png",
-    "learning/src/objInfo/assets/Pasted image 20240725201039.png",
-    "learning/src/OOM/有问题的数据引发内存读取越界.md",
-    "webFramework/Axum/assets/640.jpg"
+    "ai/OCR/ocrs.md"
   ]
 }
