@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1df4ee0bd0b83973",
+        "id": "7c671e06aeab0e78",
         "type": "tabs",
         "children": [
           {
-            "id": "b222d16f49fb5cb8",
+            "id": "459eb8abfdc09fa1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -158,18 +150,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b222d16f49fb5cb8",
+  "active": "459eb8abfdc09fa1",
   "lastOpenFiles": [
+    "Cross-platformGUI/tauri/readme.md",
+    "learning/src/objInfo/assets/Pasted image 20241014185958.png",
+    "learning/src/objInfo/assets/Pasted image 20241014185943.png",
+    "learning/src/objInfo/assets/Pasted image 20241014185926.png",
+    "README.md",
+    "Cross-platformGUI/readme.md",
+    "Cross-platformGUI/tauri",
+    "Cross-platformGUI",
+    "tauri",
+    "TEST/ftail-example/logs/2024-10-14.log",
+    "TEST/ftail-example/target/debug/incremental/ftail_example-39e7gq0i9d8cs/s-h0uf8ser6c-0xqz9xz-working/work-products.bin",
+    "TEST/ftail-example/target/debug/incremental/ftail_example-39e7gq0i9d8cs/s-h0uf8ser6c-0xqz9xz-working/query-cache.bin",
+    "TEST/ftail-example/target/debug/incremental/ftail_example-39e7gq0i9d8cs/s-h0uf8ser6c-0xqz9xz-working/dep-graph.part.bin",
+    "TEST/ftail-example/target/debug/incremental/ftail_example-39e7gq0i9d8cs/s-h0uf8ser6c-0xqz9xz-working/di9q5nm0juvcylalephqpdcej.o",
+    "TEST/ftail-example/target/debug/incremental/ftail_example-39e7gq0i9d8cs/s-h0uf8ser6c-0xqz9xz-working/czqe8gs87cc7gfjxvl47v2vtk.o",
+    "TEST/ftail-example/target/debug/incremental/ftail_example-39e7gq0i9d8cs/s-h0uf8ser6c-0xqz9xz-working/dep-graph.bin",
     "应用方向/c与rust内存优化.md",
-    "webServer/p2p/src/main.rs",
-    "webServer/p2p/src",
-    "webServer/p2p/Cargo.toml",
-    "webServer/p2p",
     "script/Release-plz/readme.md",
-    "script/Release-plz",
-    "letterTools/jiffDemo/src/main.rs",
-    "letterTools/jiffDemo/src",
-    "letterTools/jiffDemo/Cargo.toml",
     "ai/tch-rs.md",
     "ai/rustNLP.md",
     "ai/SmartCore.md",
@@ -178,7 +178,6 @@
     "ai/Candle.md",
     "learning/src/quote/引用.md",
     "应用方向/多核并行处理.md",
-    "README.md",
     "Embedded/copper/readme.md",
     "sql/nativedb-example/NativeDB.md",
     "sql/NativeDB.md",
