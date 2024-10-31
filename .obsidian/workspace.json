@@ -4,15 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7c671e06aeab0e78",
+        "id": "e19f3f00303b13de",
         "type": "tabs",
         "children": [
           {
-            "id": "459eb8abfdc09fa1",
+            "id": "612974a4758039b7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "sql/ORM库.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ORM库"
             }
           }
         ]
@@ -35,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -50,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -58,14 +68,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "1c72841315c69c57",
@@ -88,7 +100,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
             }
           },
           {
@@ -99,7 +113,9 @@
               "state": {
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "出链"
             }
           },
           {
@@ -110,7 +126,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -122,7 +140,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
             }
           },
           {
@@ -130,7 +150,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "sql/ORM库.md"
+              },
+              "icon": "lucide-list",
+              "title": "ORM库 的大纲"
             }
           }
         ],
@@ -150,8 +174,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "459eb8abfdc09fa1",
+  "active": "612974a4758039b7",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20241031214646.png",
+    "应用方向/孤儿规则.md",
+    "learning/src/objInfo/assets/Pasted image 20241031214232.png",
     "Cross-platformGUI/tauri/readme.md",
     "learning/src/objInfo/assets/Pasted image 20241014185958.png",
     "learning/src/objInfo/assets/Pasted image 20241014185943.png",
