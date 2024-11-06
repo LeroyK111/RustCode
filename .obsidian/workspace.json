@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sql/ORM库.md",
+                "file": "Embedded/ZephyrRtos/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ORM库"
+              "title": "readme"
             }
           }
         ]
@@ -151,10 +151,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql/ORM库.md"
+                "file": "Embedded/ZephyrRtos/readme.md"
               },
               "icon": "lucide-list",
-              "title": "ORM库 的大纲"
+              "title": "readme 的大纲"
             }
           }
         ],
@@ -176,13 +176,21 @@
   },
   "active": "612974a4758039b7",
   "lastOpenFiles": [
-    "learning/src/objInfo/assets/Pasted image 20241031214646.png",
+    "learning/src/objInfo/assets/Pasted image 20241106114152.png",
+    "learning/src/objInfo/assets/Pasted image 20241106114011.png",
+    "learning/src/objInfo/assets/Pasted image 20241106113937.png",
+    "learning/src/objInfo/assets/Pasted image 20241106113902.png",
+    "learning/src/objInfo/assets/Pasted image 20241106102815.png",
+    "learning/src/objInfo/assets/Pasted image 20241106102553.png",
+    "learning/src/objInfo/assets/Pasted image 20241106102527.png",
+    "learning/src/objInfo/assets/Pasted image 20241106102507.png",
+    "learning/src/objInfo/assets/Pasted image 20241106102342.png",
+    "learning/src/objInfo/assets/Pasted image 20241106101830.png",
+    "learning/src/objInfo/assets/Pasted image 20241106101717.png",
+    "Embedded/嵌入式开发环境.md",
+    "sql/ORM库.md",
     "应用方向/孤儿规则.md",
-    "learning/src/objInfo/assets/Pasted image 20241031214232.png",
     "Cross-platformGUI/tauri/readme.md",
-    "learning/src/objInfo/assets/Pasted image 20241014185958.png",
-    "learning/src/objInfo/assets/Pasted image 20241014185943.png",
-    "learning/src/objInfo/assets/Pasted image 20241014185926.png",
     "README.md",
     "Cross-platformGUI/readme.md",
     "Cross-platformGUI/tauri",
