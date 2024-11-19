@@ -1,0 +1,5 @@
+# Rerun
+
+- 支持地理空间数据新增了地理空间数据原语(如GeoPoints和GeoLineStrings),可以将它们发送到Rerun新的地图视图可以在OpenStreetMap或Mapbox地图上绘制这些原语未来还将增加GeoPolygons原语,以完全兼容GeoArrow格式地理空间数据支持是根据社区贡献开发的
+
+- 视频解码支持原生查看器现在支持解码H.264视频文件未来将支持逐帧发送编码视频数据到Rerun,为实时视频流铺平道路视频解码通过调用系统上的FFmpeg可执行文件实现,使用开源crate ffmpeg-sidecar这种架构设计考虑到了在不同环境下的灵活性
