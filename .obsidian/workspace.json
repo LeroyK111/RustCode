@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "d220dd5fec5f0f4e",
+    "id": "b162172423409f3e",
     "type": "split",
     "children": [
       {
-        "id": "61207ef545f1db78",
+        "id": "d382d15bfdd78e5c",
         "type": "tabs",
         "children": [
           {
-            "id": "1a0adf091cba89ca",
+            "id": "e333916447f43c55",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c262d51066df35fa",
+    "id": "2f5cee71aa7eac7c",
     "type": "split",
     "children": [
       {
-        "id": "6cb74d867bb39f2d",
+        "id": "c07cb1cca22c240d",
         "type": "tabs",
         "children": [
           {
-            "id": "b934d83586cc1e24",
+            "id": "ddd4324da7f3205c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +47,7 @@
             }
           },
           {
-            "id": "5fe598601fd5f240",
+            "id": "0cdfdacf07a51b40",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,7 +64,7 @@
             }
           },
           {
-            "id": "c129be9ef513b02d",
+            "id": "4dbf7677b543c974",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -73,22 +77,35 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "a0f119749718eb29",
+    "id": "cf663f57fb1ea63a",
     "type": "split",
     "children": [
       {
-        "id": "e63a04b4f49f5d07",
+        "id": "223803af49bdbfa9",
         "type": "tabs",
         "children": [
           {
-            "id": "f8fc543a4b3898ec",
+            "id": "a1c26e8f47aaf466",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              },
+              "icon": "lucide-list",
+              "title": "README 的大纲"
+            }
+          },
+          {
+            "id": "b756f3743bb481d7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,24 +115,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "README 的反向链接列表"
             }
           },
           {
-            "id": "40f285bb5d3daab3",
+            "id": "7edff77babc77f56",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "README 的出链列表"
             }
           },
           {
-            "id": "c0a4999f17720788",
+            "id": "be9d9801e9e3fbd8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -128,7 +146,7 @@
             }
           },
           {
-            "id": "f8a44ea7ca371375",
+            "id": "4f66ada56fa09313",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -140,23 +158,12 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "045d782f10ee2f4e",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {},
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,6 +175,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1a0adf091cba89ca",
-  "lastOpenFiles": []
+  "active": "e333916447f43c55",
+  "lastOpenFiles": [
+    "letterTools/jiascheduler/readme.md",
+    "letterTools/jiascheduler",
+    "ToC/C++/BuFFI.md",
+    "ToC/C++",
+    "ToC",
+    "Cross-platformGUI/Rerun/readme.md",
+    "Cross-platformGUI/Rerun"
+  ]
 }
