@@ -177,16 +177,24 @@
   },
   "active": "e333916447f43c55",
   "lastOpenFiles": [
+    "learning/target/debug/deps/liblearning-66c479c0b590025a.rmeta",
+    "learning/target/debug/deps/learning-66c479c0b590025a.d",
+    "learning/target/debug/deps/liblearning-f2830bfd7e7411c4.rmeta",
+    "learning/target/debug/deps/learning-f2830bfd7e7411c4.d",
+    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj-axs800d34ilqnelgzf71lxiow/query-cache.bin",
+    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj-axs800d34ilqnelgzf71lxiow/work-products.bin",
+    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj-axs800d34ilqnelgzf71lxiow/dep-graph.bin",
+    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj.lock",
+    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj-axs800d34ilqnelgzf71lxiow",
+    "learning/target/debug/incremental/learning-1cqba24pttufl",
+    "learning/target/debug/incremental/learning-39czzxzgv7qxt/s-h2do8kqpcu-097la9y-1lwqyub75uk9wq0tri8j9rl8r/work-products.bin",
+    "learning/src/OOM/异构.md",
+    "learning/src/OOM/导致Rust内存泄漏的4种情况及如何修复.md",
+    "ai/算法库/RustedSciThe.md",
     "sql/dataTransfer/readme.md",
-    "sql/dataTransfer",
     "learning/src/init_lazy/readme.md",
-    "learning/src/init_lazy",
     "letterTools/jiascheduler/readme.md",
-    "letterTools/jiascheduler",
     "ToC/C++/BuFFI.md",
-    "ToC/C++",
-    "ToC",
-    "Cross-platformGUI/Rerun/readme.md",
-    "Cross-platformGUI/Rerun"
+    "Cross-platformGUI/Rerun/readme.md"
   ]
 }
