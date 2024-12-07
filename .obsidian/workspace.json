@@ -18,7 +18,7 @@
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Rust2发展"
             }
           }
         ]
@@ -177,6 +177,13 @@
   },
   "active": "e333916447f43c55",
   "lastOpenFiles": [
+    "letterTools/Modbus/readme.md",
+    "letterTools/Modbus",
+    "wasm-example/AWS Lambda/readme.md.md",
+    "wasm-example/Wasmi.md",
+    "wasm-example/AWS Lambda",
+    "wasm-example/readme.md",
+    "Rust2发展.md",
     "learning/src/const.rs",
     "learning/target/debug/deps/liblearning-66c479c0b590025a.rmeta",
     "learning/target/debug/deps/learning-66c479c0b590025a.d",

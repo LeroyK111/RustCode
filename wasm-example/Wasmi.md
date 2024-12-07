@@ -12,3 +12,5 @@ Wasmi v0.32 配备了新的执行引擎，利用基于寄存器的字节码将�
 文中做了一系列的 benchmark, 结论如下：
 
 到目前为止，Wasmi 和 Wasm3 的表现最好，因为它们具有惰性编译功能。正如预期的那样，优化基于 JIT 的 Wasm 运行时（如 Wasmtime 和 Wasmer）在这种情况下表现较差。专为快速启动而设计的单通道 JIT，例如 Winch 和 Wasmer Singlepass，速度也明显较慢。尽管也使用了懒惰的翻译，但 Stitch 的翻译性能并不理想。然而，需要注意的是，Winch 和 Stitch 仍处于开发的实验阶段，改进是可以预期的。
+
+
