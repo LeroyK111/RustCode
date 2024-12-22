@@ -34,3 +34,96 @@ Rust 2024版中第一个令人兴奋的变化是保留Gen关键字，以便将�
 
 Polonius是Rust的下一代借用检查算法，它是当前借用检查器的改进版本，解决了一些常见的限制。例如，假设我们有一个函数，它接受HashMap和键作为输入，它返回一个对值的可变引用。如果键存在则返回对它的可变引用；如果键不存在，则插入默认值并返回对它的可变引用。返回Some中对value的可变引用要求Map的可变引用一直存在到函数结束。
 
+## 2024年
+### Connectivity
+
+- **tokio**: 异步运行时，支持 HTTP 和其他协议。
+    
+- **axum**: 用于构建 HTTP(S) 服务器，支持路由、状态共享等。
+    
+- **tower-http**: HTTP 中间件，例如认证和请求验证。
+    
+- **reqwest**: HTTP 客户端，支持 rustls。
+    
+- **warp**: 用于构建轻量级 HTTP 服务器。
+    
+- **prost** 和 **tonic**: 用于 protobuf 和 gRPC。
+    
+- **lapin**: RabbitMQ 客户端。
+    
+
+### Serialization & Data
+
+- **serde** 和 **serde_json**: 序列化和 JSON 处理。
+    
+- **bincode**: 二进制序列化，用于高效存储。
+    
+- **humantime-serde**: 支持人类可读的时间格式序列化。
+    
+
+### Error Handling
+
+- **thiserror**: 用于库的错误处理。
+    
+- **anyhow**: 用于应用的错误处理。
+    
+
+### Testing
+
+- **rstest**: 参数化测试和 fixtures。
+    
+- **criterion**: 性能基准测试工具。
+    
+
+### Utilities
+
+- **rustc-hash** 和 **sha1_smol**: 非加密的高效哈希。
+    
+- **tikv-jemallocator**: 用于优化内存分配。
+    
+- **uuid**: 支持 UUID 生成和解析。
+    
+- **chrono**: 时间和日期处理。
+    
+- **derivative**: 自定义派生的 trait 实现。
+    
+- **image**: 图像处理。
+    
+
+### CLI
+
+- **argh** 和 **clap**: CLI 解析。
+    
+
+### Logging, Tracing and Metrics
+
+- **tracing**: 结构化日志和跟踪。
+    
+- **prometheus**: 用于监控指标。
+    
+
+### SQL & ORMs
+
+- **sea-orm** 和 **sea-query**: ORM 和查询构建工具。
+    
+- **sqlx**: 异步数据库操作。
+    
+
+### Vectors, Arrays, ML
+
+- **ndarray** 和 **nalgebra**: 数组和线性代数。
+    
+- **half**: 支持 f16 类型。
+    
+- **approx**: 浮点数近似比较。
+    
+- **ort**: ONNX 运行时，用于机器学习推理。
+    
+
+### Deprecated or Alternative Crates
+
+- **lazy_static**: 已被 **LazyLock** 取代。
+    
+- **once_cell**: 可使用标准库中的 **OnceLock**。
+    
+- **async-trait**: 在某些情况下仍需使用，但已逐渐被 async 函数支持替代。
