@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wasm-example/使用Rust和Wasi对应用程序进行监控/readme.md",
+                "file": "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "亚毫秒定时分辨率的RTOS新方法"
             }
           }
         ]
@@ -93,10 +93,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wasm-example/使用Rust和Wasi对应用程序进行监控/readme.md"
+                "file": "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md"
               },
               "icon": "lucide-list",
-              "title": "readme 的大纲"
+              "title": "亚毫秒定时分辨率的RTOS新方法 的大纲"
             }
           },
           {
@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,9 +178,18 @@
   },
   "active": "d06911199672d34e",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20241222160623.png",
+    "learning/src/objInfo/assets/Pasted image 20241222160558.png",
+    "learning/src/objInfo/assets/Pasted image 20241222155641.png",
+    "Embedded/Future/AGI时代.md",
+    "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md",
+    "learning/src/objInfo/assets/Pasted image 20241222155121.png",
+    "learning/src/objInfo/assets/Pasted image 20241222155105.png",
+    "wasm-example/使用Rust和Wasi对应用程序进行监控/readme.md",
+    "Embedded/Future",
+    "Embedded/feturen",
     "learning/src/objInfo/assets/Pasted image 20241222152646.png",
     "wasm-example/readme.md",
-    "wasm-example/使用Rust和Wasi对应用程序进行监控/readme.md",
     "wasm-example/使用Rust和Wasi对应用程序进行监控",
     "wasm-example/未命名.md",
     "wasm-example/Wasmi.md",
@@ -195,8 +205,6 @@
     "learning/target/debug/deps/learning-66c479c0b590025a.d",
     "learning/target/debug/deps/liblearning-f2830bfd7e7411c4.rmeta",
     "learning/target/debug/deps/learning-f2830bfd7e7411c4.d",
-    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj-axs800d34ilqnelgzf71lxiow/query-cache.bin",
-    "learning/target/debug/incremental/learning-1cqba24pttufl/s-h2do8kqpdq-13py2jj-axs800d34ilqnelgzf71lxiow/work-products.bin",
     "learning/src/OOM/异构.md",
     "learning/src/OOM/导致Rust内存泄漏的4种情况及如何修复.md",
     "ai/算法库/RustedSciThe.md",
