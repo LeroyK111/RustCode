@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7f128dd683c6aa90",
+        "id": "1f035139c1ce7bff",
         "type": "tabs",
         "children": [
           {
-            "id": "ea714440af957c9b",
+            "id": "078ab773a167e04a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "只用一行代码，就可以破坏Rust的内存安全"
+              "title": "新标签页"
             }
           }
         ]
@@ -92,11 +88,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "只用一行代码，就可以破坏Rust的内存安全 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -175,9 +169,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ea714440af957c9b",
+  "active": "078ab773a167e04a",
   "lastOpenFiles": [
-    "learning/src/objInfo/assets/Pasted image 20250124223442.png",
+    "Embedded/embeddedDevelopment/RTOS.md",
+    "Embedded/embeddedDevelopment/未来趋势.md",
+    "Embedded/embeddedDevelopment/如何编写Zephyr RTOS设备驱动程序.md",
+    "Embedded/readme.assets/Pasted image 20240417225130.png",
+    "Embedded/readme.assets/Pasted image 20240417225115.png",
+    "Embedded/readme.assets/Pasted image 20240417225058.png",
+    "Embedded/readme.assets/Pasted image 20240417225040.png",
+    "Embedded/readme.assets/Pasted image 20240417225016.png",
+    "Embedded/readme.assets/Pasted image 20240417225011.png",
+    "Embedded/readme.assets/Pasted image 20240417225006.png",
+    "Embedded/readme.assets/Pasted image 20240417224938.png",
+    "Embedded/readme.assets/Pasted image 20240417224322.png",
+    "Embedded/readme.assets/Pasted image 20231023184009.png",
+    "Embedded/readme.assets",
+    "Embedded/嵌入式开发环境.md",
+    "Embedded/embeddedDevelopment/编译器.md",
+    "Embedded/embeddedDevelopment/Rust嵌入式.md",
+    "Embedded/embeddedDevelopment",
     "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
     "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
     "learning/src/asyncNote/readme.md",
@@ -192,34 +203,18 @@
     "learning/target/debug/deps/learning-2f2e99c127f12937.d",
     "learning/target/debug/deps/liblearning-e35a6796ba977c3c.rmeta",
     "learning/target/debug/deps/learning-e35a6796ba977c3c.d",
-    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h3n1w5lv0o-1ok09hv-5dzrasfnztedx27whlt8smcge/work-products.bin",
-    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h3n1w5lv0o-1ok09hv-5dzrasfnztedx27whlt8smcge/dep-graph.bin",
-    "learning/src/objInfo/assets/Pasted image 20250107223151.png",
-    "learning/src/objInfo/assets/Pasted image 20250107222946.png",
     "应用方向/readme.md",
     "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md",
     "tokioLearning/Dagrs/readme.md",
     "letterTools/cargo-generate/readme.md",
     "ai/Fastnum.md",
-    "learning/src/objInfo/assets/Pasted image 20241222160623.png",
-    "learning/src/objInfo/assets/Pasted image 20241222160558.png",
-    "learning/src/objInfo/assets/Pasted image 20241222155641.png",
     "Embedded/Future/AGI时代.md",
-    "learning/src/objInfo/assets/Pasted image 20241222155121.png",
-    "learning/src/objInfo/assets/Pasted image 20241222155105.png",
     "wasm-example/使用Rust和Wasi对应用程序进行监控/readme.md",
-    "learning/src/objInfo/assets/Pasted image 20241222152646.png",
     "wasm-example/readme.md",
     "wasm-example/未命名.md",
     "wasm-example/Wasmi.md",
     "Rust2发展.md",
     "letterTools/使用tcp-console解锁动态应用程序控制/readme.md",
-    "README.md",
-    "letterTools/Modbus/readme.md",
-    "wasm-example/AWS Lambda/readme.md.md",
-    "learning/src/OOM/异构.md",
-    "learning/src/OOM/导致Rust内存泄漏的4种情况及如何修复.md",
-    "ai/算法库/RustedSciThe.md",
-    "sql/dataTransfer/readme.md"
+    "README.md"
   ]
 }
