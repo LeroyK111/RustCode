@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "应用方向/零知识证明：支付场景中的 Rust 实现.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "零知识证明：支付场景中的 Rust 实现"
+              "title": "README"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -93,10 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "应用方向/零知识证明：支付场景中的 Rust 实现.md"
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "零知识证明：支付场景中的 Rust 实现 的大纲"
+              "title": "README 的大纲"
             }
           },
           {
@@ -177,22 +181,22 @@
   },
   "active": "4118fd90274a23ff",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-a8pymiqqf0k7ysmzon80vbsu3/work-products.bin",
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-a8pymiqqf0k7ysmzon80vbsu3/query-cache.bin",
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-a8pymiqqf0k7ysmzon80vbsu3/dep-graph.bin",
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-a8pymiqqf0k7ysmzon80vbsu3",
-    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h42e59qwyd-15g6x7r-5dzrasfnztedx27whlt8smcge/work-products.bin",
-    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h42e59qwyd-15g6x7r-5dzrasfnztedx27whlt8smcge/query-cache.bin",
-    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h42e59qwyd-15g6x7r-5dzrasfnztedx27whlt8smcge/dep-graph.bin",
-    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h42e59qwyd-15g6x7r-5dzrasfnztedx27whlt8smcge",
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-working/work-products.bin",
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-working/query-cache.bin",
-    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h42e59qwy9-1t6i6gz-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h46nrp62b8-0ossn1s-4m712bopthphn8267jqgi55gg/work-products.bin",
+    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h46nrp62b8-0ossn1s-4m712bopthphn8267jqgi55gg/query-cache.bin",
+    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h46nrp62b8-0ossn1s-4m712bopthphn8267jqgi55gg/dep-graph.bin",
+    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h46nrp62b8-0ossn1s-4m712bopthphn8267jqgi55gg",
+    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h46nrp62b8-0w870mx-90b615jiejpq0xhykympvrq9p/work-products.bin",
+    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h46nrp62b8-0w870mx-90b615jiejpq0xhykympvrq9p/query-cache.bin",
+    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h46nrp62b8-0w870mx-90b615jiejpq0xhykympvrq9p/dep-graph.bin",
+    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h46nrp62b8-0w870mx-90b615jiejpq0xhykympvrq9p",
+    "learning/target/debug/incremental/learning-17p48spg3qpe3/s-h46nrp62b8-0ossn1s.lock",
+    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h46nrp62b8-0w870mx.lock",
+    "learning/target/debug/incremental/learning-1reajegk84m1z/s-h46nr4vc4d-0k18t8e-90b615jiejpq0xhykympvrq9p/work-products.bin",
+    "应用方向/零知识证明：支付场景中的 Rust 实现.md",
     "learning/src/objInfo/assets/Pasted image 20250124223442.png",
     "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
     "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
     "func/readme.md",
-    "应用方向/零知识证明：支付场景中的 Rust 实现.md",
     "learning/src/objInfo/assets/Pasted image 20250107223151.png",
     "learning/src/objInfo/assets/Pasted image 20250107222946.png",
     "应用方向/readme.md",

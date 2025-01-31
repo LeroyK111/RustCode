@@ -152,7 +152,6 @@ tmp无法清除，目前没有正在运行的rust项目，应当是有其它需�
 
 ### 高级指令
 边用边记。
-
 ### Cargo
 https://doc.rust-lang.org/cargo/index.html
 - cargo build                   可以构建项目
@@ -324,7 +323,13 @@ cargo new learning
 ```
 ![](readme.assets/Pasted%20image%2020230715211915.png)
 ### 构建二进制文件
-不同的系统，构建的可执行二进制文件不同。
+
+  单文件构建，不推荐使用。
+```sh
+rustc main.rs
+```
+
+这里才是最常用的项目构建，不同的系统，构建的可执行二进制文件不同。
 ```shell
 cargo build
 ```
