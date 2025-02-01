@@ -320,6 +320,8 @@ https://code.visualstudio.com/docs/languages/rust
 ### 创建新项目
 ```shell
 cargo new learning
+# 创建git版本管理的仓库
+cargo new learning --vcs=git
 ```
 ![](readme.assets/Pasted%20image%2020230715211915.png)
 ### 构建二进制文件

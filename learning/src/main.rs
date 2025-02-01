@@ -1,19 +1,18 @@
 // 导入库
-// use ferris_says::say;
+use ferris_says::say;
 use std::io::{self, stdout, BufWriter};
 
 // 导入自己包，先声明同级目录下的rs文件
 // 私有模块声明
-// mod game;
+mod game;
+// 这是相对路径
+use game::{g, test};
+// 只引用一个函数
+// use game::g;
 
 // 共有模块声明
 // mod variablesVariability;
 // use variablesVariability::{constants, test_mut, Shadowing};
-
-// 这是相对路径
-// use game::{g, test};
-// 只引用一个函数
-// use game::g;
 
 // 绝对路径引入，这是根路径
 // use crate::game::test;
@@ -49,83 +48,82 @@ use std::io::{self, stdout, BufWriter};
 // use coll::strings::strMain;
 // use coll::vectors::{call, call2};
 
-// fn test_says() {
-//     let stdout: std::io::Stdout = stdout();
-//     let message: &str = "Hello fellow Rustaceans!";
-//     let width: usize = message.chars().count();
+fn test_says() {
+    let stdout: std::io::Stdout = stdout();
+    let message: &str = "Hello fellow Rustaceans!";
+    let width: usize = message.chars().count();
 
-//     let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
-//     say(message, width, &mut writer).unwrap();
-// }
+    let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
+    say(message, width, &mut writer).unwrap();
+}
 
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
-// pub fn size_prefix(n: u32) -> &'static str {
-//     const K: u32 = 10u32.pow(3);
-//     const M: u32 = 10u32.pow(6);
-//     const G: u32 = 10u32.pow(9);
-//     match n {
-//         ..K => "",
-//         K..M => "k",
-//         M..G => "M",
-//         G.. => "G",
-//     }
-// }
+pub fn size_prefix(n: u32) -> &'static str {
+    const K: u32 = 10u32.pow(3);
+    const M: u32 = 10u32.pow(6);
+    const G: u32 = 10u32.pow(9);
+    match n {
+        ..K => "",
+        K..M => "k",
+        M..G => "M",
+        G.. => "G",
+    }
+}
 
 
 
-// fn test_guess() {
-//     // 提示
-//     println!("Please input your guess.");
-//     // 创建可变值， 这一行创建了一个可变变量，当前它绑定到一个新的 String 空实例上。
-//     let mut guess = String::new();
+fn test_guess() {
+    // 提示
+    println!("Please input your guess.");
+    // 创建可变值， 这一行创建了一个可变变量，当前它绑定到一个新的 String 空实例上。
+    let mut guess = String::new();
 
-//     // 这是不可变值
-//     // let apples = 5;aaq
-//     // mut 在rust中所有对象默认都是不可变的
-//     // let mut apples1 = 5;
+    // 这是不可变值
+    // let apples = 5;
+    // mut 表示变量可变，如果没有使用 apples1+=1 还有一个error提示
+    // let mut apples1 = 6;
+    // apples1 += 1;
+    // println!("{apples}, {apples1}");
 
-//     // 引用io标准输入 句柄
-//     io::stdin()
-//         // 读取字符串 并引用 &mut guess 赋值
-//         .read_line(&mut guess)
-//         // 异常捕获, 如果不调异常捕获，程序可以执行，但是会报错提示
-//         .expect("Failed to read line");
 
-//     // 将字符串转换为 i32（32 位整数）
-//     let z: i32 = match guess.trim().parse() {
-//         Ok(n) => n,
-//         Err(e) => {
-//             println!("错误代码{}", e);
-//             // 主main中不支持 return
-//             -10
-//         }
-//     };
+    // 引用io标准输入 句柄
+    io::stdin()
+        // 读取字符串 并引用 &mut guess 赋值
+        .read_line(&mut guess)
+        // 异常捕获, 如果不调异常捕获，程序可以执行，但是会报错提示
+        .expect("捕获异常");
 
-//     // 打印字符串，模版语法
-//     println!("You guessed: {guess}");
+    // 打印字符串，模版语法
+    println!("You guessed: {guess}");
 
-//     // 设置两个常量
-//     let x = 5;
-//     let y = 10;
-
-//     // 模版语法
-//     println!("x = {x} and y + z = {}", y + z);
-// }
+    // 将字符串转换为 i32（32 位整数）
+    let z: i32 = match guess.trim().parse() {
+        Ok(n) => n,
+        Err(e) => {
+            println!("错误代码：{}", e);
+            // 主main中不支持 return
+            -10
+        }
+    };
+    // 设置两个常量
+    let x = 5;
+    let y = 10;
+    // 模版语法
+    println!("x = {x} and {y} + {z} = {}", y + z);
+}
 
 // !主程序入口函数
 fn main() {
     // 打印
-    println!("Hello, Rust!");
-    
+    // println!("Hello, Rust!");
     // 测试猜测
     // test_guess();
-
     // 测试函数
     // test_says();
 
-    // 测试导包
-    // g();
+    // 生成随机数
+    g();
 
     // *测试变量
     // test_mut();
