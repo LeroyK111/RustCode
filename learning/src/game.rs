@@ -14,7 +14,6 @@ pub fn test() {
     // 创建变量
     let apples: i32 = 5; // 不可变
     let mut bananas: i32 = 5; // 可变
-
     // 模版字符串
     let x = 5;
     let y = 10;
@@ -23,7 +22,7 @@ pub fn test() {
 
 pub fn g() {
     println!("Guess the number!");
-
+    
     /*
     接下来，我们在中间还新增加了两行。
     第一行调用了 rand::thread_rng 函数提供实际使用的随机数生成器：它位于当前执行线程的本地环境中，并从操作系统获取 seed。
