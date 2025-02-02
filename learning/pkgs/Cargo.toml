@@ -1,0 +1,13 @@
+[package]
+name = "pkgs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 引用我们自己写点library
+myLibrary = {path = "./myLibrary", version = "0.1.0"}
+
+
+[profile.dev]
+# 全局+三方库 禁用某些警告 不推荐使用
+# rustflags = ["-A dead_code", "-A non_snake_case"]
