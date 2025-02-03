@@ -33,6 +33,8 @@ pub fn g() {
     // !随机数生成，再控制个范围，链式调用，太熟悉了
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
+    
+
     // println!("The secret number is: {secret_number}");
 
     // 再套入循环

@@ -119,13 +119,12 @@ fn main() {
     // println!("Hello, Rust!");
     // 测试猜测
     // test_guess();
-    // 测试函数, 彩蛋库
+    // 测试 彩蛋库
     // test_says();
 
     // 生成随机数
     g();
     
-
     // *测试变量
     // test_mut();
     // 测试不可变量
