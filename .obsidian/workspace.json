@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Embedded/history/2024嵌入式趋势.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2024嵌入式趋势"
             }
           }
         ]
@@ -94,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Embedded/history/2024嵌入式趋势.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "2024嵌入式趋势 的大纲"
             }
           },
           {
@@ -181,6 +181,10 @@
   },
   "active": "078ab773a167e04a",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20250209151047.png",
+    "README.md",
+    "Embedded/history/2024嵌入式趋势.md",
+    "Embedded/history",
     "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.pdb",
     "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build.pdb",
     "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.exe",
@@ -190,8 +194,6 @@
     "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.pdb",
     "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build.pdb",
     "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.d",
-    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.exe",
-    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build-script-build.exe",
     "Embedded/embeddedDevelopment/RTOS.md",
     "Embedded/embeddedDevelopment/未来趋势.md",
     "Embedded/embeddedDevelopment/如何编写Zephyr RTOS设备驱动程序.md",
@@ -224,8 +226,6 @@
     "wasm-example/readme.md",
     "wasm-example/未命名.md",
     "wasm-example/Wasmi.md",
-    "Rust2发展.md",
-    "letterTools/使用tcp-console解锁动态应用程序控制/readme.md",
-    "README.md"
+    "Rust2发展.md"
   ]
 }
