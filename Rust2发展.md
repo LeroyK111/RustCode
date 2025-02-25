@@ -127,3 +127,18 @@ Polonius是Rust的下一代借用检查算法，它是当前借用检查器的�
 - **once_cell**: 可使用标准库中的 **OnceLock**。
     
 - **async-trait**: 在某些情况下仍需使用，但已逐渐被 async 函数支持替代。
+
+
+### 新特性
+
+- **Rust 2024 版**：Rust 2024 版正式稳定发布，它带来多项语言、标准库、Cargo、Rustdoc 和 Rustfmt 的更新，如改变 RPIT 生命周期捕获规则、调整临时变量作用域、增加`Future`和`IntoFuture`到标准库 prelude 等。用户可参考版本指南进行迁移，部分更改可使用`cargo fix`自动完成。
+    
+- **异步闭包**：Rust 现在支持异步闭包`async || {}` ，调用时返回`futures` ，标准库 prelude 中新增`AsyncFn`、`AsyncFnMut`和`AsyncFnOnce`三个类似的 trait，解决了之前无法让内部异步块借用闭包捕获值和用`Fn` traits 正确表达高阶函数签名返回`Future`的问题。
+    
+- **隐藏 trait 实现诊断信息**：新增`#[diagnostic::do_not_recommend]`属性，可让编译器在诊断消息中不显示注解的 trait 实现，避免给库作者提供无用或误导性的建议。
+    
+- **元组的`FromIterator`和`Extend`**：现在这些特性扩展到了更多长度的元组，从单元素`(T,)`到 12 个元素`(T1, T2, .., T11, T12)` ，可使用`collect()`同时将迭代器数据分散到多个集合中。
+    
+- **`std::env::home_dir()`更新**：该函数多年来一直被弃用，因其在某些 Windows 配置下表现异常。现在更新其行为作为 bug 修复，后续版本将移除弃用状态。
+    
+- **稳定的 API**：多个 API 达到稳定状态，部分 API 在常量上下文中也稳定可用。
