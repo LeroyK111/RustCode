@@ -1,22 +1,9 @@
 {
   "main": {
-    "id": "030ed9947c8e0ca7",
+    "id": "b162172423409f3e",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "a9dd32860616d3cc",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ea2e4c835cd2a543",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-=======
         "id": "0c40ab1eea1f1ce2",
         "type": "tabs",
         "children": [
@@ -32,7 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "README"
->>>>>>> 9d4882a (add: 自我发展)
             }
           }
         ]
@@ -41,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9ec7c92207b9d7a1",
+    "id": "2f5cee71aa7eac7c",
     "type": "split",
     "children": [
       {
-        "id": "070c462d0d772c89",
+        "id": "c07cb1cca22c240d",
         "type": "tabs",
         "children": [
           {
-            "id": "6f619b834d620351",
+            "id": "ddd4324da7f3205c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -62,12 +48,12 @@
             }
           },
           {
-            "id": "70de2ce90ade83ad",
+            "id": "0cdfdacf07a51b40",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "异步",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +65,7 @@
             }
           },
           {
-            "id": "c4f7ec3d70c75c9e",
+            "id": "4dbf7677b543c974",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -92,20 +78,17 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "c12725c97bacfbb5",
+    "id": "cf663f57fb1ea63a",
     "type": "split",
     "children": [
       {
-        "id": "276ee0b1efe10108",
+        "id": "223803af49bdbfa9",
         "type": "tabs",
         "children": [
           {
-<<<<<<< HEAD
-            "id": "ae42f524eb2d9190",
-=======
             "id": "a1c26e8f47aaf466",
             "type": "leaf",
             "state": {
@@ -122,11 +105,11 @@
           },
           {
             "id": "b756f3743bb481d7",
->>>>>>> 9d4882a (add: 自我发展)
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,39 +119,38 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "README 的反向链接列表"
             }
           },
           {
-            "id": "d56f59454d13ce46",
+            "id": "7edff77babc77f56",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "README 的出链列表"
             }
           },
           {
-            "id": "9cda2a81c69b14b7",
+            "id": "be9d9801e9e3fbd8",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "26556c2fb1cbd47c",
+            "id": "4f66ada56fa09313",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,27 +162,12 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "4f0e69da41a98174",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,10 +179,6 @@
       "command-palette:打开命令面板": false
     }
   },
-<<<<<<< HEAD
-  "active": "ea2e4c835cd2a543",
-  "lastOpenFiles": []
-=======
   "active": "f0c019faf8787bb1",
   "lastOpenFiles": [
     "Rust2发展.md",
@@ -265,5 +228,4 @@
     "wasm-example/readme.md",
     "wasm-example/未命名.md"
   ]
->>>>>>> 9d4882a (add: 自我发展)
 }
