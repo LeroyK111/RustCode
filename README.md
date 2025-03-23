@@ -1,5 +1,9 @@
 # Rust学习笔记
 
+自举发展
+![](https://raw.githubusercontent.com/LeroyK111/pictureBed/master/20250323181138.png)
+
+
 **官网**：https://www.rust-lang.org/zh-CN/
 
 **Rustup编译器**：https://github.com/rust-lang/rustup.rs/blob/master/README.md
