@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "89f6b2acc52393a9",
+        "id": "abfda3205b894b8f",
         "type": "tabs",
         "children": [
           {
-            "id": "c15d4fd566a9f82b",
+            "id": "fcc66292f16c7719",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Embedded/Oxide.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Oxide"
+              "title": "新标签页"
             }
           }
         ]
@@ -180,18 +176,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c15d4fd566a9f82b",
+  "active": "ddd4324da7f3205c",
   "lastOpenFiles": [
+    "Embedded/ESP32/readme.md",
+    "Embedded/SWM341/readme.md",
     "Embedded/遇到的坑.md",
+    "Embedded/嵌入式开发环境.md",
+    "Embedded/Oxide.md",
     "Embedded/machineState/machinery.md",
     "Embedded/machineState/rustFsm.md",
     "Embedded/copper/readme.md",
-    "Embedded/ESP32/readme.md",
     "Embedded/Rust-Shyper/readme.md",
     "Embedded/history/2024嵌入式趋势.md",
     "Embedded/Future/AGI时代.md",
     "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md",
-    "Embedded/嵌入式开发环境.md",
     "README.md",
     "learning/src/objInfo/assets/Pasted image 20250209151047.png",
     "Embedded/history",
@@ -225,8 +223,6 @@
     "tokioLearning/Kameo.md",
     "应用方向/零知识证明：支付场景中的 Rust 实现.md",
     "应用方向/readme.md",
-    "tokioLearning/Dagrs/readme.md",
-    "letterTools/cargo-generate/readme.md",
-    "ai/Fastnum.md"
+    "tokioLearning/Dagrs/readme.md"
   ]
 }
