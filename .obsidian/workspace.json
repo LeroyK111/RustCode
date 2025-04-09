@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0aab5dbabd0cbef5",
+        "id": "abfda3205b894b8f",
         "type": "tabs",
         "children": [
           {
-            "id": "f57d29da027c0621",
+            "id": "fcc66292f16c7719",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -90,12 +90,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Embedded/Oxide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Oxide 的大纲"
             }
           },
           {
@@ -162,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,20 +176,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fcc66292f16c7719",
+  "active": "ddd4324da7f3205c",
   "lastOpenFiles": [
     "Embedded/嵌入式副业.md",
-    "learning/target/debug/deps/liblearning-91ff5aa3a3e065c7.rmeta",
-    "learning/target/debug/deps/liblearning-47b6b543932cc9b7.rmeta",
-    "learning/target/debug/deps/learning-91ff5aa3a3e065c7.d",
-    "learning/target/debug/deps/learning-47b6b543932cc9b7.d",
-    "learning/target/debug/incremental/learning-25xeqa120wkc2/s-h61tgl5ydj-0i7pvj1-8eb3j0r4birjog4ajadvvq28a/work-products.bin",
-    "learning/target/debug/incremental/learning-25xeqa120wkc2/s-h61tgl5ydj-0i7pvj1-8eb3j0r4birjog4ajadvvq28a/query-cache.bin",
-    "learning/target/debug/incremental/learning-25xeqa120wkc2/s-h61tgl5ydj-0i7pvj1-8eb3j0r4birjog4ajadvvq28a/dep-graph.bin",
-    "learning/target/debug/incremental/learning-25xeqa120wkc2/s-h61tgl5ydj-0i7pvj1.lock",
-    "learning/target/debug/incremental/learning-25xeqa120wkc2/s-h61tgl5ydj-0i7pvj1-8eb3j0r4birjog4ajadvvq28a",
-    "learning/target/debug/incremental/learning-25xeqa120wkc2",
-    "Embedded/cms垃圾回收/垃圾回收器原理.md",
-    "README.md"
+    "Embedded/ESP32/readme.md",
+    "Embedded/SWM341/readme.md",
+    "Embedded/遇到的坑.md",
+    "Embedded/嵌入式开发环境.md",
+    "Embedded/Oxide.md",
+    "Embedded/machineState/machinery.md",
+    "Embedded/machineState/rustFsm.md",
+    "Embedded/copper/readme.md",
+    "Embedded/Rust-Shyper/readme.md",
+    "Embedded/history/2024嵌入式趋势.md",
+    "Embedded/Future/AGI时代.md",
+    "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md",
+    "README.md",
+    "learning/src/objInfo/assets/Pasted image 20250209151047.png",
+    "Embedded/history",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.pdb",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build.pdb",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.exe",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.d",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build-script-build.exe",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42",
+    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.pdb",
+    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build.pdb",
+    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.d",
+    "Embedded/embeddedDevelopment/RTOS.md",
+    "Embedded/embeddedDevelopment/未来趋势.md",
+    "Embedded/embeddedDevelopment/如何编写Zephyr RTOS设备驱动程序.md",
+    "Embedded/readme.assets/Pasted image 20240417225130.png",
+    "Embedded/readme.assets/Pasted image 20240417225115.png",
+    "Embedded/readme.assets/Pasted image 20240417225058.png",
+    "Embedded/readme.assets/Pasted image 20240417225040.png",
+    "Embedded/readme.assets/Pasted image 20240417225016.png",
+    "Embedded/readme.assets/Pasted image 20240417225011.png",
+    "Embedded/readme.assets/Pasted image 20240417225006.png",
+    "Embedded/readme.assets/Pasted image 20240417224938.png",
+    "Embedded/readme.assets/Pasted image 20240417224322.png",
+    "Embedded/embeddedDevelopment/编译器.md",
+    "Embedded/embeddedDevelopment/Rust嵌入式.md",
+    "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
+    "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
+    "learning/src/asyncNote/readme.md",
+    "learning/src/asyncNote/编写异步运行时库.md",
+    "tokioLearning/Kameo.md",
+    "应用方向/零知识证明：支付场景中的 Rust 实现.md",
+    "应用方向/readme.md"
   ]
 }
