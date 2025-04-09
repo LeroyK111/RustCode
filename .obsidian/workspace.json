@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "abfda3205b894b8f",
+        "id": "df5411627f78604e",
         "type": "tabs",
         "children": [
           {
-            "id": "fcc66292f16c7719",
+            "id": "68ada21e5092707c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -176,9 +176,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ddd4324da7f3205c",
+  "active": "68ada21e5092707c",
   "lastOpenFiles": [
+    "machine_learning/OCR/uniocr.md",
+    "Embedded/ArielOS/readme.md",
+    "machine_learning/OCR",
     "Embedded/嵌入式副业.md",
+    "Embedded/ArielOS",
+    "machine_learning/readme.md",
     "Embedded/ESP32/readme.md",
     "Embedded/SWM341/readme.md",
     "Embedded/遇到的坑.md",
@@ -201,8 +206,6 @@
     "learning/target/debug/build/native-tls-879f4c60e16d8d42/build-script-build.exe",
     "learning/target/debug/build/native-tls-879f4c60e16d8d42",
     "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.pdb",
-    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build.pdb",
-    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.d",
     "Embedded/embeddedDevelopment/RTOS.md",
     "Embedded/embeddedDevelopment/未来趋势.md",
     "Embedded/embeddedDevelopment/如何编写Zephyr RTOS设备驱动程序.md",
@@ -220,9 +223,6 @@
     "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
     "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
     "learning/src/asyncNote/readme.md",
-    "learning/src/asyncNote/编写异步运行时库.md",
-    "tokioLearning/Kameo.md",
-    "应用方向/零知识证明：支付场景中的 Rust 实现.md",
-    "应用方向/readme.md"
+    "learning/src/asyncNote/编写异步运行时库.md"
   ]
 }
