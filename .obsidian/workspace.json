@@ -176,6 +176,7 @@
   },
   "active": "fa6d8188fa06739b",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "learning/src/2025/Rust1.86.0发布.md",
     "machine_learning/OCR/uniocr.md",
     "Embedded/ArielOS/readme.md",
@@ -222,5 +223,21 @@
     "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
     "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
     "learning/src/asyncNote/readme.md"
+=======
+    "learning/target/debug/deps/liblearning-6c04c1ae27cb03e9.rmeta",
+    "learning/target/debug/deps/liblearning-71e8592fe18ea7c6.rmeta",
+    "learning/target/debug/deps/learning-6c04c1ae27cb03e9.d",
+    "learning/target/debug/deps/learning-71e8592fe18ea7c6.d",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij/work-products.bin",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij/query-cache.bin",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij/dep-graph.bin",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm.lock",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt",
+    "learning/target/debug/incremental/learning-031cnb0w3gdc3/s-h6b9qjebr5-1bqlbm3-14dwh80zcg30bz939cudwitvv/work-products.bin",
+    "Embedded/嵌入式副业.md",
+    "Embedded/cms垃圾回收/垃圾回收器原理.md",
+    "README.md"
+>>>>>>> 23f82df (1)
   ]
 }
