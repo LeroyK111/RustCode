@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "df5411627f78604e",
+        "id": "366f6951b82af582",
         "type": "tabs",
         "children": [
           {
-            "id": "68ada21e5092707c",
+            "id": "fa6d8188fa06739b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -90,13 +90,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded/Oxide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Oxide 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -163,8 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,8 +174,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "68ada21e5092707c",
+  "active": "fa6d8188fa06739b",
   "lastOpenFiles": [
+    "learning/src/2025/Rust1.86.0发布.md",
     "machine_learning/OCR/uniocr.md",
     "Embedded/ArielOS/readme.md",
     "machine_learning/OCR",
@@ -222,7 +221,6 @@
     "Embedded/embeddedDevelopment/Rust嵌入式.md",
     "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
     "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
-    "learning/src/asyncNote/readme.md",
-    "learning/src/asyncNote/编写异步运行时库.md"
+    "learning/src/asyncNote/readme.md"
   ]
 }
