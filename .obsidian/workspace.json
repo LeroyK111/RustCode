@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "24178eb451c3dfe2",
+    "id": "b162172423409f3e",
     "type": "split",
     "children": [
       {
-        "id": "ec9c4766b68435d0",
+        "id": "366f6951b82af582",
         "type": "tabs",
         "children": [
           {
-            "id": "317dd421d8235880",
+            "id": "fa6d8188fa06739b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Embedded/vms/Bao：适用于现代多核嵌入式系统的轻量级静态分区虚拟机管理程序.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Bao：适用于现代多核嵌入式系统的轻量级静态分区虚拟机管理程序"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "104d3a789df5531d",
+    "id": "2f5cee71aa7eac7c",
     "type": "split",
     "children": [
       {
-        "id": "42a68863a291e2ea",
+        "id": "c07cb1cca22c240d",
         "type": "tabs",
         "children": [
           {
-            "id": "80eeacdc355185b8",
+            "id": "ddd4324da7f3205c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "69f5f7c247ab963d",
+            "id": "0cdfdacf07a51b40",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "ed17b7b8f3045928",
+            "id": "4dbf7677b543c974",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,34 @@
     "width": 200
   },
   "right": {
-    "id": "c9408788636bae38",
+    "id": "fdd89d6c3c7225b4",
     "type": "split",
     "children": [
       {
-        "id": "b8e5b9f56e1b50d5",
+        "id": "aa7fdcbae76de001",
         "type": "tabs",
         "children": [
           {
-            "id": "3d4b8efced24a862",
+            "id": "a1c26e8f47aaf466",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "b756f3743bb481d7",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Embedded/vms/Bao：适用于现代多核嵌入式系统的轻量级静态分区虚拟机管理程序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +118,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "README 的反向链接列表"
             }
           },
           {
-            "id": "003610de4ca0003d",
+            "id": "7edff77babc77f56",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "README 的出链列表"
             }
           },
           {
-            "id": "11463793f2b495ae",
+            "id": "be9d9801e9e3fbd8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +151,7 @@
             }
           },
           {
-            "id": "ee4d87e27a1b331b",
+            "id": "4f66ada56fa09313",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -175,6 +195,70 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "317dd421d8235880",
-  "lastOpenFiles": []
+  "active": "fa6d8188fa06739b",
+  "lastOpenFiles": [
+<<<<<<< HEAD
+    "learning/src/2025/Rust1.86.0发布.md",
+    "machine_learning/OCR/uniocr.md",
+    "Embedded/ArielOS/readme.md",
+    "machine_learning/OCR",
+    "Embedded/嵌入式副业.md",
+    "Embedded/ArielOS",
+    "machine_learning/readme.md",
+    "Embedded/ESP32/readme.md",
+    "Embedded/SWM341/readme.md",
+    "Embedded/遇到的坑.md",
+    "Embedded/嵌入式开发环境.md",
+    "Embedded/Oxide.md",
+    "Embedded/machineState/machinery.md",
+    "Embedded/machineState/rustFsm.md",
+    "Embedded/copper/readme.md",
+    "Embedded/Rust-Shyper/readme.md",
+    "Embedded/history/2024嵌入式趋势.md",
+    "Embedded/Future/AGI时代.md",
+    "Embedded/Future/亚毫秒定时分辨率的RTOS新方法.md",
+    "README.md",
+    "learning/src/objInfo/assets/Pasted image 20250209151047.png",
+    "Embedded/history",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.pdb",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build.pdb",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.exe",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build_script_build-879f4c60e16d8d42.d",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42/build-script-build.exe",
+    "learning/target/debug/build/native-tls-879f4c60e16d8d42",
+    "learning/target/debug/build/proc-macro2-ba56d44569f01117/build_script_build-ba56d44569f01117.pdb",
+    "Embedded/embeddedDevelopment/RTOS.md",
+    "Embedded/embeddedDevelopment/未来趋势.md",
+    "Embedded/embeddedDevelopment/如何编写Zephyr RTOS设备驱动程序.md",
+    "Embedded/readme.assets/Pasted image 20240417225130.png",
+    "Embedded/readme.assets/Pasted image 20240417225115.png",
+    "Embedded/readme.assets/Pasted image 20240417225058.png",
+    "Embedded/readme.assets/Pasted image 20240417225040.png",
+    "Embedded/readme.assets/Pasted image 20240417225016.png",
+    "Embedded/readme.assets/Pasted image 20240417225011.png",
+    "Embedded/readme.assets/Pasted image 20240417225006.png",
+    "Embedded/readme.assets/Pasted image 20240417224938.png",
+    "Embedded/readme.assets/Pasted image 20240417224322.png",
+    "Embedded/embeddedDevelopment/编译器.md",
+    "Embedded/embeddedDevelopment/Rust嵌入式.md",
+    "learning/src/2025/只用一行代码，就可以破坏Rust的内存安全.md",
+    "learning/src/asyncNote/异步 Rust —— 争议不断的主题.md",
+    "learning/src/asyncNote/readme.md"
+=======
+    "learning/target/debug/deps/liblearning-6c04c1ae27cb03e9.rmeta",
+    "learning/target/debug/deps/liblearning-71e8592fe18ea7c6.rmeta",
+    "learning/target/debug/deps/learning-6c04c1ae27cb03e9.d",
+    "learning/target/debug/deps/learning-71e8592fe18ea7c6.d",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij/work-products.bin",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij/query-cache.bin",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij/dep-graph.bin",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm.lock",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt/s-h6b9qjebrl-1jvw6rm-4i0urlm41kwzwq87uupsm2nij",
+    "learning/target/debug/incremental/learning-0izejsx96mqbt",
+    "learning/target/debug/incremental/learning-031cnb0w3gdc3/s-h6b9qjebr5-1bqlbm3-14dwh80zcg30bz939cudwitvv/work-products.bin",
+    "Embedded/嵌入式副业.md",
+    "Embedded/cms垃圾回收/垃圾回收器原理.md",
+    "README.md"
+>>>>>>> 23f82df (1)
+  ]
 }
