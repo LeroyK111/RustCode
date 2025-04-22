@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Embedded/vms/Bao：适用于现代多核嵌入式系统的轻量级静态分区虚拟机管理程序.md",
+=======
+                "file": "Cross-platformGUI/readme.md",
+>>>>>>> 8b0247c (1)
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Bao：适用于现代多核嵌入式系统的轻量级静态分区虚拟机管理程序"
+=======
+              "title": "readme"
+>>>>>>> 8b0247c (1)
             }
           }
         ]
@@ -94,12 +102,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Cross-platformGUI/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "readme 的大纲"
             }
           },
           {
