@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "34bb11ef971aaade",
+        "id": "fed13205b327a8ef",
         "type": "tabs",
         "children": [
           {
-            "id": "ea6933d0bfdedd5c",
+            "id": "5105d7fda05fe522",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -176,7 +176,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ea6933d0bfdedd5c",
+  "active": "5105d7fda05fe522",
   "lastOpenFiles": [
     "README.md"
   ]
