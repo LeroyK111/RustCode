@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fed13205b327a8ef",
+        "id": "7bd9ef5dc3e0dc0b",
         "type": "tabs",
         "children": [
           {
-            "id": "5105d7fda05fe522",
+            "id": "bab8e1482157d9c5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -176,8 +176,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5105d7fda05fe522",
+  "active": "bab8e1482157d9c5",
   "lastOpenFiles": [
+    "machine_learning/词法分析器/Lexer.md",
+    "gameEngine/bevy.md",
+    "machine_learning/词法分析器",
+    "letterTools/未命名",
     "README.md"
   ]
 }
