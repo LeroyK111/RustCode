@@ -28,13 +28,13 @@ pub fn change_type() {
 pub fn float() {
     let x = 2.0; // f64
     let y: f32 = 3.0; // f32
+    println!("{x}, {y}, {}", x + y)
 }
 
 // 数值计算
 pub fn count() {
     // addition
     let sum = 5 + 10;
-
     // subtraction
     let difference = 95.5 - 4.3;
 
@@ -47,13 +47,41 @@ pub fn count() {
 
     // remainder
     let remainder = 43 % 5;
+
+    println!("{sum},{difference},{product},{quotient},{truncated},{remainder}");
+    
 }
 
 // 布尔值
 pub fn bools() {
-    let t = true;
+    let a = true;
+    let b = false;
 
-    let f: bool = false; // with explicit type annotation
+    // 逻辑与（AND）
+    let and_result = a && b;
+    println!("true && false = {}", and_result); // false
+
+    // 逻辑或（OR）
+    let or_result = a || b;
+    println!("true || false = {}", or_result); // true
+
+    // 逻辑非（NOT）
+    let not_result = !a;
+    println!("!true = {}", not_result); // false
+
+    // 条件判断
+    if a && !b {
+        println!("a 为真 且 b 为假");
+    }
+
+    // 作为表达式使用
+    let condition = a || b;
+    let message = if condition {
+        "至少一个为真"
+    } else {
+        "都为假"
+    };
+    println!("{}", message);
 }
 
 // 字符类型，这个很特殊
@@ -66,17 +94,14 @@ pub fn string() {
 // 复合类型
 pub fn tuple() {
     let tup = (500, 6.4, 1);
+    // 点索引赋值
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+    println!("{five_hundred}");
 
     // 解构赋值
     let (x, y, z) = tup;
-
-    // 点索引赋值
-    // let five_hundred = x.0;
-
-    // let six_point_four = x.1;
-
-    // let one = x.2;
-
     println!("The value of y is: {y}");
 }
 
@@ -95,10 +120,12 @@ pub fn array() {
         "November",
         "December",
     ];
+    
+
     // 直接给每个元素赋予type
     let a: [i32; 5] = [1, 2, 3, 4, 5];
 
-    // 分号表示五个元素，五个元素为3
+    // 分号表示五个元素，五个元素为3: let a = [3, 3, 3, 3, 3];
     let a = [3; 5];
 
 
@@ -106,6 +133,9 @@ pub fn array() {
     let first = a[0];
     let second = a[1];
 
+    println!("{first}");
+    
+    
 
 }
 

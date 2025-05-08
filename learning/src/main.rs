@@ -21,11 +21,11 @@ use std::io::{self, stdout, BufWriter};
 // mod 数据类型;
 // use 数据类型::{changeType;}
 
-// mod function;
-// use function::print_labeled_measurement;
+mod function;
+use function::print_labeled_measurement;
 
-mod dataType;
-use dataType::{array, bools, change_type, count, float, string, tuple};
+// mod dataType;
+// use dataType::{array, bools, change_type, count, float, string, tuple};
 
 // 测试所有权
 // mod ownership;
@@ -137,20 +137,20 @@ fn main() {
     // change_type()
     // 标量类型
     // 浮点
-    float();
+    // float();
     // 计算
     // count();
     // 布尔值
     // bools();
     // 字符串
     // string();
-    // 元组
+    // 元组()
     // tuple();
     // 数组
     // array();
 
     // 函数
-    // print_labeled_measurement(32, '2');
+    print_labeled_measurement(32, '2');
 
     // todo 作用域函数，打印
     // scope()
