@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3bd367a2fc3e5a22",
+        "id": "8cbca41205d468eb",
         "type": "tabs",
         "children": [
           {
-            "id": "e495839d66fac75c",
+            "id": "e10a4f8e2240a0f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "流处理",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6543d76095c56c9a",
@@ -182,23 +181,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e495839d66fac75c",
+  "active": "e10a4f8e2240a0f6",
   "lastOpenFiles": [
-    "learning/target/debug/deps/learning.16e9tut08986qfdjityqzauc8.rcgu.o",
-    "learning/target/debug/deps/learning.c57tnoc7yfwonqxwk0bwi2srv.rcgu.o",
-    "learning/target/debug/deps/learning.5l6d2bkgggswf0p8t1kmt2xrz.rcgu.o",
-    "learning/target/debug/deps/learning.f3ks9fd8dtqsvo93jkncnaue5.rcgu.o",
-    "learning/target/debug/deps/learning.d29j9p62fylyftt35acrb5f79.rcgu.o",
-    "learning/target/debug/deps/learning.90uriuhmwyiibamhadkx0ifs6.rcgu.o",
-    "learning/target/debug/deps/learning.787p1l4ydkq1vj7eq90x27h6i.rcgu.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/16e9tut08986qfdjityqzauc8.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/c57tnoc7yfwonqxwk0bwi2srv.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/5l6d2bkgggswf0p8t1kmt2xrz.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/work-products.bin",
-    "letterTools/mcat/图片转换工具.md",
+    "learning/target/debug/build/zerocopy-88f75efee25cee2c/invoked.timestamp",
+    "learning/target/debug/build/zerocopy-edfb72312218553b/build-script-build",
+    "learning/target/debug/build/native-tls-86c7535dbc459088/invoked.timestamp",
+    "learning/target/debug/build/zerocopy-edfb72312218553b/build_script_build-edfb72312218553b",
+    "learning/target/debug/build/native-tls-fab53b8382bbe8e5/build-script-build",
+    "learning/target/debug/build/native-tls-fab53b8382bbe8e5/build_script_build-fab53b8382bbe8e5",
+    "learning/target/debug/build/native-tls-fab53b8382bbe8e5/build_script_build-fab53b8382bbe8e5.d",
+    "learning/target/debug/build/libc-f43d76eb0d6ba610/invoked.timestamp",
+    "learning/target/debug/build/libc-6541a36177318b2b/build-script-build",
+    "learning/target/debug/build/libc-6541a36177318b2b/build_script_build-6541a36177318b2b",
+    "learning/target/debug/build/httparse-6bb292169e13280e/invoked.timestamp",
     "sql/Fluxus.md",
-    "sql/readme.md",
-    "gameEngine/bevy.md",
+    "letterTools/mcat/图片转换工具.md",
+    "ai/算法库/faer.md",
     "README.md",
     "Rust2发展.md"
   ]
