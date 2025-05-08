@@ -170,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,9 +184,19 @@
   },
   "active": "e495839d66fac75c",
   "lastOpenFiles": [
+    "learning/target/debug/deps/learning.16e9tut08986qfdjityqzauc8.rcgu.o",
+    "learning/target/debug/deps/learning.c57tnoc7yfwonqxwk0bwi2srv.rcgu.o",
+    "learning/target/debug/deps/learning.5l6d2bkgggswf0p8t1kmt2xrz.rcgu.o",
+    "learning/target/debug/deps/learning.f3ks9fd8dtqsvo93jkncnaue5.rcgu.o",
+    "learning/target/debug/deps/learning.d29j9p62fylyftt35acrb5f79.rcgu.o",
+    "learning/target/debug/deps/learning.90uriuhmwyiibamhadkx0ifs6.rcgu.o",
+    "learning/target/debug/deps/learning.787p1l4ydkq1vj7eq90x27h6i.rcgu.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/16e9tut08986qfdjityqzauc8.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/c57tnoc7yfwonqxwk0bwi2srv.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/5l6d2bkgggswf0p8t1kmt2xrz.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h75gtk7pvg-0uyc5pn-working/work-products.bin",
     "letterTools/mcat/图片转换工具.md",
     "sql/Fluxus.md",
-    "letterTools/mcat",
     "sql/readme.md",
     "gameEngine/bevy.md",
     "README.md",

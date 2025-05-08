@@ -19,8 +19,8 @@ Byte (单字节字符)(仅限于u8)	b'A'
 * 使用 --release flag 在 release 模式中构建时，Rust 不会检测会导致 panic 的整型溢出。相反发生整型溢出时，Rust 会进行一种被称为二进制补码 wrapping（two’s complement wrapping）的操作。
 */
 // 使用整型
-pub fn changeType() {
-    let guess: u32 = "42".parse().expect("Not a number!");
+pub fn change_type() {
+    let guess: u32 = "42 ".trim().parse().expect("Not a number!");
     println!("{}", guess)
 }
 

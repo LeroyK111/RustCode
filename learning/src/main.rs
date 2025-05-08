@@ -4,15 +4,15 @@ use std::io::{self, stdout, BufWriter};
 
 // 导入自己包，先声明同级目录下的rs文件
 // 私有模块声明
-mod game;
+// mod game;
 // 这是相对路径
-use game::{g, test};
+// use game::{g, test};
 // 只引用一个函数
 // use game::g;
 
 // 共有模块声明
 // mod variablesVariability;
-// use variablesVariability::{constants, test_mut, Shadowing};
+// use variablesVariability::{constants, test_mut, Shadowing, testType};
 
 // 绝对路径引入，这是根路径
 // use crate::game::test;
@@ -24,8 +24,8 @@ use game::{g, test};
 // mod function;
 // use function::print_labeled_measurement;
 
-// mod dataType;
-// use dataType::{array, bools, changeType, count, float, string, tuple};
+mod dataType;
+use dataType::{array, bools, change_type, count, float, string, tuple};
 
 // 测试所有权
 // mod ownership;
@@ -123,7 +123,7 @@ fn main() {
     // test_says();
 
     // 生成随机数
-    g();
+    // g();
     
     // *测试变量
     // test_mut();
@@ -131,12 +131,13 @@ fn main() {
     // constants()
     // 测试定义域
     // Shadowing();
+    // testType()
 
     // *改变数据类型
-    // changeType()
+    // change_type()
     // 标量类型
     // 浮点
-    // float();
+    float();
     // 计算
     // count();
     // 布尔值

@@ -30,9 +30,14 @@ pub fn Shadowing() {
 pub fn testType() {
     // todo 这种可以修改已命名的值
     let spaces = "   ";
+    // println!("{spaces}?");
+    // 这里是遮盖了
     let spaces = spaces.len();
+    // println!("{spaces}");
     
     // todo 这种就会报错，虽然你可以修改value，但不允许修改它的type。
     // let mut spaces = "   ";
+    // 但是你加let const 等等，就可以新建变量
     // spaces = spaces.len();
+    // println!("{spaces}");
 }
