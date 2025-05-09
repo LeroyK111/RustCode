@@ -22,7 +22,7 @@ use std::io::{self, stdout, BufWriter};
 // use 数据类型::{changeType;}
 
 mod function;
-use function::print_labeled_measurement;
+use function::{print_labeled_measurement, talk};
 
 // mod dataType;
 // use dataType::{array, bools, change_type, count, float, string, tuple};
@@ -150,7 +150,9 @@ fn main() {
     // array();
 
     // 函数
-    print_labeled_measurement(32, '2');
+    // print_labeled_measurement(32, '2');
+    talk()
+    
 
     // todo 作用域函数，打印
     // scope()

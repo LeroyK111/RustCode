@@ -11,10 +11,18 @@ pub fn print_labeled_measurement(value: i32, unit_label: char) {
 
 // 表达式写法
 pub fn talk() {
+    // let y = 6 语句不返回值，所以 x 没有可以绑定到的东西。这与 C 和 Ruby 等其他语言不同，在这些语言中，赋值会返回赋值的值。在这些语言中，你可以写 x = y = 6 ，让 x 和 y 都具有值 6 ；在 Rust 中则不是这种情况。
+    // let x = (let y = 6);
+
+
+    // 表达式要求职
     let y = {
         let x = 3;
         x + 1
     };
+
+    
+    
 
     println!("The value of y is: {y}");
 }
@@ -37,41 +45,41 @@ fn test1() {
 }
 
 // 一等函数
-fn test2() {
-    fn call_with_two(func: fn(i32, i32) -> i32, x: i32) -> i32 {
-        func(x, 2)
-    }
+// fn test2() {
+//     fn call_with_two(func: fn(i32, i32) -> i32, x: i32) -> i32 {
+//         func(x, 2)
+//     }
 
-    call_with_two(add, 1); // Returns 3
-}
+//     call_with_two(add, 1); // Returns 3
+// }
 
 // 一等函数
-fn test3() {
-    fn make_adder(x: i32) -> fn(i32) -> i32 {
-        fn add(y: i32) -> i32 {
-            x + y
-        }
-        add
-    }
+// fn test3() {
+//     fn make_adder(x: i32) -> fn(i32) -> i32 {
+//         fn add(y: i32) -> i32 {
+//             x + y
+//         }
+//         add
+//     }
 
-    let add_10 = make_adder(10);
+//     let add_10 = make_adder(10);
 
-    add_10(3); // Returns 13// Returns 3
-}
+//     add_10(3); // Returns 13// Returns 3
+// }
 
-fn test4() {
-    // 迭代器
-    let vec = vec![1, 2, 3];
-    let doubled = vec.iter().map(|x| x * 2).collect();
-    // doubled is [2, 4, 6]
+// fn test4() {
+//     // 迭代器
+//     let vec = vec![1, 2, 3];
+//     let doubled = vec.iter().map(|x| x * 2).collect();
+//     // doubled is [2, 4, 6]
 
-    // 闭包
-    let x = 10;
+//     // 闭包
+//     let x = 10;
 
-    let closure = |y| x + y;
+//     let closure = |y| x + y;
 
-    let answer = closure(2); // answer is 12
-}
+//     let answer = closure(2); // answer is 12
+// }
 
 // 纯函数
 fn test5() {
@@ -110,19 +118,19 @@ fn apply<F>(f: F) -> F {
     f
 }
 
-fn compose<A, B, C>(f: fn(A) -> B, g: fn(B) -> C) -> fn(A) -> C {
-    move |x| g(f(x))
-}
+// fn compose<A, B, C>(f: fn(A) -> B, g: fn(B) -> C) -> fn(A) -> C {
+//     move |x| g(f(x))
+// }
 
-fn twice<F>(f: F) -> F
-where
-    F: FnOnce() -> (),
-{
-    move || {
-        f();
-        f();
-    }
-}
+// fn twice<F>(f: F) -> F
+// where
+//     F: FnOnce() -> (),
+// {
+//     move || {
+//         f();
+//         f();
+//     }
+// }
 
 fn add_5(x: i32) -> i32 {
     x + 5
@@ -137,15 +145,15 @@ fn apply_example() {
     let result = f(10);
 }
 
-fn compose_example() {
-    let h = compose(add_5, multiply);
-    let result = h(2, 3);
-}
+// fn compose_example() {
+//     let h = compose(add_5, multiply);
+//     let result = h(2, 3);
+// }
 
-fn twice_example() {
-    let f = twice(|| println!("Hello!"));
-    f();
-}
+// fn twice_example() {
+//     let f = twice(|| println!("Hello!"));
+//     f();
+// }
 
 fn test6() {
     let nums = vec![1, 2, 3, 4, 5];
