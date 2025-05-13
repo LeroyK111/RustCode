@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d14a0a2d15893e3c",
@@ -89,11 +90,27 @@
         "type": "tabs",
         "children": [
           {
+            "id": "396a6237abcc84d7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "README 的大纲"
+            }
+          },
+          {
             "id": "8290423c10d379bb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "README 的反向链接列表"
             }
           },
           {
@@ -147,27 +164,12 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "396a6237abcc84d7",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,16 +183,16 @@
   },
   "active": "3fa6d875fe9874ec",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/d29j9p62fylyftt35acrb5f79.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/5l6d2bkgggswf0p8t1kmt2xrz.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/work-products.bin",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/query-cache.bin",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/f3ks9fd8dtqsvo93jkncnaue5.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/dep-graph.bin",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/90uriuhmwyiibamhadkx0ifs6.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/46tztfomv4te3jw87jtj96v5s.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/3vxeqqhw8kzi99qosb44h7jnz.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6/16e9tut08986qfdjityqzauc8.o",
-    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h76kvwk8yz-1j4t0vi-e5k0stib4in49qdee9204afv6"
+    "learning/target/debug/deps/learning.pdb",
+    "learning/target/debug/deps/learning.exe",
+    "learning/target/debug/deps/learning.d29j9p62fylyftt35acrb5f79.rcgu.o",
+    "learning/target/debug/deps/learning.46tztfomv4te3jw87jtj96v5s.rcgu.o",
+    "learning/target/debug/deps/learning.5l6d2bkgggswf0p8t1kmt2xrz.rcgu.o",
+    "learning/target/debug/deps/learning.f0dpujiqu31vfdbzd1zm600tc.rcgu.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h7azxw8rgw-1qg0u1o-0tazz73qrcuo9xvhdvkjpmauk/d29j9p62fylyftt35acrb5f79.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h7azxw8rgw-1qg0u1o-0tazz73qrcuo9xvhdvkjpmauk/46tztfomv4te3jw87jtj96v5s.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h7azxw8rgw-1qg0u1o-0tazz73qrcuo9xvhdvkjpmauk/5l6d2bkgggswf0p8t1kmt2xrz.o",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h7azxw8rgw-1qg0u1o-0tazz73qrcuo9xvhdvkjpmauk/work-products.bin",
+    "learning/target/debug/incremental/learning-0r3xg9148y52c/s-h7azxw8rgw-1qg0u1o-0tazz73qrcuo9xvhdvkjpmauk/query-cache.bin"
   ]
 }

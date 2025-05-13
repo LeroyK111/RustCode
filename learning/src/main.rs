@@ -21,18 +21,18 @@ use std::io::{self, stdout, BufWriter};
 // mod 数据类型;
 // use 数据类型::{changeType;}
 
-mod function;
-use function::{print_labeled_measurement, talk};
+// mod function;
+// use function::{print_labeled_measurement, talk, plus_one, if_main, testLoop, testLoop1, testWhile, testFor, testFor1};
 
 // mod dataType;
 // use dataType::{array, bools, change_type, count, float, string, tuple};
 
 // 测试所有权
-// mod ownership;
-// use ownership::{scope, scope1, scope2, scope3, scope4};
+mod ownership;
+use ownership::{scope, scope1, scope2, scope3, scope4};
 // 引用和借用
-// mod referenceBorrowing;
-// use referenceBorrowing::demo;
+mod referenceBorrowing;
+use referenceBorrowing::demo;
 
 // 结构体
 // mod structure;
@@ -151,14 +151,21 @@ fn main() {
 
     // 函数
     // print_labeled_measurement(32, '2');
-    talk()
+    // talk(3);
+    // let x = plus_one(2);
+    // println!("{x}");
+    // if_main();
+    // testLoop();
+    // testLoop1();
+    // testWhile();
+    // testFor();
+    // testFor1();
     
-
     // todo 作用域函数，打印
-    // scope()
+    // scope();
     // 字符串类型
     // scope1();
-    // scope2();
+    scope2();
     // 字面量，深复制、克隆
     // scope3();
     // 函数和字面量

@@ -10,31 +10,125 @@ pub fn print_labeled_measurement(value: i32, unit_label: char) {
 }
 
 // 表达式写法
-pub fn talk() {
+pub fn talk(x: i32) {
     // let y = 6 语句不返回值，所以 x 没有可以绑定到的东西。这与 C 和 Ruby 等其他语言不同，在这些语言中，赋值会返回赋值的值。在这些语言中，你可以写 x = y = 6 ，让 x 和 y 都具有值 6 ；在 Rust 中则不是这种情况。
     // let x = (let y = 6);
 
-
-    // 表达式要求职
+    // 表达式
     let y = {
-        let x = 3;
+        // 其他语言则需要return
         x + 1
     };
-
-    
-    
-
     println!("The value of y is: {y}");
 }
 
 // 返回值函数，只需要箭头函数
-fn plus_one(x: i32) -> i32 {
-    // 不能加入分号，“mismatched types”（类型不匹配）
+pub fn plus_one(x: i32) -> i32 {
+    // 不能加入分号，“mismatched types”（类型不匹配)
+    // 但语句的计算结果不为值，该值由 Unit（） 表示。
     x + 1
 }
 
+// if分支
+pub fn if_main() {
+    let number = 3;
+    if number > 5 {
+        println!("满足条件则为 true");
+    } else if number % 3 == 0 {
+        println!("3的倍数");
+    } else {
+        println!("不满足条件则为 false");
+    }
+
+    if number != 0 {
+        println!("不等于");
+    }
+
+    // 简写赋值
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+    println!("赋值写法 {number}");
+}
+
+// 使用循环loop, while, and for
+pub fn testLoop() {
+    let mut count = 0;
+    let result = loop {
+        if count > 5 {
+            break "ok!";
+        }
+        count += 1;
+    };
+    println!("{count}, {result}")
+}
+
+pub fn testLoop1() {
+    let mut count = 0;
+    // 循环嵌套记得打tag
+    'counting_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                // 指定跳出的循环tag
+                break 'counting_up;
+            }
+            remaining -= 1;
+        }
+
+        count += 1;
+    }
+    println!("End count = {count}");
+}
+
+
+pub fn testWhile() {
+    let mut number = 3;
+
+    while number != 0 {
+        // 不满足条件则，一直循环
+        println!("{number}!");
+
+        number -= 1;
+    }
+
+    println!("done! {number}");
+
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+        index += 1;
+    }
+}
+
+
+pub fn testFor() {
+    let a = [10, 20, 30, 40, 50];
+    for element in a {
+        println!("the value is: {element}");
+    }
+}
+
+
+pub fn testFor1() {
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
+}
+
+
+
 // 一等函数
-fn test1() {
+pub fn test1() {
     fn add(x: i32, y: i32) -> i32 {
         x + y
     }
