@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "94f3f1c1f0fb2144",
+        "id": "2a7167ba5ddb0fb7",
         "type": "tabs",
         "children": [
           {
-            "id": "26bb7df064406412",
+            "id": "7bd9f55b51ab813c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -79,6 +75,7 @@
     ],
     "direction": "horizontal",
     "width": 200
+    "width": 200
   },
   "right": {
     "id": "6543d76095c56c9a",
@@ -94,13 +91,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -181,23 +177,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "26bb7df064406412",
+  "active": "7bd9f55b51ab813c",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-3n2ydckrvacba/s-h7gl1lm8oh-1p9i555-azlfvv5td6spc34iwh2effoel/work-products.bin",
-    "learning/target/debug/incremental/learning-3n2ydckrvacba/s-h7gl1lm8oh-1p9i555-azlfvv5td6spc34iwh2effoel/query-cache.bin",
-    "learning/target/debug/incremental/learning-3n2ydckrvacba/s-h7gl1lm8oh-1p9i555-azlfvv5td6spc34iwh2effoel/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3n2ydckrvacba/s-h7gl1lm8oh-1p9i555-azlfvv5td6spc34iwh2effoel",
-    "learning/target/debug/incremental/learning-0t806q5luv7r9/s-h7gl1lm8oh-12iaolx-02my10a7eiunct1y9izuapfxv/work-products.bin",
-    "learning/target/debug/incremental/learning-0t806q5luv7r9/s-h7gl1lm8oh-12iaolx-02my10a7eiunct1y9izuapfxv/query-cache.bin",
-    "learning/target/debug/incremental/learning-0t806q5luv7r9/s-h7gl1lm8oh-12iaolx-02my10a7eiunct1y9izuapfxv/dep-graph.bin",
-    "learning/target/debug/incremental/learning-0t806q5luv7r9/s-h7gl1lm8oh-12iaolx-02my10a7eiunct1y9izuapfxv",
-    "learning/target/debug/incremental/learning-0t806q5luv7r9/s-h7gl1lm8oh-12iaolx.lock",
-    "learning/target/debug/incremental/learning-3n2ydckrvacba/s-h7gl1lm8oh-1p9i555.lock",
-    "learning/target/debug/incremental/learning-3n2ydckrvacba/s-h7gl1jmg21-1jth1d4-azlfvv5td6spc34iwh2effoel/query-cache.bin",
-    "Rust2发展.md",
+    "webServer/Rama/readme.md",
     "README.md",
-    "sql/Fluxus.md",
-    "letterTools/mcat/图片转换工具.md",
-    "ai/算法库/faer.md"
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/work-products.bin",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/query-cache.bin",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/work-products.bin",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/query-cache.bin",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/dep-graph.bin",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr.lock",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-working/work-products.bin"
   ]
 }
