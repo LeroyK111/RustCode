@@ -2264,6 +2264,12 @@ sign_in_count: i32,
 
 fn build_user(email: String, username: String) -> User {
 
+/*
+
+构建结构体
+
+*/
+
 User {
 
 active: true,
@@ -2318,17 +2324,17 @@ user1.email = String::from("785632486@qq.com");
 
 // 使用user1的内容，填充给user2
 
-// let user2 = User {
+let user2 = User {
 
-// active: user1.active,
+active: user1.active,
 
-// username: user1.username,
+username: user1.username.clone(),
 
-// email: String::from("another@example.com"),
+email: String::from("another@example.com"),
 
-// sign_in_count: user1.sign_in_count,
+sign_in_count: user1.sign_in_count,
 
-// };
+};
 
 // 使用语法糖，进行解构赋值
 
@@ -2336,15 +2342,17 @@ let user3 = User {
 
 email: String::from("another@example.com"),
 
+// 使用结构体语法糖
+
 ..user1
 
 };
 
 // user1被清理掉了，user3能正常使用。
 
-// println!("{}", user1.email)
+// println!("{}", user1.email);
 
-// println!("{}", user2.email)
+// println!("{}", user2.email);
 
 // println!("{}", user3.sign_in_count);
 
@@ -2352,7 +2360,7 @@ email: String::from("another@example.com"),
 
 let user4 = user3.email.clone();
 
-// println!("{}", user4)
+// println!("{}", user4);
 
   
 
@@ -2362,7 +2370,7 @@ let black = Color(0, 0, 0);
 
   
 
-// 类单元结构体
+// 类单元结构体, 本质就是unit类型 结构体 类似 空对象
 
 let subject = AlwaysEqual;
 
@@ -2412,17 +2420,17 @@ height: u32,
 
 fn wh() {
 
-// let width1 = 30;
+let width1 = 30;
 
-// let height1 = 50;
+let height1 = 50;
 
-// println!("{}", area(width1, height1));
+println!("{}", area(width1, height1));
 
   
 
-// let rect1 = (30, 50);
+let rect1 = (30, 50);
 
-// println!("{}", area1(rect1));
+println!("{}", area1(rect1));
 
   
 
@@ -2434,7 +2442,19 @@ height: 50,
 
 };
 
+  
+  
+  
+
 println!("{}", area2(&rect2));
+
+// println!("{rect2:#?}");
+
+// println!("{rect2:?} \n dbg!(&rect2)");
+
+// dbg! 一个简单的宏tips，不受#[derive(Debug)]干涉，随时可用
+
+dbg!(&rect1);
 
 }
 
@@ -2468,9 +2488,11 @@ rectangle.height * rectangle.width
 
   
 
-// 改写结构体，这里很像js的prototype，高级对象方法。
+// 为结构体添加方法，这里很像js的prototype，高级对象方法。
 
 impl Rectangle {
+
+// &self 代表结构体本身，类似js的this
 
 fn area(&self) -> u32 {
 
@@ -2530,7 +2552,7 @@ println!("{}", rect1.area());
 
 if rect1.width() {
 
-println!("The rectangle has a nonzero width; it is {}", rect1.width);
+println!("宽度要大于0， 则当前值是 {}", rect1.width);
 
 }
 
@@ -2603,6 +2625,10 @@ Self {
 width: size,
 
 height: size,
+
+// 不能增删参数， 必须和结构体保持一致
+
+// long: size,
 
 }
 
@@ -7095,4 +7121,32 @@ Rust标准包括原语，并在它们之上构建。
 ![](readme.assets/Pasted%20image%2020231102020242.png)
 ![](readme.assets/Pasted%20image%2020231102020253.png)
 
+
+## 字符串格式化
+
+| 占位符              | 含义                   | 示例代码                            | 输出示例         |
+| ---------------- | -------------------- | ------------------------------- | ------------ |
+| `{}`             | 默认格式（Display）        | `println!("{}", 42)`            | `42`         |
+| `{:?}`           | 调试格式（Debug）          | `println!("{:?}", [1, 2])`      | `[1, 2]`     |
+| `{:#?}`          | 美化调试格式（Pretty Debug） | `println!("{:#?}", vec![1, 2])` | 多行缩进格式       |
+| `{{` / `}}`      | 输出大括号 `{` 或 `}`      | `println!("{{}}")`              | `{}`         |
+| `{:width$}`      | 固定宽度，右对齐（默认）         | `println!("{:5}", "hi")`        | `' hi'`      |
+| `{:<width$}`     | 左对齐，占 `width` 宽度     | `println!("{:<5}", "hi")`       | `'hi '`      |
+| `{:>width$}`     | 右对齐，占 `width` 宽度     | `println!("{:>5}", "hi")`       | `' hi'`      |
+| `{:^width$}`     | 居中对齐                 | `println!("{:^5}", "hi")`       | `' hi '`     |
+| `{:*>width$}`    | 使用 `*` 填充，右对齐        | `println!("{:*>5}", "hi")`      | `'***hi'`    |
+| `{:_<width$}`    | 使用 `_` 填充，左对齐        | `println!("{:_<5}", "hi")`      | `'hi___'`    |
+| `{:b}`           | 二进制格式                | `println!("{:b}", 5)`           | `101`        |
+| `{:o}`           | 八进制格式                | `println!("{:o}", 9)`           | `11`         |
+| `{:x}`           | 十六进制（小写）             | `println!("{:x}", 255)`         | `ff`         |
+| `{:X}`           | 十六进制（大写）             | `println!("{:X}", 255)`         | `FF`         |
+| `{:#b}`          | 带前缀的二进制（`0b`）        | `println!("{:#b}", 5)`          | `0b101`      |
+| `{:#x}`          | 带前缀的十六进制（`0x`）       | `println!("{:#x}", 255)`        | `0xff`       |
+| `{:.N}`          | 浮点保留小数点后 N 位         | `println!("{:.2}", 3.14159)`    | `3.14`       |
+| `{:<width.prec}` | 浮点左对齐                | `println!("{:<8.2}", 3.14)`     | `'3.14 '`    |
+| `{:>width.prec}` | 浮点右对齐                | `println!("{:>8.2}", 3.14)`     | `' 3.14'`    |
+| `{:e}`           | 科学计数法（小写 e）          | `println!("{:e}", 1234.567)`    | `1.234567e3` |
+| `{:E}`           | 科学计数法（大写 E）          | `println!("{:E}", 1234.567)`    | `1.234567E3` |
+| `{:0width$}`     | 宽度不足前导补零             | `println!("{:05}", 42)`         | `00042`      |
+| `{:02}`          | 固定两位宽度，不足补零          | `println!("{:02}", 4)`          | `04`         |
 

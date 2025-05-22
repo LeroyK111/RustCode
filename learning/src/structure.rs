@@ -7,6 +7,9 @@ struct User {
 }
 
 fn build_user(email: String, username: String) -> User {
+    /*
+    构建结构体
+    */
     User {
         active: true,
         username: username,
@@ -34,29 +37,30 @@ pub fn theWorld() {
     // println!("{}", user1.email);
 
     // 使用user1的内容，填充给user2
-    // let user2 = User {
-    //     active: user1.active,
-    //     username: user1.username,
-    //     email: String::from("another@example.com"),
-    //     sign_in_count: user1.sign_in_count,
-    // };
+    let user2 = User {
+        active: user1.active,
+        username: user1.username.clone(),
+        email: String::from("another@example.com"),
+        sign_in_count: user1.sign_in_count,
+    };
     // 使用语法糖，进行解构赋值
     let user3 = User {
         email: String::from("another@example.com"),
+        // 使用结构体语法糖
         ..user1
     };
     // user1被清理掉了，user3能正常使用。
-    // println!("{}", user1.email)
-    // println!("{}", user2.email)
+    // println!("{}", user1.email);
+    // println!("{}", user2.email);
     // println!("{}", user3.sign_in_count);
     // clone 可以进行属性的深复制, 但结构体不能深复制
     let user4 = user3.email.clone();
-    // println!("{}", user4)
+    // println!("{}", user4);
 
     // 元组结构体
     let black = Color(0, 0, 0);
 
-    // 类单元结构体
+    // 类单元结构体, 本质就是unit类型 结构体 类似 空对象
     let subject = AlwaysEqual;
 
     // 结构体传参数
@@ -81,18 +85,25 @@ struct Rectangle {
 
 // 计算矩形面积
 fn wh() {
-    // let width1 = 30;
-    // let height1 = 50;
-    // println!("{}", area(width1, height1));
+    let width1 = 30;
+    let height1 = 50;
+    println!("{}", area(width1, height1));
 
-    // let rect1 = (30, 50);
-    // println!("{}", area1(rect1));
+    let rect1 = (30, 50);
+    println!("{}", area1(rect1));
 
     let rect2 = Rectangle {
         width: 30,
         height: 50,
     };
+
+
+
     println!("{}", area2(&rect2));
+    // println!("{rect2:#?}");
+    // println!("{rect2:?} \n dbg!(&rect2)");
+    // dbg! 一个简单的宏tips，不受#[derive(Debug)]干涉，随时可用
+    dbg!(&rect1);
 }
 
 fn area(width: u32, height: u32) -> u32 {
@@ -109,8 +120,9 @@ fn area2(rectangle: &Rectangle) -> u32 {
     rectangle.height * rectangle.width
 }
 
-// 改写结构体，这里很像js的prototype，高级对象方法。
+// 为结构体添加方法，这里很像js的prototype，高级对象方法。
 impl Rectangle {
+    // &self 代表结构体本身，类似js的this
     fn area(&self) -> u32 {
         // 这个self又类似
         self.width * self.height
@@ -140,7 +152,7 @@ fn print() {
     // 调用结构体内部方法
     println!("{}", rect1.area());
     if rect1.width() {
-        println!("The rectangle has a nonzero width; it is {}", rect1.width);
+        println!("宽度要大于0， 则当前值是 {}", rect1.width);
     }
 }
 
@@ -177,6 +189,8 @@ impl Rectangle {
         Self {
             width: size,
             height: size,
+            // 不能增删参数， 必须和结构体保持一致
+            // long: size,
         }
     }
 }

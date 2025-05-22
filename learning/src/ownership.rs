@@ -13,7 +13,7 @@ pub fn scope() {
     /*
     这是一个将 String 需要的内存返回给分配器的很自然的位置：当 s 离开作用域的时候。当变量离开作用域，Rust 为我们调用一个特殊的函数。这个函数叫做 drop，在这里 String 的作者可以放置释放内存的代码。Rust 在结尾的 } 处自动调用 drop。
     */
-    
+
     println!("{}", s)
 }
 
@@ -29,9 +29,6 @@ pub fn scope1() {
     /*
     ?就字符串字面值来说，我们在编译时就知道其内容，所以文本被直接硬编码进最终的可执行文件中。这使得字符串字面值快速且高效。不过这些特性都只得益于字符串字面值的不可变性。不幸的是，我们不能为了每一个在编译时大小未知的文本而将一块内存放入二进制文件中，并且它的大小还可能随着程序运行而改变。
     */
-    
-    
-
 }
 
 pub fn scope2() {
@@ -65,7 +62,7 @@ pub fn scope3() {
 
     println!("s1 = {}, s2 = {}", s1, s2);
 
-    // 拷贝, 这里没有使用字面量from，
+    // 深拷贝, 这里没有使用字面量from，
     let x = 5;
     let y = x;
 
@@ -74,12 +71,10 @@ pub fn scope3() {
 
 pub fn scope4() {
     let s = String::from("hello"); // s 进入作用域
-
     takes_ownership(s); // s 的值移动到函数里 ...
-                        // ... 所以到这里不再有效
+                        // println!("{}", s); // 这里会报错，s 不再有效
 
     let x = 5; // x 进入作用域
-
     makes_copy(x); // x 应该移动函数里，
                    // 但 i32 是 Copy 的，
                    // 所以在后面可继续使用 x
@@ -87,10 +82,15 @@ pub fn scope4() {
     let response = gives_ownership();
     println!("{response}");
 
-    // jie解构赋值
+    // 解构赋值
     let str1 = String::from("abc");
     let (s2, s2lenght) = calculate_length(str1);
     println!("{s2}, {s2lenght}")
+}
+// 返回一个元祖
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len() 返回字符串的长度
+    (s, length)
 }
 
 fn takes_ownership(some_string: String) {
@@ -114,11 +114,4 @@ fn gives_ownership() -> String {
     some_string // 返回 some_string
                 // 并移出给调用的函数
                 //
-                
-}
-
-// 返回一个元祖
-fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len(); // len() 返回字符串的长度
-    (s, length)
 }

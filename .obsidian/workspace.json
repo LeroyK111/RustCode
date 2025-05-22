@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2a7167ba5ddb0fb7",
+        "id": "3fda3d2ac50e92b4",
         "type": "tabs",
         "children": [
           {
-            "id": "7bd9f55b51ab813c",
+            "id": "0b5297f162383a8d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -75,7 +79,6 @@
     ],
     "direction": "horizontal",
     "width": 200
-    "width": 200
   },
   "right": {
     "id": "6543d76095c56c9a",
@@ -91,12 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "README 的大纲"
             }
           },
           {
@@ -177,19 +181,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7bd9f55b51ab813c",
+  "active": "0b5297f162383a8d",
   "lastOpenFiles": [
-    "webServer/Rama/readme.md",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/2of9bj3645gaw6cz3hdx1geks.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/work-products.bin",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/byxol3n6hmd0nb115lr8wq303.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/query-cache.bin",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/a0urdb71qyabglfh609vfjeai.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/dep-graph.bin",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/9789o9mvcg65gqsx6qy9pwuoe.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/3kvsl196lf2vbsui15ps814e1.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/92snfyx040ceu9k9t7bayxrf0.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/3fvths0akq9fetw9dpyz0kv0h.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h7kvetj4fd-00k1yea-e0qymjrenkixglqd3r2bx2xvp/0eb72x1g41rx51evjewqr343m.o",
     "README.md",
-    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/work-products.bin",
-    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/query-cache.bin",
-    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim",
-    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/work-products.bin",
-    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/query-cache.bin",
-    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/dep-graph.bin",
-    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working",
-    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr.lock",
-    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-working/work-products.bin"
+    "letterTools/rust-av/readme.md",
+    "Rust2发展.md",
+    "sql/Fluxus.md",
+    "letterTools/mcat/图片转换工具.md",
+    "ai/算法库/faer.md"
   ]
 }

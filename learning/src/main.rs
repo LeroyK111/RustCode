@@ -4,15 +4,15 @@ use std::io::{self, stdout, BufWriter};
 
 // 导入自己包，先声明同级目录下的rs文件
 // 私有模块声明
-// mod game;
+mod game;
 // 这是相对路径
-// use game::{g, test};
+use game::{g, test};
 // 只引用一个函数
 // use game::g;
 
 // 共有模块声明
-// mod variablesVariability;
-// use variablesVariability::{constants, test_mut, Shadowing, testType};
+mod variablesVariability;
+use variablesVariability::{constants, test_mut, Shadowing, testType};
 
 // 绝对路径引入，这是根路径
 // use crate::game::test;
@@ -21,11 +21,11 @@ use std::io::{self, stdout, BufWriter};
 // mod 数据类型;
 // use 数据类型::{changeType;}
 
-// mod function;
-// use function::{print_labeled_measurement, talk, plus_one, if_main, testLoop, testLoop1, testWhile, testFor, testFor1};
+mod function;
+use function::{print_labeled_measurement, talk, plus_one, if_main, testLoop, testLoop1, testWhile, testFor, testFor1};
 
-// mod dataType;
-// use dataType::{array, bools, change_type, count, float, string, tuple};
+mod dataType;
+use dataType::{array, bools, change_type, count, float, string, tuple};
 
 // 测试所有权
 mod ownership;
@@ -35,18 +35,18 @@ mod referenceBorrowing;
 use referenceBorrowing::demo;
 
 // 结构体
-// mod structure;
-// use structure::theWorld;
+mod structure;
+use structure::theWorld;
 
 // 枚举体
-// mod enums;
-// use enums::{enums, enums1, enums2, enums3};
+mod enums;
+use enums::{enums, enums1, enums2, enums3};
 
 // 集合
-// mod coll;
-// use coll::hashmaps::hashmaps;
-// use coll::strings::strMain;
-// use coll::vectors::{call, call2};
+mod coll;
+use coll::hashmaps::hashmaps;
+use coll::strings::strMain;
+use coll::vectors::{call, call2};
 
 fn test_says() {
     let stdout: std::io::Stdout = stdout();
@@ -165,7 +165,7 @@ fn main() {
     // scope();
     // 字符串类型
     // scope1();
-    scope2();
+    // scope2();
     // 字面量，深复制、克隆
     // scope3();
     // 函数和字面量
@@ -178,7 +178,7 @@ fn main() {
     // theWorld();
 
     // todo 枚举
-    // enums();
+    enums();
     // enums1();
     // enums2();
     // enums3();
