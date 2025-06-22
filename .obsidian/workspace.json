@@ -176,14 +176,24 @@
   },
   "active": "8555d563f6ed6b04",
   "lastOpenFiles": [
-    "learning/target/rust-analyzer/metadata/sysroot/Cargo.lock",
-    "learning/target/rust-analyzer/metadata/sysroot",
-    "learning/target/rust-analyzer/metadata/workspace/Cargo.lock",
-    "learning/target/rust-analyzer/metadata/workspace",
-    "learning/target/rust-analyzer/metadata",
-    "learning/target/rust-analyzer",
-    "Embedded/文献/基于安全模组的嵌入式系统启动设计.pdf",
-    "Embedded/文献",
-    "README.md"
+    "learning/target/debug/deps/learning-1bc0c9b5edce3a15",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/work-products.bin",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/query-cache.bin",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/dep-graph.bin",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/byxol3n6hmd0nb115lr8wq303.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/a0urdb71qyabglfh609vfjeai.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/9789o9mvcg65gqsx6qy9pwuoe.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/92snfyx040ceu9k9t7bayxrf0.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/3kvsl196lf2vbsui15ps814e1.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/3fvths0akq9fetw9dpyz0kv0h.o",
+    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/2of9bj3645gaw6cz3hdx1geks.o",
+    "README.md",
+    "webServer/Rama/readme.md",
+    "ai/算法库/differential-equations.md",
+    "letterTools/rust-av/readme.md",
+    "Rust2发展.md",
+    "sql/Fluxus.md",
+    "letterTools/mcat/图片转换工具.md",
+    "ai/算法库/faer.md"
   ]
 }
