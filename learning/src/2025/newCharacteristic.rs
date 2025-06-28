@@ -56,3 +56,24 @@
 //     }
 
 // }
+
+
+
+/*
+新增 If-Let Chain 功能，允许在 if 和 while 条件中使用 && 连接 let 语句，简化代码结构，但仅在Rust 2024版中可用。if let Channel::Stable(v) = release_info()
+    && let Semver { major, minor, .. } = v
+    && major == 1
+    && minor == 88
+{
+    println!("`let_chains` was stabilized in this version");
+}
+支持 naked functions，通过 #[unsafe(naked)] 属性和 naked_asm! 宏，实现对函数汇编代码的完全控制，适用于系统软件开发。#[unsafe(naked)]
+pub unsafe extern "sysv64" fn wrapping_add(a: u64, b: u64) -> u64 {
+    // Equivalent to `a.wrapping_add(b)`.
+    core::arch::naked_asm!(
+        "lea rax, [rdi + rsi]",
+        "ret"
+    );
+}
+cfg 配置语言现支持布尔值 true 和 false，使条件编译更直观。Cargo引 入自动缓存清理机制，自动清理长时间未访问的缓存文件，减少磁盘占用，但离线模式除外。此外，还稳定了多个 API，包括 Cell::update、HashMap::extract_if 等，并在常量上下文中稳定了一些之前稳定的 API。
+*/
