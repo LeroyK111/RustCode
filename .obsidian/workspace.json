@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "758a209d2718820e",
+        "id": "4a2b16c9ed408bf9",
         "type": "tabs",
         "children": [
           {
-            "id": "8555d563f6ed6b04",
+            "id": "9421519b0a812b2a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -174,7 +174,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8555d563f6ed6b04",
+  "active": "9421519b0a812b2a",
   "lastOpenFiles": [
     "learning/target/debug/deps/learning-1bc0c9b5edce3a15",
     "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/work-products.bin",
