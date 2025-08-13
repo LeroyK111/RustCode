@@ -181,6 +181,8 @@
   },
   "active": "9421519b0a812b2a",
   "lastOpenFiles": [
+    "letterTools/finetime/demo.rs",
+    "letterTools/finetime",
     "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi/work-products.bin",
     "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi/query-cache.bin",
     "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi/dep-graph.bin",
@@ -190,8 +192,6 @@
     "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d-d3lnwpg48l8ypu6hd64buq2ap/dep-graph.bin",
     "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d-d3lnwpg48l8ypu6hd64buq2ap",
     "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c.lock",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d.lock",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha27ts3kxq-114syb6-4ql34owv4fl5vmkolg2o6ebxi/work-products.bin",
     "README.md",
     "webServer/Rama/readme.md",
     "ai/算法库/differential-equations.md",
