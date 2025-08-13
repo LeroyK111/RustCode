@@ -11,10 +11,14 @@
             "id": "9421519b0a812b2a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "README 的反向链接列表"
             }
           },
           {
@@ -176,17 +181,17 @@
   },
   "active": "9421519b0a812b2a",
   "lastOpenFiles": [
-    "learning/target/debug/deps/learning-1bc0c9b5edce3a15",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/work-products.bin",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/query-cache.bin",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/dep-graph.bin",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/byxol3n6hmd0nb115lr8wq303.o",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/a0urdb71qyabglfh609vfjeai.o",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/9789o9mvcg65gqsx6qy9pwuoe.o",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/92snfyx040ceu9k9t7bayxrf0.o",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/3kvsl196lf2vbsui15ps814e1.o",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/3fvths0akq9fetw9dpyz0kv0h.o",
-    "learning/target/debug/incremental/learning-044dbj0axx7is/s-h81upx1czx-00odqm6-e0qymjrenkixglqd3r2bx2xvp/2of9bj3645gaw6cz3hdx1geks.o",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi/work-products.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi/query-cache.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi/dep-graph.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c-4ql34owv4fl5vmkolg2o6ebxi",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d-d3lnwpg48l8ypu6hd64buq2ap/work-products.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d-d3lnwpg48l8ypu6hd64buq2ap/query-cache.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d-d3lnwpg48l8ypu6hd64buq2ap/dep-graph.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d-d3lnwpg48l8ypu6hd64buq2ap",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha2a4ju5ua-0hytz2c.lock",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-ha2a4ju4vr-1n6iu1d.lock",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-ha27ts3kxq-114syb6-4ql34owv4fl5vmkolg2o6ebxi/work-products.bin",
     "README.md",
     "webServer/Rama/readme.md",
     "ai/算法库/differential-equations.md",

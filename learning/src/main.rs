@@ -116,7 +116,7 @@ fn test_guess() {
 // !主程序入口函数
 fn main() {
     // 打印
-    // println!("Hello, Rust!");
+    println!("Hello, Rust!");
     // 测试猜测
     // test_guess();
     // 测试 彩蛋库
@@ -178,7 +178,7 @@ fn main() {
     // theWorld();
 
     // todo 枚举
-    enums();
+    // enums();
     // enums1();
     // enums2();
     // enums3();
