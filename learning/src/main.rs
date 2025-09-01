@@ -12,7 +12,7 @@ use game::{g, test};
 
 // 共有模块声明
 mod variablesVariability;
-use variablesVariability::{constants, test_mut, Shadowing, testType};
+use variablesVariability::{constants, testType, test_mut, Shadowing};
 
 // 绝对路径引入，这是根路径
 // use crate::game::test;
@@ -22,7 +22,10 @@ use variablesVariability::{constants, test_mut, Shadowing, testType};
 // use 数据类型::{changeType;}
 
 mod function;
-use function::{print_labeled_measurement, talk, plus_one, if_main, testLoop, testLoop1, testWhile, testFor, testFor1};
+use function::{
+    if_main, plus_one, print_labeled_measurement, talk, testFor, testFor1, testLoop, testLoop1,
+    testWhile,
+};
 
 mod dataType;
 use dataType::{array, bools, change_type, count, float, string, tuple};
@@ -71,8 +74,6 @@ pub fn size_prefix(n: u32) -> &'static str {
     }
 }
 
-
-
 fn test_guess() {
     // 提示
     println!("Please input your guess.");
@@ -85,7 +86,6 @@ fn test_guess() {
     // let mut apples1 = 6;
     // apples1 += 1;
     // println!("{apples}, {apples1}");
-
 
     // 引用io标准输入 句柄
     io::stdin()
@@ -117,6 +117,7 @@ fn test_guess() {
 fn main() {
     // 打印
     println!("Hello, Rust!");
+
     // 测试猜测
     // test_guess();
     // 测试 彩蛋库
@@ -124,7 +125,7 @@ fn main() {
 
     // 生成随机数
     // g();
-    
+
     // *测试变量
     // test_mut();
     // 测试不可变量
@@ -160,7 +161,7 @@ fn main() {
     // testWhile();
     // testFor();
     // testFor1();
-    
+
     // todo 作用域函数，打印
     // scope();
     // 字符串类型

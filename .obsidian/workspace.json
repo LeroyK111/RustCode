@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7d67ec7f9a5cca29",
+        "id": "5587e8a5031f59ea",
         "type": "tabs",
         "children": [
           {
-            "id": "80b207722eb2d1c4",
+            "id": "3bb8759899d55922",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -181,20 +181,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "80b207722eb2d1c4",
+  "active": "3bb8759899d55922",
   "lastOpenFiles": [
-    "Rust2发展.md",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09/work-products.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09/query-cache.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09/dep-graph.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u/query-cache.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u/work-products.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u/dep-graph.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-working/work-products.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-working/query-cache.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-working/dep-graph.part.bin",
     "README.md",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hac2uizbik-1fqacb8-d3lnwpg48l8ypu6hd64buq2ap/query-cache.bin",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hac2uizbik-1fqacb8-d3lnwpg48l8ypu6hd64buq2ap/work-products.bin",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hac2uizbik-1fqacb8-d3lnwpg48l8ypu6hd64buq2ap/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hac2uizbik-1fqacb8-d3lnwpg48l8ypu6hd64buq2ap",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hac2uizbt4-00zwr7p-4ql34owv4fl5vmkolg2o6ebxi/work-products.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hac2uizbt4-00zwr7p-4ql34owv4fl5vmkolg2o6ebxi/query-cache.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hac2uizbt4-00zwr7p-4ql34owv4fl5vmkolg2o6ebxi/dep-graph.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hac2uizbt4-00zwr7p-4ql34owv4fl5vmkolg2o6ebxi",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hac2uizbt4-00zwr7p.lock",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hac2uizbik-1fqacb8.lock",
+    "Rust2发展.md",
     "webServer/Rama/readme.md",
     "ai/算法库/differential-equations.md",
     "letterTools/rust-av/readme.md",
