@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5587e8a5031f59ea",
+        "id": "676959285414d313",
         "type": "tabs",
         "children": [
           {
-            "id": "3bb8759899d55922",
+            "id": "95515b72f4ecceba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -79,6 +75,7 @@
     ],
     "direction": "horizontal",
     "width": 200
+    "width": 200
   },
   "right": {
     "id": "5941f62a915a2548",
@@ -94,13 +91,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -173,6 +169,7 @@
   "left-ribbon": {
     "hiddenItems": {
       "bases:创建新数据库": false,
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -181,26 +178,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3bb8759899d55922",
+  "active": "95515b72f4ecceba",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09/work-products.bin",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09/query-cache.bin",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hak65510fi-0ej9prb-3srp6mo691n97e6by0cuceu09",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u/query-cache.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u/work-products.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u/dep-graph.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-30qflmlfuiyqjv5z12b0myg1u",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-working/work-products.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-working/query-cache.bin",
-    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hak65511qy-16bm681-working/dep-graph.part.bin",
     "README.md",
-    "Rust2发展.md",
-    "webServer/Rama/readme.md",
-    "ai/算法库/differential-equations.md",
-    "letterTools/rust-av/readme.md",
-    "sql/Fluxus.md",
-    "letterTools/mcat/图片转换工具.md",
-    "ai/算法库/faer.md"
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/work-products.bin",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/query-cache.bin",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/work-products.bin",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/query-cache.bin",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working/dep-graph.bin",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr-working",
+    "learning/target/debug/incremental/learning-0jitynhc7df23/s-h7azz4bcez-0bhbymr.lock",
+    "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-working/work-products.bin"
   ]
 }
