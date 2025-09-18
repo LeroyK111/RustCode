@@ -4,11 +4,19 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "676959285414d313",
         "type": "tabs",
         "children": [
           {
             "id": "95515b72f4ecceba",
+=======
+        "id": "e5b52f4ca80b6948",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58fa29bb4675e23e",
+>>>>>>> c270d5a (1)
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -178,8 +186,24 @@
       "command-palette:打开命令面板": false
     }
   },
+<<<<<<< HEAD
   "active": "95515b72f4ecceba",
   "lastOpenFiles": [
+=======
+  "active": "58fa29bb4675e23e",
+  "lastOpenFiles": [
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hb0ng9i820-0qsgr4k-30qflmlfuiyqjv5z12b0myg1u/work-products.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hb0ng9i820-0qsgr4k-30qflmlfuiyqjv5z12b0myg1u/query-cache.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hb0ng9i820-0qsgr4k-30qflmlfuiyqjv5z12b0myg1u/dep-graph.bin",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hb0ng9i820-0qsgr4k-30qflmlfuiyqjv5z12b0myg1u",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hb0ng9i6zi-0h6yt5a-3srp6mo691n97e6by0cuceu09/work-products.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hb0ng9i6zi-0h6yt5a-3srp6mo691n97e6by0cuceu09/query-cache.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hb0ng9i6zi-0h6yt5a-3srp6mo691n97e6by0cuceu09/dep-graph.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hb0ng9i6zi-0h6yt5a-3srp6mo691n97e6by0cuceu09",
+    "learning/target/debug/incremental/learning-1fti9schhqnr1/s-hb0ng9i820-0qsgr4k.lock",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hb0ng9i6zi-0h6yt5a-working/work-products.bin",
+    "learning/target/debug/incremental/learning-2k1q7c98losb1/s-hb0ng9i6zi-0h6yt5a-working/query-cache.bin",
+>>>>>>> c270d5a (1)
     "README.md",
     "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/work-products.bin",
     "learning/target/debug/incremental/learning-3vz14ber3vstd/s-h7azz49adu-0e2sldj-bbotejt8ajvrabn0pzu7s1eim/query-cache.bin",
