@@ -183,6 +183,8 @@
   },
   "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
+    "cloud/MQ/robustmq.md",
+    "cloud/MQ",
     "learning/target/debug/deps/liblearning-b8b28257a77baf95.rmeta",
     "learning/target/debug/deps/liblearning-803a02a6b4cf5fe9.rmeta",
     "learning/target/debug/deps/learning-b8b28257a77baf95.d",
@@ -192,8 +194,6 @@
     "learning/target/debug/incremental/learning-1d9wqa10ucqaj/s-hbbh0acpon-1dazoo4-c6wscaasagxyid5u90bgp68hk/dep-graph.bin",
     "learning/target/debug/incremental/learning-1d9wqa10ucqaj/s-hbbh0acpon-1dazoo4.lock",
     "learning/target/debug/incremental/learning-1d9wqa10ucqaj/s-hbbh0acpon-1dazoo4-c6wscaasagxyid5u90bgp68hk",
-    "learning/target/debug/incremental/learning-1d9wqa10ucqaj",
-    "learning/target/debug/incremental/learning-2dsrqbbeneuly/s-hbbh0acowi-0mqzehd-ebfc79ieqfndrklgmxqpj9a8v/work-products.bin",
     "README.md",
     "Rust2发展.md",
     "webServer/Rama/readme.md",
