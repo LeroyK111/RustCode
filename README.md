@@ -164,6 +164,7 @@ https://doc.rust-lang.org/cargo/index.html
 - cargo doc                     可以为项目构建文档
 - cargo publish               可以将库发布到 crates.io。
 - cargo --version
+- cargo publish -- workspace 也支持pnpm类似的功能了
 
 ### Rustup
 
