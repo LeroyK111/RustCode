@@ -11,4 +11,3 @@
 | **其他（如 Holtek, Zilog）** | 通用 8 位            | <5%             | niche 市场，如玩具/家电 |
 
 ## 使用rust开发Microchip
-
