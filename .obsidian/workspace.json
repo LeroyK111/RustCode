@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Embedded/嵌入式开发环境.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "嵌入式开发环境"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5941f62a915a2548",
@@ -94,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Embedded/嵌入式开发环境.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "嵌入式开发环境 的大纲"
             }
           },
           {
@@ -183,6 +184,7 @@
   },
   "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
+    "README.md",
     "learning/src/objInfo/assets/Pasted image 20251018132015.png",
     "C_lang/C++/src/main.cpp",
     "C_lang/C++/src/main.o",
@@ -199,7 +201,6 @@
     "C_lang/C++语言学习.md",
     "Embedded/Microchip/readme.md",
     "Rust2发展.md",
-    "README.md",
     "cloud/MQ/robustmq.md",
     "webServer/Rama/readme.md",
     "ai/算法库/differential-equations.md",
