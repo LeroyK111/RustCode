@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e5b52f4ca80b6948",
+        "id": "99e2afc130827c96",
         "type": "tabs",
         "children": [
           {
-            "id": "58fa29bb4675e23e",
+            "id": "9c241dbb471d6f34",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -182,10 +182,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "58fa29bb4675e23e",
+  "active": "9c241dbb471d6f34",
   "lastOpenFiles": [
-    "README.md",
-    "learning/src/objInfo/assets/Pasted image 20251018132015.png",
+    "Embedded/开发板/瑞芯微RK3506.md",
+    "C_lang/C++/hello_cpp.exe",
+    "C_lang/C++/src/main.o",
+    "C/C语言学习.md",
     "C_lang/C++/src/main.cpp",
     "C_lang/C++/src/main.o",
     "C_lang/C/src/main.o",
@@ -194,9 +196,6 @@
     "C_lang/C++/hello_cpp.exe",
     "C_lang/C++/Makefile",
     "C_lang/C/src",
-    "C_lang/C/hello.exe",
-    "C_lang/C/Makefile",
-    "C_lang/配置环境.md",
     "C_lang/C语言学习.md",
     "C_lang/C++语言学习.md",
     "Embedded/Microchip/readme.md",
