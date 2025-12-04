@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "C_lang/配置环境.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "配置环境"
             }
           }
         ]
@@ -94,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "C_lang/配置环境.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "配置环境 的大纲"
             }
           },
           {
@@ -183,13 +183,13 @@
   },
   "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
-    "Rust2发展.md",
     "README.md",
     "Embedded/开发板/嵌入式虚拟化技术探索及实践(hypervisor&guestOS).pdf",
     "Embedded/USB/cherrUSB驱动开发.pdf",
     "Embedded/USB",
     "Embedded/IDE/嵌入式开发工具IDE.pdf",
     "Embedded/IDE",
+    "Rust2发展.md",
     "learning/target/debug/deps/liblearning-73df6fef04b64c5f.rmeta",
     "learning/target/debug/deps/liblearning-55b7351dd36f9e7d.rmeta",
     "learning/target/debug/deps/learning-73df6fef04b64c5f.d",
