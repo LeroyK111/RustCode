@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C_lang/配置环境.md",
+                "file": "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "配置环境"
+              "title": "Rust 正在重写可观测性基础设施"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "可观测",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C_lang/配置环境.md",
+                "file": "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "配置环境 的大纲"
+              "title": "Rust 正在重写可观测性基础设施 的大纲"
             }
           },
           {
@@ -183,6 +184,8 @@
   },
   "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20251204223444.png",
+    "C_lang/配置环境.md",
     "README.md",
     "Embedded/开发板/嵌入式虚拟化技术探索及实践(hypervisor&guestOS).pdf",
     "Embedded/USB/cherrUSB驱动开发.pdf",
@@ -196,7 +199,6 @@
     "learning/target/debug/deps/learning-55b7351dd36f9e7d.d",
     "learning/target/debug/incremental/learning-0rohotucp2a0g/s-hd0zjslg8e-0415tio-5welsa0wlreb1ovjgxqdocrr5/work-products.bin",
     "learning/src/objInfo/assets/Pasted image 20251018132015.png",
-    "C_lang/配置环境.md",
     "C_lang/C语言学习.md",
     "C_lang/C++语言学习.md",
     "Embedded/Microchip/readme.md",
