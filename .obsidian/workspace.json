@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bdb1c66db6f4fb3f",
+        "id": "e5b52f4ca80b6948",
         "type": "tabs",
         "children": [
           {
-            "id": "016dbd3189bf6deb",
+            "id": "58fa29bb4675e23e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bugs/如何理解大型rust项目.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "如何理解大型rust项目"
+              "title": "README"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "可观测",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bugs/如何理解大型rust项目.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "如何理解大型rust项目 的大纲"
+              "title": "README 的大纲"
             }
           },
           {
@@ -181,27 +181,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "016dbd3189bf6deb",
+  "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
-    "README.md",
-    "bugs/如何理解大型rust项目.md",
-    "Rust2发展.md",
-    "Embedded/入门指引/如何入门.md",
-    "Embedded/遇到的坑.md",
-    "Embedded/入门指引",
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
+    "应用方向/可观测",
     "learning/src/objInfo/assets/Pasted image 20251204223444.png",
-    "C_lang/配置环境.md",
-    "Embedded/开发板/嵌入式虚拟化技术探索及实践(hypervisor&guestOS).pdf",
-    "Embedded/USB/cherrUSB驱动开发.pdf",
-    "Embedded/USB",
-    "Embedded/IDE/嵌入式开发工具IDE.pdf",
-    "Embedded/IDE",
-    "learning/target/debug/deps/liblearning-73df6fef04b64c5f.rmeta",
-    "learning/target/debug/deps/liblearning-55b7351dd36f9e7d.rmeta",
-    "learning/target/debug/deps/learning-73df6fef04b64c5f.d",
-    "learning/target/debug/deps/learning-55b7351dd36f9e7d.d",
+    "bugs/如何理解大型rust项目.md",
+    "Embedded/入门指引/如何入门.md",
+    "Embedded/入门指引",
+    "learning/target/debug/deps/liblearning-52f69803ec1c26a2.rmeta",
+    "learning/target/debug/deps/liblearning-a26eb30fe699120d.rmeta",
+    "learning/target/debug/deps/learning-52f69803ec1c26a2.d",
+    "learning/target/debug/deps/learning-a26eb30fe699120d.d",
+    "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6-97k95j7ie9pfqepnnpzbavrkr/work-products.bin",
+    "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6-97k95j7ie9pfqepnnpzbavrkr/query-cache.bin",
+    "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6-97k95j7ie9pfqepnnpzbavrkr/dep-graph.bin",
+    "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6.lock",
+    "Rust2发展.md",
+    "README.md",
     "learning/src/objInfo/assets/Pasted image 20251018132015.png",
+    "C_lang/配置环境.md",
     "C_lang/C语言学习.md",
     "C_lang/C++语言学习.md",
     "Embedded/Microchip/readme.md",
