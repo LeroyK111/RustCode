@@ -172,7 +172,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -183,6 +183,7 @@
   },
   "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
+    "Embedded/ZephyrRtos/zvm嵌入式虚拟机.pdf",
     "Embedded/文献/嵌入式操作系统技术发展趋势.pdf",
     "Embedded/ZephyrRtos/基于实时操作系统TSN协议的研究与移植实践.pdf",
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
@@ -197,7 +198,6 @@
     "learning/target/debug/deps/learning-a26eb30fe699120d.d",
     "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6-97k95j7ie9pfqepnnpzbavrkr/work-products.bin",
     "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6-97k95j7ie9pfqepnnpzbavrkr/query-cache.bin",
-    "learning/target/debug/incremental/learning-15djq2ekrnai3/s-hdziowoqsr-1uu8ru6-97k95j7ie9pfqepnnpzbavrkr/dep-graph.bin",
     "Rust2发展.md",
     "README.md",
     "learning/src/objInfo/assets/Pasted image 20251018132015.png",
