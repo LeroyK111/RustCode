@@ -183,6 +183,7 @@
   },
   "active": "58fa29bb4675e23e",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "ai/算法库/Neuroxide.md",
     "Embedded/文献/云边端协同计算与智能.pdf",
     "Embedded/ZephyrRtos/zvm嵌入式虚拟机.pdf",
@@ -194,6 +195,19 @@
     "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv-6islznuz0go8pdkkykglakraw/query-cache.bin",
     "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv-6islznuz0go8pdkkykglakraw/dep-graph.bin",
     "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv.lock",
+=======
+    "learning/target/debug/deps/libfutures_task-9a0eb379e03e4007.rmeta",
+    "learning/target/debug/deps/libpin_utils-32455b7bbb55cc9a.rmeta",
+    "learning/target/debug/deps/pin_utils-32455b7bbb55cc9a.d",
+    "learning/target/debug/deps/liblibc-c18c6ae5c59ce278.rmeta",
+    "learning/target/debug/deps/futures_task-9a0eb379e03e4007.d",
+    "learning/target/debug/deps/libcore_foundation_sys-cda86d87b2ff14e2.rmeta",
+    "learning/target/debug/deps/libequivalent-0716044aa765588b.rmeta",
+    "learning/target/debug/deps/tracing_core-fe2059a2f78e4462.d",
+    "learning/target/debug/deps/equivalent-0716044aa765588b.d",
+    "learning/target/debug/deps/libyoke-5e1cd2b54c84da87.rmeta",
+    "learning/target/debug/deps/liblock_api-fba9cbd8b9cd01ef.rmeta",
+>>>>>>> 96d90ac (1)
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
     "learning/src/objInfo/assets/Pasted image 20251204223444.png",
     "bugs/如何理解大型rust项目.md",
