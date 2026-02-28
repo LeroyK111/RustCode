@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e5b52f4ca80b6948",
+        "id": "32982f2dbacafd3f",
         "type": "tabs",
         "children": [
           {
-            "id": "58fa29bb4675e23e",
+            "id": "6b22dce029d11742",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -181,39 +181,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "58fa29bb4675e23e",
+  "active": "6b22dce029d11742",
   "lastOpenFiles": [
-<<<<<<< HEAD
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq/query-cache.bin",
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq/work-products.bin",
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq/dep-graph.bin",
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq",
+    "learning/target/debug/incremental/learning-3ne7472jkaz9n/s-hg81qrarau-0ebxm9f-9z1wyh8agxmk0fjqbt888sbz9/work-products.bin",
+    "learning/target/debug/incremental/learning-3ne7472jkaz9n/s-hg81qrarau-0ebxm9f-9z1wyh8agxmk0fjqbt888sbz9/query-cache.bin",
+    "learning/target/debug/incremental/learning-3ne7472jkaz9n/s-hg81qrarau-0ebxm9f-9z1wyh8agxmk0fjqbt888sbz9/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3ne7472jkaz9n/s-hg81qrarau-0ebxm9f-9z1wyh8agxmk0fjqbt888sbz9",
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-working/work-products.bin",
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-working/dep-graph.bin",
+    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-working/query-cache.bin",
+    "README.md",
+    "Rust2发展.md",
     "ai/算法库/Neuroxide.md",
-    "Embedded/文献/云边端协同计算与智能.pdf",
-    "Embedded/ZephyrRtos/zvm嵌入式虚拟机.pdf",
-    "learning/target/debug/deps/liblearning-e3beb3a3833a5ec5.rmeta",
-    "learning/target/debug/deps/liblearning-8ff4d536013a38be.rmeta",
-    "learning/target/debug/deps/learning-e3beb3a3833a5ec5.d",
-    "learning/target/debug/deps/learning-8ff4d536013a38be.d",
-    "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv-6islznuz0go8pdkkykglakraw/work-products.bin",
-    "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv-6islznuz0go8pdkkykglakraw/query-cache.bin",
-    "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv-6islznuz0go8pdkkykglakraw/dep-graph.bin",
-    "learning/target/debug/incremental/learning-2d8jhgumpr8ab/s-hf63pxpko3-1ulpkyv.lock",
-=======
-    "learning/target/debug/deps/libfutures_task-9a0eb379e03e4007.rmeta",
-    "learning/target/debug/deps/libpin_utils-32455b7bbb55cc9a.rmeta",
-    "learning/target/debug/deps/pin_utils-32455b7bbb55cc9a.d",
-    "learning/target/debug/deps/liblibc-c18c6ae5c59ce278.rmeta",
-    "learning/target/debug/deps/futures_task-9a0eb379e03e4007.d",
-    "learning/target/debug/deps/libcore_foundation_sys-cda86d87b2ff14e2.rmeta",
-    "learning/target/debug/deps/libequivalent-0716044aa765588b.rmeta",
-    "learning/target/debug/deps/tracing_core-fe2059a2f78e4462.d",
-    "learning/target/debug/deps/equivalent-0716044aa765588b.d",
-    "learning/target/debug/deps/libyoke-5e1cd2b54c84da87.rmeta",
-    "learning/target/debug/deps/liblock_api-fba9cbd8b9cd01ef.rmeta",
->>>>>>> 96d90ac (1)
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
     "learning/src/objInfo/assets/Pasted image 20251204223444.png",
     "bugs/如何理解大型rust项目.md",
     "Embedded/入门指引/如何入门.md",
-    "Rust2发展.md",
-    "README.md",
     "learning/src/objInfo/assets/Pasted image 20251018132015.png",
     "C_lang/配置环境.md",
     "C_lang/C语言学习.md",
