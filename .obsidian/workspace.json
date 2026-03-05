@@ -183,6 +183,8 @@
   },
   "active": "6b22dce029d11742",
   "lastOpenFiles": [
+    "Rust2发展.md",
+    "README.md",
     "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq/query-cache.bin",
     "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq/work-products.bin",
     "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-efrc2hdklq9w2oogu037pnzsq/dep-graph.bin",
@@ -193,9 +195,6 @@
     "learning/target/debug/incremental/learning-3ne7472jkaz9n/s-hg81qrarau-0ebxm9f-9z1wyh8agxmk0fjqbt888sbz9",
     "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-working/work-products.bin",
     "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-working/dep-graph.bin",
-    "learning/target/debug/incremental/learning-08pp3jkedaigi/s-hg81qraraq-0xbccub-working/query-cache.bin",
-    "README.md",
-    "Rust2发展.md",
     "ai/算法库/Neuroxide.md",
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
     "learning/src/objInfo/assets/Pasted image 20251204223444.png",
