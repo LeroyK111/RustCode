@@ -183,6 +183,8 @@
   },
   "active": "6b22dce029d11742",
   "lastOpenFiles": [
+    "cursive_example/readme.md",
+    "README.md",
     "learning/target/debug/deps/liblearning-e0d0376eb127ee0c.rmeta",
     "learning/target/debug/deps/liblearning-ad420725c0323098.rmeta",
     "learning/target/debug/deps/learning-e0d0376eb127ee0c.d",
@@ -193,9 +195,6 @@
     "learning/target/debug/incremental/learning-0qeybmwxb20yo/s-hhsdh4uxud-0dkf27n.lock",
     "learning/target/debug/incremental/learning-0qeybmwxb20yo/s-hhsdh4uxud-0dkf27n-1739ylkz1g5e5ody47z7h26xj",
     "learning/target/debug/incremental/learning-0qeybmwxb20yo",
-    "learning/target/debug/incremental/learning-070r8kvgoi00c/s-hhsdh4uxu6-1tttsow-azqzmuwaaqiuwaitigvdz2n4d/work-products.bin",
-    "cursive_example/readme.md",
-    "README.md",
     "Rust2发展.md",
     "ai/算法库/Neuroxide.md",
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
