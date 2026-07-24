@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -100,7 +102,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -183,21 +185,35 @@
   },
   "active": "c9a15a0711bf0e3e",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Embedded/ZephyrRtos/ZephyrRTOS基础上构建AutoSarCP的智能车控操作系统.pdf",
     "README.md",
     "Embedded/文献/大模型在嵌入式软件开发中的应用.pdf",
+=======
+    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy/work-products.bin",
+    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy/query-cache.bin",
+    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy",
+    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke/work-products.bin",
+    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke/query-cache.bin",
+    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke",
+    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-working/work-products.bin",
+>>>>>>> 9924053 (1)
     "learning/src/2026/future.md",
-    "learning/src/2026/future.d",
-    "learning/src/2026/newFuterch",
-    "learning/src/2026",
     "Embedded/RTOS/readme.md",
-    "Embedded/RTOS",
     "cursive_example/readme.md",
+<<<<<<< HEAD
     "learning/target/debug/deps/liblearning-e0d0376eb127ee0c.rmeta",
     "learning/target/debug/deps/liblearning-ad420725c0323098.rmeta",
     "learning/target/debug/deps/learning-e0d0376eb127ee0c.d",
     "learning/target/debug/deps/learning-ad420725c0323098.d",
     "learning/target/debug/incremental/learning-0qeybmwxb20yo/s-hhsdh4uxud-0dkf27n-1739ylkz1g5e5ody47z7h26xj/query-cache.bin",
+=======
+    "README.md",
+>>>>>>> 9924053 (1)
     "Rust2发展.md",
     "ai/算法库/Neuroxide.md",
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
