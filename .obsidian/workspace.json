@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "adr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,8 +181,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6b22dce029d11742",
+  "active": "c9a15a0711bf0e3e",
   "lastOpenFiles": [
+    "Embedded/ZephyrRtos/ZephyrRTOS基础上构建AutoSarCP的智能车控操作系统.pdf",
+    "README.md",
     "Embedded/文献/大模型在嵌入式软件开发中的应用.pdf",
     "learning/src/2026/future.md",
     "learning/src/2026/future.d",
@@ -191,13 +193,11 @@
     "Embedded/RTOS/readme.md",
     "Embedded/RTOS",
     "cursive_example/readme.md",
-    "README.md",
     "learning/target/debug/deps/liblearning-e0d0376eb127ee0c.rmeta",
     "learning/target/debug/deps/liblearning-ad420725c0323098.rmeta",
     "learning/target/debug/deps/learning-e0d0376eb127ee0c.d",
     "learning/target/debug/deps/learning-ad420725c0323098.d",
     "learning/target/debug/incremental/learning-0qeybmwxb20yo/s-hhsdh4uxud-0dkf27n-1739ylkz1g5e5ody47z7h26xj/query-cache.bin",
-    "learning/target/debug/incremental/learning-0qeybmwxb20yo/s-hhsdh4uxud-0dkf27n-1739ylkz1g5e5ody47z7h26xj/work-products.bin",
     "Rust2发展.md",
     "ai/算法库/Neuroxide.md",
     "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
