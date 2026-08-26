@@ -189,6 +189,7 @@
   },
   "active": "6b2eb584ed411a6b",
   "lastOpenFiles": [
+    "Embedded/文献/嵌入式安全.pdf",
     "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q/work-products.bin",
     "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q/query-cache.bin",
     "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q/dep-graph.bin",
@@ -199,7 +200,6 @@
     "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-9ul2bar28p82twyggr9mlfocp",
     "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du.lock",
     "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-working/work-products.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-working/query-cache.bin",
     "learning/readme.md"
   ]
 }
