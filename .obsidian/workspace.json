@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "98860ac678429b28",
+    "id": "ef99489bc7911a24",
     "type": "split",
     "children": [
       {
-        "id": "32982f2dbacafd3f",
+        "id": "b709b39179ff6c98",
         "type": "tabs",
         "children": [
           {
-            "id": "6b22dce029d11742",
+            "id": "6b2eb584ed411a6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4c36053a584c6125",
+    "id": "1c39f35b877d1161",
     "type": "split",
     "children": [
       {
-        "id": "dea1f93666f2fd51",
+        "id": "c396c9296430bef3",
         "type": "tabs",
         "children": [
           {
-            "id": "c9a15a0711bf0e3e",
+            "id": "199c826df3171290",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,12 +50,12 @@
             }
           },
           {
-            "id": "c89772954dee39fb",
+            "id": "084c14fe5e5a7398",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "adr",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -67,11 +67,14 @@
             }
           },
           {
-            "id": "9f436ca25cb87150",
+            "id": "23a770ba0933e6f0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "书签"
             }
@@ -83,15 +86,15 @@
     "width": 200
   },
   "right": {
-    "id": "5941f62a915a2548",
+    "id": "cdf8b9eca1e1afe4",
     "type": "split",
     "children": [
       {
-        "id": "8cc99ef6ec92a8f0",
+        "id": "c374e5e09923fa0c",
         "type": "tabs",
         "children": [
           {
-            "id": "894e8a3c036df4d4",
+            "id": "23fbc2eb58982979",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -106,7 +109,7 @@
             }
           },
           {
-            "id": "bf189bc4cf2ff926",
+            "id": "d579de39412f76fc",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -121,15 +124,16 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "50ec6c9cb7267c7b",
+            "id": "8d5e56966ac4c082",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -138,7 +142,7 @@
             }
           },
           {
-            "id": "481a442cb5d46d23",
+            "id": "3ba8769ae8e3c71f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -153,7 +157,7 @@
             }
           },
           {
-            "id": "fadf40dc5afc33f7",
+            "id": "860ea1206f4d8140",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -174,63 +178,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
     }
   },
-  "active": "c9a15a0711bf0e3e",
+  "active": "6b2eb584ed411a6b",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Embedded/ZephyrRtos/ZephyrRTOS基础上构建AutoSarCP的智能车控操作系统.pdf",
-    "README.md",
-    "Embedded/文献/大模型在嵌入式软件开发中的应用.pdf",
-=======
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy/work-products.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy/query-cache.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-7ny0lzhm9duyzw25irnierrqy",
-    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke/work-products.bin",
-    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke/query-cache.bin",
-    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-1hzhi5xcpm8qv3qzzwwb51mke",
-    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hkw8hg5j5i-0ireq8j-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hkw8hg5jye-1cs8d97-working/work-products.bin",
->>>>>>> 9924053 (1)
-    "learning/src/2026/future.md",
-    "Embedded/RTOS/readme.md",
-    "cursive_example/readme.md",
-<<<<<<< HEAD
-    "learning/target/debug/deps/liblearning-e0d0376eb127ee0c.rmeta",
-    "learning/target/debug/deps/liblearning-ad420725c0323098.rmeta",
-    "learning/target/debug/deps/learning-e0d0376eb127ee0c.d",
-    "learning/target/debug/deps/learning-ad420725c0323098.d",
-    "learning/target/debug/incremental/learning-0qeybmwxb20yo/s-hhsdh4uxud-0dkf27n-1739ylkz1g5e5ody47z7h26xj/query-cache.bin",
-=======
-    "README.md",
->>>>>>> 9924053 (1)
-    "Rust2发展.md",
-    "ai/算法库/Neuroxide.md",
-    "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
-    "learning/src/objInfo/assets/Pasted image 20251204223444.png",
-    "bugs/如何理解大型rust项目.md",
-    "Embedded/入门指引/如何入门.md",
-    "learning/src/objInfo/assets/Pasted image 20251018132015.png",
-    "C_lang/配置环境.md",
-    "C_lang/C语言学习.md",
-    "C_lang/C++语言学习.md",
-    "Embedded/Microchip/readme.md",
-    "cloud/MQ/robustmq.md",
-    "webServer/Rama/readme.md",
-    "ai/算法库/differential-equations.md",
-    "letterTools/rust-av/readme.md",
-    "sql/Fluxus.md",
-    "letterTools/mcat/图片转换工具.md",
-    "ai/算法库/faer.md"
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q/work-products.bin",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q/query-cache.bin",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q/dep-graph.bin",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du-9rh40xkuauz1pj2ktdjvete6q",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-9ul2bar28p82twyggr9mlfocp/query-cache.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-9ul2bar28p82twyggr9mlfocp/work-products.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-9ul2bar28p82twyggr9mlfocp/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-9ul2bar28p82twyggr9mlfocp",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hln8jjtb9d-0v0w7du.lock",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-working/work-products.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hln8jjs9rm-1wj080t-working/query-cache.bin",
+    "learning/readme.md"
   ]
 }

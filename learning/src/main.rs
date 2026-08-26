@@ -119,7 +119,7 @@ fn main() {
     println!("Hello, Rust!");
 
     // 测试猜测
-    // test_guess();
+    test_guess();
     // 测试 彩蛋库
     // test_says();
 
