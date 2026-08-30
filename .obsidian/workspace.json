@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "98860ac678429b28",
+    "id": "efbbbf6b9a649864",
     "type": "split",
     "children": [
       {
-        "id": "a625a069a821805c",
+        "id": "3467b386290867f3",
         "type": "tabs",
         "children": [
           {
-            "id": "14532decd333013c",
+            "id": "ce237507c1d9fa9d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "README"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4c36053a584c6125",
+    "id": "073af6ef77500bb4",
     "type": "split",
     "children": [
       {
-        "id": "dea1f93666f2fd51",
+        "id": "63896f6968c22cc2",
         "type": "tabs",
         "children": [
           {
-            "id": "c9a15a0711bf0e3e",
+            "id": "d0c9da461e5da90a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -46,7 +50,7 @@
             }
           },
           {
-            "id": "c89772954dee39fb",
+            "id": "5a4d1bac61bb4585",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -63,11 +67,14 @@
             }
           },
           {
-            "id": "9f436ca25cb87150",
+            "id": "dec3d6057213ebb6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "书签"
             }
@@ -79,35 +86,21 @@
     "width": 200
   },
   "right": {
-    "id": "5941f62a915a2548",
+    "id": "91de19fb6c56e676",
     "type": "split",
     "children": [
       {
-        "id": "8cc99ef6ec92a8f0",
+        "id": "6fd4acc020e0e5e7",
         "type": "tabs",
         "children": [
           {
-            "id": "894e8a3c036df4d4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
-          },
-          {
-            "id": "bf189bc4cf2ff926",
+            "id": "5fde4f6d7a65d087",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
                 "file": "README.md",
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -116,15 +109,16 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "50ec6c9cb7267c7b",
+            "id": "e8112a43e58cb21a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -133,7 +127,7 @@
             }
           },
           {
-            "id": "481a442cb5d46d23",
+            "id": "3b31526cfa2db8a2",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -148,7 +142,7 @@
             }
           },
           {
-            "id": "fadf40dc5afc33f7",
+            "id": "056c4d9c96e87f29",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -160,58 +154,53 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "6f1ff60748375a81",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
     }
   },
-  "active": "14532decd333013c",
+  "active": "ce237507c1d9fa9d",
   "lastOpenFiles": [
-    "projects/main.rs",
-    "projects/main.pdb",
-    "projects/main.exe",
-    "projects",
-    "Embedded/文献/嵌入式安全.pdf",
-    "Embedded/RTOS/实时操作系统RT-Thread启动流程剖析.pdf",
-    "README.md",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hl7gyqcu22-1enrcon-85kfnk2fjtelvvq6u54gbj8ed/work-products.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hl7gyqcu22-1enrcon-85kfnk2fjtelvvq6u54gbj8ed/query-cache.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hl7gyqcu22-1enrcon-85kfnk2fjtelvvq6u54gbj8ed/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3n63u3797bj03/s-hl7gyqcu22-1enrcon-85kfnk2fjtelvvq6u54gbj8ed",
-    "learning/target/debug/incremental/learning-3h05uty9q6f82/s-hl7gyqcu22-0of83gr-cdabvuiu7efz7kbzykejjulov/work-products.bin",
-    "learning/src/2026/future.md",
-    "Embedded/RTOS/readme.md",
-    "cursive_example/readme.md",
-    "Rust2发展.md",
-    "ai/算法库/Neuroxide.md",
-    "应用方向/可观测/Rust 正在重写可观测性基础设施.md",
-    "learning/src/objInfo/assets/Pasted image 20251204223444.png",
-    "bugs/如何理解大型rust项目.md",
-    "Embedded/入门指引/如何入门.md",
-    "learning/src/objInfo/assets/Pasted image 20251018132015.png",
-    "C_lang/配置环境.md",
-    "C_lang/C语言学习.md",
-    "C_lang/C++语言学习.md",
-    "Embedded/Microchip/readme.md",
-    "cloud/MQ/robustmq.md",
-    "webServer/Rama/readme.md",
-    "ai/算法库/differential-equations.md",
-    "letterTools/rust-av/readme.md",
-    "sql/Fluxus.md",
-    "letterTools/mcat/图片转换工具.md",
-    "ai/算法库/faer.md"
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp/work-products.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp/query-cache.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlvjafomyr-1pg50g2.lock",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/work-products.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/dep-graph.part.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/query-cache.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn.lock",
+    "learning/readme.md"
   ]
 }
