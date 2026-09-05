@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3467b386290867f3",
+        "id": "c7613eaa75a959cd",
         "type": "tabs",
         "children": [
           {
-            "id": "ce237507c1d9fa9d",
+            "id": "e5a65dc70185efc9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -188,19 +184,20 @@
       "bases:新建数据库": false
     }
   },
-  "active": "ce237507c1d9fa9d",
+  "active": "e5a65dc70185efc9",
   "lastOpenFiles": [
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp/work-products.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp/query-cache.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-9ul2bar28p82twyggr9mlfocp",
-    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlvjafomyr-1pg50g2.lock",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/work-products.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/dep-graph.part.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/query-cache.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working/dep-graph.bin",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn-working",
-    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlvjafnws2-1cx71nn.lock",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlyvtve4n1-1kjtps5-9rh40xkuauz1pj2ktdjvete6q/work-products.bin",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlyvtve4n1-1kjtps5-9rh40xkuauz1pj2ktdjvete6q/query-cache.bin",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlyvtve4n1-1kjtps5-9rh40xkuauz1pj2ktdjvete6q/dep-graph.bin",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlyvtve4n1-1kjtps5-9rh40xkuauz1pj2ktdjvete6q",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlyvtvd1iq-1kalodg-9ul2bar28p82twyggr9mlfocp/query-cache.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlyvtvd1iq-1kalodg-9ul2bar28p82twyggr9mlfocp/work-products.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlyvtvd1iq-1kalodg-9ul2bar28p82twyggr9mlfocp/dep-graph.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlyvtvd1iq-1kalodg-9ul2bar28p82twyggr9mlfocp",
+    "learning/target/debug/incremental/learning-00a8xjbk016kp/s-hlyvtve4n1-1kjtps5.lock",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlyvtvd1iq-1kalodg-working/query-cache.bin",
+    "learning/target/debug/incremental/learning-3pzjete01w1r5/s-hlyvtvd1iq-1kalodg-working/work-products.bin",
+    "README.md",
     "learning/readme.md"
   ]
 }
