@@ -24,15 +24,18 @@ pub fn Shadowing() {
     }
 
     println!("The value of x is: {x}");
-}
+} 
 
 // 变量类型的强制性
 pub fn testType() {
+    // rust 的 mut 允许同一个变量重新赋值，但不能改变它的类型；再次使用 let 则是创建同名的新绑定，不是在修改旧变量。 
+
+
     // todo 这种可以修改已命名的值
-    let spaces = "   ";
+    // let spaces = "   ";
     // println!("{spaces}?");
     // 这里是遮盖了
-    let spaces = spaces.len();
+    // let spaces = spaces.len();
     // println!("{spaces}");
     
     // todo 这种就会报错，虽然你可以修改value，但不允许修改它的type。

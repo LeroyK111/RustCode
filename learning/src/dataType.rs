@@ -105,6 +105,10 @@ pub fn tuple() {
     println!("The value of y is: {y}");
 }
 
+
+
+
+
 pub fn array() {
     let months = [
         "January",
@@ -143,7 +147,7 @@ use std::io;
 
 
 // 通过输入索引，获取数组中的value。如果超过索引范围，则报错
-fn test() {
+pub fn testArrayIndex() {
     let a = [1, 2, 3, 4, 5];
 
     println!("Please enter an array index.");

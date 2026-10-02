@@ -80,11 +80,17 @@ fn no_double_borrow() {
     let r2 = &s; // 不可变引用
 
     println!("{r1}");
+
+
     // 可变类型引用，只能引用一次
-    let r3 = &mut s; // error[E0502]: cannot borrow `s` as mutable because it is also borrowed as immutable
+    let r3 = &mut s; 
+    // let r4 = &mut r3; 
+    // println!("{r4}");
+
     println!("{r3}");
     r3.push_str(", world");
     println!("{r3}");
+
 }
 
 pub fn demo() {
@@ -98,7 +104,7 @@ pub fn demo() {
 
     // 迭代器分割字符串
     // let mut data = String::from("ab c");
-    // let mut res = first_word(&data);
+    // let res = first_word(&data);
     // data.clear(); // data会被清空
     // println!("{res}, {data}");
 
@@ -123,15 +129,15 @@ pub fn demo() {
     // println!("{s}, {hello}, {world}")
     // let x = &s[-1]; // 不支持负索引
 
-    let a = [1, 2, 3, 4, 5];
-    let slice = &a[1..3];
+    // let a = [1, 2, 3, 4, 5];
+    // let slice = &a[1..3];
 
     // 读写
-    for s in slice {
-        println!("{}", s);
-    }
+    // for s in slice {
+    //     println!("{}", s);
+    // }
     // 断言相等
-    assert_eq!(slice, &[2, 3]);
+    // assert_eq!(slice, &[2, 3]);
 
     // 其他测试
     // split_strs();

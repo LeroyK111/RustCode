@@ -28,7 +28,7 @@ use function::{
 };
 
 mod dataType;
-use dataType::{array, bools, change_type, count, float, string, tuple};
+use dataType::{array, bools, change_type, count, float, string, tuple, testArrayIndex};
 
 // 测试所有权
 mod ownership;
@@ -50,15 +50,6 @@ mod coll;
 use coll::hashmaps::hashmaps;
 use coll::strings::strMain;
 use coll::vectors::{call, call2};
-
-fn test_says() {
-    let stdout: std::io::Stdout = stdout();
-    let message: &str = "Hello fellow Rustaceans!";
-    let width: usize = message.chars().count();
-
-    let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
-    say(message, width, &mut writer).unwrap();
-}
 
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
@@ -95,7 +86,18 @@ fn test_guess() {
         .expect("捕获异常");
 
     // 打印字符串，模版语法
-    println!("You guessed: {guess}");
+    println!("You guessed1: {guess}");
+
+    /*
+        io::stdin()
+        // 读取字符串 并引用 &mut guess 赋值
+        .read_line(&mut guess)
+        // 异常捕获, 如果不调异常捕获，程序可以执行，但是会报错提示
+        .expect("捕获异常");
+
+    // 打印字符串，模版语法
+    println!("You guessed2: {guess}");
+    */
 
     // 将字符串转换为 i32（32 位整数）
     let z: i32 = match guess.trim().parse() {
@@ -106,6 +108,7 @@ fn test_guess() {
             -10
         }
     };
+
     // 设置两个常量
     let x = 5;
     let y = 10;
@@ -113,24 +116,40 @@ fn test_guess() {
     println!("x = {x} and {y} + {z} = {}", y + z);
 }
 
+fn test_says() {
+    /*
+     这是彩蛋了
+    */
+    let stdout: std::io::Stdout = stdout();
+
+    let message: &str = "Hello fellow Rustaceans!";
+    let width: usize = message.chars().count();
+
+    let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
+    say(message, width, &mut writer).unwrap();
+}
+
 // !主程序入口函数
 fn main() {
     // 打印
-    println!("Hello, Rust!");
+    // println!("Hello, Rust!");
 
-    // 测试猜测
-    test_guess();
     // 测试 彩蛋库
     // test_says();
 
+    // 测试猜测
+    // test_guess();
+
     // 生成随机数
     // g();
+
     // *测试变量
     // test_mut();
     // 测试不可变量
     // constants()
     // 测试定义域
     // Shadowing();
+    // 只能修改值，不能修改类型
     // testType()
 
     // *改变数据类型
@@ -148,6 +167,7 @@ fn main() {
     // tuple();
     // 数组
     // array();
+    // testArrayIndex();
 
     // 函数
     // print_labeled_measurement(32, '2');
@@ -160,6 +180,9 @@ fn main() {
     // testWhile();
     // testFor();
     // testFor1();
+    
+
+
 
     // todo 作用域函数，打印
     // scope();
@@ -175,7 +198,7 @@ fn main() {
     // demo();
 
     // ?结构体，有点像typescript的接口语法
-    // theWorld();
+    theWorld();
 
     // todo 枚举
     // enums();

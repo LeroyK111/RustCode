@@ -9,6 +9,8 @@ pub fn print_labeled_measurement(value: i32, unit_label: char) {
     println!("The measurement is: {value}{unit_label}");
 }
 
+
+
 // 表达式写法
 pub fn talk(x: i32) {
     // let y = 6 语句不返回值，所以 x 没有可以绑定到的东西。这与 C 和 Ruby 等其他语言不同，在这些语言中，赋值会返回赋值的值。在这些语言中，你可以写 x = y = 6 ，让 x 和 y 都具有值 6 ；在 Rust 中则不是这种情况。
@@ -25,7 +27,7 @@ pub fn talk(x: i32) {
 // 返回值函数，只需要箭头函数
 pub fn plus_one(x: i32) -> i32 {
     // 不能加入分号，“mismatched types”（类型不匹配)
-    // 但语句的计算结果不为值，该值由 Unit（） 表示。
+    // 加入分号则表示语句，返回值为 Unit（），所以会报错
     x + 1
 }
 
@@ -55,6 +57,7 @@ pub fn testLoop() {
     let mut count = 0;
     let result = loop {
         if count > 5 {
+            // break 关键字可以带一个值，这个值会作为整个循环的返回值
             break "ok!";
         }
         count += 1;
@@ -119,6 +122,7 @@ pub fn testFor() {
 
 
 pub fn testFor1() {
+    // rev: 反转数组
     for number in (1..4).rev() {
         println!("{number}!");
     }
@@ -137,6 +141,9 @@ pub fn test1() {
 
     sum(1, 2); // Returns 3
 }
+
+
+
 
 // 一等函数
 // fn test2() {

@@ -144,7 +144,14 @@ pub struct Guess {
     braeking: bool,
 }
 
+
 impl Guess {
+    /*
+    这里其实是创建了一个新的结构体实例，new是一个关联函数（associated function），它不需要 self 参数。我们在这里使用了一个常见的 Rust 约定：new 函数通常用于创建结构体的实例。
+    这个函数的签名表明它接收一个 i32 类型的参数
+
+    
+    */
     pub fn new(value: i32) -> Guess {
         if value < 1 || value > 100 {
             panic!("Guess value must be between 1 and 100, got {}.", value);

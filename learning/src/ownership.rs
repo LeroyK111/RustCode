@@ -71,6 +71,9 @@ pub fn scope3() {
 
 pub fn scope4() {
     let s = String::from("hello"); // s 进入作用域
+    
+
+
     takes_ownership(s); // s 的值移动到函数里 ...
                         // println!("{}", s); // 这里会报错，s 不再有效
 
@@ -103,6 +106,10 @@ fn makes_copy(some_integer: i32) {
     // some_integer 进入作用域
     println!("{}", some_integer);
 } // 这里，some_integer 移出作用域。没有特殊之处
+
+
+
+
 
 fn gives_ownership() -> String {
     // gives_ownership 会将
