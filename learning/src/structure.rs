@@ -1,5 +1,6 @@
 // 定义结构体
 struct User {
+    
     active: bool,
     username: String,
     email: String,
@@ -10,10 +11,19 @@ fn build_user(email: String, username: String) -> User {
     /*
     构建结构体
     */
+    // 常规写法
+    // User {
+    //     active: true,
+    //     username: username,
+    //     email: email,
+    //     sign_in_count: 1,
+    // }
+
+    // 简写
     User {
         active: true,
-        username: username,
-        email: email,
+        username,
+        email,
         sign_in_count: 1,
     }
 }
@@ -25,16 +35,18 @@ struct Color(i32, i32, i32);
 struct AlwaysEqual;
 
 pub fn theWorld() {
-    // 有点对象语法的感觉
+    // 有点对象语法的感觉, 先定义接口，再定义结构体，最后实例化结构体
     let mut user1 = User {
         active: true,
         username: String::from("someusername123"),
         email: String::from("someone@example.com"),
         sign_in_count: 1,
+        
     };
+
     // 结构体赋值
     user1.email = String::from("785632486@qq.com");
-    // println!("{}", user1.email);
+    // println!("结构体赋值{}", user1.email);
 
     // 使用user1的内容，填充给user2
     let user2 = User {
@@ -49,10 +61,11 @@ pub fn theWorld() {
         // 使用结构体语法糖
         ..user1
     };
-    // user1被清理掉了，user3能正常使用。
-    // println!("{}", user1.email);
-    // println!("{}", user2.email);
-    // println!("{}", user3.sign_in_count);
+
+
+    // println!("user1{}", user1.email);
+    // println!("user2 {}", user2.email);
+    // println!("user3 {}", user3.sign_in_count);
     // clone 可以进行属性的深复制, 但结构体不能深复制
     let user4 = user3.email.clone();
     // println!("{}", user4);
@@ -62,6 +75,7 @@ pub fn theWorld() {
 
     // 类单元结构体, 本质就是unit类型 结构体 类似 空对象
     let subject = AlwaysEqual;
+    
 
     // 结构体传参数
     // wh();
@@ -76,7 +90,7 @@ pub fn theWorld() {
     testSelf();
 }
 
-// 使用 #[derive(Debug)] 后才能打印结构体
+// ?使用 #[derive(Debug)] 后才能打印结构体, 结构体申明默认是隐藏的. 除了使用 #[derive(Debug)]，还可以使用 dbg! 宏打印结构体。
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -85,12 +99,23 @@ struct Rectangle {
 
 // 计算矩形面积
 fn wh() {
-    let width1 = 30;
-    let height1 = 50;
-    println!("{}", area(width1, height1));
+    /*
+    写明类型 or 加入负号即可说明 有符号数
+    let width1: i32 = 30;
+    let offset: i32 = -10;
+    直接 跟在数字后面也行
+    let width1 = 30i32;
+    let height1 = 50i32;
+    */
 
+    // let width1 = 30;
+    // let height1: u32 = 50;
+    // println!("{}", area(width1, height1));
+
+
+    // 直接使用元组结构体，计算面积
     let rect1 = (30, 50);
-    println!("{}", area1(rect1));
+    // println!("{}", area1(rect1));
 
     let rect2 = Rectangle {
         width: 30,
@@ -98,17 +123,23 @@ fn wh() {
     };
 
 
+    // 借用 而不是转移 所有权
+    // println!("{}", area2(&rect2));
 
-    println!("{}", area2(&rect2));
+
+    // ?直接打印实例 则会报错, 结构体需要模板语法处理一下. 与上述联动
+    // println!(rect2);
+
     // println!("{rect2:#?}");
     // println!("{rect2:?} \n dbg!(&rect2)");
     // dbg! 一个简单的宏tips，不受#[derive(Debug)]干涉，随时可用
-    dbg!(&rect1);
+    // dbg!(&rect1);
 }
 
 fn area(width: u32, height: u32) -> u32 {
     width * height
 }
+
 
 fn area1(dimensions: (u32, u32)) -> u32 {
     // 使用元组结构体，计算
@@ -132,6 +163,9 @@ impl Rectangle {
         self.width > 0
     }
 }
+
+
+
 
 // 通过派生 trait 增加实用功能, 打印结构体
 fn print() {
@@ -177,6 +211,7 @@ fn inherit() {
         width: 60,
         height: 45,
     };
+    println!("原始值: {:?}", rect1);
 
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
@@ -196,6 +231,12 @@ impl Rectangle {
 }
 
 fn testSelf() {
+
+    // 甚至可以使用 到处的结构体方法， 这里就涉及到模块了
     let sq = Rectangle::square(23);
+    
+    
     println!("{:#?}", sq)
+
+    
 }

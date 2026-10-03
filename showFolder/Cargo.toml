@@ -9,3 +9,7 @@ panic = 'abort'
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# 引入本地 restaurant 项目 lib.rs 中的函数
+restaurant = { path = "../restaurant" }
+
+

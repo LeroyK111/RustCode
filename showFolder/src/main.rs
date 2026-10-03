@@ -1,8 +1,12 @@
 // crate 是当前项目的根文件, 对于一个二进制 crate 而言是src/main.rs
-// gardan的代码路径
-// use crate::garden::vegetables::Asparagus
 // 申明子模块的路径
 mod garden;
+// gardan的代码路径
+use crate::garden::vegetables::Asparagus;
+
+// 调用lib.rs中的函数
+use restaurant::{self, add, eat_at_restaurant};
+
 
 // 调用fs文件系统
 // use std::fs::File
@@ -23,6 +27,84 @@ use traits::interfaces;
 mod lefttime;
 use lefttime::timer;
 
+
+/*
+TODO：三种拆分模块代码的布局（三选一）
+
+========== 布局一：garden.rs + garden/ 目录 ==========
+
+src/
+├── main.rs
+├── garden.rs
+└── garden/
+    └── vegetables.rs
+
+src/main.rs
+mod garden;
+
+fn main() {
+    garden::vegetables::grow();
+}
+
+src/garden.rs
+pub mod vegetables;
+
+src/garden/vegetables.rs
+pub fn grow() {
+    println!("种植蔬菜");
+}
+
+
+?========== 布局二：garden/mod.rs ==========
+
+src/
+├── main.rs
+└── garden/
+    ├── mod.rs
+    └── vegetables.rs
+
+src/main.rs
+mod garden;
+
+fn main() {
+    garden::vegetables::grow();
+}
+
+src/garden/mod.rs
+pub mod vegetables;
+
+src/garden/vegetables.rs
+pub fn grow() {
+    println!("种植蔬菜");
+}
+
+
+*========== 布局三：内联父模块 + 子模块文件 ==========
+
+src/
+├── main.rs
+└── garden/
+    └── vegetables.rs
+
+src/main.rs
+mod garden {
+    pub mod vegetables;
+}
+
+fn main() {
+    garden::vegetables::grow();
+}
+
+src/garden/vegetables.rs
+pub fn grow() {
+    println!("种植蔬菜");
+}
+
+
+*/
+
+
+
 // ?这里是主函数报错捕获
 // use std::io::ErrorKind;
 // fn main() -> Result<(), Box<dyn Error>> {
@@ -31,6 +113,13 @@ fn main() {
     // let plant = Asparagus {};
     // println!("I'm growing {:?}!", plant);
     // my::indirect_call();
+    
+    // eat_at_restaurant();
+    // println!("1 + 2 = {}", add(1, 2));
+
+    
+
+
 
     // !这里我们学习panic 不可恢复错误
     // panic!("crash and burn");
@@ -181,7 +270,7 @@ fn main() {
     // interfaces();
 
     // !生命周期
-    timer();
+    // timer();
 }
 
 fn type_of<T>(_: T) -> &'static str {
@@ -219,25 +308,25 @@ fn largest_char(list: &[char]) -> &char {
 // }
 
 fn function() {
-    println!("called `function()`");
+    println!("called `main.function()\n`");
 }
 
 // module cool 模块cool
 mod cool {
     pub fn function() {
-        println!("called `cool::function()`");
+        println!("called `cool::function()\n`");
     }
 }
 
 // 模块my
 mod my {
     fn function() {
-        println!("called `my::function()`");
+        println!("called `my::function()\n`");
     }
 
     mod cool {
         pub fn function() {
-            println!("called `my::cool::function()`");
+            println!("called `my::cool::function()`\n");
         }
     }
 

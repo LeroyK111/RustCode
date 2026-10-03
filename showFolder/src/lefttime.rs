@@ -3,9 +3,9 @@ pub fn timer() {
                //           |
     let r = &x; // --+-- 'a  |
                 //   |       |
-    // println!("r: {}", r); //   |       |
-                          // --+       |
-                          // ----------+
+                // println!("r: {}", r); //   |       |
+                // --+       |
+                // ----------+
 
     // !函数生命周期
     let string1 = String::from("abcd");
@@ -65,15 +65,11 @@ impl<'a> ImportantExcerpt<'a> {
     }
 }
 
-let s: &'static str = "I have a static lifetime.";
+// let s: &'static str = "I have a static lifetime.";
 
 use std::fmt::Display;
 
-fn longest_with_an_announcement<'a, T>(
-    x: &'a str,
-    y: &'a str,
-    ann: T,
-) -> &'a str
+fn longest_with_an_announcement<'a, T>(x: &'a str, y: &'a str, ann: T) -> &'a str
 where
     T: Display,
 {
@@ -84,3 +80,5 @@ where
         y
     }
 }
+
+

@@ -43,7 +43,7 @@ use structure::theWorld;
 
 // 枚举体
 mod enums;
-use enums::{enums, enums1, enums2, enums3};
+use enums::{enums, enums1, enums2, enums3, enums4};
 
 // 集合
 mod coll;
@@ -181,10 +181,7 @@ fn main() {
     // testFor();
     // testFor1();
     
-
-
-
-    // todo 作用域函数，打印
+    // 作用域函数，打印
     // scope();
     // 字符串类型
     // scope1();
@@ -194,26 +191,35 @@ fn main() {
     // 函数和字面量
     // scope4();
 
-    // *所有权：引用和借用
+    // 所有权：引用和借用
     // demo();
 
-    // ?结构体，有点像typescript的接口语法
-    theWorld();
+    // 结构体，有点像typescript的接口语法
+    // theWorld();
 
-    // todo 枚举
+    // 枚举
     // enums();
     // enums1();
     // enums2();
     // enums3();
+    // enums4();
 
     // !集合
-    // call();
+    call();
     // call2();
     // strMain();
     // hashmaps();
 
 
     // ?错误处理
+    
+
+
+
+
+
+
+
 
 
     // todo 泛型,trait,生命周期

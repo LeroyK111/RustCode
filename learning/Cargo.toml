@@ -5,6 +5,12 @@
 name = "learning"
 version = "0.1.0"
 edition = "2021"
+
+[lints.rust]
+non_snake_case = "allow"
+
+
+
 [profile.release]
 panic = 'abort'
 
