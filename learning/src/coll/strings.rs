@@ -20,6 +20,21 @@ pub fn strMain() {
     s += "baz";
     s.push('l');
     println!("{}", s);
+    // 不支持 所有权直接索引和切片
+    // println!("{}", s[0]);
+
+    // 只能这样做
+    let hello = "123456";
+    let ch = hello.chars().nth(0);
+    let byte = hello.bytes().nth(0);
+    let text = &hello[0..2];
+    println!("索引和切片 {ch:?},{byte:?},{text}");
+
+    
+
+
+
+
 
     // 使用format!
     let s1 = String::from("tic");

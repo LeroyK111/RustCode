@@ -12,11 +12,17 @@ pub fn hashmaps() {
     let team_name = String::from("Blue");
     let score = scores.get(&team_name).copied().unwrap_or(0);
 
+    // copied: 借用的值 复制一份
+    // unwrap_or: 如果值不存在,则给个默认值
+    
+
+
+
     // 插入hash
     let field_name = String::from("Favorite color");
     let field_value = String::from("Blue");
     let mut map = HashMap::new();
-    // field_name， field_name 立刻失效
+    // field_name， field_name 立刻失效, 转移所有权了
     map.insert(field_name, field_value);
 
     // 覆盖更新hash
@@ -25,6 +31,11 @@ pub fn hashmaps() {
     // 检查更新，没有才增加
     scores.entry(String::from("Yellow")).or_insert(50);
     scores.entry(String::from("Blue")).or_insert(50);
+
+    
+
+
+    
 
     // 根据旧值更新新值
     let text = "hello world wonderful world";

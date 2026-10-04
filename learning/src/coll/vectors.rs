@@ -4,6 +4,7 @@ pub fn call() {
     // 简写方式
     // let v = vec![1, 2, 3];
     let mut v = vec![];
+    
     // 开始堆栈
     v.push(5);
     v.push(6);
@@ -22,12 +23,19 @@ pub fn call() {
         None => println!("There is no third element."),
     }
 
+
+
+
+
     // let does_not_exist = &v[100];
     // println!("{}", does_not_exist);
 
     // get 可以避免索引报错。取不到的值，用none代替
     let does_not_exist = v.get(100);
     println!("{:?}", does_not_exist);
+    
+
+
 }
 
 pub fn call2() {
@@ -41,14 +49,19 @@ pub fn call3() {
     let v = vec![100, 32, 57];
     // 循环引用
     for i in &v {
+
         println!("{i}");
     }
 
-    // 循环改写
+    // 循环改写: 这里是获得所有权了
     let mut v = vec![100, 32, 57];
     for i in &mut v {
         *i += 50;
     }
+
+    
+    println!("{v:?}");
+
 
     // 枚举结构自适应
     enum SpreadsheetCell {

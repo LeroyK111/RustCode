@@ -49,7 +49,24 @@ use enums::{enums, enums1, enums2, enums3, enums4};
 mod coll;
 use coll::hashmaps::hashmaps;
 use coll::strings::strMain;
-use coll::vectors::{call, call2};
+use coll::vectors::{call, call2, call3};
+
+// 异常处理, 使用这种导入
+mod errors {
+    pub mod usePanic;
+    pub mod useResult;
+
+}
+
+use errors::usePanic::{testPanic};
+use errors::useResult::{self, controlFile};
+
+// 泛型,trait,生命周期, 使用这种导入
+mod lifes;
+use lifes::*;
+
+
+
 
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
@@ -64,6 +81,11 @@ pub fn size_prefix(n: u32) -> &'static str {
         G.. => "G",
     }
 }
+
+
+
+
+
 
 fn test_guess() {
     // 提示
@@ -128,6 +150,10 @@ fn test_says() {
     let mut writer: BufWriter<std::io::StdoutLock<'_>> = BufWriter::new(stdout.lock());
     say(message, width, &mut writer).unwrap();
 }
+
+
+
+
 
 // !主程序入口函数
 fn main() {
@@ -205,40 +231,54 @@ fn main() {
     // enums4();
 
     // !集合
-    call();
+
+    /*
+        & 借来看，&mut 借来改；
+        * 顺引用，找到原值来；
+        整数传副本，改了不影响；
+        可变引用传，改到原身上。
+    */
+
+    // call();
     // call2();
+    // call3();
     // strMain();
     // hashmaps();
 
 
     // ?错误处理
+    // testPanic();
+    // controlFile();
+    // useResult::propagating();
     
-
-
-
-
-
-
-
-
-
     // todo 泛型,trait,生命周期
+    // genericsTemp::test();
+    // traitTemp::test();
+    // traitTemp2::test();
+    // lifeTemp::test();
 
-
-    // !测试宏
-
+    // !拆分代码和包引用等等, ./RustCode/showFolder/src/main.rs 进行学习
+    // !测试宏: 我们在 ./restaurant/src/lib.rs 进行学习, 这里涉及到库的概念
 
     // ?例子: 构建 command line 工具
 
 
 
-
-    
-
     // todo 迭代器和闭包
 
 
     // !cargo 打包,发布等多功能工具
+
+
+
+
+
+
+
+
+
+
+    
 
     // ?智能指针
 
