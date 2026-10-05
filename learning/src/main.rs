@@ -27,6 +27,10 @@ use function::{
     testWhile,
 };
 
+
+mod advFunc;
+use advFunc::{cloth};
+
 mod dataType;
 use dataType::{array, bools, change_type, count, float, string, tuple, testArrayIndex};
 
@@ -260,12 +264,10 @@ fn main() {
     // !拆分代码和包引用等等, ./RustCode/showFolder/src/main.rs 进行学习
     // !测试宏: 我们在 ./restaurant/src/lib.rs 进行学习, 这里涉及到库的概念
 
-    // ?例子: 构建 command line 工具
-
-
+    // ?例子: 构建 command line 工具: ./editCLI 中
 
     // todo 迭代器和闭包
-
+    cloth();
 
     // !cargo 打包,发布等多功能工具
 
