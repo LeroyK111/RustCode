@@ -68,6 +68,17 @@ use errors::useResult::{self, controlFile};
 mod lifes;
 use lifes::*;
 
+
+
+
+// 智能指针
+mod points;
+use points::{*};
+
+
+
+
+
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
 pub fn size_prefix(n: u32) -> &'static str {
@@ -280,10 +291,33 @@ fn main() {
 
     // !cargo 打包,发布等多功能工具: editCLI/cargo.toml
     // ?智能指针
+    // BoxTest::test();
+    // DerefTest::test();
+    // DropTest::test();
+    // RcTest::test();
+    // RefCellTest::test();
+    // RefCellTest::handleMsg();
+    // RefCellTest::handlRcAndRefcell();
+    // oomTest::bug();
+    // oomTest::useWeak();
 
+    /*
+    | 类型或 trait  | 核心职责           |
+    | ---------- | -------------- |
+    | Box<T>     | 拥有并管理堆上的值      |
+    | Rc<T>      | 提供共享所有权，维护引用计数 |
+    | RefCell<T> | 管理内部值的运行时借用    |
+    | Ref<T>     | 表示一次只读借用       borrow 返回值类型|
+    | RefMut<T>  | 表示一次可变借用       borrow_mut 返回值类型|
+    | Deref      | 支持像引用一样访问目标值   |
+    | Drop       | 在对象销毁时执行收尾工作   |
+    */
 
 
     // todo 并发编程
+
+
+
 
     // ! 异步编程
 
@@ -295,5 +329,5 @@ fn main() {
 
     // ?例子: 多线程web server
 
-    // todo: 2026 新特性学习
+    // todo: 2026 新特性学习: learning\src\2026..20xx
 }

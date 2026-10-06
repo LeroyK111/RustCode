@@ -5060,6 +5060,15 @@ y
 }
 ```
 
+| 场景                     | 通常要手写 `'a` 吗    | 示例                                                 |
+| ---------------------- | --------------- | -------------------------------------------------- |
+| 函数内部创建局部引用             | 不需要             | `let r = &value;`                                  |
+| 函数只读取参数，不返回或保存引用       | 不需要             | `fn print(s: &str)`                                |
+| 一个引用输入，返回借自它的引用        | 不需要，省略规则能表达     | `fn first(s: &str) -> &str`                        |
+| 多个引用输入，返回引用且没有 `&self` | 通常需要明确返回值与输入的关系 | `fn choose<'a>(x: &'a str, y: &'a str) -> &'a str` |
+| 方法返回借自 `self` 的引用      | 通常不需要           | `fn name(&self) -> &str`                           |
+| 结构体保存外部引用              | 需要显式标明字段生命周期    | `struct View<'a> { text: &'a str }`                |
+| 返回拥有所有权的数据             | 不需要为返回值建立借用关系   | `fn copy(s: &str) -> String`                       |
 
 #### 自动化测试
 Edsger W. Dijkstra 在其 1972 年的文章【谦卑的程序员】（“The Humble Programmer”）中说到 “软件测试是证明 bug 存在的有效方法，而证明其不存在时则显得令人绝望的不足。”（“Program testing can be a very effective way to show the presence of bugs, but it is hopelessly inadequate for showing their absence.”）这并不意味着我们不该尽可能地测试软件！
@@ -6729,19 +6738,19 @@ Rust 的 闭包（closures）是可以保存在一个变量中或作为参数传
 ```
 
 
-
-
-
-
-
-
-
-
-
 #### ⭐️智能指针
+```
+在 Rust 中，由于所有权和借用的概念，引用和智能指针之间还有一个额外区别：引用只会借用数据，而智能指针在很多情况下会拥有它们所指向的数据。
+```
+
+
+
 
 
 #### ⭐️安全并发
+
+
+
 
 
 #### 面向对象编程
@@ -6832,14 +6841,17 @@ cargo check
 cargo test
 
 cargo publish --dry-run
+# 修改版本号
+cargo publish 
 ```
+##### 撤销更新
+```
+# 撤销这个版本
+cargo yank --vers 0.1.1
+# 撤销的撤销.
+cargo yank --vers 1.0.1 --undo
 
-
-
-
-
-
-
+```
 
 #### 嵌入式开发
 

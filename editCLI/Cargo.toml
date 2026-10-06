@@ -1,6 +1,6 @@
 [package]
 name = "editCLI"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 # 发布时要记得添加
 description = "A fun game where you guess what number the computer has chosen."
@@ -19,8 +19,8 @@ non_snake_case = "allow"
 
 
 
-[dependencies]
 
+[dependencies]
 
 
 
@@ -38,3 +38,16 @@ opt-level = 3
 
 # cargo doc --open 会在 E:\RustCode\editCLI\target\doc\editCLI\index.html 生成一份html 文档
 
+
+# 创建子空间: cargo new add_one --lib
+[workspace]
+resolver = "3"
+members = ["add_one","adder"]
+
+# -p 特指哪个空间
+# cargo test -p add_one  
+# cargo build -p add_one
+# cargo build -p add_one
+# cargo run -p adder  
+
+#  cargo install ripgrep  也可以安装二进制文件, 这个就常见于js/py
