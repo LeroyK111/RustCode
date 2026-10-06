@@ -6803,6 +6803,7 @@ https://crates.io/ 注册账号
 ![](learning/src/objInfo/assets/Pasted%20image%2020261006160827.png)
 
 点击生成token, 复制它, 然后在shell
+记得还要 验证 邮箱.
 ```
 PS E:\RustCode\editCLI> cargo login                                                                                   
 please paste the token found on https://crates.io/me below
