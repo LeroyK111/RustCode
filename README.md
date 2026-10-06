@@ -6816,9 +6816,12 @@ description = "A fun game where you guess what number the computer has chosen."
 
 license = "MIT OR Apache-2.0"
 ```
-随后
+随后 成功
 ```
-cargo publish
+PS E:\RustCode\editCLI> cargo publish
+    Updating crates.io index
+    <skip>
+   Published editCLI v0.1.0 at registry `crates-io`       
 ```
 
 
