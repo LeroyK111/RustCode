@@ -316,6 +316,10 @@ Source code -> MIR -> LLVM IR -> 机器码 -> Target链接 -> 可执行文件或
 Go编译器是自己实现了链接目标平台的工作，因此不需要msvc或gnu。Java也是类似，所有的底层工作都是Java虚拟机实现的，javac仅仅是把源码编译成class字节码就结束了。
 ```
 
+### 生成lib文档
+
+![](learning/src/objInfo/assets/Pasted%20image%2020261006155832.png)
+
 ### VScode编辑器配置
 https://code.visualstudio.com/docs/languages/rust
 
@@ -6792,6 +6796,32 @@ $ cargo doc --open
 
 
 ##### 打包发布
+```
+https://crates.io/ 注册账号
+```
+![](learning/src/objInfo/assets/Pasted%20image%2020261006160608.png)
+![](learning/src/objInfo/assets/Pasted%20image%2020261006160827.png)
+
+点击生成token, 复制它, 然后在shell
+```
+PS E:\RustCode\editCLI> cargo login                                                                                   
+please paste the token found on https://crates.io/me below
+<token>
+```
+记得给你的 toml 中添加
+```toml
+[package]
+description = "A fun game where you guess what number the computer has chosen."
+
+license = "MIT OR Apache-2.0"
+```
+随后
+```
+cargo publish
+```
+
+
+
 
 
 

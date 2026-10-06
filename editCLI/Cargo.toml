@@ -2,5 +2,27 @@
 name = "editCLI"
 version = "0.1.0"
 edition = "2024"
+# 发布时要记得添加
+description = "A fun game where you guess what number the computer has chosen."
+license = "MIT OR Apache-2.0"
+
 
 [dependencies]
+
+
+
+
+# 构建这个项目: 目录根路径下: 创建target目录/
+# cargo build # 创建debug文件夹
+# cargo build --release  # 创建release文件夹
+
+
+# opt-level 设置控制 Rust 会对代码进行何种程度的优化。这个配置的值从 0 到 3。越高的优化级别需要更多的时间编译，所以如果你在进行开发并经常编译，可能会希望在牺牲一些代码性能的情况下减少优化以便编译得快一些。因此 dev 的 opt-level 默认为 0。当你准备发布时，花费更多时间在编译上则更好。只需要在发布模式编译一次，而编译出来的程序则会运行很多次，所以发布模式用更长的编译时间换取运行更快的代码。这正是为什么 release 配置的 opt-level 默认为 3。
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+
+# cargo doc --open 会在 E:\RustCode\editCLI\target\doc\editCLI\index.html 生成一份html 文档
+

@@ -49,7 +49,6 @@ pub fn count() {
     let remainder = 43 % 5;
 
     println!("{sum},{difference},{product},{quotient},{truncated},{remainder}");
-    
 }
 
 // 布尔值
@@ -105,10 +104,6 @@ pub fn tuple() {
     println!("The value of y is: {y}");
 }
 
-
-
-
-
 pub fn array() {
     let months = [
         "January",
@@ -124,7 +119,6 @@ pub fn array() {
         "November",
         "December",
     ];
-    
 
     // 直接给每个元素赋予type
     let a: [i32; 5] = [1, 2, 3, 4, 5];
@@ -132,19 +126,14 @@ pub fn array() {
     // 分号表示五个元素，五个元素为3: let a = [3, 3, 3, 3, 3];
     let a = [3; 5];
 
-
     // 通过索引访问数组元素
     let first = a[0];
     let second = a[1];
 
     println!("{first}");
-    
-    
-
 }
 
 use std::io;
-
 
 // 通过输入索引，获取数组中的value。如果超过索引范围，则报错
 pub fn testArrayIndex() {
@@ -168,5 +157,27 @@ pub fn testArrayIndex() {
     println!("The value of the element at index {index} is: {element}");
 }
 
+fn print_length2(text: &String) {
+    /*
+            对照一下：
+
+    机制	检查发生在哪里
+    普通的 &T、&mut T 借用规则	编译期
+    RefCell<T> 的借用规则	运行时
+
+    RefCell<T> 通过运行时检查换取更灵活的使用方式，因此不能把它和普通借用的检查机制混为一谈。
 
 
+
+        */
+    println!("{}", text.len());
+}
+
+fn main2() {
+    let text = String::from("Rust");
+
+    print_length2(&text);
+
+    // 借出去之后，所有权仍然属于 text
+    println!("{text}");
+}

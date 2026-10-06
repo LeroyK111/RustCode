@@ -125,3 +125,50 @@ pub fn test() {
         println!("{}", animal.introduce());
     }
 }
+
+
+/*
+以下是动态分发和静态分发.
+
+静态分发 也是一种零成本抽象
+*/
+
+trait Speak1 {
+    fn speak(&self);
+}
+
+struct Dog1;
+struct Cat1;
+
+impl Speak1 for Dog1 {
+    fn speak(&self) {
+        println!("汪汪");
+    }
+}
+
+impl Speak1 for Cat1 {
+    fn speak(&self) {
+        println!("喵喵");
+    }
+}
+
+// 静态分发
+fn greet_static<T: Speak1>(animal: &T) {
+    animal.speak();
+}
+
+// 动态分发
+fn greet_dynamic(animal: &dyn Speak1) {
+    animal.speak();
+}
+
+fn tes1() {
+    let dog = Dog1;
+    let cat = Cat1;
+
+    greet_static(&dog);
+    greet_static(&cat);
+
+    greet_dynamic(&dog);
+    greet_dynamic(&cat);
+}

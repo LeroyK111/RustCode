@@ -2,6 +2,7 @@
 use ferris_says::say;
 use std::io::{self, stdout, BufWriter};
 
+use std::any::{type_name, type_name_of_val, Any};
 // 导入自己包，先声明同级目录下的rs文件
 // 私有模块声明
 mod game;
@@ -27,12 +28,11 @@ use function::{
     testWhile,
 };
 
-
 mod advFunc;
-use advFunc::{cloth};
+use advFunc::{cloth, nextItem};
 
 mod dataType;
-use dataType::{array, bools, change_type, count, float, string, tuple, testArrayIndex};
+use dataType::{array, bools, change_type, count, float, string, testArrayIndex, tuple};
 
 // 测试所有权
 mod ownership;
@@ -59,18 +59,14 @@ use coll::vectors::{call, call2, call3};
 mod errors {
     pub mod usePanic;
     pub mod useResult;
-
 }
 
-use errors::usePanic::{testPanic};
+use errors::usePanic::testPanic;
 use errors::useResult::{self, controlFile};
 
 // 泛型,trait,生命周期, 使用这种导入
 mod lifes;
 use lifes::*;
-
-
-
 
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
@@ -85,11 +81,6 @@ pub fn size_prefix(n: u32) -> &'static str {
         G.. => "G",
     }
 }
-
-
-
-
-
 
 fn test_guess() {
     // 提示
@@ -155,10 +146,6 @@ fn test_says() {
     say(message, width, &mut writer).unwrap();
 }
 
-
-
-
-
 // !主程序入口函数
 fn main() {
     // 打印
@@ -181,6 +168,19 @@ fn main() {
     // Shadowing();
     // 只能修改值，不能修改类型
     // testType()
+    // 查看数据类型
+    // println!("a: {}", type_name_of_val("a"));
+    // let value = 123_i32;
+    // if type_name_of_val(&value) == type_name::<i32>() {
+    //     println!("类型名称相同");
+    // }
+
+    // 判断变量 主要是 is
+    // let value: &dyn Any = &123_i32;
+    // println!("是否为 i32：{}", value.is::<i32>());
+    // if let Some(number) = value.downcast_ref::<i32>() {
+    //     println!("取出的数字：{}", number);
+    // }
 
     // *改变数据类型
     // change_type()
@@ -210,7 +210,7 @@ fn main() {
     // testWhile();
     // testFor();
     // testFor1();
-    
+
     // 作用域函数，打印
     // scope();
     // 字符串类型
@@ -249,15 +249,15 @@ fn main() {
     // strMain();
     // hashmaps();
 
-
     // ?错误处理
     // testPanic();
     // controlFile();
     // useResult::propagating();
-    
+
     // todo 泛型,trait,生命周期
     // genericsTemp::test();
     // traitTemp::test();
+    // 涉及到 dyn 分发,
     // traitTemp2::test();
     // lifeTemp::test();
 
@@ -266,46 +266,34 @@ fn main() {
 
     // ?例子: 构建 command line 工具: ./editCLI 中
 
-    // todo 迭代器和闭包
-    cloth();
+    // todo 迭代器和闭包: 迭代器是 Rust 的零成本抽象 之一
+    // cloth();
+    // nextItem();
+    /*
+        | 抽象         | 你写的高层表达        | 编译器帮你做什么         |
+    | ---------- | -------------- | ---------------- |
+    | 泛型         | “同一段逻辑适用于多种类型” | 生成具体类型的版本        |
+    | trait 静态分发 | “调用实现了这个行为的方法” | 提前确定具体实现         |
+    | 普通借用       | “暂时使用别人的数据”    | 提前检查引用和借用是否合法    |
+    | 迭代器与闭包     | “筛选、转换、累加”     | 通常优化成直接完成操作的底层代码 |
+        */
 
-    // !cargo 打包,发布等多功能工具
-
-
-
-
-
-
-
-
-
-
-    
-
+    // !cargo 打包,发布等多功能工具: editCLI/cargo.toml
     // ?智能指针
+
+
 
     // todo 并发编程
 
-
     // ! 异步编程
-
 
     // ?对象编程
 
-
     // todo 模式和匹配
-
 
     // !高级特性, 裸指针等等
 
-
     // ?例子: 多线程web server
 
-
     // todo: 2026 新特性学习
-
-    
-
-
-
 }
