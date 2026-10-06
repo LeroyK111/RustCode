@@ -1,3 +1,4 @@
+//! 这是特别要求注释
 // pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 //     let mut results = Vec::new();
 
@@ -21,7 +22,7 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 
 
 
-//! 这是特别要求注释
+
 /// # hi 这是给 cargo doc --open 的
 pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     // 查询word 转为小写
