@@ -6813,8 +6813,11 @@ please paste the token found on https://crates.io/me below
 ```toml
 [package]
 description = "A fun game where you guess what number the computer has chosen."
-
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/LeroyK111/"
+
+[lints.rust]
+non_snake_case = "allow"
 ```
 随后 成功
 ```
@@ -6823,6 +6826,14 @@ PS E:\RustCode\editCLI> cargo publish
     <skip>
    Published editCLI v0.1.0 at registry `crates-io`       
 ```
+##### 更新库
+```
+cargo check
+cargo test
+
+cargo publish --dry-run
+```
+
 
 
 
