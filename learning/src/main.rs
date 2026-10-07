@@ -75,9 +75,12 @@ use lifes::*;
 mod points;
 use points::{*};
 
+// 多线程
+mod process;
 
-
-
+// 异步
+mod asyncs;
+use asyncs::{FA, Fs, STREAM, advA, combination, asyncT};
 
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
@@ -315,11 +318,43 @@ fn main() {
 
 
     // todo 并发编程
+    // process::one::test();
+    // process::one::test1();
+    // process::two::test();
+    // process::two::test1();
+    // process::two::test2();
+    // process::two::test3();
+    // process::three::test();
+    // process::three::test1();
+    // process::four::test();
+    // ! 异步编程
+    // FA::test();
+    // FA::test2();
+    // FA::test3();
+    // Fs::test();
+    // Fs::test2();
+    // Fs::test3();
+    // Fs::test4();
+    // Fs::test5();
+    // advA::test();
+    // advA::test2();
+    // advA::test3();
+    // STREAM::test();
+    // STREAM::test2();
+    STREAM::test3();
+
+
+
+
+
+
+
+
+
+
+
     
 
-
-
-    // ! 异步编程
 
     // ?对象编程
 
@@ -328,15 +363,15 @@ fn main() {
     // !高级特性, 裸指针等等
 
     // ?例子: 多线程web server
-
-
-
-
-
-
-
-
-
     
+
+
+
+
+
+
+
+
+
     // todo: 2026 新特性学习: learning\src\2026..20xx
 }
