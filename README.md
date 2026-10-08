@@ -6751,6 +6751,21 @@ Rust 的 闭包（closures）是可以保存在一个变量中或作为参数传
 
 
 
+#### 异步
+
+```
+async fn calculate() -> u32 {
+    42
+}
+
+# 上述的类型申明
+Future<Output = u32>
+
+# poll 本质就是枚举
+Poll::Ready(42)
+
+```
+
 
 
 #### 面向对象编程

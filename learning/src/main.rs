@@ -68,19 +68,33 @@ use errors::useResult::{self, controlFile};
 mod lifes;
 use lifes::*;
 
-
-
-
 // 智能指针
 mod points;
-use points::{*};
+use points::*;
 
 // 多线程
 mod process;
 
 // 异步
 mod asyncs;
-use asyncs::{FA, Fs, STREAM, advA, combination, asyncT};
+use asyncs::{advA, asyncT, Fs, FA, STREAM};
+
+// 对象编程
+mod object;
+
+// 模式
+mod modes; 
+
+// 高级应用
+mod unsafes;
+
+// 高级类型和闭包
+mod funcAdv;
+
+// 宏脚本
+mod macros;
+use macros::usages;
+
 
 // 模式匹配中的专属范围
 // Rust现在支持专属范围的模式匹配(a..b)，这增强了模式匹配并减少了对包含端点的单独常量的需求。
@@ -316,7 +330,6 @@ fn main() {
     | Drop       | 在对象销毁时执行收尾工作   |
     */
 
-
     // todo 并发编程
     // process::one::test();
     // process::one::test1();
@@ -341,26 +354,73 @@ fn main() {
     // advA::test3();
     // STREAM::test();
     // STREAM::test2();
-    STREAM::test3();
-
-
-
-
-
-
-
-
-
-
-
-    
-
+    // STREAM::test3();
+    // asyncT::test();
+    // asyncT::test2();
+    // asyncT::test3();
+    // asyncT::moveEle();
+    // asyncT::test4();
+    // asyncT::test5();
+    // asyncT::test6();
+    // asyncT::test7();
 
     // ?对象编程
+    // object::base::test();
+    // object::adv::test(); 
+    // object::adv::test2();
 
     // todo 模式和匹配
+    // modes::base::test();
+    // modes::base::test2();
+    // modes::base::test3();
+    // modes::base::test4();
+    // modes::base::test5();
+    // modes::adv::test();
+    // modes::adv::test2();
+    // modes::adv::test3();
+    // modes::adv::test4();
+    // modes::adv::test5();
+    // modes::adv::test6();
+    // modes::adv::test7();
 
     // !高级特性, 裸指针等等
+    // unsafes::one::test();
+    // unsafes::one::test2();
+    // unsafes::one::test3();
+    // unsafes::one::test4();
+    // unsafes::one::test5();
+    // unsafes::one::test6();
+    // unsafes::one::test7();
+
+    // !高级trait
+    // traitAdv::test();
+    // traitAdv::test2();
+    // traitAdv::test3();
+    // traitAdv::test4();
+    // traitAdv::test5();
+    // traitAdv::test6();
+
+    // !高级函数 和 闭包
+    // funcAdv::bases::test();
+    // funcAdv::bases::test2();
+    // funcAdv::bases::test3();
+    // funcAdv::bases::test4();
+    // funcAdv::bases::test5();
+    // funcAdv::bases::test6();
+    // funcAdv::adv::test();
+    // funcAdv::adv::test2();
+    // funcAdv::adv::test3();
+    // 三种函数申明
+    // funcAdv::adv::mainx();
+    // funcAdv::adv::main2x();
+    // funcAdv::adv::main3x();
+    // funcAdv::adv::test4();
+    // funcAdv::adv::test5();
+    // funcAdv::adv::test6();
+    // funcAdv::adv::test7();
+    // !宏 这里就是麻烦的地方
+    // usages::test();
+    // usages::test2();
 
     // ?例子: 多线程web server
     
@@ -373,5 +433,5 @@ fn main() {
 
 
 
-    // todo: 2026 新特性学习: learning\src\2026..20xx
+    // todo: 2026 新特性学习: learning\src\2025..20xx
 }
