@@ -222,4 +222,3 @@ fn handle(mut stream: TcpStream) -> io::Result<()> {
 
     Ok(())
 }
-s
