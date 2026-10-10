@@ -52,14 +52,26 @@ use std::{
 //     }
 // }
 
+/*
+接受 TCP 连接
+      ↓
+把持有连接的任务放入队列
+      ↓
+Worker 领取任务
+      ↓
+读取 HTTP 请求 → 处理 → 写回响应
+*/
+
 fn main() {
     // 主线程和 Ctrl+C 处理线程共享停止标志。
-    let stopping = Arc::new(AtomicBool::new(false));
-    let signal = Arc::clone(&stopping);
+    let stopping = Arc::new(AtomicBool::new(false)); // 线程共享对象: 原子布尔值
+    let signal = Arc::clone(&stopping); // 句柄copy
 
     // 收到 Ctrl+C 后，只设置停止标志。
     // 不在这里直接结束进程，也不在这里等待工作线程。
     ctrlc::set_handler(move || {
+        // 写入 true: 两个线程操作同一个 AtomicBool，这些原子读写不会构成数据竞争. 
+        //  Ordering::SeqCst 全局读写顺序.
         signal.store(true, Ordering::SeqCst);
     })
     .expect("无法注册 Ctrl+C 处理器");
@@ -79,8 +91,9 @@ fn main() {
     println!("按 Ctrl+C 停止接受新连接，并等待已有任务完成");
 
     // 不再使用 incoming().take(2)。
-    // 持续接收连接，直到收到停止通知。
+    // 持续接收连接，直到收到停止通知。 这就是让 listener 能够一直循环下去 
     while !stopping.load(Ordering::SeqCst) {
+        // 等待请求
         match listener.accept() {
             Ok((stream, address)) => {
                 // 刚接受连接时，再检查一次停止标志。
@@ -88,7 +101,7 @@ fn main() {
                     drop(stream);
                     break;
                 }
-
+                // 客户端信息
                 println!("接受连接：{address}");
 
                 // 主线程提交任务，Worker 执行 handle。

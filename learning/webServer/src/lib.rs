@@ -31,6 +31,7 @@ impl ThreadPool {
         let mut workers = Vec::with_capacity(size);
 
         for id in 0..size {
+            // 创建线程并共享一个接收端: 这里也是在下面创建了
             let worker = Worker::new(id, Arc::clone(&receiver));
 
             workers.push(worker);
@@ -47,7 +48,7 @@ impl ThreadPool {
         F: FnOnce() + Send + 'static,
     {
         let job: Job = Box::new(task);
-
+        
         let sender = self.sender.as_ref().expect("线程池已关闭任务发送端");
 
         sender.send(job).expect("任务发送失败：线程池接收端已关闭");
