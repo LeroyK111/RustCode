@@ -1,6 +1,7 @@
  # Rust学习笔记
 
-自举发展
+自举发展(抱歉,某些 rust仓库 就不开放了, 这里就开源给大家)
+
 ![](https://raw.githubusercontent.com/LeroyK111/pictureBed/master/20250323181138.png)
 
 **官网**：https://www.rust-lang.org/zh-CN/
@@ -6731,27 +6732,20 @@ programming）。函数式编程风格通常包含将函数作为参数值或其
 
 ##### 闭包
 Rust 的 闭包（closures）是可以保存在一个变量中或作为参数传递给其他函数的匿名函数。可以在一个地方创建闭包，然后在不同的上下文中执行闭包运算。不同于函数，闭包允许捕获被定义时所在作用域中的值。
-
-
-```rust
-
-```
-
+learning/main.rs
 
 #### ⭐️智能指针
 ```
 在 Rust 中，由于所有权和借用的概念，引用和智能指针之间还有一个额外区别：引用只会借用数据，而智能指针在很多情况下会拥有它们所指向的数据。
 ```
-
-
-
+learning/main.rs
 
 
 #### ⭐️安全并发
-
-
+learning/main.rs
 
 #### 异步
+learning/main.rs
 
 ```
 async fn calculate() -> u32 {
@@ -6765,23 +6759,24 @@ Future<Output = u32>
 Poll::Ready(42)
 
 ```
-
-
-
 #### 面向对象编程
+learning/main.rs
 
 
 #### 模式与模式匹配
+learning/main.rs
 
 
 #### 高级特征
+learning/main.rs
 
 
-#### ⭐️多线程与多进程
-
+#### ⭐️多线程web services
+learning/webServer
 
 
 #### 标准库
+std::process: 进程库,极少使用.一般都是多线程+异步
 
 
 #### Cargo用法
