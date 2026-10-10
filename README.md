@@ -1,6 +1,6 @@
  # Rust学习笔记
 
-自举发展(抱歉,某些 rust仓库 就不开放了, 这里就开源给大家)
+自举发展(抱歉,某些 rust仓库 就不开放了, 这里就只开源给大家学习笔记)
 
 ![](https://raw.githubusercontent.com/LeroyK111/pictureBed/master/20250323181138.png)
 
