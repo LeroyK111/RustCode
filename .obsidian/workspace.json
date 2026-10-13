@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Embedded/NUCLEOF446RE/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "readme"
             }
           }
         ]
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Embedded/NUCLEOF446RE/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,17 +190,20 @@
   },
   "active": "5802f37a83c0a427",
   "lastOpenFiles": [
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/work-products.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/query-cache.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/dep-graph.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/e2dk2sx5x18o2gihvj844jx1v.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/c6d4uxccr2uohxnem5bdlmfa7.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/acsskle5tqoe4prr0xhr9gwox.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/976xns0ne29ntxqip7urlhp82.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/8ftzmfctfy7qcnn8fhbwpnzkj.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/8ay9doqaiy3j50098vg5tpt4x.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/7373rdkovlni0qq5hatxl4nsr.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn2yimaspt-0q93yuj-9hfyk0b04eb2o7j918ix1dan3/7s9qthsgteebgaw4syamv34md.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/work-products.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/dep-graph.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/query-cache.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/e2dk2sx5x18o2gihvj844jx1v.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/c6d4uxccr2uohxnem5bdlmfa7.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/acsskle5tqoe4prr0xhr9gwox.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/976xns0ne29ntxqip7urlhp82.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/8ay9doqaiy3j50098vg5tpt4x.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/8ftzmfctfy7qcnn8fhbwpnzkj.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/7s9qthsgteebgaw4syamv34md.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/7373rdkovlni0qq5hatxl4nsr.o",
+    "learning/src/objInfo/assets/Pasted image 20261012154741.png",
+    "learning/src/objInfo/assets/Pasted image 20261012153300.png",
+    "README.md",
     "Embedded/NUCLEOF446RE/readme.md",
     "Embedded/readme.md",
     "Embedded/Embedded/README.md",
@@ -217,7 +220,6 @@
     "editCLI/构建命令行工具.md",
     "restaurant/testCommand.md",
     "learning/src/lifes/Trait和泛型的高级用法.md",
-    "README.md",
     "learning/readme.md"
   ]
 }
