@@ -190,6 +190,7 @@
   },
   "active": "5802f37a83c0a427",
   "lastOpenFiles": [
+    "ai/应用/模型参数.md",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/work-products.bin",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/dep-graph.bin",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/query-cache.bin",
@@ -200,7 +201,6 @@
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/8ay9doqaiy3j50098vg5tpt4x.o",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/8ftzmfctfy7qcnn8fhbwpnzkj.o",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/7s9qthsgteebgaw4syamv34md.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/nucleo_f446re-19w8s953zoq9u/s-hn4xsg0etv-0atik5r-1pg00qv4c1kiuphdfkqxnvauy/7373rdkovlni0qq5hatxl4nsr.o",
     "learning/src/objInfo/assets/Pasted image 20261012154741.png",
     "learning/src/objInfo/assets/Pasted image 20261012153300.png",
     "README.md",
