@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Embedded/NUCLEOF446RE/readme.md",
+                "file": "Embedded/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded/NUCLEOF446RE/readme.md",
+                "file": "Embedded/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,10 @@
   },
   "active": "65c960ea6d06bc05",
   "lastOpenFiles": [
+    "Embedded/NUCLEOF446RE/readme.md",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf",
+    "Embedded/readme.md",
+    "learning/src/objInfo/assets/Pasted image 20261103212109.png",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/thin-lto-past-keys.bin",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/work-products.bin",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/query-cache.bin",
@@ -199,14 +203,10 @@
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/c1zoxczdpik2w90gx2yfql32g.pre-lto.bc",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/axpcli7p697zyq6cyd9dm52tw.o",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/axpcli7p697zyq6cyd9dm52tw.pre-lto.bc",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/c1zoxczdpik2w90gx2yfql32g.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/9df0yzg0yhjzexl9pwj52h1k2.o",
-    "Embedded/readme.md",
     "Embedded/遇到的坑.md",
     "Embedded/嵌入式副业.md",
     "Embedded/Oxide.md",
     "Embedded/入门指引/如何入门.md",
-    "Embedded/NUCLEOF446RE/readme.md",
     "README.md",
     "Embedded/开发板/gd32.md",
     "Embedded/开发板/stm32.md",
