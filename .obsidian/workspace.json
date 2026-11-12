@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1f9f025e85de1014",
+        "id": "b29ce265008e5fec",
         "type": "tabs",
         "children": [
           {
-            "id": "65c960ea6d06bc05",
+            "id": "a3b6bfdb2bcebf04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Embedded/readme.md",
+                "file": "Embedded/NUCLEOF446RE/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded/readme.md",
+                "file": "Embedded/NUCLEOF446RE/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,25 +188,27 @@
       "bases:新建数据库": false
     }
   },
-  "active": "65c960ea6d06bc05",
+  "active": "a3b6bfdb2bcebf04",
   "lastOpenFiles": [
+    "Embedded/NUCLEOF446RE/nucleo-f446re/src/ch10/main.rs",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/src/ch10",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.4hyg0quszv0a26k6b5za4do96.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.4n6i524r5njzyrzf2uwsrx3im.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.22wtmpkez0se26z2qxbw5qhou.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.4qd73fhtokkydbw8zhj394qct.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.2j2q4iqsh2e71i11xwhqmk58m.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.c0npnn0bv0cp5rdtcv65tg48q.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.35olc0cahyun2uatnf22ca6no.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.183llz976fpp76oblc1bgoeap.03i9b5m.rcgu.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.9skp9heb6ipa2xzhxcedjyzca.03i9b5m.rcgu.o",
+    "Embedded/ESP32/readme.md",
     "Embedded/NUCLEOF446RE/readme.md",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf",
     "Embedded/readme.md",
+    "Embedded/入门指引/如何入门.md",
     "learning/src/objInfo/assets/Pasted image 20261103212109.png",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/thin-lto-past-keys.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/work-products.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/query-cache.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/ed62xcqwlix23l6sro3ah475p.pre-lto.bc",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/ed62xcqwlix23l6sro3ah475p.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/dep-graph.bin",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/c1zoxczdpik2w90gx2yfql32g.pre-lto.bc",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/axpcli7p697zyq6cyd9dm52tw.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch08-15k46dqpt3aa6/s-hnp3f915jn-0xtggi4-597ziovgdd5giefpaibdsqa0z/axpcli7p697zyq6cyd9dm52tw.pre-lto.bc",
     "Embedded/遇到的坑.md",
     "Embedded/嵌入式副业.md",
     "Embedded/Oxide.md",
-    "Embedded/入门指引/如何入门.md",
     "README.md",
     "Embedded/开发板/gd32.md",
     "Embedded/开发板/stm32.md",

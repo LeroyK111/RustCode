@@ -4,5 +4,6 @@
   "useMarkdownLinks": true,
   "showInlineTitle": false,
   "defaultViewMode": "source",
-  "promptDelete": false
+  "promptDelete": false,
+  "readableLineLength": false
 }
