@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Embedded/NUCLEOF446RE/readme.md",
+                "file": "Embedded/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded/NUCLEOF446RE/readme.md",
+                "file": "Embedded/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,19 +190,18 @@
   },
   "active": "a3b6bfdb2bcebf04",
   "lastOpenFiles": [
-    "Embedded/NUCLEOF446RE/nucleo-f446re/src/ch10/main.rs",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/src/ch10",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.4hyg0quszv0a26k6b5za4do96.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.4n6i524r5njzyrzf2uwsrx3im.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.22wtmpkez0se26z2qxbw5qhou.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.4qd73fhtokkydbw8zhj394qct.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.2j2q4iqsh2e71i11xwhqmk58m.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.c0npnn0bv0cp5rdtcv65tg48q.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.35olc0cahyun2uatnf22ca6no.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.183llz976fpp76oblc1bgoeap.03i9b5m.rcgu.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/deps/ch09-ea1f07d0d277c4c3.9skp9heb6ipa2xzhxcedjyzca.03i9b5m.rcgu.o",
-    "Embedded/ESP32/readme.md",
     "Embedded/NUCLEOF446RE/readme.md",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/work-products.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/thin-lto-past-keys.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/f33a07r04whclf5rfdpkc78bn.pre-lto.bc",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/f33a07r04whclf5rfdpkc78bn.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/query-cache.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/dfvabi5wsrgqv3xqvs69nbdrh.pre-lto.bc",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/dfvabi5wsrgqv3xqvs69nbdrh.o",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/dep-graph.bin",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/crsj6oprhozcphnw87my9kgu4.pre-lto.bc",
+    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch10-065xqk753ukm9/s-ho4ebxiz7r-0pw7pvv-2eubuao3a7nxmw5kee40tab5d/crsj6oprhozcphnw87my9kgu4.o",
+    "Embedded/ESP32/readme.md",
     "Embedded/readme.md",
     "Embedded/入门指引/如何入门.md",
     "learning/src/objInfo/assets/Pasted image 20261103212109.png",
