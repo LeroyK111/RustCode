@@ -36,8 +36,10 @@
       },
     }
   },
+  // 需要代码提示和补全的项目路径 自行添加 vscode插件还是太慢了
   "rust-analyzer.linkedProjects": [
-    "./learning/Cargo.toml"
+    "./learning/Cargo.toml",
+    "./Embedded/NUCLEOF446RE/nucleo-f446re/Cargo.toml"
   ],
-  "rust-analyzer.showUnlinkedFileNotification": false,
+  "rust-analyzer.showUnlinkedFileNotification": true,
 }
