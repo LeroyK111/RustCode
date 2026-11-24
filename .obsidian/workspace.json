@@ -13,6 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Embedded/readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "readme"
+            }
+          },
+          {
+            "id": "878da10b5b2aef79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Embedded/ESP32/readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "readme"
+            }
+          },
+          {
+            "id": "8b5d1b57e8252dfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Embedded/NUCLEOF446RE/readme.md",
                 "mode": "source",
                 "source": false
@@ -161,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Embedded/NUCLEOF446RE/readme.md",
+                "file": "Embedded/readme.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +218,14 @@
   },
   "active": "a3b6bfdb2bcebf04",
   "lastOpenFiles": [
+    "learning/src/objInfo/assets/Pasted image 20261124212732.png",
+    "learning/src/objInfo/assets/Pasted image 20261124212628.png",
+    "learning/src/objInfo/assets/Pasted image 20261124212555.png",
+    "learning/src/objInfo/assets/Pasted image 20261124212439.png",
+    "Embedded/ESP32/readme.md",
+    "Embedded/Microchip/readme.md",
+    "Embedded/NUCLEOF446RE/readme.md",
+    "Embedded/readme.md",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/build/nucleo-f446re/f20a851bc3a5e460/out/ch13.d",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch13-342xaozlabda1/s-hoe92858e2-0yssdkd-7p9nwxwmz1acfruam51olf1tp/work-products.bin",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch13-342xaozlabda1/s-hoe92858e2-0yssdkd-7p9nwxwmz1acfruam51olf1tp/thin-lto-past-keys.bin",
@@ -200,12 +236,8 @@
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch13-342xaozlabda1/s-hoe92858e2-0yssdkd-7p9nwxwmz1acfruam51olf1tp/7jtlh2yic8sswwcd84vobgiow.pre-lto.bc",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch13-342xaozlabda1/s-hoe92858e2-0yssdkd-7p9nwxwmz1acfruam51olf1tp/7jtlh2yic8sswwcd84vobgiow.o",
     "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch13-342xaozlabda1/s-hoe92858e2-0yssdkd-7p9nwxwmz1acfruam51olf1tp/9pmccf468mr1idv3otc5m8jmp.o",
-    "Embedded/NUCLEOF446RE/nucleo-f446re/target/thumbv7em-none-eabihf/debug/incremental/ch13-342xaozlabda1/s-hoe92858e2-0yssdkd-7p9nwxwmz1acfruam51olf1tp/5nea0ch37mbwhsxtazfvqj6gb.pre-lto.bc",
-    "Embedded/readme.md",
     "Embedded/NUCLEOF446RE/STLink/六合一串口调试器.jpg",
     "Embedded/NUCLEOF446RE/STLink/b4ad92e08af82ac784ce4b5e95f6cf1a.jpg",
-    "Embedded/NUCLEOF446RE/readme.md",
-    "Embedded/ESP32/readme.md",
     "Embedded/入门指引/如何入门.md",
     "learning/src/objInfo/assets/Pasted image 20261103212109.png",
     "Embedded/遇到的坑.md",
@@ -224,10 +256,7 @@
     "editCLI/target/package/editCLI-0.1.0/构建命令行工具.md",
     "learning/src/objInfo/assets/Pasted image 20261006160827.png",
     "learning/src/objInfo/assets/Pasted image 20261006160608.png",
-    "learning/src/objInfo/assets/Pasted image 20261006155832.png",
     "editCLI/target/doc/static.files/SourceSerif4-LICENSE-a2cfd9d5.md",
-    "editCLI/target/doc/static.files/rust-logo-9a9549ea.svg",
-    "editCLI/target/doc/static.files/favicon-044be391.svg",
     "editCLI/构建命令行工具.md",
     "restaurant/testCommand.md",
     "learning/src/lifes/Trait和泛型的高级用法.md"
